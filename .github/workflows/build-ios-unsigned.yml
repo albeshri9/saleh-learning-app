@@ -1,4 +1,4 @@
-name: Build unsigned Saleh IPA v15
+name: Build unsigned Saleh IPA v16
 
 on:
   push:
@@ -11,7 +11,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: ios-unsigned-v15
+  group: ios-unsigned-v16
   cancel-in-progress: true
 
 jobs:
@@ -32,6 +32,8 @@ jobs:
           cat patch_v15_parts/part-*.bin > patch-v15-rebuilt.zip
           echo "943a5b097eb23fdac8c07ed2c93fbc794f7071ebcc230bf4c152314727707a8a  patch-v15-rebuilt.zip" | shasum -a 256 -c -
           unzip -qo patch-v15-rebuilt.zip -d saleh_app
+          echo "74e7f6fa6e3a6a227644d47533860f4d8b462c3d831a2902dadad56658d559dc  patch-v16-alif.zip" | shasum -a 256 -c -
+          unzip -qo patch-v16-alif.zip -d saleh_app
       - name: Install Flutter
         uses: subosito/flutter-action@v2
         with:
@@ -55,14 +57,14 @@ jobs:
         run: |
           mkdir Payload
           cp -R saleh_app/build/ios/iphoneos/Runner.app Payload/Runner.app
-          /usr/bin/zip -qry Saleh-unsigned-v15.ipa Payload
-          shasum -a 256 Saleh-unsigned-v15.ipa > Saleh-unsigned-v15.ipa.sha256
+          /usr/bin/zip -qry Saleh-unsigned-v16.ipa Payload
+          shasum -a 256 Saleh-unsigned-v16.ipa > Saleh-unsigned-v16.ipa.sha256
       - name: Upload IPA
         uses: actions/upload-artifact@v4
         with:
-          name: Saleh-iOS-unsigned-v15
+          name: Saleh-iOS-unsigned-v16
           path: |
-            Saleh-unsigned-v15.ipa
-            Saleh-unsigned-v15.ipa.sha256
+            Saleh-unsigned-v16.ipa
+            Saleh-unsigned-v16.ipa.sha256
           if-no-files-found: error
           retention-days: 14
