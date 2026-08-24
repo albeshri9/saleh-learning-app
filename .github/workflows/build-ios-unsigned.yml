@@ -29,7 +29,9 @@ jobs:
           unzip -qo patch-v5.zip -d saleh_app
           cat patch_v14_parts/part-*.bin > patch-v14-full.zip
           unzip -qo patch-v14-full.zip -d saleh_app
-          unzip -qo patch-v15.zip -d saleh_app
+          cat patch_v15_parts/part-*.bin > patch-v15-rebuilt.zip
+          echo "943a5b097eb23fdac8c07ed2c93fbc794f7071ebcc230bf4c152314727707a8a  patch-v15-rebuilt.zip" | shasum -a 256 -c -
+          unzip -qo patch-v15-rebuilt.zip -d saleh_app
       - name: Install Flutter
         uses: subosito/flutter-action@v2
         with:
