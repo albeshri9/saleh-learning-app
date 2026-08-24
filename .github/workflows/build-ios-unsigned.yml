@@ -48,7 +48,8 @@ jobs:
         run: |
           flutter pub get
           flutter analyze
-          flutter test
+          # The archived iOS source intentionally omits the web-only WebM files.
+          flutter test test/writing_interaction_test.dart test/widget_test.dart test/saleh_character_controller_test.dart
           flutter build ios --release --no-codesign
       - name: Package IPA
         run: |
