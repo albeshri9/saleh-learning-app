@@ -3,6 +3,8 @@ name: Build unsigned Saleh IPA v15
 on:
   push:
     branches: [build/ios-v14]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
