@@ -40,8 +40,9 @@ jobs:
       - name: Clean animated alpha assets
         working-directory: saleh_app
         run: |
-          python3 -m pip install --quiet pillow
-          python3 tool/clean_animated_alpha.py
+          python3 -m venv .alpha-venv
+          .alpha-venv/bin/pip install --quiet pillow
+          .alpha-venv/bin/python tool/clean_animated_alpha.py
       - name: Verify and build unsigned iOS app
         working-directory: saleh_app
         run: |
