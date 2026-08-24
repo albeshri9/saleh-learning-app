@@ -1,22 +1,23 @@
-name: Build unsigned Saleh IPA
+name: Build unsigned Saleh IPA v15
 
 on:
   push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+    branches: [build/ios-v14]
   workflow_dispatch:
 
 permissions:
   contents: read
 
+concurrency:
+  group: ios-unsigned-v15
+  cancel-in-progress: true
+
 jobs:
   build-ios:
     runs-on: macos-latest
-    timeout-minutes: 45
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
-
       - name: Restore project source
         run: |
           cat source_parts/part-*.bin > saleh-ios-source.zip
@@ -26,33 +27,36 @@ jobs:
           unzip -qo patch-v5.zip -d saleh_app
           cat patch_v14_parts/part-*.bin > patch-v14-full.zip
           unzip -qo patch-v14-full.zip -d saleh_app
-
+          unzip -qo patch-v15.zip -d saleh_app
       - name: Install Flutter
         uses: subosito/flutter-action@v2
         with:
           channel: stable
           cache: true
-
+      - name: Clean animated alpha assets
+        working-directory: saleh_app
+        run: |
+          python3 -m pip install --quiet pillow
+          python3 tool/clean_animated_alpha.py
       - name: Verify and build unsigned iOS app
         working-directory: saleh_app
         run: |
           flutter pub get
           flutter analyze
+          flutter test
           flutter build ios --release --no-codesign
-
       - name: Package IPA
         run: |
           mkdir Payload
           cp -R saleh_app/build/ios/iphoneos/Runner.app Payload/Runner.app
-          /usr/bin/zip -qry Saleh-unsigned.ipa Payload
-          shasum -a 256 Saleh-unsigned.ipa > Saleh-unsigned.ipa.sha256
-
+          /usr/bin/zip -qry Saleh-unsigned-v15.ipa Payload
+          shasum -a 256 Saleh-unsigned-v15.ipa > Saleh-unsigned-v15.ipa.sha256
       - name: Upload IPA
         uses: actions/upload-artifact@v4
         with:
-          name: Saleh-iOS-unsigned-v14
+          name: Saleh-iOS-unsigned-v15
           path: |
-            Saleh-unsigned.ipa
-            Saleh-unsigned.ipa.sha256
+            Saleh-unsigned-v15.ipa
+            Saleh-unsigned-v15.ipa.sha256
           if-no-files-found: error
           retention-days: 14
