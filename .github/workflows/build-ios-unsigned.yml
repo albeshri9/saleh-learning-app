@@ -3,8 +3,7 @@ name: Build unsigned Saleh IPA v22
 on:
   push:
     branches: [build/ios-v22]
-  pull_request:
-    branches: [main]
+  pull_request:\n    branches: [build/ios-v22]
   workflow_dispatch:
 
 permissions:
