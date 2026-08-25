@@ -1,17 +1,17 @@
-name: Build unsigned Saleh IPA v22
+name: Build unsigned Saleh IPA v23
 
 on:
   push:
-    branches: [build/ios-v14, build/ios-v22]
+    branches: [build/ios-v14, build/ios-v23]
   pull_request:
-    branches: [main, build/ios-v22]
+    branches: [main, build/ios-v23]
   workflow_dispatch:
 
 permissions:
   contents: read
 
 concurrency:
-  group: ios-unsigned-v22
+  group: ios-unsigned-v23
   cancel-in-progress: true
 
 jobs:
@@ -46,6 +46,7 @@ jobs:
           echo "2aed70f4593338f2ba3494a948d40784cc2f5dffebe6fd9435cecf1ee7f32758  patch-v21-user-audio.zip" | shasum -a 256 -c -
           unzip -qo patch-v21-user-audio.zip -d saleh_app
           cp -R patch-v22/. saleh_app/
+          cp -R patch-v23/. saleh_app/
 
       - name: Install Flutter
         uses: subosito/flutter-action@v2
@@ -65,22 +66,22 @@ jobs:
         run: |
           flutter pub get
           flutter analyze
-          flutter test test/writing_interaction_test.dart test/widget_test.dart test/saleh_character_controller_test.dart test/alif_audio_assets_test.dart
+          flutter test test/writing_interaction_test.dart test/widget_test.dart test/saleh_character_controller_test.dart test/alif_audio_assets_test.dart test/alif_lesson_interaction_test.dart
           flutter build ios --release --no-codesign
 
       - name: Package IPA
         run: |
           mkdir Payload
           cp -R saleh_app/build/ios/iphoneos/Runner.app Payload/Runner.app
-          /usr/bin/zip -qry Saleh-unsigned-v22.ipa Payload
-          shasum -a 256 Saleh-unsigned-v22.ipa > Saleh-unsigned-v22.ipa.sha256
+          /usr/bin/zip -qry Saleh-unsigned-v23.ipa Payload
+          shasum -a 256 Saleh-unsigned-v23.ipa > Saleh-unsigned-v23.ipa.sha256
 
       - name: Upload IPA
         uses: actions/upload-artifact@v4
         with:
-          name: Saleh-iOS-unsigned-v22
+          name: Saleh-iOS-unsigned-v23
           path: |
-            Saleh-unsigned-v22.ipa
-            Saleh-unsigned-v22.ipa.sha256
+            Saleh-unsigned-v23.ipa
+            Saleh-unsigned-v23.ipa.sha256
           if-no-files-found: error
           retention-days: 14
