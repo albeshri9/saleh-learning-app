@@ -1,17 +1,17 @@
-name: Build unsigned Saleh IPA v27
+name: Build unsigned Saleh IPA v28
 
 on:
   push:
-    branches: [build/ios-v14, build/ios-v27]
+    branches: [build/ios-v14, build/ios-v28]
   pull_request:
-    branches: [main, build/ios-v27]
+    branches: [main, build/ios-v28]
   workflow_dispatch:
 
 permissions:
   contents: read
 
 concurrency:
-  group: ios-unsigned-v27
+  group: ios-unsigned-v28
   cancel-in-progress: true
 
 jobs:
@@ -51,6 +51,7 @@ jobs:
           cp -R patch-v25/. saleh_app/
           cp -R patch-v26/. saleh_app/
           cp -R patch-v27/. saleh_app/
+          cp -R patch-v28/. saleh_app/
 
       - name: Install Flutter
         uses: subosito/flutter-action@v2
@@ -77,15 +78,15 @@ jobs:
         run: |
           mkdir Payload
           cp -R saleh_app/build/ios/iphoneos/Runner.app Payload/Runner.app
-          /usr/bin/zip -qry Saleh-unsigned-v27.ipa Payload
-          shasum -a 256 Saleh-unsigned-v27.ipa > Saleh-unsigned-v27.ipa.sha256
+          /usr/bin/zip -qry Saleh-unsigned-v28.ipa Payload
+          shasum -a 256 Saleh-unsigned-v28.ipa > Saleh-unsigned-v28.ipa.sha256
 
       - name: Upload IPA
         uses: actions/upload-artifact@v4
         with:
-          name: Saleh-iOS-unsigned-v27
+          name: Saleh-iOS-unsigned-v28
           path: |
-            Saleh-unsigned-v27.ipa
-            Saleh-unsigned-v27.ipa.sha256
+            Saleh-unsigned-v28.ipa
+            Saleh-unsigned-v28.ipa.sha256
           if-no-files-found: error
           retention-days: 14
