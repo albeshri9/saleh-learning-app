@@ -1,17 +1,17 @@
-name: Build unsigned Saleh IPA v23
+name: Build unsigned Saleh IPA v24
 
 on:
   push:
-    branches: [build/ios-v14, build/ios-v23]
+    branches: [build/ios-v14, build/ios-v24]
   pull_request:
-    branches: [main, build/ios-v23]
+    branches: [main, build/ios-v24]
   workflow_dispatch:
 
 permissions:
   contents: read
 
 concurrency:
-  group: ios-unsigned-v23
+  group: ios-unsigned-v24
   cancel-in-progress: true
 
 jobs:
@@ -47,6 +47,7 @@ jobs:
           unzip -qo patch-v21-user-audio.zip -d saleh_app
           cp -R patch-v22/. saleh_app/
           cp -R patch-v23/. saleh_app/
+          cp -R patch-v24/. saleh_app/
 
       - name: Install Flutter
         uses: subosito/flutter-action@v2
@@ -73,15 +74,15 @@ jobs:
         run: |
           mkdir Payload
           cp -R saleh_app/build/ios/iphoneos/Runner.app Payload/Runner.app
-          /usr/bin/zip -qry Saleh-unsigned-v23.ipa Payload
-          shasum -a 256 Saleh-unsigned-v23.ipa > Saleh-unsigned-v23.ipa.sha256
+          /usr/bin/zip -qry Saleh-unsigned-v24.ipa Payload
+          shasum -a 256 Saleh-unsigned-v24.ipa > Saleh-unsigned-v24.ipa.sha256
 
       - name: Upload IPA
         uses: actions/upload-artifact@v4
         with:
-          name: Saleh-iOS-unsigned-v23
+          name: Saleh-iOS-unsigned-v24
           path: |
-            Saleh-unsigned-v23.ipa
-            Saleh-unsigned-v23.ipa.sha256
+            Saleh-unsigned-v24.ipa
+            Saleh-unsigned-v24.ipa.sha256
           if-no-files-found: error
           retention-days: 14
