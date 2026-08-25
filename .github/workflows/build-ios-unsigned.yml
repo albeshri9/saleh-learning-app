@@ -1,8 +1,8 @@
-name: Build unsigned Saleh IPA v21
+name: Build unsigned Saleh IPA v22
 
 on:
   push:
-    branches: [build/ios-v14]
+    branches: [build/ios-v22]
   pull_request:
     branches: [main]
   workflow_dispatch:
@@ -11,7 +11,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: ios-unsigned-v21
+  group: ios-unsigned-v22
   cancel-in-progress: true
 
 jobs:
@@ -43,7 +43,7 @@ jobs:
           echo "f3a28c86ebfa52dd23e1368f545d2d42f59709f7379dbe4d6a8c402ea5ae79db  patch-v20-autoplay-version.zip" | shasum -a 256 -c -
           unzip -qo patch-v20-autoplay-version.zip -d saleh_app
           echo "2aed70f4593338f2ba3494a948d40784cc2f5dffebe6fd9435cecf1ee7f32758  patch-v21-user-audio.zip" | shasum -a 256 -c -
-          unzip -qo patch-v21-user-audio.zip -d saleh_app
+          unzip -qo patch-v21-user-audio.zip -d saleh_app\n          cp -R patch-v22/. saleh_app/
       - name: Install Flutter
         uses: subosito/flutter-action@v2
         with:
@@ -67,14 +67,14 @@ jobs:
         run: |
           mkdir Payload
           cp -R saleh_app/build/ios/iphoneos/Runner.app Payload/Runner.app
-          /usr/bin/zip -qry Saleh-unsigned-v21.ipa Payload
-          shasum -a 256 Saleh-unsigned-v21.ipa > Saleh-unsigned-v21.ipa.sha256
+          /usr/bin/zip -qry Saleh-unsigned-v22.ipa Payload
+          shasum -a 256 Saleh-unsigned-v22.ipa > Saleh-unsigned-v22.ipa.sha256
       - name: Upload IPA
         uses: actions/upload-artifact@v4
         with:
-          name: Saleh-iOS-unsigned-v21
+          name: Saleh-iOS-unsigned-v22
           path: |
-            Saleh-unsigned-v21.ipa
-            Saleh-unsigned-v21.ipa.sha256
+            Saleh-unsigned-v22.ipa
+            Saleh-unsigned-v22.ipa.sha256
           if-no-files-found: error
           retention-days: 14
