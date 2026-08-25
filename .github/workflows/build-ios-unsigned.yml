@@ -1,4 +1,4 @@
-name: Build unsigned Saleh IPA v19
+name: Build unsigned Saleh IPA v20
 
 on:
   push:
@@ -11,7 +11,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: ios-unsigned-v19
+  group: ios-unsigned-v20
   cancel-in-progress: true
 
 jobs:
@@ -40,6 +40,8 @@ jobs:
           unzip -qo patch-v18-audio-activation.zip -d saleh_app
           echo "30f3fa696388827984302850e642613eb18e0b4791bb4341cb34d84f9036e23a  patch-v19-lesson-feedback.zip" | shasum -a 256 -c -
           unzip -qo patch-v19-lesson-feedback.zip -d saleh_app
+          echo "f3a28c86ebfa52dd23e1368f545d2d42f59709f7379dbe4d6a8c402ea5ae79db  patch-v20-autoplay-version.zip" | shasum -a 256 -c -
+          unzip -qo patch-v20-autoplay-version.zip -d saleh_app
       - name: Install Flutter
         uses: subosito/flutter-action@v2
         with:
@@ -63,14 +65,14 @@ jobs:
         run: |
           mkdir Payload
           cp -R saleh_app/build/ios/iphoneos/Runner.app Payload/Runner.app
-          /usr/bin/zip -qry Saleh-unsigned-v19.ipa Payload
-          shasum -a 256 Saleh-unsigned-v19.ipa > Saleh-unsigned-v19.ipa.sha256
+          /usr/bin/zip -qry Saleh-unsigned-v20.ipa Payload
+          shasum -a 256 Saleh-unsigned-v20.ipa > Saleh-unsigned-v20.ipa.sha256
       - name: Upload IPA
         uses: actions/upload-artifact@v4
         with:
-          name: Saleh-iOS-unsigned-v19
+          name: Saleh-iOS-unsigned-v20
           path: |
-            Saleh-unsigned-v19.ipa
-            Saleh-unsigned-v19.ipa.sha256
+            Saleh-unsigned-v20.ipa
+            Saleh-unsigned-v20.ipa.sha256
           if-no-files-found: error
           retention-days: 14
