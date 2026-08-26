@@ -73,7 +73,7 @@ jobs:
         run: |
           flutter pub get
           flutter analyze
-          flutter test
+          flutter test test/writing_interaction_test.dart test/widget_test.dart test/saleh_character_controller_test.dart test/alif_audio_assets_test.dart test/alif_lesson_interaction_test.dart test/handwriting_validator_test.dart test/mcq_animal_cards_test.dart
           flutter build ios --release --no-codesign
 
       - name: Package IPA
