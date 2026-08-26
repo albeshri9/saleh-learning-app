@@ -1,4 +1,4 @@
-name: Build unsigned Saleh IPA v32
+name: Build unsigned Saleh IPA v33
 
 on:
   push:
@@ -11,7 +11,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: ios-unsigned-v32
+  group: ios-unsigned-v33
   cancel-in-progress: true
 
 jobs:
@@ -56,7 +56,8 @@ jobs:
           cp -R patch-v30/. saleh_app/
           cp -R patch-v31/. saleh_app/
           cp -R patch-v32/. saleh_app/
-
+          echo "b094eeab6874cbc222bae2f9f49ca6c4a98e8986bbcd2affa7d86505f4370aa6  patch-v33-audio-start-verification.zip" | shasum -a 256 -c -
+          unzip -qo patch-v33-audio-start-verification.zip -d saleh_app
       - name: Install Flutter
         uses: subosito/flutter-action@v2
         with:
@@ -82,15 +83,14 @@ jobs:
         run: |
           mkdir Payload
           cp -R saleh_app/build/ios/iphoneos/Runner.app Payload/Runner.app
-          /usr/bin/zip -qry Saleh-unsigned-v32.ipa Payload
-          shasum -a 256 Saleh-unsigned-v32.ipa > Saleh-unsigned-v32.ipa.sha256
-
+          /usr/bin/zip -qry Saleh-unsigned-v33.ipa Payload
+          shasum -a 256 Saleh-unsigned-v33.ipa > Saleh-unsigned-v33.ipa.sha256
       - name: Upload IPA
         uses: actions/upload-artifact@v4
         with:
-          name: Saleh-iOS-unsigned-v32
+          name: Saleh-iOS-unsigned-v33
           path: |
-            Saleh-unsigned-v32.ipa
-            Saleh-unsigned-v32.ipa.sha256
+            Saleh-unsigned-v33.ipa
+            Saleh-unsigned-v33.ipa.sha256
           if-no-files-found: error
           retention-days: 14
