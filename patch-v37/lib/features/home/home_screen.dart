@@ -60,7 +60,7 @@ class HomeScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final profile = ref.watch(childProfileProvider).valueOrNull;
     return _CatalogShell(
-      title: 'برامج تعلّم مع صالح',
+      title: 'برامج تعلم مع صالح',
       profile: profile,
       child: Column(
         children: [

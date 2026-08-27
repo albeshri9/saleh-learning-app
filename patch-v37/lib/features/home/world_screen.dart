@@ -208,7 +208,7 @@ class _WorldScreenState extends ConsumerState<WorldScreen> {
         'review' => 'ألعب وأراجع',
         'achievements' => 'إنجازاتي',
         'parents' => 'ركن الأهل',
-        _ => 'تعلّم مع صالح',
+        _ => 'تعلم مع صالح',
       };
 
   Widget _home(BoxConstraints size, LessonProgress? p) {
@@ -746,7 +746,7 @@ class _WelcomeJourney extends StatelessWidget {
                     children: [
                       const Text('أهلًا بكم في',
                           style: TextStyle(color: _ink, fontSize: 18)),
-                      const Text('تعلّم مع صالح',
+                      const Text('تعلم مع صالح',
                           style: TextStyle(
                               color: _ink,
                               fontSize: 36,

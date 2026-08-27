@@ -23,7 +23,7 @@ class SalehApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: 'تعلّم مع صالح',
+      title: 'تعلم مع صالح',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.light(),
       routerConfig: appRouter,

@@ -128,7 +128,7 @@ void main() {
     )));
     await _frames(tester);
     expect(tester.takeException(), isNull);
-    expect(find.text('تعلّم مع صالح'), findsOneWidget);
+    expect(find.text('تعلم مع صالح'), findsOneWidget);
     await tester.tap(find.text('دروسي'));
     await _frames(tester);
     expect(find.text('حديقة الحروف'), findsOneWidget);

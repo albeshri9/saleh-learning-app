@@ -1,4 +1,4 @@
-# تعلّم مع صالح — v37
+# تعلم مع صالح — v37
 
 - Reinstates classroom_main.jpg for current lessons; retains classroom_v36.png for future use.
 - Removes the drawn ground shadow and vertical body translation from idle Saleh.
@@ -9,7 +9,7 @@
 - Redesigned welcome, compact resume card, readable greeting on an opaque panel.
 - Name then age vertically, required age selection with no default; editable child profile keeps its id/progress namespace.
 - 12 actual cartoon career portraits replace emoji. Physical west arrows for progression, not automatically mirrored.
-- Display name: تعلّم مع صالح (including iOS home-screen label). Song unchanged as requested.
+- Display name: تعلم مع صالح (including iOS home-screen label). Song unchanged as requested.
 
 ## Image generation
 
