@@ -1,4 +1,4 @@
-name: Build unsigned Saleh IPA v35
+name: Build unsigned Saleh IPA v36
 
 on:
   push:
@@ -11,7 +11,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: ios-unsigned-v35
+  group: ios-unsigned-v36
   cancel-in-progress: true
 
 jobs:
@@ -59,6 +59,7 @@ jobs:
           cp -R patch-v33/. saleh_app/
           cp -R patch-v34/. saleh_app/
           cp -R patch-v35/. saleh_app/
+          cp -R patch-v36/. saleh_app/
 
       - name: Install Flutter
         uses: subosito/flutter-action@v2
@@ -80,21 +81,22 @@ jobs:
           flutter analyze
           flutter test test/writing_interaction_test.dart test/widget_test.dart test/saleh_character_controller_test.dart test/alif_audio_assets_test.dart test/alif_lesson_interaction_test.dart test/handwriting_validator_test.dart test/mcq_animal_cards_test.dart
           flutter test test/interaction_effects_test.dart --exclude-tags visual
+          flutter test test/world_v36_test.dart --exclude-tags visual
           flutter build ios --release --no-codesign
 
       - name: Package IPA
         run: |
           mkdir Payload
           cp -R saleh_app/build/ios/iphoneos/Runner.app Payload/Runner.app
-          /usr/bin/zip -qry Saleh-unsigned-v35.ipa Payload
-          shasum -a 256 Saleh-unsigned-v35.ipa > Saleh-unsigned-v35.ipa.sha256
+          /usr/bin/zip -qry Saleh-unsigned-v36.ipa Payload
+          shasum -a 256 Saleh-unsigned-v36.ipa > Saleh-unsigned-v36.ipa.sha256
 
       - name: Upload IPA
         uses: actions/upload-artifact@v4
         with:
-          name: Saleh-iOS-unsigned-v35
+          name: Saleh-iOS-unsigned-v36
           path: |
-            Saleh-unsigned-v35.ipa
-            Saleh-unsigned-v35.ipa.sha256
+            Saleh-unsigned-v36.ipa
+            Saleh-unsigned-v36.ipa.sha256
           if-no-files-found: error
           retention-days: 14
