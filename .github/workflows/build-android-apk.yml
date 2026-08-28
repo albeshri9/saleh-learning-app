@@ -1,27 +1,26 @@
-name: Build unsigned Saleh IPA v46
+name: Build Saleh Android APK v46
 
 on:
   push:
-    branches: [build/ios-v14, build/ios-v29]
-  pull_request:
-    branches: [main, build/ios-v29]
+    branches: [build/ios-v14]
+    paths:
+      - 'patch-android-v46/**'
+      - '.github/workflows/build-android-apk.yml'
   workflow_dispatch:
 
 permissions:
   contents: read
 
 concurrency:
-  group: ios-unsigned-v46
-  cancel-in-progress: true
+  group: android-apk-v46
+  cancel-in-progress: false
 
 jobs:
-  build-ios:
-    if: github.event_name != 'push' || !contains(github.event.head_commit.message, '[android-only]')
-    runs-on: macos-14
+  build-android:
+    runs-on: ubuntu-24.04
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
-
       - name: Restore project source
         run: |
           cat source_parts/part-*.bin > saleh-ios-source.zip
@@ -70,55 +69,53 @@ jobs:
           cp -R patch-v44/. saleh_app/
           cp -R patch-v45/. saleh_app/
           cp -R patch-v46/. saleh_app/
-
+          cp -R patch-android-v46/. saleh_app/
+          chmod +x saleh_app/android/gradlew
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
       - name: Install Flutter
         uses: subosito/flutter-action@v2
         with:
+          flutter-version: '3.47.1'
           channel: stable
           cache: true
-
-      - name: Clean animated alpha assets
+      - name: Prepare assets and verify source
         working-directory: saleh_app
         run: |
           python3 -m venv .alpha-venv
           .alpha-venv/bin/pip install --quiet pillow
           .alpha-venv/bin/python tool/clean_animated_alpha.py
-
-      - name: Verify and build unsigned iOS app
-        working-directory: saleh_app
-        run: |
           flutter pub get
           python3 tool/validate_content.py
-          python3 tool/test_validate_content.py
           python3 tool/validate_voice_bindings.py
+          python3 tool/test_validate_content.py
           python3 tool/test_validate_voice_bindings.py
           flutter analyze
-          flutter test test/writing_interaction_test.dart test/widget_test.dart test/saleh_character_controller_test.dart test/alif_audio_assets_test.dart test/alif_lesson_interaction_test.dart test/handwriting_validator_test.dart test/mcq_animal_cards_test.dart
-          flutter test test/interaction_effects_test.dart --exclude-tags visual
-          flutter test test/world_v36_test.dart test/profile_v37_test.dart --exclude-tags visual
-          flutter test test/v38_test.dart --exclude-tags visual
-          flutter test test/v39_test.dart --exclude-tags visual
-          flutter test test/games_worlds_test.dart test/v41_test.dart --exclude-tags visual
-          flutter test test/v42_test.dart test/v42_catalog_test.dart --exclude-tags visual
-          flutter test test/v43_lessons_test.dart test/v43_fatha_words_test.dart --exclude-tags visual
-          flutter test test/v44_test.dart --exclude-tags visual
-          flutter test test/v45_test.dart test/v45_reveal_test.dart --exclude-tags visual
-          flutter test test/v46_test.dart --exclude-tags visual
-          flutter build ios --release --no-codesign
-
-      - name: Package IPA
+          flutter test --exclude-tags visual
+      - name: Build installable evaluation APK
+        working-directory: saleh_app
+        run: flutter build apk --release --build-name=0.1.0 --build-number=46
+      - name: Verify and package APK
+        working-directory: saleh_app
         run: |
-          mkdir Payload
-          cp -R saleh_app/build/ios/iphoneos/Runner.app Payload/Runner.app
-          /usr/bin/zip -qry Saleh-unsigned-v46.ipa Payload
-          shasum -a 256 Saleh-unsigned-v46.ipa > Saleh-unsigned-v46.ipa.sha256
-
-      - name: Upload IPA
+          mkdir -p release-apk
+          cp build/app/outputs/flutter-apk/app-release.apk release-apk/Saleh-v46.apk
+          APK_TOOLS="$(find "$ANDROID_HOME/build-tools" -mindepth 1 -maxdepth 1 -type d | sort -V | tail -n 1)"
+          "$APK_TOOLS/apksigner" verify --verbose --print-certs release-apk/Saleh-v46.apk | tee release-apk/signature.txt
+          "$APK_TOOLS/aapt" dump badging release-apk/Saleh-v46.apk | tee release-apk/package-info.txt
+          python3 tool/verify_android_apk.py release-apk/Saleh-v46.apk > release-apk/verification.json
+          grep -q "package: name='com.example.saleh_app' versionCode='46' versionName='0.1.0'" release-apk/package-info.txt
+          grep -q "application-label:'تعلم مع صالح'" release-apk/package-info.txt
+          if grep -q application-debuggable release-apk/package-info.txt; then exit 1; fi
+          cp ANDROID_V46.md release-apk/README.md
+          cd release-apk
+          sha256sum Saleh-v46.apk > Saleh-v46.apk.sha256
+      - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: Saleh-iOS-unsigned-v46
-          path: |
-            Saleh-unsigned-v46.ipa
-            Saleh-unsigned-v46.ipa.sha256
+          name: Saleh-Android-v46
+          path: saleh_app/release-apk/
           if-no-files-found: error
           retention-days: 14
