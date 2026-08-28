@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "packs": [
+    {
+      "id": "alif",
+      "version": 1,
+      "title": "حرف الألف",
+      "letter": "أَ",
+      "status": "available",
+      "lessonAsset": "assets/content/lesson_alif.json",
+      "audioFolder": "assets/audio/alif/",
+      "traceTemplateIds": ["alif_fatha_video_v1"],
+      "exampleImages": ["assets/images/assessment/alif_lion.png", "assets/images/assessment/duck.png", "assets/images/assessment/fox.png"],
+      "reviewChecklist": ["audio-text-match", "trace-direction", "assessment-answer-mapping", "phone-layout", "offline-assets"]
+    }
+  ]
+}
