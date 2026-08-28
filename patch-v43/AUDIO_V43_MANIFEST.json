@@ -1,0 +1,212 @@
+{
+  "assets/audio/thaa/welcome.mp3": {
+    "sha256": "79ebbd130f35f1f686e34e1246a475614a4f65d34fccb1b120f035638eba670b",
+    "durationSec": 8.83,
+    "text": "مرحبًا يا أصدقائي، كيف حالكم اليوم؟ سوف نتعلم اليوم حرفًا جديدًا، حرف الثاء. هيا بنا."
+  },
+  "assets/audio/thaa/explain_1.mp3": {
+    "sha256": "c44d5f77d699f505d38cbcd6a01093b4b7ad6cf73f6c4de562014367cdba246f",
+    "durationSec": 4.52,
+    "text": "انظروا يا أصدقائي إلى حرف الثاء، إنه حرف جميل."
+  },
+  "assets/audio/thaa/explain_2.mp3": {
+    "sha256": "c492dc167fc6c84c6d192101f26093eac6d4b341e7164516f7699c2a10a51f7e",
+    "durationSec": 7.0,
+    "text": "ثَا، ثَا، ثَا. هل تعرفون كلمةً تبدأ بحرف الثاء؟"
+  },
+  "assets/audio/thaa/explain_3.mp3": {
+    "sha256": "957b3480ac83704cf3fa2068d6f3bad355a39ebf7005da87bd1953ad3a8ef820",
+    "durationSec": 5.72,
+    "text": "ثَا، ثَعْلَب. ثَا، ثَعْلَب."
+  },
+  "assets/audio/thaa/explain_4.mp3": {
+    "sha256": "5293893a8c443fe00899c0ca11fd5569c7819de06f6a8e73dd99ee7fd0850634",
+    "durationSec": 4.68,
+    "text": "انظروا إلى كلمة ثَعْلَب، إنها تبدأ بحرف الثاء."
+  },
+  "assets/audio/thaa/explain_5.mp3": {
+    "sha256": "436246d73d65527c8f409d4396d653cff2b558daba582cfd6229040e109d8a5c",
+    "durationSec": 10.03,
+    "text": "ردِّدوا معي: ثَا، ثَعْلَب. ثَا، ثَعْلَب. ثَا، ثَعْلَب."
+  },
+  "assets/audio/thaa/explain_6.mp3": {
+    "sha256": "f024b0943fd9231dc3a5b617d1aa70b2e72dc63c42994f51c4e016a28fea77a0",
+    "durationSec": 8.91,
+    "text": "هكذا يا أصدقائي تعلمنا اليوم حرف الثاء. سننتقل الآن إلى نطق وكتابة حرف الثاء. هيا بنا."
+  },
+  "assets/audio/thaa/pronounce_intro.mp3": {
+    "sha256": "00979f80a7e199a441903b4900d18b09a337d7a23f253c6a7616dd3d07b85db5",
+    "durationSec": 14.99,
+    "text": "هيا يا أصدقائي، سأستمع إلى نطقكم لحرف الثاء. ثَا، ثَا، ثَا. اضغطوا على زر المايك وقوموا بنطق الحرف. هيا."
+  },
+  "assets/audio/thaa/writing_demo.mp3": {
+    "sha256": "ac4c8a5f7c0c502abac05792fa8d52d98bb4d30fb44dbb66ee3c4b3be489183a",
+    "durationSec": 27.01,
+    "text": "انظروا يا أصدقائي كيف نكتب حرف الثاء. نبدأ من اليمين، ونسير مع المسار إلى اليسار، ثم نضع ثلاث نقاط فوق الحرف، ثم الفتحة. انظروا مرةً أخرى. نبدأ من اليمين، ونسير مع المسار إلى اليسار، ثم نضع ثلاث نقاط فوق الحرف، ثم الفتحة."
+  },
+  "assets/audio/thaa/writing_try.mp3": {
+    "sha256": "853ce3f32d066aa8863c35af6d7e5706c9722af7ab1c3af9b0c89d1a1439ffb4",
+    "durationSec": 13.17,
+    "text": "هيا يا أصدقائي، اكتبوا حرف الثاء. ضعوا إصبعكم على النقطة الخضراء، واتبعوا مسار الحرف حتى النهاية. ثَا، ثَا."
+  },
+  "assets/audio/thaa/free_intro.mp3": {
+    "sha256": "a9cc359d57f0bb4840a23b726aa2fb3f1a0755a97f87f004543e2599e2963938",
+    "durationSec": 7.81,
+    "text": "هيا يا أصدقائي، هل تذكرون كيفية كتابة حرف الثاء؟ قوموا بكتابة حرف الثاء الآن."
+  },
+  "assets/audio/thaa/assessment_1.mp3": {
+    "sha256": "e7479062019d3e850c7d9fe6ac0c71cf085028eb02381c54bdfb8d07171ee626",
+    "durationSec": 3.4,
+    "text": "أين حرف الثاء؟ اضغطوا على حرف الثاء."
+  },
+  "assets/audio/thaa/assessment_2.mp3": {
+    "sha256": "1035109673ff61c57322e0b618fc36d1b93e75d86f026679fbb649048046eafb",
+    "durationSec": 4.44,
+    "text": "ما الكلمة التي تبدأ بحرف الثاء؟ اختاروا الصورة الصحيحة."
+  },
+  "assets/audio/thaa/closing.mp3": {
+    "sha256": "2499141a35d80e0d3b72a44137984d61b350e72ebbe4f89bd6ffaa1ea3f956ae",
+    "durationSec": 14.29,
+    "text": "أحسنتم يا أبطال. الحمد لله، لقد تعرفنا هذا اليوم على حرف الثاء. ثَا، ثَعْلَب. نلقاكم غدًا بإذن الله. إلى اللقاء يا أصدقائي."
+  },
+  "assets/audio/jeem/welcome.mp3": {
+    "sha256": "be203283a7e3b81edf3a7b58b44b9853cacae194adace200a5ba7b208e5082ba",
+    "durationSec": 10.61,
+    "text": "مرحبًا يا أصدقائي، كيف حالكم اليوم؟ سوف نتعلم اليوم حرفًا جديدًا، حرف الجيم. هيا بنا."
+  },
+  "assets/audio/jeem/explain_1.mp3": {
+    "sha256": "4c1eccdc3f6cde47389502579c3ec537a2f7e9beca1db8a05c4d0e1cfb133ed9",
+    "durationSec": 4.83,
+    "text": "انظروا يا أصدقائي إلى حرف الجيم، إنه حرف جميل."
+  },
+  "assets/audio/jeem/explain_2.mp3": {
+    "sha256": "dc3df07581dd2f877cd7473a29870956b073fb90030562600cb52082ecc20b10",
+    "durationSec": 5.25,
+    "text": "جَا، جَا، جَا. هل تعرفون كلمةً تبدأ بحرف الجيم؟"
+  },
+  "assets/audio/jeem/explain_3.mp3": {
+    "sha256": "39b133d95f22a57dbb1595684e802f8a59024a2e1da5147d4c031764b3d6b338",
+    "durationSec": 3.87,
+    "text": "جَا، جَمَل. جَا، جَمَل."
+  },
+  "assets/audio/jeem/explain_4.mp3": {
+    "sha256": "f08b584f9a200739bcd1c07f2f8f9f74f5a1474cfc53684606ab20dfe5e13530",
+    "durationSec": 4.44,
+    "text": "انظروا إلى كلمة جَمَل، إنها تبدأ بحرف الجيم."
+  },
+  "assets/audio/jeem/explain_5.mp3": {
+    "sha256": "50dbf25308021d6923fcad6e86e7621c7f3698e3ff46ec74227fecc8f6349c61",
+    "durationSec": 8.44,
+    "text": "ردِّدوا معي: جَا، جَمَل. جَا، جَمَل. جَا، جَمَل."
+  },
+  "assets/audio/jeem/explain_6.mp3": {
+    "sha256": "9090bc9d0b6e1b0f1bc8978dc789cc22c0f8bea6b2185d5dd3d1c2dda837a302",
+    "durationSec": 8.83,
+    "text": "هكذا يا أصدقائي تعلمنا اليوم حرف الجيم. سننتقل الآن إلى نطق وكتابة حرف الجيم. هيا بنا."
+  },
+  "assets/audio/jeem/pronounce_intro.mp3": {
+    "sha256": "1c30f71d2b11e9ec23b5a397e6c666ad123f062a59e9cae1b260de4ef37c59f5",
+    "durationSec": 15.96,
+    "text": "هيا يا أصدقائي، سأستمع إلى نطقكم لحرف الجيم. جَا، جَا، جَا. اضغطوا على زر المايك وقوموا بنطق الحرف. هيا."
+  },
+  "assets/audio/jeem/writing_demo.mp3": {
+    "sha256": "6f1ffb4cedf818746cb386cb41d0a91e94c9800f3cc3f609e82000d2eb457511",
+    "durationSec": 29.65,
+    "text": "انظروا يا أصدقائي كيف نكتب حرف الجيم. نرسم رأس الحرف مع المسار، ثم ننزل ونكمل الانحناءة إلى اليمين، ونضع نقطة داخل الحرف، ثم الفتحة. انظروا مرةً أخرى. نرسم رأس الحرف مع المسار، ثم ننزل ونكمل الانحناءة إلى اليمين، ونضع نقطة داخل الحرف، ثم الفتحة."
+  },
+  "assets/audio/jeem/writing_try.mp3": {
+    "sha256": "aafd14c137f75343811d633b0464b9ca8e595a28c223e8d5d05a9b15ef43c067",
+    "durationSec": 12.59,
+    "text": "هيا يا أصدقائي، اكتبوا حرف الجيم. ضعوا إصبعكم على النقطة الخضراء، واتبعوا مسار الحرف حتى النهاية. جَا، جَا."
+  },
+  "assets/audio/jeem/free_intro.mp3": {
+    "sha256": "c178e2e6ba2a8282530b63025fcd0c451117647d87844e1842eec9f199bb0d41",
+    "durationSec": 7.39,
+    "text": "هيا يا أصدقائي، هل تذكرون كيفية كتابة حرف الجيم؟ قوموا بكتابة حرف الجيم الآن."
+  },
+  "assets/audio/jeem/assessment_1.mp3": {
+    "sha256": "62c1eec299692d3bcfa545419eab19af4d5d2eb238968f272c1cbb62bc0eb45d",
+    "durationSec": 3.79,
+    "text": "أين حرف الجيم؟ اضغطوا على حرف الجيم."
+  },
+  "assets/audio/jeem/assessment_2.mp3": {
+    "sha256": "5f75bb21680aea4e8ebe3aba5b0cdd709cf2c530e3df268b6b575a76696b92e2",
+    "durationSec": 4.52,
+    "text": "ما الكلمة التي تبدأ بحرف الجيم؟ اختاروا الصورة الصحيحة."
+  },
+  "assets/audio/jeem/closing.mp3": {
+    "sha256": "16ba52b382fea3edef8f5357f7e87532eebae23c5b324aead646f204a32f9af7",
+    "durationSec": 11.31,
+    "text": "أحسنتم يا أبطال. الحمد لله، لقد تعرفنا هذا اليوم على حرف الجيم. جَا، جَمَل. نلقاكم غدًا بإذن الله. إلى اللقاء يا أصدقائي."
+  },
+  "assets/audio/haa/welcome.mp3": {
+    "sha256": "766212e5a9712a85071ba26343a56e1435a037ad409737f04dd8c629210c3fbe",
+    "durationSec": 8.75,
+    "text": "مرحبًا يا أصدقائي، كيف حالكم اليوم؟ سوف نتعلم اليوم حرفًا جديدًا، حرف الحاء. هيا بنا."
+  },
+  "assets/audio/haa/explain_1.mp3": {
+    "sha256": "e0d17624a749f76009300f14875811dab5394d43d6eedd5f014b0a087392b3b6",
+    "durationSec": 4.52,
+    "text": "انظروا يا أصدقائي إلى حرف الحاء، إنه حرف جميل."
+  },
+  "assets/audio/haa/explain_2.mp3": {
+    "sha256": "bf946e4ffc25210bd0b58e85fe5a8cc78ca6b697ed36484cab42b814967b236d",
+    "durationSec": 4.99,
+    "text": "حَا، حَا، حَا. هل تعرفون كلمةً تبدأ بحرف الحاء؟"
+  },
+  "assets/audio/haa/explain_3.mp3": {
+    "sha256": "f5457a8786fa65be1df90eee7a1a496f451d72fa56b20b6b95054b4f951ffb03",
+    "durationSec": 4.52,
+    "text": "حَا، حَبْل. حَا، حَبْل."
+  },
+  "assets/audio/haa/explain_4.mp3": {
+    "sha256": "48b479f0756c1215ba1916ef82d8a4b2cdd7843e81761b574fa0754557ac7804",
+    "durationSec": 4.44,
+    "text": "انظروا إلى كلمة حَبْل، إنها تبدأ بحرف الحاء."
+  },
+  "assets/audio/haa/explain_5.mp3": {
+    "sha256": "61e971db1dd2d7cb1f65ac58352fb7e0d3b772788918c768fd31c7e5c883181d",
+    "durationSec": 9.17,
+    "text": "ردِّدوا معي: حَا، حَبْل. حَا، حَبْل. حَا، حَبْل."
+  },
+  "assets/audio/haa/explain_6.mp3": {
+    "sha256": "68666903bafa5ee26d4e1c4f21fc172509539f432893f95054019409826c81f0",
+    "durationSec": 9.48,
+    "text": "هكذا يا أصدقائي تعلمنا اليوم حرف الحاء. سننتقل الآن إلى نطق وكتابة حرف الحاء. هيا بنا."
+  },
+  "assets/audio/haa/pronounce_intro.mp3": {
+    "sha256": "a4fc23a806b85c239cd3443222268a024f095f1f59284270925b10e30d18ea9b",
+    "durationSec": 14.84,
+    "text": "هيا يا أصدقائي، سأستمع إلى نطقكم لحرف الحاء. حَا، حَا، حَا. اضغطوا على زر المايك وقوموا بنطق الحرف. هيا."
+  },
+  "assets/audio/haa/writing_demo.mp3": {
+    "sha256": "c5b80ddad152bfb8218e1989304945e25920fc4283d30e8d55e23c7dfa710c17",
+    "durationSec": 29.23,
+    "text": "انظروا يا أصدقائي كيف نكتب حرف الحاء. نرسم رأس الحرف مع المسار، ثم ننزل ونكمل الانحناءة إلى اليمين، ثم نضع الفتحة. حرف الحاء ليس له نقاط. انظروا مرةً أخرى. نرسم رأس الحرف مع المسار، ثم ننزل ونكمل الانحناءة إلى اليمين، ثم نضع الفتحة. حرف الحاء ليس له نقاط."
+  },
+  "assets/audio/haa/writing_try.mp3": {
+    "sha256": "f7b79f33e293d6c6bc6bb1f196ff307675af5971d64fedc51af76dcd8f4ce85d",
+    "durationSec": 12.75,
+    "text": "هيا يا أصدقائي، اكتبوا حرف الحاء. ضعوا إصبعكم على النقطة الخضراء، واتبعوا مسار الحرف حتى النهاية. حَا، حَا."
+  },
+  "assets/audio/haa/free_intro.mp3": {
+    "sha256": "471c94174ba7644b6c25ee092876fb720959efef20f06f8d3f4a3b2a440149bc",
+    "durationSec": 7.89,
+    "text": "هيا يا أصدقائي، هل تذكرون كيفية كتابة حرف الحاء؟ قوموا بكتابة حرف الحاء الآن."
+  },
+  "assets/audio/haa/assessment_1.mp3": {
+    "sha256": "d7b3dd4400c05fb805afa52bbdc21777fcdf07344040de3e0619ba792d76cfc2",
+    "durationSec": 3.47,
+    "text": "أين حرف الحاء؟ اضغطوا على حرف الحاء."
+  },
+  "assets/audio/haa/assessment_2.mp3": {
+    "sha256": "79e1b05a8c3b6f693b108d8bb798b9118ee627a7af7fc431c1817461d1c1a4c0",
+    "durationSec": 4.99,
+    "text": "ما الكلمة التي تبدأ بحرف الحاء؟ اختاروا الصورة الصحيحة."
+  },
+  "assets/audio/haa/closing.mp3": {
+    "sha256": "8baf940e304fa65b75c1b4fb01df2e0130eb0b564712aec22c14a69d06cd81be",
+    "durationSec": 15.31,
+    "text": "أحسنتم يا أبطال. الحمد لله، لقد تعرفنا هذا اليوم على حرف الحاء. حَا، حَبْل. نلقاكم غدًا بإذن الله. إلى اللقاء يا أصدقائي."
+  }
+}

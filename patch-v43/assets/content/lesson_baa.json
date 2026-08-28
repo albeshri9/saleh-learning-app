@@ -1,0 +1,350 @@
+{
+  "id": "baa",
+  "title": "درس حرف بَ",
+  "mastery": {
+    "minScore": 0.6,
+    "requiredSceneIds": [
+      "assessment_1"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "welcome_1",
+      "type": "welcome",
+      "title": "ترحيب",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "مرحبًا يا أصدقائي، كيف حالكم اليوم؟ سوف نتعلم اليوم حرفًا جديدًا، حرف الباء. هيا بنا.",
+          "female": "مرحبًا يا أصدقائي، كيف حالكم اليوم؟ سوف نتعلم اليوم حرفًا جديدًا، حرف الباء. هيا بنا.",
+          "audio": "assets/audio/baa/welcome.mp3",
+          "durationSec": 9.17,
+          "events": [
+            {
+              "action": "playAnimation",
+              "target": "saleh",
+              "atSec": 0,
+              "params": {
+                "name": "greetThenTalk"
+              }
+            }
+          ]
+        }
+      ],
+      "data": {}
+    },
+    {
+      "id": "prior_review_1",
+      "type": "review",
+      "title": "نتذكر معًا",
+      "canSkip": false,
+      "lines": [
+        {
+          "male": "تعلمنا سابقًا حرف الآ. هل تذكرونه؟ اضغطوا على حرف الآ.",
+          "female": "تعلمنا سابقًا حرف الآ. هل تذكرونه؟ اضغطوا على حرف الآ.",
+          "audio": "assets/audio/baa/prior_review.mp3",
+          "durationSec": 5.41
+        }
+      ],
+      "data": {
+        "priorLessonIds": [
+          "alif"
+        ],
+        "questions": [
+          {
+            "reviewLessonId": "alif",
+            "prompt": "أين حرف أَ؟",
+            "options": [
+              "أَ",
+              "بَ",
+              "تَ",
+              "ثَ"
+            ],
+            "correctIndex": 0
+          }
+        ],
+        "successAudio": "assets/audio/baa/prior_review_success.mp3",
+        "retryAudio": "assets/audio/baa/prior_review_retry.mp3",
+        "completionLabel": "نبدأ الحرف الجديد"
+      }
+    },
+    {
+      "id": "nasheed_1",
+      "type": "nasheed",
+      "title": "أنشودة الحرف",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "هيا نستمع إلى نشيد حرف الباء.",
+          "female": "هيا نستمع إلى نشيد حرف الباء.",
+          "audio": "assets/audio/baa/nasheed_intro.mp3",
+          "durationSec": 2.51
+        }
+      ],
+      "data": {
+        "mediaType": "audio",
+        "durationSec": 8,
+        "label": "أنشودة حرف بَ"
+      }
+    },
+    {
+      "id": "explain_1",
+      "type": "explanation",
+      "title": "شرح الحرف",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "انظروا يا أصدقائي إلى حرف الباء، إنه حرف جميل.",
+          "female": "انظروا يا أصدقائي إلى حرف الباء، إنه حرف جميل.",
+          "audio": "assets/audio/baa/explain_1.mp3",
+          "durationSec": 5.07,
+          "events": [
+            {
+              "action": "show",
+              "target": "letter",
+              "atSec": 0.2
+            },
+            {
+              "action": "salehPointAt",
+              "target": "letter",
+              "atSec": 0.3
+            }
+          ]
+        },
+        {
+          "male": "بَ، بَ، بَ. هل تعرفون كلمةً تبدأ بحرف الباء؟",
+          "female": "بَ، بَ، بَ. هل تعرفون كلمةً تبدأ بحرف الباء؟",
+          "audio": "assets/audio/baa/explain_2.mp3",
+          "durationSec": 5.33,
+          "events": [
+            {
+              "action": "pulse",
+              "target": "letter",
+              "atSec": 0.3
+            },
+            {
+              "action": "pulse",
+              "target": "letter",
+              "atSec": 1.1
+            },
+            {
+              "action": "pulse",
+              "target": "letter",
+              "atSec": 1.9
+            }
+          ]
+        },
+        {
+          "male": "بَ، بَطة. بَ، بَطة.",
+          "female": "بَ، بَطة. بَ، بَطة.",
+          "audio": "assets/audio/baa/explain_3.mp3",
+          "durationSec": 3.47,
+          "events": [
+            {
+              "action": "show",
+              "target": "example",
+              "atSec": 0.4
+            },
+            {
+              "action": "highlight",
+              "target": "exampleLetter",
+              "atSec": 0.8
+            }
+          ]
+        },
+        {
+          "male": "انظروا إلى كلمة بَطة، إنها تبدأ بحرف الباء.",
+          "female": "انظروا إلى كلمة بَطة، إنها تبدأ بحرف الباء.",
+          "audio": "assets/audio/baa/explain_4.mp3",
+          "durationSec": 4.13
+        },
+        {
+          "male": "ردِّدوا معي: بَا، بَطة. بَا، بَطة. بَا، بَطة.",
+          "female": "ردِّدوا معي: بَا، بَطة. بَا، بَطة. بَا، بَطة.",
+          "audio": "assets/audio/baa/explain_5.mp3",
+          "durationSec": 8.28
+        },
+        {
+          "male": "هكذا يا أصدقائي تعلمنا اليوم حرف الباء. سننتقل الآن إلى نطق وكتابة حرف الباء. هيا بنا.",
+          "female": "هكذا يا أصدقائي تعلمنا اليوم حرف الباء. سننتقل الآن إلى نطق وكتابة حرف الباء. هيا بنا.",
+          "audio": "assets/audio/baa/explain_6.mp3",
+          "durationSec": 8.99
+        }
+      ],
+      "data": {
+        "letter": "بَ",
+        "letterName": "الباء",
+        "letterAudio": "assets/audio/baa/explain_2.mp3",
+        "example": {
+          "word": "بَطة",
+          "imageAsset": "assets/images/assessment/duck.png",
+          "highlightPrefix": "ب"
+        }
+      }
+    },
+    {
+      "id": "pronounce_1",
+      "type": "pronunciation",
+      "title": "تدريب النطق",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "هيا يا أصدقائي، سأستمع إلى نطقكم لحرف الباء. بَا، بَا، بَا. اضغطوا على زر المايك وقوموا بنطق الحرف. هيا.",
+          "female": "هيا يا أصدقائي، سأستمع إلى نطقكم لحرف الباء. بَا، بَا، بَا. اضغطوا على زر المايك وقوموا بنطق الحرف. هيا.",
+          "audio": "assets/audio/baa/pronounce_intro.mp3",
+          "durationSec": 15.57
+        }
+      ],
+      "data": {
+        "letter": "بَ",
+        "spokenLetter": "بَا",
+        "expected": "با",
+        "maxAttempts": 3,
+        "retryAudio": "assets/audio/baa/pronounce_retry.mp3",
+        "successAudio": "assets/audio/baa/pronounce_success.mp3",
+        "letterAudio": "assets/audio/baa/explain_2.mp3"
+      }
+    },
+    {
+      "id": "write_guided_1",
+      "type": "guidedWriting",
+      "title": "الكتابة بالدليل",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "انظروا يا أصدقائي كيف نكتب حرف الباء. نبدأ من اليمين، ونسير مع المسار إلى اليسار، ثم نضع نقطةً واحدة تحت الحرف. انظروا مرةً أخرى. نبدأ من اليمين، ونسير مع المسار إلى اليسار، ثم نضع النقطة تحت الحرف.",
+          "female": "انظروا يا أصدقائي كيف نكتب حرف الباء. نبدأ من اليمين، ونسير مع المسار إلى اليسار، ثم نضع نقطةً واحدة تحت الحرف. انظروا مرةً أخرى. نبدأ من اليمين، ونسير مع المسار إلى اليسار، ثم نضع النقطة تحت الحرف.",
+          "audio": "assets/audio/baa/writing_demo.mp3",
+          "durationSec": 21.55
+        },
+        {
+          "male": "هيا يا أصدقائي، اكتبوا حرف الباء. ضعوا إصبعكم على النقطة الخضراء، واتبعوا مسار الحرف، ثم اكتبوا النقطة تحته. بَ، بَ.",
+          "female": "هيا يا أصدقائي، اكتبوا حرف الباء. ضعوا إصبعكم على النقطة الخضراء، واتبعوا مسار الحرف، ثم اكتبوا النقطة تحته. بَ، بَ.",
+          "audio": "assets/audio/baa/writing_try.mp3",
+          "durationSec": 11.47
+        }
+      ],
+      "data": {
+        "letter": "بَ",
+        "traceTemplateId": "baa_fatha_pdf_v1",
+        "writing": {
+          "guidedAttempts": 2,
+          "freeAttempts": 0,
+          "required": true
+        },
+        "againAudio": "assets/audio/baa/writing_again.mp3",
+        "successAudio": "assets/audio/baa/writing_success.mp3",
+        "guidedPraiseAudio": "assets/audio/baa/writing_success.mp3",
+        "demoPassDurationMs": 10775,
+        "lessonId": "baa"
+      }
+    },
+    {
+      "id": "write_free_1",
+      "type": "freeWriting",
+      "title": "الكتابة الحرة",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "هيا يا أصدقائي، هل تذكرون كيفية كتابة حرف الباء؟ قوموا بكتابة حرف الباء الآن.",
+          "female": "هيا يا أصدقائي، هل تذكرون كيفية كتابة حرف الباء؟ قوموا بكتابة حرف الباء الآن.",
+          "audio": "assets/audio/baa/free_intro.mp3",
+          "durationSec": 7.24
+        }
+      ],
+      "data": {
+        "letter": "بَ",
+        "traceTemplateId": "baa_fatha_pdf_v1",
+        "writing": {
+          "guidedAttempts": 0,
+          "freeAttempts": 1,
+          "required": false
+        },
+        "successAudio": "assets/audio/baa/free_success.mp3",
+        "lessonId": "baa"
+      }
+    },
+    {
+      "id": "assessment_1",
+      "type": "multipleChoice",
+      "title": "التقويم الختامي",
+      "canSkip": false,
+      "lines": [
+        {
+          "male": "الآن يا أصدقائي سأختبر معلوماتكم. أين حرف الباء؟ اضغطوا على حرف الباء.",
+          "female": "الآن يا أصدقائي سأختبر معلوماتكم. أين حرف الباء؟ اضغطوا على حرف الباء.",
+          "audio": "assets/audio/baa/assessment_1.mp3",
+          "durationSec": 8.12
+        }
+      ],
+      "data": {
+        "retryAudio": "assets/audio/baa/assessment_retry.mp3",
+        "successAudio": "assets/audio/baa/assessment_success.mp3",
+        "secondAudio": "assets/audio/baa/assessment_2.mp3",
+        "questions": [
+          {
+            "prompt": "اضغط على حرف بَ",
+            "showPrompt": false,
+            "options": [
+              "أَ",
+              "بَ",
+              "تَ",
+              "ثَ"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "prompt": "ما الكلمة التي تبدأ بحرف بَ؟",
+            "showPrompt": false,
+            "options": [
+              "بَطة",
+              "أَسد",
+              "ثَعْلَب"
+            ],
+            "optionImages": [
+              "assets/images/assessment/duck.png",
+              "assets/images/assessment/alif_lion.png",
+              "assets/images/assessment/fox.png"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "success_1",
+      "type": "success",
+      "title": "أحسنت",
+      "canSkip": false,
+      "lines": [
+        {
+          "male": "أحسنتم يا أبطال. الحمد لله، لقد تعرفنا هذا اليوم على حرف الباء. بَ، بَطة. نلقاكم غدًا بإذن الله. إلى اللقاء يا أصدقائي.",
+          "female": "أحسنتم يا أبطال. الحمد لله، لقد تعرفنا هذا اليوم على حرف الباء. بَ، بَطة. نلقاكم غدًا بإذن الله. إلى اللقاء يا أصدقائي.",
+          "audio": "assets/audio/baa/closing.mp3",
+          "durationSec": 13.24,
+          "events": [
+            {
+              "action": "playAnimation",
+              "target": "saleh",
+              "atSec": 0.2,
+              "params": {
+                "name": "celebrateThenWave"
+              }
+            },
+            {
+              "action": "playAnimation",
+              "target": "saleh",
+              "atSec": 10.440000000000001,
+              "params": {
+                "name": "farewell"
+              }
+            }
+          ]
+        }
+      ],
+      "data": {
+        "stars": 3
+      }
+    }
+  ]
+}

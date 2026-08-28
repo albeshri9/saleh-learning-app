@@ -1,0 +1,385 @@
+{
+  "id": "jeem",
+  "title": "درس حرف جَ",
+  "mastery": {
+    "minScore": 0.6,
+    "requiredSceneIds": [
+      "assessment_1"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "welcome_1",
+      "type": "welcome",
+      "title": "ترحيب",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "مرحبًا يا أصدقائي، كيف حالكم اليوم؟ سوف نتعلم اليوم حرفًا جديدًا، حرف الجيم. هيا بنا.",
+          "female": "مرحبًا يا أصدقائي، كيف حالكم اليوم؟ سوف نتعلم اليوم حرفًا جديدًا، حرف الجيم. هيا بنا.",
+          "audio": "assets/audio/jeem/welcome.mp3",
+          "durationSec": 10.61,
+          "events": [
+            {
+              "action": "playAnimation",
+              "target": "saleh",
+              "atSec": 0,
+              "params": {
+                "name": "greetThenTalk"
+              }
+            }
+          ]
+        }
+      ],
+      "data": {}
+    },
+    {
+      "id": "prior_review_1",
+      "type": "review",
+      "title": "نتذكر معًا",
+      "canSkip": false,
+      "lines": [
+        {
+          "male": "قوموا باختيار حرف الآ.",
+          "female": "قوموا باختيار حرف الآ.",
+          "audio": "assets/audio/taa/prior_review_2.mp3",
+          "durationSec": 2.04
+        }
+      ],
+      "data": {
+        "priorLessonIds": [
+          "alif",
+          "baa",
+          "taa",
+          "thaa"
+        ],
+        "questions": [
+          {
+            "reviewLessonId": "alif",
+            "prompt": "أين حرف أَ؟",
+            "options": [
+              "أَ",
+              "بَ",
+              "تَ",
+              "ثَ"
+            ],
+            "correctIndex": 0,
+            "successAudio": "assets/audio/taa/assessment_success.mp3"
+          },
+          {
+            "reviewLessonId": "baa",
+            "prompt": "أين حرف بَ؟",
+            "options": [
+              "بَ",
+              "أَ",
+              "تَ",
+              "ثَ"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/taa/prior_review_3.mp3",
+            "successAudio": "assets/audio/taa/assessment_success.mp3"
+          },
+          {
+            "reviewLessonId": "taa",
+            "prompt": "أين حرف تَ؟",
+            "options": [
+              "تَ",
+              "أَ",
+              "بَ",
+              "ثَ"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/taa/assessment_1.mp3",
+            "successAudio": "assets/audio/taa/assessment_success.mp3"
+          },
+          {
+            "reviewLessonId": "thaa",
+            "prompt": "أين حرف ثَ؟",
+            "options": [
+              "ثَ",
+              "أَ",
+              "بَ",
+              "تَ"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/thaa/assessment_1.mp3"
+          }
+        ],
+        "successAudio": "assets/audio/taa/prior_review_success.mp3",
+        "retryAudio": "assets/audio/taa/prior_review_retry.mp3",
+        "completionLabel": "نبدأ الحرف الجديد"
+      }
+    },
+    {
+      "id": "nasheed_1",
+      "type": "nasheed",
+      "title": "أنشودة الحرف",
+      "canSkip": true,
+      "lines": [],
+      "data": {
+        "mediaType": "audio",
+        "durationSec": 8,
+        "label": "أنشودة حرف جَ"
+      }
+    },
+    {
+      "id": "explain_1",
+      "type": "explanation",
+      "title": "شرح الحرف",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "انظروا يا أصدقائي إلى حرف الجيم، إنه حرف جميل.",
+          "female": "انظروا يا أصدقائي إلى حرف الجيم، إنه حرف جميل.",
+          "audio": "assets/audio/jeem/explain_1.mp3",
+          "durationSec": 4.83,
+          "events": [
+            {
+              "action": "show",
+              "target": "letter",
+              "atSec": 0.2
+            },
+            {
+              "action": "salehPointAt",
+              "target": "letter",
+              "atSec": 0.3
+            }
+          ]
+        },
+        {
+          "male": "جَا، جَا، جَا. هل تعرفون كلمةً تبدأ بحرف الجيم؟",
+          "female": "جَا، جَا، جَا. هل تعرفون كلمةً تبدأ بحرف الجيم؟",
+          "audio": "assets/audio/jeem/explain_2.mp3",
+          "durationSec": 5.25,
+          "events": [
+            {
+              "action": "pulse",
+              "target": "letter",
+              "atSec": 0.3
+            },
+            {
+              "action": "pulse",
+              "target": "letter",
+              "atSec": 1.1
+            },
+            {
+              "action": "pulse",
+              "target": "letter",
+              "atSec": 1.9
+            }
+          ]
+        },
+        {
+          "male": "جَا، جَمَل. جَا، جَمَل.",
+          "female": "جَا، جَمَل. جَا، جَمَل.",
+          "audio": "assets/audio/jeem/explain_3.mp3",
+          "durationSec": 3.87,
+          "events": [
+            {
+              "action": "show",
+              "target": "example",
+              "atSec": 0.4
+            },
+            {
+              "action": "highlight",
+              "target": "exampleLetter",
+              "atSec": 0.8
+            }
+          ]
+        },
+        {
+          "male": "انظروا إلى كلمة جَمَل، إنها تبدأ بحرف الجيم.",
+          "female": "انظروا إلى كلمة جَمَل، إنها تبدأ بحرف الجيم.",
+          "audio": "assets/audio/jeem/explain_4.mp3",
+          "durationSec": 4.44
+        },
+        {
+          "male": "ردِّدوا معي: جَا، جَمَل. جَا، جَمَل. جَا، جَمَل.",
+          "female": "ردِّدوا معي: جَا، جَمَل. جَا، جَمَل. جَا، جَمَل.",
+          "audio": "assets/audio/jeem/explain_5.mp3",
+          "durationSec": 8.44
+        },
+        {
+          "male": "هكذا يا أصدقائي تعلمنا اليوم حرف الجيم. سننتقل الآن إلى نطق وكتابة حرف الجيم. هيا بنا.",
+          "female": "هكذا يا أصدقائي تعلمنا اليوم حرف الجيم. سننتقل الآن إلى نطق وكتابة حرف الجيم. هيا بنا.",
+          "audio": "assets/audio/jeem/explain_6.mp3",
+          "durationSec": 8.83
+        }
+      ],
+      "data": {
+        "letter": "جَ",
+        "letterName": "الجيم",
+        "letterAudio": "assets/audio/jeem/explain_2.mp3",
+        "example": {
+          "word": "جَمَل",
+          "imageAsset": "assets/images/assessment/camel_v43.png",
+          "highlightPrefix": "جَ"
+        }
+      }
+    },
+    {
+      "id": "pronounce_1",
+      "type": "pronunciation",
+      "title": "تدريب النطق",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "هيا يا أصدقائي، سأستمع إلى نطقكم لحرف الجيم. جَا، جَا، جَا. اضغطوا على زر المايك وقوموا بنطق الحرف. هيا.",
+          "female": "هيا يا أصدقائي، سأستمع إلى نطقكم لحرف الجيم. جَا، جَا، جَا. اضغطوا على زر المايك وقوموا بنطق الحرف. هيا.",
+          "audio": "assets/audio/jeem/pronounce_intro.mp3",
+          "durationSec": 15.96
+        }
+      ],
+      "data": {
+        "letter": "جَ",
+        "spokenLetter": "جَا",
+        "expected": "جَا",
+        "maxAttempts": 3,
+        "retryAudio": "assets/audio/taa/pronounce_retry.mp3",
+        "successAudio": "assets/audio/taa/pronounce_success.mp3",
+        "letterAudio": "assets/audio/jeem/explain_2.mp3"
+      }
+    },
+    {
+      "id": "write_guided_1",
+      "type": "guidedWriting",
+      "title": "الكتابة بالدليل",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "انظروا يا أصدقائي كيف نكتب حرف الجيم. نرسم رأس الحرف مع المسار، ثم ننزل ونكمل الانحناءة إلى اليمين، ونضع نقطة داخل الحرف، ثم الفتحة. انظروا مرةً أخرى. نرسم رأس الحرف مع المسار، ثم ننزل ونكمل الانحناءة إلى اليمين، ونضع نقطة داخل الحرف، ثم الفتحة.",
+          "female": "انظروا يا أصدقائي كيف نكتب حرف الجيم. نرسم رأس الحرف مع المسار، ثم ننزل ونكمل الانحناءة إلى اليمين، ونضع نقطة داخل الحرف، ثم الفتحة. انظروا مرةً أخرى. نرسم رأس الحرف مع المسار، ثم ننزل ونكمل الانحناءة إلى اليمين، ونضع نقطة داخل الحرف، ثم الفتحة.",
+          "audio": "assets/audio/jeem/writing_demo.mp3",
+          "durationSec": 29.65
+        },
+        {
+          "male": "هيا يا أصدقائي، اكتبوا حرف الجيم. ضعوا إصبعكم على النقطة الخضراء، واتبعوا مسار الحرف حتى النهاية. جَا، جَا.",
+          "female": "هيا يا أصدقائي، اكتبوا حرف الجيم. ضعوا إصبعكم على النقطة الخضراء، واتبعوا مسار الحرف حتى النهاية. جَا، جَا.",
+          "audio": "assets/audio/jeem/writing_try.mp3",
+          "durationSec": 12.59
+        }
+      ],
+      "data": {
+        "letter": "جَ",
+        "traceTemplateId": "jeem_fatha_pdf_v1",
+        "writing": {
+          "guidedAttempts": 2,
+          "freeAttempts": 0,
+          "required": true
+        },
+        "againAudio": "assets/audio/taa/writing_again.mp3",
+        "successAudio": "assets/audio/taa/writing_success.mp3",
+        "guidedPraiseAudio": "assets/audio/taa/writing_success.mp3",
+        "demoPassDurationMs": 14825,
+        "lessonId": "jeem"
+      }
+    },
+    {
+      "id": "write_free_1",
+      "type": "freeWriting",
+      "title": "الكتابة الحرة",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "هيا يا أصدقائي، هل تذكرون كيفية كتابة حرف الجيم؟ قوموا بكتابة حرف الجيم الآن.",
+          "female": "هيا يا أصدقائي، هل تذكرون كيفية كتابة حرف الجيم؟ قوموا بكتابة حرف الجيم الآن.",
+          "audio": "assets/audio/jeem/free_intro.mp3",
+          "durationSec": 7.39
+        }
+      ],
+      "data": {
+        "letter": "جَ",
+        "traceTemplateId": "jeem_fatha_pdf_v1",
+        "writing": {
+          "guidedAttempts": 0,
+          "freeAttempts": 1,
+          "required": false
+        },
+        "successAudio": "assets/audio/taa/free_success.mp3",
+        "lessonId": "jeem"
+      }
+    },
+    {
+      "id": "assessment_1",
+      "type": "multipleChoice",
+      "title": "التقويم الختامي",
+      "canSkip": false,
+      "lines": [
+        {
+          "male": "أين حرف الجيم؟ اضغطوا على حرف الجيم.",
+          "female": "أين حرف الجيم؟ اضغطوا على حرف الجيم.",
+          "audio": "assets/audio/jeem/assessment_1.mp3",
+          "durationSec": 3.79
+        }
+      ],
+      "data": {
+        "retryAudio": "assets/audio/taa/assessment_retry.mp3",
+        "successAudio": "assets/audio/taa/assessment_success.mp3",
+        "secondAudio": "assets/audio/jeem/assessment_2.mp3",
+        "questions": [
+          {
+            "prompt": "اضغط على حرف جَ",
+            "showPrompt": false,
+            "options": [
+              "جَ",
+              "أَ",
+              "بَ",
+              "تَ"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "prompt": "ما الكلمة التي تبدأ بحرف جَ؟",
+            "showPrompt": false,
+            "options": [
+              "جَمَل",
+              "أَسد",
+              "بَطة"
+            ],
+            "optionImages": [
+              "assets/images/assessment/camel_v43.png",
+              "assets/images/assessment/alif_lion.png",
+              "assets/images/assessment/duck.png"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "success_1",
+      "type": "success",
+      "title": "أحسنت",
+      "canSkip": false,
+      "lines": [
+        {
+          "male": "أحسنتم يا أبطال. الحمد لله، لقد تعرفنا هذا اليوم على حرف الجيم. جَا، جَمَل. نلقاكم غدًا بإذن الله. إلى اللقاء يا أصدقائي.",
+          "female": "أحسنتم يا أبطال. الحمد لله، لقد تعرفنا هذا اليوم على حرف الجيم. جَا، جَمَل. نلقاكم غدًا بإذن الله. إلى اللقاء يا أصدقائي.",
+          "audio": "assets/audio/jeem/closing.mp3",
+          "durationSec": 11.31,
+          "events": [
+            {
+              "action": "playAnimation",
+              "target": "saleh",
+              "atSec": 0.2,
+              "params": {
+                "name": "celebrateThenWave"
+              }
+            },
+            {
+              "action": "playAnimation",
+              "target": "saleh",
+              "atSec": 8.510000000000002,
+              "params": {
+                "name": "farewell"
+              }
+            }
+          ]
+        }
+      ],
+      "data": {
+        "stars": 3
+      }
+    }
+  ]
+}
