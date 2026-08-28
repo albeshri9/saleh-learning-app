@@ -1,8 +1,8 @@
-name: Build unsigned Saleh IPA v39
+name: Build unsigned Saleh games IPA v40
 
 on:
   push:
-    branches: [build/ios-v14, build/ios-v29]
+    branches: [build/games-v40]
   pull_request:
     branches: [main, build/ios-v29]
   workflow_dispatch:
@@ -11,7 +11,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: ios-unsigned-v39
+  group: ios-games-v40
   cancel-in-progress: true
 
 jobs:
@@ -63,6 +63,7 @@ jobs:
           cp -R patch-v37/. saleh_app/
           cp -R patch-v38/. saleh_app/
           cp -R patch-v39/. saleh_app/
+          cp -R patch-v40/. saleh_app/
 
       - name: Install Flutter
         uses: subosito/flutter-action@v2
@@ -89,21 +90,22 @@ jobs:
           flutter test test/world_v36_test.dart test/profile_v37_test.dart --exclude-tags visual
           flutter test test/v38_test.dart --exclude-tags visual
           flutter test test/v39_test.dart --exclude-tags visual
+          flutter test test/games_worlds_test.dart --exclude-tags visual
           flutter build ios --release --no-codesign
 
       - name: Package IPA
         run: |
           mkdir Payload
           cp -R saleh_app/build/ios/iphoneos/Runner.app Payload/Runner.app
-          /usr/bin/zip -qry Saleh-unsigned-v39.ipa Payload
-          shasum -a 256 Saleh-unsigned-v39.ipa > Saleh-unsigned-v39.ipa.sha256
+          /usr/bin/zip -qry Saleh-games-v40.ipa Payload
+          shasum -a 256 Saleh-games-v40.ipa > Saleh-games-v40.ipa.sha256
 
       - name: Upload IPA
         uses: actions/upload-artifact@v4
         with:
-          name: Saleh-iOS-unsigned-v39
+          name: Saleh-iOS-games-v40
           path: |
-            Saleh-unsigned-v39.ipa
-            Saleh-unsigned-v39.ipa.sha256
+            Saleh-games-v40.ipa
+            Saleh-games-v40.ipa.sha256
           if-no-files-found: error
           retention-days: 14
