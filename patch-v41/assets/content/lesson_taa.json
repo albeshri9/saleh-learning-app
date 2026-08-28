@@ -1,0 +1,370 @@
+{
+  "id": "taa",
+  "title": "درس حرف تَ",
+  "mastery": {
+    "minScore": 0.6,
+    "requiredSceneIds": [
+      "assessment_1"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "welcome_1",
+      "type": "welcome",
+      "title": "ترحيب",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "مرحبًا يا أصدقائي، كيف حالكم اليوم؟ سوف نتعلم اليوم حرفًا جديدًا، حرف التاء. هيا بنا.",
+          "female": "مرحبًا يا أصدقائي، كيف حالكم اليوم؟ سوف نتعلم اليوم حرفًا جديدًا، حرف التاء. هيا بنا.",
+          "audio": "assets/audio/taa/welcome.mp3",
+          "durationSec": 9.09,
+          "events": [
+            {
+              "action": "playAnimation",
+              "target": "saleh",
+              "atSec": 0,
+              "params": {
+                "name": "greetThenTalk"
+              }
+            }
+          ]
+        }
+      ],
+      "data": {}
+    },
+    {
+      "id": "prior_review_1",
+      "type": "review",
+      "title": "نتذكر معًا",
+      "canSkip": false,
+      "lines": [
+        {
+          "male": "تعلمنا سابقًا حرف الآ وحرف الباء. هل تذكرونهما؟",
+          "female": "تعلمنا سابقًا حرف الآ وحرف الباء. هل تذكرونهما؟",
+          "audio": "assets/audio/taa/prior_review.mp3",
+          "durationSec": 4.68
+        },
+        {
+          "male": "قوموا باختيار حرف الآ.",
+          "female": "قوموا باختيار حرف الآ.",
+          "audio": "assets/audio/taa/prior_review_2.mp3",
+          "durationSec": 2.04
+        }
+      ],
+      "data": {
+        "priorLessonIds": [
+          "alif",
+          "baa"
+        ],
+        "questions": [
+          {
+            "reviewLessonId": "alif",
+            "prompt": "أين حرف أَ؟",
+            "options": [
+              "أَ",
+              "بَ",
+              "تَ",
+              "ثَ"
+            ],
+            "correctIndex": 0,
+            "successAudio": "assets/audio/taa/assessment_success.mp3"
+          },
+          {
+            "reviewLessonId": "baa",
+            "prompt": "أين حرف بَ؟",
+            "options": [
+              "أَ",
+              "بَ",
+              "تَ",
+              "ثَ"
+            ],
+            "correctIndex": 1,
+            "audio": "assets/audio/taa/prior_review_3.mp3"
+          }
+        ],
+        "successAudio": "assets/audio/taa/prior_review_success.mp3",
+        "retryAudio": "assets/audio/taa/prior_review_retry.mp3",
+        "completionLabel": "نبدأ الحرف الجديد"
+      }
+    },
+    {
+      "id": "nasheed_1",
+      "type": "nasheed",
+      "title": "أنشودة الحرف",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "هيا نستمع إلى نشيد حرف التاء.",
+          "female": "هيا نستمع إلى نشيد حرف التاء.",
+          "audio": "assets/audio/taa/nasheed_intro.mp3",
+          "durationSec": 2.69
+        }
+      ],
+      "data": {
+        "mediaType": "audio",
+        "durationSec": 8,
+        "label": "أنشودة حرف تَ"
+      }
+    },
+    {
+      "id": "explain_1",
+      "type": "explanation",
+      "title": "شرح الحرف",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "انظروا يا أصدقائي إلى حرف التاء، إنه حرف جميل.",
+          "female": "انظروا يا أصدقائي إلى حرف التاء، إنه حرف جميل.",
+          "audio": "assets/audio/taa/explain_1.mp3",
+          "durationSec": 4.99,
+          "events": [
+            {
+              "action": "show",
+              "target": "letter",
+              "atSec": 0.2
+            },
+            {
+              "action": "salehPointAt",
+              "target": "letter",
+              "atSec": 0.3
+            }
+          ]
+        },
+        {
+          "male": "تَا، تَا، تَا. هل تعرفون كلمةً تبدأ بحرف التاء؟",
+          "female": "تَا، تَا، تَا. هل تعرفون كلمةً تبدأ بحرف التاء؟",
+          "audio": "assets/audio/taa/explain_2.mp3",
+          "durationSec": 5.07,
+          "events": [
+            {
+              "action": "pulse",
+              "target": "letter",
+              "atSec": 0.3
+            },
+            {
+              "action": "pulse",
+              "target": "letter",
+              "atSec": 1.1
+            },
+            {
+              "action": "pulse",
+              "target": "letter",
+              "atSec": 1.9
+            }
+          ]
+        },
+        {
+          "male": "تَا، تاج. تَا، تاج.",
+          "female": "تَا، تاج. تَا، تاج.",
+          "audio": "assets/audio/taa/explain_3.mp3",
+          "durationSec": 4.44,
+          "events": [
+            {
+              "action": "show",
+              "target": "example",
+              "atSec": 0.4
+            },
+            {
+              "action": "highlight",
+              "target": "exampleLetter",
+              "atSec": 0.8
+            }
+          ]
+        },
+        {
+          "male": "انظروا إلى كلمة تاج، إنها تبدأ بحرف التاء.",
+          "female": "انظروا إلى كلمة تاج، إنها تبدأ بحرف التاء.",
+          "audio": "assets/audio/taa/explain_4.mp3",
+          "durationSec": 4.13
+        },
+        {
+          "male": "ردِّدوا معي: تَا، تاج. تَا، تاج. تَا، تاج.",
+          "female": "ردِّدوا معي: تَا، تاج. تَا، تاج. تَا، تاج.",
+          "audio": "assets/audio/taa/explain_5.mp3",
+          "durationSec": 9.95
+        },
+        {
+          "male": "هكذا يا أصدقائي تعلمنا اليوم حرف التاء. سننتقل الآن إلى نطق وكتابة حرف التاء. هيا بنا.",
+          "female": "هكذا يا أصدقائي تعلمنا اليوم حرف التاء. سننتقل الآن إلى نطق وكتابة حرف التاء. هيا بنا.",
+          "audio": "assets/audio/taa/explain_6.mp3",
+          "durationSec": 8.83
+        }
+      ],
+      "data": {
+        "letter": "تَ",
+        "letterName": "التاء",
+        "letterAudio": "assets/audio/taa/explain_2.mp3",
+        "example": {
+          "word": "تاج",
+          "imageAsset": "assets/images/assessment/crown_v41.png",
+          "highlightPrefix": "ت"
+        }
+      }
+    },
+    {
+      "id": "pronounce_1",
+      "type": "pronunciation",
+      "title": "تدريب النطق",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "هيا يا أصدقائي، سأستمع إلى نطقكم لحرف التاء. تَا، تَا، تَا. اضغطوا على زر المايك وقوموا بنطق الحرف. هيا.",
+          "female": "هيا يا أصدقائي، سأستمع إلى نطقكم لحرف التاء. تَا، تَا، تَا. اضغطوا على زر المايك وقوموا بنطق الحرف. هيا.",
+          "audio": "assets/audio/taa/pronounce_intro.mp3",
+          "durationSec": 14.03
+        }
+      ],
+      "data": {
+        "letter": "تَ",
+        "spokenLetter": "تَا",
+        "expected": "تا",
+        "maxAttempts": 3,
+        "retryAudio": "assets/audio/taa/pronounce_retry.mp3",
+        "successAudio": "assets/audio/taa/pronounce_success.mp3",
+        "letterAudio": "assets/audio/taa/explain_2.mp3"
+      }
+    },
+    {
+      "id": "write_guided_1",
+      "type": "guidedWriting",
+      "title": "الكتابة بالدليل",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "انظروا يا أصدقائي كيف نكتب حرف التاء. نبدأ من اليمين، ونسير مع المسار إلى اليسار، ثم نضع نقطتين فوق الحرف. انظروا مرةً أخرى. نبدأ من اليمين، ونسير مع المسار إلى اليسار، ثم نضع النقطتين فوق الحرف.",
+          "female": "انظروا يا أصدقائي كيف نكتب حرف التاء. نبدأ من اليمين، ونسير مع المسار إلى اليسار، ثم نضع نقطتين فوق الحرف. انظروا مرةً أخرى. نبدأ من اليمين، ونسير مع المسار إلى اليسار، ثم نضع النقطتين فوق الحرف.",
+          "audio": "assets/audio/taa/writing_demo.mp3",
+          "durationSec": 20.69
+        },
+        {
+          "male": "هيا يا أصدقائي، اكتبوا حرف التاء. ضعوا إصبعكم على النقطة الخضراء، واتبعوا مسار الحرف، ثم اكتبوا النقطتين فوقه. تَا، تَا.",
+          "female": "هيا يا أصدقائي، اكتبوا حرف التاء. ضعوا إصبعكم على النقطة الخضراء، واتبعوا مسار الحرف، ثم اكتبوا النقطتين فوقه. تَا، تَا.",
+          "audio": "assets/audio/taa/writing_try.mp3",
+          "durationSec": 13.56
+        }
+      ],
+      "data": {
+        "letter": "تَ",
+        "traceTemplateId": "taa_fatha_pdf_v1",
+        "writing": {
+          "guidedAttempts": 2,
+          "freeAttempts": 0,
+          "required": true
+        },
+        "againAudio": "assets/audio/taa/writing_again.mp3",
+        "successAudio": "assets/audio/taa/writing_success.mp3",
+        "guidedPraiseAudio": "assets/audio/taa/writing_success.mp3",
+        "demoPassDurationMs": 10345,
+        "lessonId": "taa"
+      }
+    },
+    {
+      "id": "write_free_1",
+      "type": "freeWriting",
+      "title": "الكتابة الحرة",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "هيا يا أصدقائي، هل تذكرون كيفية كتابة حرف التاء؟ قوموا بكتابة حرف التاء الآن.",
+          "female": "هيا يا أصدقائي، هل تذكرون كيفية كتابة حرف التاء؟ قوموا بكتابة حرف التاء الآن.",
+          "audio": "assets/audio/taa/free_intro.mp3",
+          "durationSec": 7.39
+        }
+      ],
+      "data": {
+        "letter": "تَ",
+        "traceTemplateId": "taa_fatha_pdf_v1",
+        "writing": {
+          "guidedAttempts": 0,
+          "freeAttempts": 1,
+          "required": false
+        },
+        "successAudio": "assets/audio/taa/free_success.mp3",
+        "lessonId": "taa"
+      }
+    },
+    {
+      "id": "assessment_1",
+      "type": "multipleChoice",
+      "title": "التقويم الختامي",
+      "canSkip": false,
+      "lines": [
+        {
+          "male": "الآن يا أصدقائي سأختبر معلوماتكم. أين حرف التاء؟ اضغطوا على حرف التاء.",
+          "female": "الآن يا أصدقائي سأختبر معلوماتكم. أين حرف التاء؟ اضغطوا على حرف التاء.",
+          "audio": "assets/audio/taa/assessment_1.mp3",
+          "durationSec": 8.05
+        }
+      ],
+      "data": {
+        "retryAudio": "assets/audio/taa/assessment_retry.mp3",
+        "successAudio": "assets/audio/taa/assessment_success.mp3",
+        "secondAudio": "assets/audio/taa/assessment_2.mp3",
+        "questions": [
+          {
+            "prompt": "اضغط على حرف تَ",
+            "showPrompt": false,
+            "options": [
+              "أَ",
+              "بَ",
+              "تَ",
+              "ثَ"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "prompt": "ما الكلمة التي تبدأ بحرف تَ؟",
+            "showPrompt": false,
+            "options": [
+              "تاج",
+              "أسد",
+              "بطة"
+            ],
+            "optionImages": [
+              "assets/images/assessment/crown_v41.png",
+              "assets/images/assessment/alif_lion.png",
+              "assets/images/assessment/duck.png"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "success_1",
+      "type": "success",
+      "title": "أحسنت",
+      "canSkip": false,
+      "lines": [
+        {
+          "male": "أحسنتم يا أبطال. الحمد لله، لقد تعرفنا هذا اليوم على حرف التاء. تَا، تاج. نلقاكم غدًا بإذن الله. إلى اللقاء يا أصدقائي.",
+          "female": "أحسنتم يا أبطال. الحمد لله، لقد تعرفنا هذا اليوم على حرف التاء. تَا، تاج. نلقاكم غدًا بإذن الله. إلى اللقاء يا أصدقائي.",
+          "audio": "assets/audio/taa/closing.mp3",
+          "durationSec": 13.64,
+          "events": [
+            {
+              "action": "playAnimation",
+              "target": "saleh",
+              "atSec": 0.2,
+              "params": {
+                "name": "celebrateThenWave"
+              }
+            },
+            {
+              "action": "playAnimation",
+              "target": "saleh",
+              "atSec": 10.84,
+              "params": {
+                "name": "farewell"
+              }
+            }
+          ]
+        }
+      ],
+      "data": {
+        "stars": 3
+      }
+    }
+  ]
+}

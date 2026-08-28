@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "packs": [
+    {
+      "id": "alif",
+      "version": 1,
+      "title": "حرف الألف",
+      "letter": "أَ",
+      "status": "available",
+      "lessonAsset": "assets/content/lesson_alif.json",
+      "audioFolder": "assets/audio/alif/",
+      "traceTemplateIds": [
+        "alif_fatha_video_v1"
+      ],
+      "exampleImages": [
+        "assets/images/assessment/alif_lion.png",
+        "assets/images/assessment/duck.png",
+        "assets/images/assessment/fox.png"
+      ],
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ],
+      "stageId": "letters_fatha",
+      "priorLessonIds": []
+    },
+    {
+      "id": "baa",
+      "version": 1,
+      "title": "حرف الباء",
+      "letter": "بَ",
+      "stageId": "letters_fatha",
+      "priorLessonIds": [
+        "alif"
+      ],
+      "status": "available",
+      "lessonAsset": "assets/content/lesson_baa.json",
+      "audioFolder": "assets/audio/baa/",
+      "traceTemplateIds": [
+        "baa_fatha_pdf_v1"
+      ],
+      "exampleImages": [
+        "assets/images/assessment/duck.png"
+      ],
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ]
+    },
+    {
+      "id": "taa",
+      "version": 1,
+      "title": "حرف التاء",
+      "letter": "تَ",
+      "stageId": "letters_fatha",
+      "priorLessonIds": [
+        "alif",
+        "baa"
+      ],
+      "status": "available",
+      "lessonAsset": "assets/content/lesson_taa.json",
+      "audioFolder": "assets/audio/taa/",
+      "traceTemplateIds": [
+        "taa_fatha_pdf_v1"
+      ],
+      "exampleImages": [
+        "assets/images/assessment/crown_v41.png"
+      ],
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ]
+    }
+  ]
+}

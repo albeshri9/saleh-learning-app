@@ -1,0 +1,210 @@
+{
+  "baa/assessment_1.mp3": {
+    "sha256": "8f541b67eee8fae55e19d0b4cf198c4966322e63f03a31fdab92e2d58c04a666",
+    "durationSec": 8.12
+  },
+  "baa/assessment_2.mp3": {
+    "sha256": "b35432af7411dd997c4fc0fa8c7a6ea47ead66725e2836ac0015722be4a98b02",
+    "durationSec": 7.31
+  },
+  "baa/assessment_retry.mp3": {
+    "sha256": "5d4a876550aca93a68828bb89d5eedea76e34702ec0cc573b7717ebd6b184a40",
+    "durationSec": 1.65
+  },
+  "baa/assessment_success.mp3": {
+    "sha256": "c653400123a9ffc10aff85b4570f66c685764caa1315b97f35db7cc29934a592",
+    "durationSec": 3.4
+  },
+  "baa/closing.mp3": {
+    "sha256": "85c2ae0edb98575cc3acfaa7f5d0060b86fc6d2ddaa5ce781fd4793a327aa801",
+    "durationSec": 13.24
+  },
+  "baa/explain_1.mp3": {
+    "sha256": "75003bdda8ac3a391ea445e942073ff36a91fdf7f21052adbbc56811749ebf44",
+    "durationSec": 5.07
+  },
+  "baa/explain_2.mp3": {
+    "sha256": "607ec60a2617c67f69ede1147021e3e56a2b1ec59aa459fdc77e17a16ef8a94d",
+    "durationSec": 5.33
+  },
+  "baa/explain_3.mp3": {
+    "sha256": "e485ea27f7fe71174725327632c0e1ab2b226404d11cde10deef319bd58cc8d3",
+    "durationSec": 3.47
+  },
+  "baa/explain_4.mp3": {
+    "sha256": "43e21616376ffbbd1b0c63a08cc8a12501a5f6d8e559433a175d0d472f7905d4",
+    "durationSec": 4.13
+  },
+  "baa/explain_5.mp3": {
+    "sha256": "69e0e2720320ab5ac1ca55222b9813bba2198d5b479c455ace671fcece076a8c",
+    "durationSec": 8.28
+  },
+  "baa/explain_6.mp3": {
+    "sha256": "668b0e3e714a9237a69b719a623c8d7e4793f7673baae550a3db2e7ccf66f61a",
+    "durationSec": 8.99
+  },
+  "baa/free_intro.mp3": {
+    "sha256": "94d84cedfcad311200fe600c0a20623f7767287725878afac696492d7798a93b",
+    "durationSec": 7.24
+  },
+  "baa/free_success.mp3": {
+    "sha256": "bdf02acc2f0931e0a0165b8ca97f3a22952a286e787a7f2f59d2b8f68b2e2a7b",
+    "durationSec": 3.4
+  },
+  "baa/nasheed_intro.mp3": {
+    "sha256": "c868cec1be3e2fb98ba074fe914e7d5f1dbea8c79df9c82dfce1bf2c90a349eb",
+    "durationSec": 2.51
+  },
+  "baa/prior_review.mp3": {
+    "sha256": "a0f0e77e9d5578c3fec671c597e3152b0c1d8a8fbfdaf988534c17342dd1fdc4",
+    "durationSec": 5.41
+  },
+  "baa/prior_review_retry.mp3": {
+    "sha256": "17328f3b8dc240418ce3a388dac345d79f00dcab991160090274402e90aef4d0",
+    "durationSec": 3.47
+  },
+  "baa/prior_review_success.mp3": {
+    "sha256": "1d20729af278fc4385725f778a640381ed8149237af0bef044256e43fd528d3f",
+    "durationSec": 5.96
+  },
+  "baa/pronounce_intro.mp3": {
+    "sha256": "c3d2d29e7794a37720fa0fa1abbf61f2e3a46c4f76850d14073db30a690a98ef",
+    "durationSec": 15.57
+  },
+  "baa/pronounce_retry.mp3": {
+    "sha256": "b54654ff3fd6fb073760df074e4ee294a69b95a40e8f5461983cbb30f63b70f4",
+    "durationSec": 3.87
+  },
+  "baa/pronounce_success.mp3": {
+    "sha256": "5b43040c13c0ecb64753971f4c73a44cc4ed54124edcc581770171c2f50d7254",
+    "durationSec": 5.41
+  },
+  "baa/welcome.mp3": {
+    "sha256": "632302662dbe4a2a0112625067bb7af5109ed3c5a79979b6eef085a93765266d",
+    "durationSec": 9.17
+  },
+  "baa/writing_again.mp3": {
+    "sha256": "8c38a2c1f67447b18e3121c93ab66258ae612ba100a31a095208a429a55255b0",
+    "durationSec": 6.92
+  },
+  "baa/writing_demo.mp3": {
+    "sha256": "27005e8f629da85aff114b0843194139377ce83055f4b4f39f22ef5adc440d28",
+    "durationSec": 21.55
+  },
+  "baa/writing_success.mp3": {
+    "sha256": "224a3dc6f0d2d4ac30742a78d8f81c0a90caf0896ebbfa035c48ddcc4f19258f",
+    "durationSec": 3.87
+  },
+  "baa/writing_try.mp3": {
+    "sha256": "781b39cde1ab6c23f538a0dc82102bc5b24a59add4ae1cde7bb61c033e7d0bfd",
+    "durationSec": 11.47
+  },
+  "taa/assessment_1.mp3": {
+    "sha256": "9f3191435684079dff62e638410a2c12a847972c7bbfab51b54b39b39a178718",
+    "durationSec": 8.05
+  },
+  "taa/assessment_2.mp3": {
+    "sha256": "17de92d9e1bfecd64b8e30ccb503152747210e4425bbbc3585ff448193b7b137",
+    "durationSec": 7.81
+  },
+  "taa/assessment_retry.mp3": {
+    "sha256": "29eaccfd941de73de60cb40547061b69f0c8cba11e23ade8f74cd4d8302be1be",
+    "durationSec": 1.57
+  },
+  "taa/assessment_success.mp3": {
+    "sha256": "059afed1f07d13ec1306ba282cbc81bd9b4f38878b1cf0b922ef4b44c48f5fd4",
+    "durationSec": 3.71
+  },
+  "taa/closing.mp3": {
+    "sha256": "3158162e0a8a685d2651db492de56a19ee47ff5ffa91601d6e87bdd7ac4b8976",
+    "durationSec": 13.64
+  },
+  "taa/explain_1.mp3": {
+    "sha256": "a130b90a92c1a04e3653c0600acfc52e29f651ed76ed6d76f894da075b210ddd",
+    "durationSec": 4.99
+  },
+  "taa/explain_2.mp3": {
+    "sha256": "9e3cbc0c3f218ad9edf2d21cb0fcf8aadbb2d195cc406986c7e078cebf22931e",
+    "durationSec": 5.07
+  },
+  "taa/explain_3.mp3": {
+    "sha256": "152c53fcf05583ef02a44dc6f12e8cec4433d38b9f2491b27a56fb230a6a4208",
+    "durationSec": 4.44
+  },
+  "taa/explain_4.mp3": {
+    "sha256": "03d0ff551fd56a1fcadfbe0e9b6d002f95b4095e9f8ac84f29556e12bfd89d53",
+    "durationSec": 4.13
+  },
+  "taa/explain_5.mp3": {
+    "sha256": "9fd4ff1d2144d97141691ae2ce90ec9a2ac0c50186c2aaa8ead90c6e5926dbcf",
+    "durationSec": 9.95
+  },
+  "taa/explain_6.mp3": {
+    "sha256": "4352b706fdfcf4ce58baa34de76cfbcf7a92fb44fb92f3678d780fa955861d47",
+    "durationSec": 8.83
+  },
+  "taa/free_intro.mp3": {
+    "sha256": "03a636075bb72cc65cc1852ff5a9ab53e4a7b81ef7947fd809f523cb43adf70a",
+    "durationSec": 7.39
+  },
+  "taa/free_success.mp3": {
+    "sha256": "ede81fd32543049f74dddfea1677185b7c223fa791a0b3654c50e8ac3850483a",
+    "durationSec": 3.47
+  },
+  "taa/nasheed_intro.mp3": {
+    "sha256": "d11fe05f575968a66430b8195c446985e7751c65f8b6d6ae635e89b255cb9782",
+    "durationSec": 2.69
+  },
+  "taa/prior_review.mp3": {
+    "sha256": "549788ce48a27c2405bf2ea114186800dfacfb4d8a4ab6564d2775ade5940bbb",
+    "durationSec": 4.68
+  },
+  "taa/prior_review_2.mp3": {
+    "sha256": "91d1088546fee2f21f2566f3d4dfb3a66b2b1f13a32e9a7e6bdb011fc38e165d",
+    "durationSec": 2.04
+  },
+  "taa/prior_review_3.mp3": {
+    "sha256": "bf912513d6c3a6bbd8a7c2f7c47331910fc6661ebabcdd35825c353febb98fc1",
+    "durationSec": 1.8
+  },
+  "taa/prior_review_retry.mp3": {
+    "sha256": "751a2bef5c194cadd72efb133db4a81dcb5d41fb4fcb9246ead5af46e3a1f0e6",
+    "durationSec": 3.63
+  },
+  "taa/prior_review_success.mp3": {
+    "sha256": "ab3a5508802240f3dc611e386d469213f21c5088ca31834f2e85855d4a4fdc32",
+    "durationSec": 4.36
+  },
+  "taa/pronounce_intro.mp3": {
+    "sha256": "1271e83128b970547c89a961c5da42fa0d7c4e14fc09e31c4903007ad793adf1",
+    "durationSec": 14.03
+  },
+  "taa/pronounce_retry.mp3": {
+    "sha256": "75cb5cfed45fe895042ae243e8115cf5236f72c47602fb9a8a35ca7ce101ce91",
+    "durationSec": 4.05
+  },
+  "taa/pronounce_success.mp3": {
+    "sha256": "abd7de3d80ef42380801b40f459f1ef9e4eca2a778c80901448cf8c74442f77e",
+    "durationSec": 6.11
+  },
+  "taa/welcome.mp3": {
+    "sha256": "af990c568d0c7fd1cfc37a5c3d7ebdac30b425ee0b8fc719a64a6fdd031afb71",
+    "durationSec": 9.09
+  },
+  "taa/writing_again.mp3": {
+    "sha256": "d90afe9849f2aa5e35b32b8a3326eaf9298ee3d4888e07cc38b67fd015f14520",
+    "durationSec": 7.16
+  },
+  "taa/writing_demo.mp3": {
+    "sha256": "5772a1cc12a3060bb5520fb04fcfdaaa4a9318a8f7b62d9055f7aeeafeefac1d",
+    "durationSec": 20.69
+  },
+  "taa/writing_success.mp3": {
+    "sha256": "3ddd8a33f431e3a89c55af1e405d1c7d851238a55408ecb15b0f3e1e2ecbbcba",
+    "durationSec": 3.4
+  },
+  "taa/writing_try.mp3": {
+    "sha256": "c97d89f4439634db63c86c638bd73c5881d8b94b7345d2c7780451a550f8e5af",
+    "durationSec": 13.56
+  }
+}
