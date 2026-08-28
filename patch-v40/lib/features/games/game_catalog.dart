@@ -472,7 +472,7 @@ GameRound roundFor(GameSpec game, int round) {
           prompt: 'ابنِ البيت من قطع الأشكال',
           hero: 9,
           target: 4,
-          grid: [2, 2, 1, 1],
+          grid: [6, 7, 1, 1],
           caption: 'ضع كل قطعة فوق مكانها المطابق');
     case 'symmetry':
       return GameRound(

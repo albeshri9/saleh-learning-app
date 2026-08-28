@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'game_art.dart';
 import 'game_catalog.dart';
 import 'game_session.dart';
+import 'game_special_boards.dart';
 
 class GameBoard extends StatefulWidget {
   const GameBoard(this.session, {super.key});
@@ -21,12 +22,16 @@ class _GameBoardState extends State<GameBoard> {
         PlayKind.choose || PlayKind.collect => _choices(),
         PlayKind.order => _order(),
         PlayKind.memory => _memory(),
-        PlayKind.counter =>
-          s.game.id == 'feed_rabbit' ? _feeding() : _counter(),
+        PlayKind.counter => s.game.id == 'feed_rabbit'
+            ? _feeding()
+            : s.game.id == 'measure'
+                ? BridgeMeasure(s)
+                : _counter(),
         PlayKind.distribute => _distribute(),
         PlayKind.value => _value(),
         PlayKind.sort => _sort(),
-        PlayKind.puzzle || PlayKind.mosaic => _pieces(),
+        PlayKind.puzzle => _pieces(),
+        PlayKind.mosaic => HouseAssembly(s),
         PlayKind.mirror => _mirror(),
         PlayKind.maze || PlayKind.robot => _path(),
         PlayKind.pipes => _pipes(),
