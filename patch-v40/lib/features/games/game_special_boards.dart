@@ -169,7 +169,7 @@ class BridgeMeasure extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Column(children: [
         Expanded(child: LayoutBuilder(builder: (context, c) {
-          final unit = min(65.0, (c.maxWidth - 40) / 6),
+          final unit = min(65.0, (c.maxWidth - 40) / 9),
               width = unit * s.data.target;
           return Stack(alignment: Alignment.center, children: [
             Positioned(
@@ -187,8 +187,9 @@ class BridgeMeasure extends StatelessWidget {
                 width: width,
                 height: 62,
                 child: CustomPaint(painter: _MeasureBridge(s.data.target))),
-            Positioned(
+              Positioned(
                 bottom: 8,
+                left: (c.maxWidth - width) / 2,
                 width: unit * 6,
                 height: 48,
                 child: Directionality(

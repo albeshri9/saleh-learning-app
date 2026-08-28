@@ -155,7 +155,7 @@ class GameSession extends ChangeNotifier {
 
   void adjustCount(int delta) {
     if (solved) return;
-    count = (count + delta).clamp(0, 12);
+    count = (count + delta).clamp(0, game.id == 'measure' ? 6 : 12);
     notifyListeners();
   }
 
