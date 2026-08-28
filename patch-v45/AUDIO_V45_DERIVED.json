@@ -1,0 +1,30 @@
+{
+  "assets/audio/v45/taa_review_letter.mp3": {
+    "source": "assets/audio/taa/assessment_1.mp3",
+    "sourceSha256": "9f3191435684079dff62e638410a2c12a847972c7bbfab51b54b39b39a178718",
+    "startSec": 3.7,
+    "sha256": "1cb6c3bd5f622d58dc02aedf8e78308a3cb2e4cf3fa5068f3c473151d915c06b",
+    "durationSec": 4.34
+  },
+  "assets/audio/v45/alif_review_word.mp3": {
+    "source": "assets/audio/alif/assessment_2.mp3",
+    "sourceSha256": "8edd76dba11043e0ce24eeb96ae10c68a2cc527ffc06cafe3b47e55229f5de53",
+    "startSec": 4.0,
+    "sha256": "153ece39f83af80d49c6cc52a32fe885e0dd24e2095ae7a39e65399d7cebd87f",
+    "durationSec": 3.63
+  },
+  "assets/audio/v45/baa_review_word.mp3": {
+    "source": "assets/audio/baa/assessment_2.mp3",
+    "sourceSha256": "b35432af7411dd997c4fc0fa8c7a6ea47ead66725e2836ac0015722be4a98b02",
+    "startSec": 4.1,
+    "sha256": "45b03dc03fee3f8f9c2edb7e88f6f1bdc40925c446c6752f6ed4462f6a27b7e8",
+    "durationSec": 3.21
+  },
+  "assets/audio/v45/taa_review_word.mp3": {
+    "source": "assets/audio/taa/assessment_2.mp3",
+    "sourceSha256": "17de92d9e1bfecd64b8e30ccb503152747210e4425bbbc3585ff448193b7b137",
+    "startSec": 4.5,
+    "sha256": "fb6dfa2ee2f43cf620d233c8a87530369802cbab8b05f282c1d91bbae43afb16",
+    "durationSec": 3.29
+  }
+}

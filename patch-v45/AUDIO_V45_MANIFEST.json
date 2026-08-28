@@ -1,0 +1,67 @@
+{
+  "assets/audio/v45/review_intro.mp3": {
+    "sha256": "07a95d144b60b582cee7ebe5eba5f5fb72165fd070eec5a2dcc4c86d1a74156d",
+    "text": "الآن يا أصدقائي سأختبر معلوماتكم السابقة.",
+    "durationSec": 3.79
+  },
+  "assets/audio/v45/alif_nasheed_intro.mp3": {
+    "sha256": "d1fefb4c58c7fe5e10b228fcf9e9745a7af9a67737f5617863133130a806bdac",
+    "text": "الآن نستمع نشيد حرف الآ.",
+    "durationSec": 2.85
+  },
+  "assets/audio/v45/baa_nasheed_intro.mp3": {
+    "sha256": "2d39da90135f7a57e1449918e3c3afce734b4d4f2aa0574f5fa0113a801a4e86",
+    "text": "الآن نستمع نشيد حرف الباء.",
+    "durationSec": 2.85
+  },
+  "assets/audio/v45/taa_nasheed_intro.mp3": {
+    "sha256": "32fd360d94533b2d353a4e3db4a6496063d8a42af6cdefa0158ddf552e92833c",
+    "text": "الآن نستمع نشيد حرف التاء.",
+    "durationSec": 2.51
+  },
+  "assets/audio/v45/thaa_nasheed_intro.mp3": {
+    "sha256": "d5283d6076bd70390329abb21df75a3a93eee101d4e4cdf7654b3f426f02dfb2",
+    "text": "الآن نستمع نشيد حرف الثاء.",
+    "durationSec": 2.51
+  },
+  "assets/audio/v45/jeem_nasheed_intro.mp3": {
+    "sha256": "8471b5231add8d98e728ca3646ad5c328e40a40dbb6b4cc3391d76ae8ea38b85",
+    "text": "الآن نستمع نشيد حرف الجَا.",
+    "durationSec": 2.69
+  },
+  "assets/audio/v45/haa_nasheed_intro.mp3": {
+    "sha256": "550fff74178bc57588dd39e81f0dacd50e481477b594fdc02b185c040c23bde3",
+    "text": "الآن نستمع نشيد حرف الحاء.",
+    "durationSec": 2.43
+  },
+  "assets/audio/v45/thaa_pronounce_retry.mp3": {
+    "sha256": "974aa0c766899b01c3fdbd991223d93c7fa8932b3896153172f1cc479be57a7a",
+    "text": "لم أسمع حرف الثاء بوضوح. حاولوا مرةً أخرى.",
+    "durationSec": 3.79
+  },
+  "assets/audio/v45/jeem_pronounce_retry.mp3": {
+    "sha256": "de575e79b113e9d51635c0b67b55a0ac48e61b08344c111123e2ce1bf80ba2cd",
+    "text": "لم أسمع حرف الجَا بوضوح. حاولوا مرةً أخرى.",
+    "durationSec": 3.79
+  },
+  "assets/audio/v45/haa_pronounce_retry.mp3": {
+    "sha256": "05b5eb31f8f6d1010a694b7a5cbd9d06a6f30354f0469dc8aa0575528f0e2d1e",
+    "text": "لم أسمع حرف الحاء بوضوح. حاولوا مرةً أخرى.",
+    "durationSec": 3.87
+  },
+  "assets/audio/v45/thaa_writing_demo.mp3": {
+    "sha256": "d967b162402a67ccd44baa1f5c02358599d6e7e30e79e57bfdff971e0437dc47",
+    "text": "انظروا يا أصدقائي كيف نكتب حرف الثاء. نبدأ من اليمين، ونسير مع المسار إلى اليسار، ثم نضع ثلاث نقاط فوق الحرف. انظروا مرةً أخرى. نبدأ من اليمين، ونسير مع المسار إلى اليسار، ثم نضع ثلاث نقاط فوق الحرف.",
+    "durationSec": 24.45
+  },
+  "assets/audio/v45/jeem_writing_demo.mp3": {
+    "sha256": "8556e413e09b13a5da99ef9965bbe37ff48d2b3f94c2889de9d5c7ff6094df4f",
+    "text": "انظروا يا أصدقائي كيف نكتب حرف الجَا. نرسم رأس الحرف مع المسار، ثم ننزل ونكمل الانحناءة إلى اليمين، ونضع نقطة داخل الحرف. انظروا مرةً أخرى. نرسم رأس الحرف مع المسار، ثم ننزل ونكمل الانحناءة إلى اليمين، ونضع نقطة داخل الحرف.",
+    "durationSec": 24.11
+  },
+  "assets/audio/v45/haa_writing_demo.mp3": {
+    "sha256": "2988f0dfe160db1555047a500957c411497865057964df19efa783db20ce74e1",
+    "text": "انظروا يا أصدقائي كيف نكتب حرف الحاء. نرسم رأس الحرف مع المسار، ثم ننزل ونكمل الانحناءة إلى اليمين. انظروا مرةً أخرى. نرسم رأس الحرف مع المسار، ثم ننزل ونكمل الانحناءة إلى اليمين.",
+    "durationSec": 17.79
+  }
+}
