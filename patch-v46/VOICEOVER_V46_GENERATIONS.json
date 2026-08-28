@@ -1,0 +1,92 @@
+[
+  {
+    "key": "thaa_example",
+    "prompt": "ثَاء، ثَعْلَب. ثَاء، ثَعْلَب.",
+    "flow_id": "aPCIWlJ7YyPocOKST0tg",
+    "session_ids": [
+      "Q5cwKSvHqrOo2lTm9v8o"
+    ],
+    "generation_id": "6ZQlmZ8QwPn92VbE5Z36",
+    "durationSec": 5.36
+  },
+  {
+    "key": "assessment_intro",
+    "prompt": "والآن سأراجع معكم ما تعلمناه في هذا اليوم.",
+    "flow_id": "aPCIWlJ7YyPocOKST0tg",
+    "session_ids": [
+      "vNTtJM7gAyF38XPMUJzd"
+    ],
+    "generation_id": "vuY0xGqNwyaJIjL9ycmb",
+    "durationSec": 3.76
+  },
+  {
+    "key": "free_praise",
+    "prompt": "ممتاز! أحسَنتُم كتابةَ الحرف.",
+    "flow_id": "aPCIWlJ7YyPocOKST0tg",
+    "session_ids": [
+      "pu0iNaOmsRk33GG9i0mu"
+    ],
+    "generation_id": "qXVnIAevP9420taUkP4C",
+    "durationSec": 2.72
+  },
+  {
+    "key": "alif_writing_demo",
+    "prompt": "انظروا يا أصدقائي كيف نكتب حرف الآ. نبدأ من الأعلى، ونكتب الحرف هكذا.",
+    "flow_id": "aPCIWlJ7YyPocOKST0tg",
+    "session_ids": [
+      "t9oOmgN1XeQ4tQ8NFROR"
+    ],
+    "generation_id": "i6M5oNrVet3IiBCNyxqw",
+    "durationSec": 6.72
+  },
+  {
+    "key": "baa_writing_demo",
+    "prompt": "انظروا يا أصدقائي كيف نكتب حرف الباء. نبدأ من اليمين، ونسير مع المسار إلى اليسار، ثم نضع نقطةً واحدة تحت الحرف.",
+    "flow_id": "aPCIWlJ7YyPocOKST0tg",
+    "session_ids": [
+      "Okcl2pfJ8yE9vy2Bn7gY"
+    ],
+    "generation_id": "QpyAO8lH9RiuLRh1VjlS",
+    "durationSec": 11.2
+  },
+  {
+    "key": "taa_writing_demo",
+    "prompt": "انظروا يا أصدقائي كيف نكتب حرف التاء. نبدأ من اليمين، ونسير مع المسار إلى اليسار، ثم نضع نقطتين فوق الحرف.",
+    "flow_id": "aPCIWlJ7YyPocOKST0tg",
+    "session_ids": [
+      "vyaaAV0LfXbNR6qM4Qp1"
+    ],
+    "generation_id": "H7LYFjG0R7xvDmGnN7TB",
+    "durationSec": 10.48
+  },
+  {
+    "key": "thaa_writing_demo",
+    "prompt": "انظروا يا أصدقائي كيف نكتب حرف الثاء. نبدأ من اليمين، ونسير مع المسار إلى اليسار، ثم نضع ثلاث نقاط فوق الحرف.",
+    "flow_id": "aPCIWlJ7YyPocOKST0tg",
+    "session_ids": [
+      "S0unyEE6Cv2hrY6nSHIj"
+    ],
+    "generation_id": "vTmHaQ0uobTe9lhJ3NkF",
+    "durationSec": 10.88
+  },
+  {
+    "key": "jeem_writing_demo",
+    "prompt": "انظروا يا أصدقائي كيف نكتب حرف الجَا. نرسم رأس الحرف مع المسار، ثم ننزل ونكمل الانحناءة إلى اليمين، ونضع نقطة داخل الحرف.",
+    "flow_id": "aPCIWlJ7YyPocOKST0tg",
+    "session_ids": [
+      "Phyk5EtPfAYdqpK6KarP"
+    ],
+    "generation_id": "OSUKCHvQdw3n3NI7IxE4",
+    "durationSec": 12.16
+  },
+  {
+    "key": "haa_writing_demo",
+    "prompt": "انظروا يا أصدقائي كيف نكتب حرف الحاء. نرسم رأس الحرف مع المسار، ثم ننزل ونكمل الانحناءة إلى اليمين.",
+    "flow_id": "aPCIWlJ7YyPocOKST0tg",
+    "session_ids": [
+      "1gHv3zraPQ5Uuuki0k4u"
+    ],
+    "generation_id": "3cJestQDarppNdeJ3qUD",
+    "durationSec": 10.4
+  }
+]

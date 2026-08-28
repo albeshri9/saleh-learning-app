@@ -1,0 +1,47 @@
+{
+  "assets/audio/v46/thaa_example.mp3": {
+    "text": "ثَاء، ثَعْلَب. ثَاء، ثَعْلَب.",
+    "sha256": "f69a7569ff63b1148e526acda624f9989dce1da79ac57d72ed310e825807cc07",
+    "durationSec": 5.36
+  },
+  "assets/audio/v46/assessment_intro.mp3": {
+    "text": "والآن سأراجع معكم ما تعلمناه في هذا اليوم.",
+    "sha256": "4917708ae0e1c543640c160f9d511129535266ff5a1bf36897d90f419847b0fc",
+    "durationSec": 3.76
+  },
+  "assets/audio/v46/free_praise.mp3": {
+    "text": "ممتاز! أحسَنتُم كتابةَ الحرف.",
+    "sha256": "f6872dd59493ddf013393d3eb32b9c6f8deef1fa0b00c985810c67fc09d686ba",
+    "durationSec": 2.72
+  },
+  "assets/audio/v46/alif_writing_demo.mp3": {
+    "text": "انظروا يا أصدقائي كيف نكتب حرف الآ. نبدأ من الأعلى، ونكتب الحرف هكذا.",
+    "sha256": "e3900abc01e6542db552bdbbc63375c87a16dacf1208e7e9966b89a2f7f71212",
+    "durationSec": 6.72
+  },
+  "assets/audio/v46/baa_writing_demo.mp3": {
+    "text": "انظروا يا أصدقائي كيف نكتب حرف الباء. نبدأ من اليمين، ونسير مع المسار إلى اليسار، ثم نضع نقطةً واحدة تحت الحرف.",
+    "sha256": "ef438b13fd1a46ef744f3fe0d3a41dedcfe6eab2b0b9064dfe78c06826e4817a",
+    "durationSec": 11.2
+  },
+  "assets/audio/v46/taa_writing_demo.mp3": {
+    "text": "انظروا يا أصدقائي كيف نكتب حرف التاء. نبدأ من اليمين، ونسير مع المسار إلى اليسار، ثم نضع نقطتين فوق الحرف.",
+    "sha256": "636771f7e0fb5ff7de0dbe7093cd3447fdbdac1ce915051d09b42ec864d8c25c",
+    "durationSec": 10.48
+  },
+  "assets/audio/v46/thaa_writing_demo.mp3": {
+    "text": "انظروا يا أصدقائي كيف نكتب حرف الثاء. نبدأ من اليمين، ونسير مع المسار إلى اليسار، ثم نضع ثلاث نقاط فوق الحرف.",
+    "sha256": "dd653a2ba00b797c17bf2ed92a5fd0a0c41b27eab879f89e42002b461a6f5344",
+    "durationSec": 10.88
+  },
+  "assets/audio/v46/jeem_writing_demo.mp3": {
+    "text": "انظروا يا أصدقائي كيف نكتب حرف الجَا. نرسم رأس الحرف مع المسار، ثم ننزل ونكمل الانحناءة إلى اليمين، ونضع نقطة داخل الحرف.",
+    "sha256": "36422c2ad831e528f210c6c4a281b0385c335b849b78a8983136ec806d9d20ef",
+    "durationSec": 12.16
+  },
+  "assets/audio/v46/haa_writing_demo.mp3": {
+    "text": "انظروا يا أصدقائي كيف نكتب حرف الحاء. نرسم رأس الحرف مع المسار، ثم ننزل ونكمل الانحناءة إلى اليمين.",
+    "sha256": "9171f150327773a3568c1939f221f1a3af06848e41b076f85d53e1e867d8888d",
+    "durationSec": 10.4
+  }
+}
