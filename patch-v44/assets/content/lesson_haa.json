@@ -1,0 +1,405 @@
+{
+  "id": "haa",
+  "title": "درس حرف حَ",
+  "mastery": {
+    "minScore": 0.6,
+    "requiredSceneIds": [
+      "assessment_1"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "welcome_1",
+      "type": "welcome",
+      "title": "ترحيب",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "مرحبًا يا أصدقائي، كيف حالكم اليوم؟ سوف نتعلم اليوم حرفًا جديدًا، حرف الحاء. هيا بنا.",
+          "female": "مرحبًا يا أصدقائي، كيف حالكم اليوم؟ سوف نتعلم اليوم حرفًا جديدًا، حرف الحاء. هيا بنا.",
+          "audio": "assets/audio/haa/welcome.mp3",
+          "durationSec": 8.75,
+          "events": [
+            {
+              "action": "playAnimation",
+              "target": "saleh",
+              "atSec": 0,
+              "params": {
+                "name": "greetThenTalk"
+              }
+            }
+          ]
+        }
+      ],
+      "data": {}
+    },
+    {
+      "id": "prior_review_1",
+      "type": "review",
+      "title": "مراجعة قبلية",
+      "canSkip": false,
+      "lines": [
+        {
+          "male": "قوموا باختيار حرف الآ.",
+          "female": "قوموا باختيار حرف الآ.",
+          "audio": "assets/audio/taa/prior_review_2.mp3",
+          "durationSec": 2.04
+        }
+      ],
+      "data": {
+        "priorLessonIds": [
+          "alif",
+          "baa",
+          "taa",
+          "thaa",
+          "jeem"
+        ],
+        "questions": [
+          {
+            "reviewLessonId": "alif",
+            "prompt": "أين حرف أَ؟",
+            "options": [
+              "أَ",
+              "بَ",
+              "تَ",
+              "ثَ"
+            ],
+            "correctIndex": 0,
+            "successAudio": "assets/audio/taa/assessment_success.mp3",
+            "showPrompt": false,
+            "audio": "assets/audio/taa/prior_review_2.mp3"
+          },
+          {
+            "reviewLessonId": "baa",
+            "prompt": "أين حرف بَ؟",
+            "options": [
+              "بَ",
+              "أَ",
+              "تَ",
+              "ثَ"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/taa/prior_review_3.mp3",
+            "successAudio": "assets/audio/taa/assessment_success.mp3",
+            "showPrompt": false
+          },
+          {
+            "reviewLessonId": "taa",
+            "prompt": "أين حرف تَ؟",
+            "options": [
+              "تَ",
+              "أَ",
+              "بَ",
+              "ثَ"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/taa/assessment_1.mp3",
+            "successAudio": "assets/audio/taa/assessment_success.mp3",
+            "showPrompt": false
+          },
+          {
+            "reviewLessonId": "thaa",
+            "prompt": "أين حرف ثَ؟",
+            "options": [
+              "ثَ",
+              "أَ",
+              "بَ",
+              "تَ"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/thaa/assessment_1.mp3",
+            "successAudio": "assets/audio/taa/assessment_success.mp3",
+            "showPrompt": false
+          },
+          {
+            "reviewLessonId": "jeem",
+            "prompt": "أين حرف جَ؟",
+            "options": [
+              "جَ",
+              "أَ",
+              "بَ",
+              "تَ"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/jeem_v44/assessment_1.mp3",
+            "showPrompt": false
+          }
+        ],
+        "successAudio": "assets/audio/taa/prior_review_success.mp3",
+        "retryAudio": "assets/audio/taa/prior_review_retry.mp3",
+        "completionLabel": "نبدأ الحرف الجديد"
+      }
+    },
+    {
+      "id": "nasheed_1",
+      "type": "nasheed",
+      "title": "أنشودة الحرف",
+      "canSkip": true,
+      "lines": [],
+      "data": {
+        "mediaType": "audio",
+        "durationSec": 8,
+        "label": "أنشودة حرف حَ"
+      }
+    },
+    {
+      "id": "explain_1",
+      "type": "explanation",
+      "title": "شرح الحرف",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "انظروا يا أصدقائي إلى حرف الحاء، إنه حرف جميل.",
+          "female": "انظروا يا أصدقائي إلى حرف الحاء، إنه حرف جميل.",
+          "audio": "assets/audio/haa/explain_1.mp3",
+          "durationSec": 4.52,
+          "events": [
+            {
+              "action": "show",
+              "target": "letter",
+              "atSec": 0.2
+            },
+            {
+              "action": "salehPointAt",
+              "target": "letter",
+              "atSec": 0.3
+            }
+          ]
+        },
+        {
+          "male": "حَا، حَا، حَا. هل تعرفون كلمةً تبدأ بحرف الحاء؟",
+          "female": "حَا، حَا، حَا. هل تعرفون كلمةً تبدأ بحرف الحاء؟",
+          "audio": "assets/audio/haa/explain_2.mp3",
+          "durationSec": 4.99,
+          "events": [
+            {
+              "action": "pulse",
+              "target": "letter",
+              "atSec": 0.3
+            },
+            {
+              "action": "pulse",
+              "target": "letter",
+              "atSec": 1.1
+            },
+            {
+              "action": "pulse",
+              "target": "letter",
+              "atSec": 1.9
+            }
+          ]
+        },
+        {
+          "male": "حَا، حَبْل. حَا، حَبْل.",
+          "female": "حَا، حَبْل. حَا، حَبْل.",
+          "audio": "assets/audio/haa/explain_3.mp3",
+          "durationSec": 4.52,
+          "events": [
+            {
+              "action": "show",
+              "target": "example",
+              "atSec": 0.4
+            },
+            {
+              "action": "highlight",
+              "target": "exampleLetter",
+              "atSec": 0.8
+            }
+          ]
+        },
+        {
+          "male": "انظروا إلى كلمة حَبْل، إنها تبدأ بحرف الحاء.",
+          "female": "انظروا إلى كلمة حَبْل، إنها تبدأ بحرف الحاء.",
+          "audio": "assets/audio/haa/explain_4.mp3",
+          "durationSec": 4.44
+        },
+        {
+          "male": "ردِّدوا معي: حَا، حَبْل. حَا، حَبْل. حَا، حَبْل.",
+          "female": "ردِّدوا معي: حَا، حَبْل. حَا، حَبْل. حَا، حَبْل.",
+          "audio": "assets/audio/haa/explain_5.mp3",
+          "durationSec": 9.17
+        },
+        {
+          "male": "هكذا يا أصدقائي تعلمنا اليوم حرف الحاء. سننتقل الآن إلى نطق وكتابة حرف الحاء. هيا بنا.",
+          "female": "هكذا يا أصدقائي تعلمنا اليوم حرف الحاء. سننتقل الآن إلى نطق وكتابة حرف الحاء. هيا بنا.",
+          "audio": "assets/audio/haa/explain_6.mp3",
+          "durationSec": 9.48
+        }
+      ],
+      "data": {
+        "letter": "حَ",
+        "letterName": "الحاء",
+        "letterAudio": "assets/audio/haa/explain_2.mp3",
+        "example": {
+          "word": "حَبْل",
+          "imageAsset": "assets/images/assessment/rope_v43.png",
+          "highlightPrefix": "حَ"
+        }
+      }
+    },
+    {
+      "id": "pronounce_1",
+      "type": "pronunciation",
+      "title": "تدريب النطق",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "هيا يا أصدقائي، سأستمع إلى نطقكم لحرف الحاء. حَا، حَا، حَا. اضغطوا على زر المايك وقوموا بنطق الحرف. هيا.",
+          "female": "هيا يا أصدقائي، سأستمع إلى نطقكم لحرف الحاء. حَا، حَا، حَا. اضغطوا على زر المايك وقوموا بنطق الحرف. هيا.",
+          "audio": "assets/audio/haa/pronounce_intro.mp3",
+          "durationSec": 14.84
+        }
+      ],
+      "data": {
+        "letter": "حَ",
+        "spokenLetter": "حَا",
+        "expected": "حَا",
+        "maxAttempts": 3,
+        "retryAudio": "assets/audio/taa/pronounce_retry.mp3",
+        "successAudio": "assets/audio/taa/pronounce_success.mp3",
+        "letterAudio": "assets/audio/haa/explain_2.mp3"
+      }
+    },
+    {
+      "id": "write_guided_1",
+      "type": "guidedWriting",
+      "title": "الكتابة بالدليل",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "انظروا يا أصدقائي كيف نكتب حرف الحاء. نرسم رأس الحرف مع المسار، ثم ننزل ونكمل الانحناءة إلى اليمين، ثم نضع الفتحة. حرف الحاء ليس له نقاط. انظروا مرةً أخرى. نرسم رأس الحرف مع المسار، ثم ننزل ونكمل الانحناءة إلى اليمين، ثم نضع الفتحة. حرف الحاء ليس له نقاط.",
+          "female": "انظروا يا أصدقائي كيف نكتب حرف الحاء. نرسم رأس الحرف مع المسار، ثم ننزل ونكمل الانحناءة إلى اليمين، ثم نضع الفتحة. حرف الحاء ليس له نقاط. انظروا مرةً أخرى. نرسم رأس الحرف مع المسار، ثم ننزل ونكمل الانحناءة إلى اليمين، ثم نضع الفتحة. حرف الحاء ليس له نقاط.",
+          "audio": "assets/audio/haa/writing_demo.mp3",
+          "durationSec": 29.23
+        },
+        {
+          "male": "هيا يا أصدقائي، اكتبوا حرف الحاء. ضعوا إصبعكم على النقطة الخضراء، واتبعوا مسار الحرف حتى النهاية. حَا، حَا.",
+          "female": "هيا يا أصدقائي، اكتبوا حرف الحاء. ضعوا إصبعكم على النقطة الخضراء، واتبعوا مسار الحرف حتى النهاية. حَا، حَا.",
+          "audio": "assets/audio/haa/writing_try.mp3",
+          "durationSec": 12.75
+        }
+      ],
+      "data": {
+        "letter": "حَ",
+        "traceTemplateId": "haa_fatha_pdf_v1",
+        "writing": {
+          "guidedAttempts": 2,
+          "freeAttempts": 0,
+          "required": true
+        },
+        "againAudio": "assets/audio/taa/writing_again.mp3",
+        "successAudio": "assets/audio/taa/writing_success.mp3",
+        "guidedPraiseAudio": "assets/audio/taa/writing_success.mp3",
+        "demoPassDurationMs": 14615,
+        "lessonId": "haa"
+      }
+    },
+    {
+      "id": "write_free_1",
+      "type": "freeWriting",
+      "title": "الكتابة الحرة",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "هيا يا أصدقائي، هل تذكرون كيفية كتابة حرف الحاء؟ قوموا بكتابة حرف الحاء الآن.",
+          "female": "هيا يا أصدقائي، هل تذكرون كيفية كتابة حرف الحاء؟ قوموا بكتابة حرف الحاء الآن.",
+          "audio": "assets/audio/haa/free_intro.mp3",
+          "durationSec": 7.89
+        }
+      ],
+      "data": {
+        "letter": "حَ",
+        "traceTemplateId": "haa_fatha_pdf_v1",
+        "writing": {
+          "guidedAttempts": 0,
+          "freeAttempts": 1,
+          "required": false
+        },
+        "successAudio": "assets/audio/taa/free_success.mp3",
+        "lessonId": "haa"
+      }
+    },
+    {
+      "id": "assessment_1",
+      "type": "multipleChoice",
+      "title": "التقويم الختامي",
+      "canSkip": false,
+      "lines": [
+        {
+          "male": "أين حرف الحاء؟ اضغطوا على حرف الحاء.",
+          "female": "أين حرف الحاء؟ اضغطوا على حرف الحاء.",
+          "audio": "assets/audio/haa/assessment_1.mp3",
+          "durationSec": 3.47
+        }
+      ],
+      "data": {
+        "retryAudio": "assets/audio/taa/assessment_retry.mp3",
+        "successAudio": "assets/audio/taa/assessment_success.mp3",
+        "secondAudio": "assets/audio/haa/assessment_2.mp3",
+        "questions": [
+          {
+            "prompt": "اضغط على حرف حَ",
+            "showPrompt": false,
+            "options": [
+              "حَ",
+              "أَ",
+              "بَ",
+              "تَ"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "prompt": "ما الكلمة التي تبدأ بحرف حَ؟",
+            "showPrompt": false,
+            "options": [
+              "حَبْل",
+              "أَسد",
+              "بَطة"
+            ],
+            "optionImages": [
+              "assets/images/assessment/rope_v43.png",
+              "assets/images/assessment/alif_lion.png",
+              "assets/images/assessment/duck.png"
+            ],
+            "correctIndex": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "success_1",
+      "type": "success",
+      "title": "أحسنت",
+      "canSkip": false,
+      "lines": [
+        {
+          "male": "أحسنتم يا أبطال. الحمد لله، لقد تعرفنا هذا اليوم على حرف الحاء. حَا، حَبْل. نلقاكم غدًا بإذن الله. إلى اللقاء يا أصدقائي.",
+          "female": "أحسنتم يا أبطال. الحمد لله، لقد تعرفنا هذا اليوم على حرف الحاء. حَا، حَبْل. نلقاكم غدًا بإذن الله. إلى اللقاء يا أصدقائي.",
+          "audio": "assets/audio/haa/closing.mp3",
+          "durationSec": 15.31,
+          "events": [
+            {
+              "action": "playAnimation",
+              "target": "saleh",
+              "atSec": 0.2,
+              "params": {
+                "name": "celebrateThenWave"
+              }
+            },
+            {
+              "action": "playAnimation",
+              "target": "saleh",
+              "atSec": 12.510000000000002,
+              "params": {
+                "name": "farewell"
+              }
+            }
+          ]
+        }
+      ],
+      "data": {
+        "stars": 3
+      }
+    }
+  ]
+}

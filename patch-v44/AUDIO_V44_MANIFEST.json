@@ -1,0 +1,62 @@
+{
+  "assets/audio/jeem_v44/welcome.mp3": {
+    "sha256": "5c79c6b56556ca4d74a86ca70a2f478ee0c04c1bcf1c029c8f44f08bc81f2aad",
+    "durationSec": 9.72,
+    "text": "مرحبًا يا أصدقائي، كيف حالكم اليوم؟ سوف نتعلم اليوم حرفًا جديدًا، حرف الجَا. هيا بنا."
+  },
+  "assets/audio/jeem_v44/explain_1.mp3": {
+    "sha256": "51224d8d6e92a4a4f73ef47d6984d8209b62bd7411633a7b1abd79cafbcb74b3",
+    "durationSec": 4.75,
+    "text": "انظروا يا أصدقائي إلى حرف الجَا، إنه حرف جميل."
+  },
+  "assets/audio/jeem_v44/explain_2.mp3": {
+    "sha256": "2e78809e263ad8e7fe921592c32096a4a2f86fcc437501efc43c1b2f14295578",
+    "durationSec": 4.75,
+    "text": "جَا، جَا، جَا. هل تعرفون كلمةً تبدأ بحرف الجَا؟"
+  },
+  "assets/audio/jeem_v44/explain_4.mp3": {
+    "sha256": "7e3c0c319c390a2656029fe8408cb5329cef0b17fa539b87f302bdf51c26be43",
+    "durationSec": 3.87,
+    "text": "انظروا إلى كلمة جَمَل، إنها تبدأ بحرف الجَا."
+  },
+  "assets/audio/jeem_v44/explain_6.mp3": {
+    "sha256": "7c8ba5a06567f581f2380835c4ece9d997f2adf604383708e4fdb555e524815f",
+    "durationSec": 9.48,
+    "text": "هكذا يا أصدقائي تعلمنا اليوم حرف الجَا. سننتقل الآن إلى نطق وكتابة حرف الجَا. هيا بنا."
+  },
+  "assets/audio/jeem_v44/pronounce_intro.mp3": {
+    "sha256": "906e20fd29631ba7657fc580878b5e566592372ff2f2ce4f2d0f3ce66e6b4945",
+    "durationSec": 15.65,
+    "text": "هيا يا أصدقائي، سأستمع إلى نطقكم لحرف الجَا. جَا، جَا، جَا. اضغطوا على زر المايك وقوموا بنطق الحرف. هيا."
+  },
+  "assets/audio/jeem_v44/writing_demo.mp3": {
+    "sha256": "dec4b83f5b1899441b2c9033192b4b78a497d55e617cff5d9c1046e01679908c",
+    "durationSec": 27.79,
+    "text": "انظروا يا أصدقائي كيف نكتب حرف الجَا. نرسم رأس الحرف مع المسار، ثم ننزل ونكمل الانحناءة إلى اليمين، ونضع نقطة داخل الحرف، ثم الفتحة. انظروا مرةً أخرى. نرسم رأس الحرف مع المسار، ثم ننزل ونكمل الانحناءة إلى اليمين، ونضع نقطة داخل الحرف، ثم الفتحة."
+  },
+  "assets/audio/jeem_v44/writing_try.mp3": {
+    "sha256": "5a21c9219614faafcc3c3151620086f6309b24b12109bbb2a4f5a25797c850ed",
+    "durationSec": 13.24,
+    "text": "هيا يا أصدقائي، اكتبوا حرف الجَا. ضعوا إصبعكم على النقطة الخضراء، واتبعوا مسار الحرف حتى النهاية. جَا، جَا."
+  },
+  "assets/audio/jeem_v44/free_intro.mp3": {
+    "sha256": "377bfb0419cecaa94887e4516b9ae734be3fa6a39e7d1f0a420f1c0e2aba3be0",
+    "durationSec": 8.2,
+    "text": "هيا يا أصدقائي، هل تذكرون كيفية كتابة حرف الجَا؟ قوموا بكتابة حرف الجَا الآن."
+  },
+  "assets/audio/jeem_v44/assessment_1.mp3": {
+    "sha256": "5fea85e1b2fa3e367373e1cfd9ba4c29d799fec3be4d3c49f68bbf725df34620",
+    "durationSec": 3.47,
+    "text": "أين حرف الجَا؟ اضغطوا على حرف الجَا."
+  },
+  "assets/audio/jeem_v44/assessment_2.mp3": {
+    "sha256": "c5768cba25324c60a2893c94e90872a9ddc5555d5cef8f0bef52ae100d962c06",
+    "durationSec": 4.91,
+    "text": "ما الكلمة التي تبدأ بحرف الجَا؟ اختاروا الصورة الصحيحة."
+  },
+  "assets/audio/jeem_v44/closing.mp3": {
+    "sha256": "a77bd393add355c01e65dfcadaa1b84070cc39f1481bc287b3d7c3479bb69a35",
+    "durationSec": 13.01,
+    "text": "أحسنتم يا أبطال. الحمد لله، لقد تعرفنا هذا اليوم على حرف الجَا. جَا، جَمَل. نلقاكم غدًا بإذن الله. إلى اللقاء يا أصدقائي."
+  }
+}
