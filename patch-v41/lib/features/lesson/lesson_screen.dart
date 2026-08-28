@@ -162,6 +162,7 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
     final channel = _channel;
     if (channel == null) return;
     channel.scriptFinished.value = false;
+    channel.scriptInterrupted.value = false;
     _saleh.reset();
     setState(() => _replayGeneration++);
   }
@@ -672,6 +673,7 @@ class _HiddenScriptPlayer extends StatelessWidget {
         child: SalehScriptPlayer(
           key: ValueKey('script_${scene.id}_${api.replayGeneration}'),
           lines: scene.lines,
+          stopSignal: api.channel.scriptInterrupted,
           profile: api.profile,
           tailDirection: SpeechTailDirection.start,
           compact: compact,

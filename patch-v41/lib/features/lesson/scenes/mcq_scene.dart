@@ -63,6 +63,9 @@ class _McqSceneState extends ConsumerState<McqScene> {
 
   Future<void> _choose(int index) async {
     if (_answered) return;
+    // A quick answer owns the audio now. Cancel queued introduction lines
+    // before feedback replaces the current recording.
+    widget.api.channel.interruptScript();
     setState(() {
       _selected = index;
       _answered = true;

@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:saleh_app/features/lesson/widgets/saleh_script_player.dart';
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -36,6 +37,29 @@ void main() {
     await (FontLoader('MaterialIcons')
           ..addFont(rootBundle.load('fonts/MaterialIcons-Regular.otf')))
         .load();
+  });
+
+  testWidgets('early review answer cancels queued narration and startup retry',
+      (tester) async {
+    final audio = RecordedAudio();
+    final stopped = ValueNotifier(false);
+    final review = lesson('taa').scenes[1];
+    await tester.pumpWidget(support.app(
+        SalehScriptPlayer(
+            lines: review.lines, profile: support.child, stopSignal: stopped),
+        audio: audio));
+    await tester.pump(const Duration(milliseconds: 500));
+    expect(audio.assets, ['assets/audio/taa/prior_review.mp3']);
+    stopped.value = true;
+    await audio.play('assets/audio/taa/assessment_success.mp3');
+    await tester.pump(const Duration(seconds: 3));
+    expect(audio.assets, [
+      'assets/audio/taa/prior_review.mp3',
+      'assets/audio/taa/assessment_success.mp3'
+    ]);
+    await tester.pumpWidget(const SizedBox());
+    await tester.pump(const Duration(seconds: 1));
+    stopped.dispose();
   });
 
   test('seven ordered stages, three available letters, cumulative review only',
