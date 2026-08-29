@@ -476,6 +476,8 @@ class _CompactTopBar extends StatelessWidget {
         Expanded(
             child: Text(state.lesson.title,
                 textAlign: TextAlign.center,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
                 style: const TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,

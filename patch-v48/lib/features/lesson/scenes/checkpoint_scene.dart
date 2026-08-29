@@ -547,12 +547,19 @@ class _ProgressHeader extends StatelessWidget {
   final bool remedial;
   @override
   Widget build(BuildContext context) => Row(children: [
-    Container(padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-      decoration: BoxDecoration(color: remedial ? const Color(0xFFFFE9C8)
-          : const Color(0xFFEDE5F8), borderRadius: BorderRadius.circular(18)),
-      child: Text(remedial ? 'تدريب ذكي' : 'الاختبار المرحلي',
-          style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w800,
-              color: Color(0xFF594574)))),
+    ConstrainedBox(
+      constraints: const BoxConstraints(maxWidth: 118),
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+        decoration: BoxDecoration(color: remedial ? const Color(0xFFFFE9C8)
+            : const Color(0xFFEDE5F8), borderRadius: BorderRadius.circular(18)),
+        child: FittedBox(fit: BoxFit.scaleDown, child:
+          Text(remedial ? 'تدريب ذكي' : 'الاختبار المرحلي',
+            maxLines: 1,
+            style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w800,
+                color: Color(0xFF594574)))),
+      ),
+    ),
     const SizedBox(width: 10),
     Expanded(child: ClipRRect(borderRadius: BorderRadius.circular(8),
       child: LinearProgressIndicator(value: total == 0 ? 0 : current / total,
