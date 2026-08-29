@@ -1,0 +1,15 @@
+{
+  "release": 49,
+  "generatedAt": "2026-08-29T22:01:30+03:00",
+  "provider": "ElevenLabs",
+  "model": "eleven_v3",
+  "voiceId": "zAHOVUiYXuxggpSljiCQ",
+  "voiceName": "Laloosh - Upbeat Arabic Reels Voice",
+  "flowId": "91mjlUf07XRVJQTULVvh",
+  "generationId": "QrujMDgCFzHj96p4xKPd",
+  "text": "هيا يا أبطال، انطقوا هذا الحرف.",
+  "durationSeconds": 3.28,
+  "asset": "assets/audio/checkpoint_1/pronounce_generic_v49.mp3",
+  "bytes": 70378,
+  "sha256": "324E94C67AD348BEBBA8C4E449C60280515AFC03B444CE462D151FDDC22148E1"
+}
