@@ -11,7 +11,6 @@ import '../../../core/design/widgets/letter_glyph.dart';
 import '../../../core/design/widgets/touch_feedback.dart';
 import '../../../domain/models/lesson.dart';
 import '../../../services/audio/interaction_audio.dart';
-import '../../../services/speech/speech_service.dart';
 import '../scene_registry.dart';
 import '../writing/handwriting_validator.dart';
 import '../writing/letter_trace_template.dart';
