@@ -1,0 +1,98 @@
+[
+  {
+    "id": "arabic_foundation",
+    "title": "تأسيس اللغة العربية",
+    "stages": [
+      {
+        "id": "letters_fatha",
+        "title": "الحروف بحركة الفتح",
+        "levels": [
+          {
+            "id": "group_1",
+            "title": "حروفنا الأولى",
+            "lessons": [
+              {
+                "lessonId": "alif",
+                "title": "حرف الألف",
+                "subtitle": "أَ — أَسد",
+                "emoji": "🦁",
+                "letter": "أَ"
+              },
+              {
+                "lessonId": "baa",
+                "title": "حرف الباء",
+                "subtitle": "بَ — بَطة",
+                "letter": "بَ"
+              },
+              {
+                "lessonId": "taa",
+                "title": "حرف التاء",
+                "subtitle": "تَ — تَاج",
+                "letter": "تَ"
+              },
+              {
+                "lessonId": "thaa",
+                "title": "حرف الثاء",
+                "subtitle": "ثَ — ثَعْلَب",
+                "letter": "ثَ"
+              },
+              {
+                "lessonId": "jeem",
+                "title": "حرف الجيم",
+                "subtitle": "جَ — جَمَل",
+                "letter": "جَ"
+              },
+              {
+                "lessonId": "haa",
+                "title": "حرف الحاء",
+                "subtitle": "حَ — حَبْل",
+                "letter": "حَ"
+              },
+              {
+                "lessonId": "khaa",
+                "title": "حرف الخاء",
+                "subtitle": "خَ — خَرُوف",
+                "letter": "خَ"
+              },
+              {
+                "lessonId": "checkpoint_group_1",
+                "title": "الاختبار المرحلي",
+                "subtitle": "إتقان حروف المجموعة الأولى"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "letters_kasra",
+        "title": "الحروف بحركة الكسر",
+        "levels": []
+      },
+      {
+        "id": "letters_damma",
+        "title": "الحروف بحركة الضم",
+        "levels": []
+      },
+      {
+        "id": "sukun",
+        "title": "السكون",
+        "levels": []
+      },
+      {
+        "id": "madd",
+        "title": "المدود",
+        "levels": []
+      },
+      {
+        "id": "shadda",
+        "title": "التشديد",
+        "levels": []
+      },
+      {
+        "id": "tanween",
+        "title": "التنوين",
+        "levels": []
+      }
+    ]
+  }
+]

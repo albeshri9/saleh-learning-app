@@ -1,0 +1,92 @@
+{
+  "assets/audio/khaa/welcome.mp3": {
+    "sha256": "2028c800c279283e37c665ed01e51e36ae634e9c61e83c87dba146c104770249",
+    "durationSec": 9.4,
+    "text": "مرحبًا يا أصدقائي، كيف حالكم اليوم؟ سوف نتعلم اليوم حرفًا جديدًا، حرف الخَا. هيا بنا."
+  },
+  "assets/audio/khaa/nasheed_intro.mp3": {
+    "sha256": "337b26927a30e4a054bc92f885a44a669605b0bc40d7b1eb14f9f81ca700df82",
+    "durationSec": 3.0,
+    "text": "الآن نستمع نشيد حرف الخَا."
+  },
+  "assets/audio/khaa/explain_1.mp3": {
+    "sha256": "0f09264e6666520ddeaa2d83e1965457f8ce2d0fee6be4111c526658111046b8",
+    "durationSec": 5.07,
+    "text": "انظروا يا أصدقائي إلى حرف الخَا، إنه حرف جميل."
+  },
+  "assets/audio/khaa/explain_2.mp3": {
+    "sha256": "82d6ca8e8a1f383551d02fd392e54d16bbeaa043ad4f1a46f3fa2d8a9548bd39",
+    "durationSec": 6.03,
+    "text": "خَا، خَا، خَا. هل تعرفون كلمةً تبدأ بحرف الخَا؟"
+  },
+  "assets/audio/khaa/explain_3.mp3": {
+    "sha256": "2ddaae66c32fdafb95f018a91675f5181dfc71f0b019a27fd8edd62009b08628",
+    "durationSec": 5.07,
+    "text": "خَا، خَرُوف. خَا، خَرُوف."
+  },
+  "assets/audio/khaa/explain_4.mp3": {
+    "sha256": "1c52c313e95e8e693788a8d7e44ffd8a1560fbe8bdce532fe6621428e2419fc6",
+    "durationSec": 4.52,
+    "text": "انظروا إلى كلمة خَرُوف، إنها تبدأ بحرف الخَا."
+  },
+  "assets/audio/khaa/explain_5.mp3": {
+    "sha256": "8ad65b1d196ff1b3f1d5ed7ac37963a2e63a7dd0b14934357539b75cef8bad93",
+    "durationSec": 8.91,
+    "text": "ردِّدوا معي: خَا، خَرُوف. خَا، خَرُوف. خَا، خَرُوف."
+  },
+  "assets/audio/khaa/explain_6.mp3": {
+    "sha256": "66a7fa4baeee765ce8caf403cb1f8734aa7a2dcf05dda22aebc8614424f030d3",
+    "durationSec": 9.64,
+    "text": "هكذا يا أصدقائي تعلمنا اليوم حرف الخَا. سننتقل الآن إلى نطق وكتابة حرف الخَا. هيا بنا."
+  },
+  "assets/audio/khaa/pronounce_intro.mp3": {
+    "sha256": "c6d52fe10d0d92c985c66aa2ccf35888ec75bbdc85929225e387b2aa035f36cb",
+    "durationSec": 16.67,
+    "text": "هيا يا أصدقائي، سأستمع إلى نطقكم لحرف الخَا. خَا، خَا، خَا. اضغطوا على زر المايك وقوموا بنطق الحرف. هيا."
+  },
+  "assets/audio/khaa/pronounce_retry.mp3": {
+    "sha256": "076dd746652f8cf547ff3398decb8c0605e61a22493a369de4f8c58a93f9eaa4",
+    "durationSec": 4.21,
+    "text": "لم أسمع حرف الخَا بوضوح. حاولوا مرةً أخرى."
+  },
+  "assets/audio/khaa/writing_demo.mp3": {
+    "sha256": "46e1ba611bda207095ab3af904071ceb915a7fa038dea243d4ae89b5e24f42de",
+    "durationSec": 13.32,
+    "text": "انظروا يا أصدقائي كيف نكتب حرف الخَا. نرسم رأس الحرف مع المسار، ثم ننزل ونكمل الانحناءة إلى اليمين، ثم نضع نقطة فوق الحرف."
+  },
+  "assets/audio/khaa/writing_try.mp3": {
+    "sha256": "9fe397e5c21f84a0447aab4cedb555e97ce9769d465302c4962225ff9db1a562",
+    "durationSec": 11.23,
+    "text": "هيا يا أصدقائي، اكتبوا حرف الخَا. ضعوا إصبعكم على النقطة الخضراء، واتبعوا مسار الحرف حتى النهاية. خَا، خَا."
+  },
+  "assets/audio/khaa/free_intro.mp3": {
+    "sha256": "9ba9a488405b1f72ef98f709cdd2add4a0da86373ccfd9265ef43950de0a3f58",
+    "durationSec": 7.63,
+    "text": "هيا يا أصدقائي، هل تذكرون كيفية كتابة حرف الخَا؟ قوموا بكتابة حرف الخَا الآن."
+  },
+  "assets/audio/khaa/assessment_1.mp3": {
+    "sha256": "93edc992c99546a21092534e2bc814454e39fad152453a6781b4cadb2829ccef",
+    "durationSec": 3.71,
+    "text": "أين حرف الخَا؟ اضغطوا على حرف الخَا."
+  },
+  "assets/audio/khaa/assessment_2.mp3": {
+    "sha256": "83ac97cab68694d6daa170294ff610be61d5c37f59bfd4814ad19c10166e29ed",
+    "durationSec": 4.68,
+    "text": "ما الكلمة التي تبدأ بحرف الخَا؟ اختاروا الصورة الصحيحة."
+  },
+  "assets/audio/khaa/closing.mp3": {
+    "sha256": "f9cddbe795db15ce6cd57ff3ddd10cc3bd6db37d71ee3bfe71e1a57fe93cf2f0",
+    "durationSec": 16.43,
+    "text": "أحسنتم يا أبطال. الحمد لله، لقد تعرفنا هذا اليوم على حرف الخَا. خَا، خَرُوف. والآن حان وقت الاختبار المرحلي. هيا نُظهر ما تعلمناه."
+  },
+  "assets/audio/checkpoint_1/checkpoint_intro.mp3": {
+    "sha256": "cebfb039a603ea177994ed2f4f7db7e0fab63c3f0e350c777134ea623267e83e",
+    "durationSec": 10.68,
+    "text": "أهلًا يا أبطال. سنراجع الآن حروف مجموعتنا بطرق ممتعة ومتنوعة. ركزوا جيدًا، وهيا نبدأ الاختبار المرحلي."
+  },
+  "assets/audio/checkpoint_1/checkpoint_wrong.mp3": {
+    "sha256": "74efbb7fffd3c988b9ac2298e54dca9353cd7a9cbbfa09c52198a222b955f17f",
+    "durationSec": 3.24,
+    "text": "إجابة خاطئة. حاولوا مرةً أخرى."
+  }
+}

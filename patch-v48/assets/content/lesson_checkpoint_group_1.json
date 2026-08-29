@@ -1,0 +1,316 @@
+{
+  "id": "checkpoint_group_1",
+  "title": "الاختبار المرحلي للمجموعة الأولى",
+  "mastery": {
+    "minScore": 0.85,
+    "requiredSceneIds": [
+      "checkpoint_1"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "checkpoint_1",
+      "type": "checkpoint",
+      "title": "الاختبار المرحلي",
+      "canSkip": false,
+      "lines": [
+        {
+          "male": "أهلًا يا أبطال. سنراجع الآن حروف مجموعتنا بطرق ممتعة ومتنوعة. ركزوا جيدًا، وهيا نبدأ الاختبار المرحلي.",
+          "female": "أهلًا يا أبطال. سنراجع الآن حروف مجموعتنا بطرق ممتعة ومتنوعة. ركزوا جيدًا، وهيا نبدأ الاختبار المرحلي.",
+          "audio": "assets/audio/checkpoint_1/checkpoint_intro.mp3",
+          "durationSec": 10.68
+        }
+      ],
+      "data": {
+        "tasks": [
+          {
+            "id": "recognize_taa",
+            "type": "choice",
+            "letter": "تَ",
+            "prompt": "اختر حرف تَ",
+            "options": [
+              "تَ",
+              "بَ",
+              "ثَ"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/v45/taa_review_letter.mp3"
+          },
+          {
+            "id": "recognize_khaa",
+            "type": "choice",
+            "letter": "خَ",
+            "prompt": "اختر حرف خَ",
+            "options": [
+              "خَ",
+              "حَ",
+              "جَ"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/khaa/assessment_1.mp3"
+          },
+          {
+            "id": "picture_alif",
+            "type": "image",
+            "letter": "أَ",
+            "prompt": "اختر الصورة التي تبدأ بحرف أَ",
+            "options": [
+              "أَسَد",
+              "بَطَّة",
+              "ثَعْلَب"
+            ],
+            "optionImages": [
+              "assets/images/assessment/alif_lion.png",
+              "assets/images/assessment/duck.png",
+              "assets/images/assessment/fox.png"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/v45/alif_review_word.mp3"
+          },
+          {
+            "id": "picture_haa",
+            "type": "image",
+            "letter": "حَ",
+            "prompt": "اختر الصورة التي تبدأ بحرف حَ",
+            "options": [
+              "حَبْل",
+              "جَمَل",
+              "خَرُوف"
+            ],
+            "optionImages": [
+              "assets/images/assessment/rope_v43.png",
+              "assets/images/assessment/camel_v43.png",
+              "assets/images/assessment/sheep_v48.png"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/haa/assessment_2.mp3"
+          },
+          {
+            "id": "match_first",
+            "type": "match",
+            "letter": "أَ",
+            "prompt": "صِل كل حرف بالصورة المناسبة",
+            "pairs": [
+              {
+                "letter": "أَ",
+                "word": "أَسَد",
+                "image": "assets/images/assessment/alif_lion.png"
+              },
+              {
+                "letter": "بَ",
+                "word": "بَطَّة",
+                "image": "assets/images/assessment/duck.png"
+              },
+              {
+                "letter": "تَ",
+                "word": "تَاج",
+                "image": "assets/images/assessment/crown_v41.png"
+              },
+              {
+                "letter": "ثَ",
+                "word": "ثَعْلَب",
+                "image": "assets/images/assessment/fox.png"
+              }
+            ]
+          },
+          {
+            "id": "match_shapes",
+            "type": "match",
+            "letter": "جَ",
+            "prompt": "صِل كل حرف بالصورة المناسبة",
+            "pairs": [
+              {
+                "letter": "جَ",
+                "word": "جَمَل",
+                "image": "assets/images/assessment/camel_v43.png"
+              },
+              {
+                "letter": "حَ",
+                "word": "حَبْل",
+                "image": "assets/images/assessment/rope_v43.png"
+              },
+              {
+                "letter": "خَ",
+                "word": "خَرُوف",
+                "image": "assets/images/assessment/sheep_v48.png"
+              }
+            ]
+          },
+          {
+            "id": "listen_baa",
+            "type": "listen",
+            "letter": "بَ",
+            "prompt": "استمع واختر الحرف الصحيح",
+            "options": [
+              "بَ",
+              "تَ",
+              "ثَ"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/taa/prior_review_3.mp3"
+          },
+          {
+            "id": "listen_jeem",
+            "type": "listen",
+            "letter": "جَ",
+            "prompt": "استمع واختر الحرف الصحيح",
+            "options": [
+              "جَ",
+              "حَ",
+              "خَ"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/jeem_v44/assessment_1.mp3"
+          },
+          {
+            "id": "pronounce_thaa",
+            "type": "pronounce",
+            "letter": "ثَ",
+            "prompt": "انطق صوت الحرف ثَا",
+            "expected": "ثَا",
+            "audio": "assets/audio/thaa/pronounce_intro.mp3"
+          },
+          {
+            "id": "pronounce_khaa",
+            "type": "pronounce",
+            "letter": "خَ",
+            "prompt": "انطق صوت الحرف خَا",
+            "expected": "خَا",
+            "audio": "assets/audio/khaa/pronounce_intro.mp3"
+          },
+          {
+            "id": "guided_jeem",
+            "type": "guided",
+            "letter": "جَ",
+            "prompt": "اكتب جَ فوق المسار",
+            "traceTemplateId": "jeem_fatha_pdf_v1"
+          },
+          {
+            "id": "guided_khaa",
+            "type": "guided",
+            "letter": "خَ",
+            "prompt": "اكتب خَ فوق المسار",
+            "traceTemplateId": "khaa_fatha_pdf_v1"
+          },
+          {
+            "id": "free_taa",
+            "type": "free",
+            "letter": "تَ",
+            "prompt": "اكتب تَ كتابة حرة",
+            "traceTemplateId": "taa_fatha_pdf_v1"
+          },
+          {
+            "id": "free_haa",
+            "type": "free",
+            "letter": "حَ",
+            "prompt": "اكتب حَ كتابة حرة",
+            "traceTemplateId": "haa_fatha_pdf_v1"
+          },
+          {
+            "id": "similar_thaa",
+            "type": "similar",
+            "letter": "ثَ",
+            "prompt": "أي حرف له ثلاث نقاط؟",
+            "options": [
+              "ثَ",
+              "تَ",
+              "بَ"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/thaa/assessment_1.mp3"
+          },
+          {
+            "id": "similar_khaa",
+            "type": "similar",
+            "letter": "خَ",
+            "prompt": "اختر خَ من الحروف المتشابهة",
+            "options": [
+              "خَ",
+              "حَ",
+              "جَ"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/khaa/assessment_1.mp3"
+          }
+        ],
+        "letters": [
+          {
+            "id": "alif",
+            "letter": "أَ",
+            "word": "أَسَد",
+            "image": "assets/images/assessment/alif_lion.png",
+            "letterAudio": "assets/audio/taa/prior_review_2.mp3",
+            "wordAudio": "assets/audio/v45/alif_review_word.mp3"
+          },
+          {
+            "id": "baa",
+            "letter": "بَ",
+            "word": "بَطَّة",
+            "image": "assets/images/assessment/duck.png",
+            "letterAudio": "assets/audio/taa/prior_review_3.mp3",
+            "wordAudio": "assets/audio/v45/baa_review_word.mp3"
+          },
+          {
+            "id": "taa",
+            "letter": "تَ",
+            "word": "تَاج",
+            "image": "assets/images/assessment/crown_v41.png",
+            "letterAudio": "assets/audio/v45/taa_review_letter.mp3",
+            "wordAudio": "assets/audio/v45/taa_review_word.mp3"
+          },
+          {
+            "id": "thaa",
+            "letter": "ثَ",
+            "word": "ثَعْلَب",
+            "image": "assets/images/assessment/fox.png",
+            "letterAudio": "assets/audio/thaa/assessment_1.mp3",
+            "wordAudio": "assets/audio/thaa/assessment_2.mp3"
+          },
+          {
+            "id": "jeem",
+            "letter": "جَ",
+            "word": "جَمَل",
+            "image": "assets/images/assessment/camel_v43.png",
+            "letterAudio": "assets/audio/jeem_v44/assessment_1.mp3",
+            "wordAudio": "assets/audio/jeem_v44/assessment_2.mp3"
+          },
+          {
+            "id": "haa",
+            "letter": "حَ",
+            "word": "حَبْل",
+            "image": "assets/images/assessment/rope_v43.png",
+            "letterAudio": "assets/audio/haa/assessment_1.mp3",
+            "wordAudio": "assets/audio/haa/assessment_2.mp3"
+          },
+          {
+            "id": "khaa",
+            "letter": "خَ",
+            "word": "خَرُوف",
+            "image": "assets/images/assessment/sheep_v48.png",
+            "letterAudio": "assets/audio/khaa/assessment_1.mp3",
+            "wordAudio": "assets/audio/khaa/assessment_2.mp3"
+          }
+        ],
+        "successAudio": "assets/audio/taa/assessment_success.mp3",
+        "wrongAudio": "assets/audio/checkpoint_1/checkpoint_wrong.mp3"
+      }
+    },
+    {
+      "id": "success_1",
+      "type": "success",
+      "title": "أحسنت",
+      "canSkip": false,
+      "lines": [
+        {
+          "male": "ممتاز! أحسنتم، إجابة صحيحة.",
+          "female": "ممتاز! أحسنتم، إجابة صحيحة.",
+          "audio": "assets/audio/taa/assessment_success.mp3",
+          "durationSec": 3.71
+        }
+      ],
+      "data": {
+        "stars": 3
+      }
+    }
+  ]
+}
