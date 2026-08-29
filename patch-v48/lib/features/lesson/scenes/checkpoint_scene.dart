@@ -10,7 +10,9 @@ import '../../../core/design/widgets/app_button.dart';
 import '../../../core/design/widgets/letter_glyph.dart';
 import '../../../core/design/widgets/touch_feedback.dart';
 import '../../../domain/models/lesson.dart';
+import '../../../services/audio/audio_service.dart';
 import '../../../services/audio/interaction_audio.dart';
+import '../../../services/speech/speech_service.dart';
 import '../scene_registry.dart';
 import '../writing/handwriting_validator.dart';
 import '../writing/letter_trace_template.dart';
@@ -29,6 +31,8 @@ class CheckpointScene extends ConsumerStatefulWidget {
 }
 
 class _CheckpointSceneState extends ConsumerState<CheckpointScene> {
+  late final AudioService _audio;
+  late final SpeechService _speech;
   late final List<Map<String, dynamic>> _tasks =
       ((widget.scene.data['tasks'] as List?) ?? const [])
           .cast<Map<String, dynamic>>();
@@ -74,6 +78,8 @@ class _CheckpointSceneState extends ConsumerState<CheckpointScene> {
   @override
   void initState() {
     super.initState();
+    _audio = ref.read(audioServiceProvider);
+    _speech = ref.read(speechServiceProvider);
     _ready = widget.scene.lines.isEmpty;
     if (!_ready) {
       widget.api.channel.scriptFinished.addListener(_introFinished);
@@ -92,7 +98,7 @@ class _CheckpointSceneState extends ConsumerState<CheckpointScene> {
   Future<void> _playPrompt() async {
     final audio = _task['audio'] as String?;
     if (audio != null) {
-      await ref.read(audioServiceProvider).play(audio);
+      await _audio.play(audio);
     }
   }
 
@@ -103,7 +109,7 @@ class _CheckpointSceneState extends ConsumerState<CheckpointScene> {
     final asset = widget.scene.data[
         correct ? 'successAudio' : 'wrongAudio'] as String?;
     if (asset != null) {
-      await ref.read(audioServiceProvider).play(asset);
+      await _audio.play(asset);
     } else {
       await Future<void>.delayed(const Duration(milliseconds: 650));
     }
@@ -132,7 +138,7 @@ class _CheckpointSceneState extends ConsumerState<CheckpointScene> {
       final data = _letterData(current);
       final audio = data[_remediationPhase == 0 ? 'letterAudio' : 'wordAudio']
           as String?;
-      if (audio != null) unawaited(ref.read(audioServiceProvider).play(audio));
+      if (audio != null) unawaited(_audio.play(audio));
     } else {
       unawaited(_playPrompt());
     }
@@ -183,10 +189,10 @@ class _CheckpointSceneState extends ConsumerState<CheckpointScene> {
     if (_busy) return;
     setState(() => _busy = true);
     widget.api.channel.interruptScript();
-    await ref.read(audioServiceProvider).stop();
-    final result = await ref
-        .read(speechServiceProvider)
-        .listenFor(_task['expected'] as String? ?? '');
+    await _audio.stop();
+    final result = await _speech.listenFor(
+      _task['expected'] as String? ?? '',
+    );
     if (!mounted) return;
     setState(() => _busy = false);
     if (result.correct) {
@@ -291,7 +297,7 @@ class _CheckpointSceneState extends ConsumerState<CheckpointScene> {
         _remediationOrder = _newRemediationOrder;
       });
       final audio = data['wordAudio'] as String?;
-      if (audio != null) unawaited(ref.read(audioServiceProvider).play(audio));
+      if (audio != null) unawaited(_audio.play(audio));
       return;
     }
     _weakLetters.remove(current);
@@ -326,7 +332,7 @@ class _CheckpointSceneState extends ConsumerState<CheckpointScene> {
   void dispose() {
     widget.api.channel.scriptFinished.removeListener(_introFinished);
     InteractionAudio.stopCelebration();
-    ref.read(speechServiceProvider).dispose().ignore();
+    _speech.dispose().ignore();
     super.dispose();
   }
 
