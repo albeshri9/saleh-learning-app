@@ -1,0 +1,51 @@
+{
+  "provider": "ElevenLabs",
+  "voiceId": "zAHOVUiYXuxggpSljiCQ",
+  "voiceName": "Laloosh - Upbeat Arabic Reels Voice",
+  "model": "eleven_multilingual_v2",
+  "flowId": "5vJxkEKwiVtXDeUNCzqv",
+  "assets": {
+    "assets/audio/checkpoint_1/drag_match_intro_v51.mp3": {
+      "generationId": "RU2ghODg6hSyYgySYuWC",
+      "durationSeconds": 7.06,
+      "text": "الآن يا أصدقائي، ترون أمامكم صورًا عديدة. قوموا بسحب الحرف إلى الكلمة التي تبدأ به.",
+      "sha256": "2C69952296F4BCF0AB00B910CEB325A31067AE7E26FDB53E68ACA15B1BC74346"
+    },
+    "assets/audio/checkpoint_1/retry_only_v51.mp3": {
+      "generationId": "0tVUjFedia1Z5zHdtfry",
+      "durationSeconds": 1.86,
+      "text": "حاولوا مرة أخرى.",
+      "sha256": "B91143215EDA80E18FD4C361FBC1F811921F6D5482346C8B30D4CD58AD12752D"
+    },
+    "assets/audio/checkpoint_1/praise_excellent_v51.mp3": {
+      "generationId": "vlAxvvbx3dYKFEbdH0ne",
+      "durationSeconds": 2.32,
+      "text": "ممتاز، إجابة صحيحة.",
+      "sha256": "B63C7CA23B85FA79AF56DF876F12E567C994F6CAA229D74044E820B632FFFC66"
+    },
+    "assets/audio/checkpoint_1/praise_well_done_v51.mp3": {
+      "generationId": "UusG8ufj15QdmI1RE0qk",
+      "durationSeconds": 2.79,
+      "text": "أحسنتم، إجابة صحيحة.",
+      "sha256": "2E9EC22717CF1896E8109CC864763D0DFAAC7A355D135E759B549869962863DA"
+    },
+    "assets/audio/checkpoint_1/praise_wow_v51.mp3": {
+      "generationId": "Tzjhy2WV1uilpAN8oKCG",
+      "durationSeconds": 2.04,
+      "text": "يا سلام، إجابة صحيحة.",
+      "sha256": "6103734302DC406D2CD96265FC65121DEA457042453475F0C1F1F8D215C15BCC"
+    },
+    "assets/audio/checkpoint_1/praise_bless_you_v51.mp3": {
+      "generationId": "8jLxuBbHU6GRmS212jmX",
+      "durationSeconds": 3.20,
+      "text": "بارك الله فيك، إجابة صحيحة.",
+      "sha256": "C92AFEC604CBD07C3272120D320F1060B389303F67D22D3C04533646B6B5DFDC"
+    },
+    "assets/audio/checkpoint_1/checkpoint_mastery_v51.mp3": {
+      "generationId": "CBWAdDdHwukhEdvWw19H",
+      "durationSeconds": 7.66,
+      "text": "تهانينا، لقد تجاوزتم هذا الاختبار المرحلي بتفوق. أتمنى لكم مزيدًا من التوفيق والنجاح.",
+      "sha256": "F85CB1C58A58B56C213EAB28C5ABDB8CE738F1B0D221CE5CE0D9FA757FDA188F"
+    }
+  }
+}
