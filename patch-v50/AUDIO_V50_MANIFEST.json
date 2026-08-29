@@ -1,0 +1,12 @@
+{
+  "assets/audio/khaa/closing_v50.mp3": {
+    "provider": "ElevenLabs",
+    "voiceId": "zAHOVUiYXuxggpSljiCQ",
+    "model": "eleven_v3",
+    "flowId": "NfCwwpFa0CzxY1sjtjwc",
+    "generationId": "PfDSOzyqGEv9VDoxE7Bp",
+    "durationSeconds": 11.92,
+    "text": "أحسَنتُم يا أبطال. الحمد لله، لقد تعرَّفنا هذا اليوم على حرف الخَا. خَا، خَرُوف. إلى اللقاء يا أصدقائي.",
+    "sha256": "5B9E61772AC04541604ADE33A5E139267236C39CC9C09A4AB0BE2A7B7A8E71D1"
+  }
+}
