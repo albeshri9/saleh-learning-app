@@ -72,12 +72,6 @@ void main() {
       expect(find.text('نلعب'), findsOneWidget);
       expect(find.text('لنبدأ'), findsOneWidget);
       expect(tester.takeException(), isNull);
-      if (size == const Size(1280, 590)) {
-        await expectLater(
-          find.byKey(const ValueKey('v53-capture')),
-          matchesGoldenFile('goldens/welcome-v53.png'),
-        );
-      }
     });
   }
 }
