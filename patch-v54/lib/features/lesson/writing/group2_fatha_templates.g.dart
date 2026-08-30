@@ -6,10 +6,10 @@ const _group2Fatha = LetterTracePart(
   id: 'fatha',
   revealWidthFactor: .16,
   outline: [
-    Offset(.67, .05), Offset(.38, .10), Offset(.36, .16),
-    Offset(.65, .11),
+    Offset(.67, .00), Offset(.38, .035), Offset(.36, .085),
+    Offset(.65, .045),
   ],
-  centerline: [Offset(.64, .08), Offset(.39, .13)],
+  centerline: [Offset(.64, .02), Offset(.39, .06)],
 );
 
 const _dalBody = LetterTracePart(
