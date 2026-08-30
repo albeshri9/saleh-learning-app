@@ -1,0 +1,85 @@
+{
+  "provider": "ElevenLabs",
+  "voiceName": "Laloosh – Upbeat Arabic Reels Voice",
+  "voiceId": "zAHOVUiYXuxggpSljiCQ",
+  "modelId": "eleven_v3",
+  "generationsCount": 1,
+  "gapSeconds": 1.5,
+  "flowId": "Kc1lADs9Bb2FISuuNaeE",
+  "clips": [
+    {
+      "key": "seen_writing_try",
+      "nodeId": "TRUBSjuyi2Mg6QJKMbBc",
+      "generationId": "z1GK2npA6e1dWDN465kt",
+      "asset": "assets/audio/seen/writing_try_v58.mp3",
+      "text": "هيا يا أصدقائي، اكتبوا حرف السَا. ضعوا إصبعكم على النقطة الخضراء، واتبعوا مسار الحرف حتى النهاية. سَا، سَا.",
+      "bytes": 221262,
+      "sha256": "01e2e0ac67711323d79b78de153b225f4dde9374913b39a94c9355fb7c876f04",
+      "durationSec": 12.72,
+      "transcription": "هيا يا أصدقائي، اكتبوا حرف السَا. ضعوا إصبعكم على النقطة الخضراء، واتبعوا مسار الحرف حتى النهاية. سَا، سَا."
+    },
+    {
+      "key": "praise_correct_well_done",
+      "nodeId": "nGItnAfxCXGlhegTs8O1",
+      "asset": "assets/audio/praise_v58/praise_correct_well_done_v58.mp3",
+      "text": "أحسنتم، إجابة صحيحة.",
+      "bytes": 54914,
+      "sha256": "2cc5e08aef0fc4f90bf6fe0eb3bfdece50561bab25ccf904aba966ad6122f3c0",
+      "durationSec": 2.32
+    },
+    {
+      "key": "praise_correct_excellent",
+      "nodeId": "0SjRR4YmWrTlK6KhyUVX",
+      "asset": "assets/audio/praise_v58/praise_correct_excellent_v58.mp3",
+      "text": "ممتاز، إجابة صحيحة.",
+      "bytes": 53660,
+      "sha256": "9d4c14df3400f644e4440c6bfe93fc27d909a2db1fdc230a2bb9dc772ee37024",
+      "durationSec": 2.24
+    },
+    {
+      "key": "praise_correct_wow",
+      "nodeId": "QcylmMq7KgWj3FL4Isqb",
+      "asset": "assets/audio/praise_v58/praise_correct_wow_v58.mp3",
+      "text": "يا سلام، إجابة صحيحة.",
+      "bytes": 51152,
+      "sha256": "6560e22c7a1d7ce052383fb5e3903b37c8a493b7b6cb5ddd74aebc34e822b75c",
+      "durationSec": 2.08
+    },
+    {
+      "key": "praise_correct_bless",
+      "nodeId": "jtILmCpVs3wNZ1WGQh5b",
+      "asset": "assets/audio/praise_v58/praise_correct_bless_v58.mp3",
+      "text": "بارك الله فيكم، إجابة صحيحة.",
+      "bytes": 64109,
+      "sha256": "ee52a6e0e1ce2146505ee574ec46d4ed81a600f06f768f5bd1a31c985d1f243e",
+      "durationSec": 2.88
+    },
+    {
+      "key": "praise_correct_wonderful",
+      "nodeId": "m112UGLX33ZRKfE2HIju",
+      "asset": "assets/audio/praise_v58/praise_correct_wonderful_v58.mp3",
+      "text": "رائع جدًا، إجابة صحيحة.",
+      "bytes": 61601,
+      "sha256": "a6bde41b44064486cb85748876615e10d7bcd31d2ff6114345789fca1d9778b6",
+      "durationSec": 2.72
+    },
+    {
+      "key": "praise_correct_mashallah",
+      "nodeId": "zGIUAo4cFzJB7EijBR0g",
+      "asset": "assets/audio/praise_v58/praise_correct_mashallah_v58.mp3",
+      "text": "ما شاء الله، إجابة صحيحة.",
+      "bytes": 52406,
+      "sha256": "38d11ee5e3df858983670de5cc3fa08c4fc56970cdf6a59559ef2d5e7bf51c48",
+      "durationSec": 2.16
+    },
+    {
+      "key": "praise_heroes",
+      "nodeId": "h8cgRVacFp7XDIbUXh5i",
+      "asset": "assets/audio/praise_v58/praise_heroes_v58.mp3",
+      "text": "أحسنتم يا أبطال.",
+      "bytes": 43629,
+      "sha256": "3297554629507df864a0ca68bf4c7e0a790494f18dd2b19d046f42066d2c7b66",
+      "durationSec": 1.6
+    }
+  ]
+}

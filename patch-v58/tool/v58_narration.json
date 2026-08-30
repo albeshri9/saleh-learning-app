@@ -1,0 +1,59 @@
+{
+  "provider": "ElevenLabs",
+  "voiceName": "Laloosh – Upbeat Arabic Reels Voice",
+  "voiceId": "zAHOVUiYXuxggpSljiCQ",
+  "modelId": "eleven_v3",
+  "generationsCount": 1,
+  "gapSeconds": 1.5,
+  "flowId": "Kc1lADs9Bb2FISuuNaeE",
+  "clips": [
+    {
+      "key": "seen_writing_try",
+      "nodeId": "TRUBSjuyi2Mg6QJKMbBc",
+      "asset": "assets/audio/seen/writing_try_v58.mp3",
+      "text": "هيا يا أصدقائي، اكتبوا حرف السَا. ضعوا إصبعكم على النقطة الخضراء، واتبعوا مسار الحرف حتى النهاية. سَا، سَا."
+    },
+    {
+      "key": "praise_correct_well_done",
+      "nodeId": "nGItnAfxCXGlhegTs8O1",
+      "asset": "assets/audio/praise_v58/praise_correct_well_done_v58.mp3",
+      "text": "أحسنتم، إجابة صحيحة."
+    },
+    {
+      "key": "praise_correct_excellent",
+      "nodeId": "0SjRR4YmWrTlK6KhyUVX",
+      "asset": "assets/audio/praise_v58/praise_correct_excellent_v58.mp3",
+      "text": "ممتاز، إجابة صحيحة."
+    },
+    {
+      "key": "praise_correct_wow",
+      "nodeId": "QcylmMq7KgWj3FL4Isqb",
+      "asset": "assets/audio/praise_v58/praise_correct_wow_v58.mp3",
+      "text": "يا سلام، إجابة صحيحة."
+    },
+    {
+      "key": "praise_correct_bless",
+      "nodeId": "jtILmCpVs3wNZ1WGQh5b",
+      "asset": "assets/audio/praise_v58/praise_correct_bless_v58.mp3",
+      "text": "بارك الله فيكم، إجابة صحيحة."
+    },
+    {
+      "key": "praise_correct_wonderful",
+      "nodeId": "m112UGLX33ZRKfE2HIju",
+      "asset": "assets/audio/praise_v58/praise_correct_wonderful_v58.mp3",
+      "text": "رائع جدًا، إجابة صحيحة."
+    },
+    {
+      "key": "praise_correct_mashallah",
+      "nodeId": "zGIUAo4cFzJB7EijBR0g",
+      "asset": "assets/audio/praise_v58/praise_correct_mashallah_v58.mp3",
+      "text": "ما شاء الله، إجابة صحيحة."
+    },
+    {
+      "key": "praise_heroes",
+      "nodeId": "h8cgRVacFp7XDIbUXh5i",
+      "asset": "assets/audio/praise_v58/praise_heroes_v58.mp3",
+      "text": "أحسنتم يا أبطال."
+    }
+  ]
+}
