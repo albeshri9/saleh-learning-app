@@ -1,0 +1,400 @@
+{
+  "id": "raa",
+  "title": "درس حرف رَ",
+  "mastery": {
+    "minScore": 0.6,
+    "requiredSceneIds": [
+      "assessment_1"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "welcome_1",
+      "type": "welcome",
+      "title": "ترحيب",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "مرحبًا يا أصدقائي، كيف حالكم اليوم؟ سوف نتعلم اليوم حرفًا جديدًا، حرف رَا. هيا بنا.",
+          "female": "مرحبًا يا أصدقائي، كيف حالكم اليوم؟ سوف نتعلم اليوم حرفًا جديدًا، حرف رَا. هيا بنا.",
+          "audio": "assets/audio/raa/welcome.mp3",
+          "durationSec": 8.12,
+          "events": [
+            {
+              "action": "playAnimation",
+              "target": "saleh",
+              "atSec": 0,
+              "params": {
+                "name": "greetThenTalk"
+              }
+            }
+          ]
+        }
+      ],
+      "data": {}
+    },
+    {
+      "id": "prior_review_1",
+      "type": "review",
+      "title": "المراجعة القبلية",
+      "canSkip": false,
+      "lines": [
+        {
+          "male": "الآن يا أصدقائي سأختبر معلوماتكم السابقة.",
+          "female": "الآن يا أصدقائي سأختبر معلوماتكم السابقة.",
+          "audio": "assets/audio/v45/review_intro.mp3",
+          "durationSec": 3.79
+        }
+      ],
+      "data": {
+        "priorLessonIds": [
+          "alif",
+          "baa",
+          "taa",
+          "thaa",
+          "jeem",
+          "haa",
+          "khaa",
+          "dal",
+          "dhal"
+        ],
+        "questions": [
+          {
+            "kind": "letter",
+            "reviewLessonId": "thaa",
+            "showPrompt": false,
+            "prompt": "أين حرف ثَ؟",
+            "options": [
+              "ثَ",
+              "أَ",
+              "بَ",
+              "تَ"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/thaa/assessment_1.mp3",
+            "successAudio": "assets/audio/taa/assessment_success.mp3",
+            "retryAudio": "assets/audio/taa/assessment_retry.mp3"
+          },
+          {
+            "kind": "letter",
+            "reviewLessonId": "jeem",
+            "showPrompt": false,
+            "prompt": "أين حرف جَ؟",
+            "options": [
+              "جَ",
+              "أَ",
+              "بَ",
+              "تَ"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/jeem_v44/assessment_1.mp3",
+            "successAudio": "assets/audio/taa/assessment_success.mp3",
+            "retryAudio": "assets/audio/taa/assessment_retry.mp3"
+          },
+          {
+            "kind": "letter",
+            "reviewLessonId": "haa",
+            "showPrompt": false,
+            "prompt": "أين حرف حَ؟",
+            "options": [
+              "حَ",
+              "أَ",
+              "بَ",
+              "تَ"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/haa/assessment_1.mp3",
+            "successAudio": "assets/audio/taa/assessment_success.mp3",
+            "retryAudio": "assets/audio/taa/assessment_retry.mp3"
+          },
+          {
+            "kind": "word",
+            "reviewLessonId": "khaa",
+            "showPrompt": false,
+            "prompt": "أين الصورة التي تبدأ بحرف خَ؟",
+            "options": [
+              "خَرُوف",
+              "أَسَد",
+              "بَطَّة"
+            ],
+            "optionImages": [
+              "assets/images/assessment/sheep_v48.png",
+              "assets/images/assessment/alif_lion.png",
+              "assets/images/assessment/duck.png"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/khaa/assessment_2.mp3",
+            "successAudio": "assets/audio/taa/assessment_success.mp3",
+            "retryAudio": "assets/audio/taa/assessment_retry.mp3"
+          },
+          {
+            "kind": "word",
+            "reviewLessonId": "dal",
+            "showPrompt": false,
+            "prompt": "أين الصورة التي تبدأ بحرف دَ؟",
+            "options": [
+              "دَجَاجَة",
+              "أَسَد",
+              "بَطَّة"
+            ],
+            "optionImages": [
+              "assets/images/assessment/chicken_v54.png",
+              "assets/images/assessment/alif_lion.png",
+              "assets/images/assessment/duck.png"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/dal/assessment_word.mp3",
+            "successAudio": "assets/audio/taa/assessment_success.mp3",
+            "retryAudio": "assets/audio/taa/assessment_retry.mp3"
+          },
+          {
+            "kind": "word",
+            "reviewLessonId": "dhal",
+            "showPrompt": false,
+            "prompt": "أين الصورة التي تبدأ بحرف ذَ؟",
+            "options": [
+              "ذَيْل",
+              "أَسَد",
+              "بَطَّة"
+            ],
+            "optionImages": [
+              "assets/images/assessment/tail_v54.png",
+              "assets/images/assessment/alif_lion.png",
+              "assets/images/assessment/duck.png"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/dhal/assessment_word.mp3",
+            "successAudio": "assets/audio/taa/assessment_success.mp3",
+            "retryAudio": "assets/audio/taa/assessment_retry.mp3"
+          }
+        ],
+        "successAudio": "assets/audio/taa/assessment_success.mp3",
+        "retryAudio": "assets/audio/taa/assessment_retry.mp3",
+        "completionLabel": "نستمع النشيد"
+      }
+    },
+    {
+      "id": "nasheed_1",
+      "type": "nasheed",
+      "title": "أنشودة الحرف",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "الآن نستمع نشيد حرف رَا.",
+          "female": "الآن نستمع نشيد حرف رَا.",
+          "audio": "assets/audio/raa/nasheed_intro.mp3",
+          "durationSec": 2.27
+        }
+      ],
+      "data": {
+        "mediaType": "audio",
+        "durationSec": 8,
+        "label": "أنشودة حرف رَ"
+      }
+    },
+    {
+      "id": "explain_1",
+      "type": "explanation",
+      "title": "شرح الحرف",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "انظروا يا أصدقائي إلى حرف رَا. رَا، رَجُل. رَا، رَجُل. رددوا معي: رَا، رَجُل.",
+          "female": "انظروا يا أصدقائي إلى حرف رَا. رَا، رَجُل. رَا، رَجُل. رددوا معي: رَا، رَجُل.",
+          "audio": "assets/audio/raa/explain.mp3",
+          "durationSec": 7.71,
+          "events": [
+            {
+              "action": "show",
+              "target": "letter",
+              "atSec": 0.2
+            },
+            {
+              "action": "salehPointAt",
+              "target": "letter",
+              "atSec": 0.3
+            }
+          ]
+        }
+      ],
+      "data": {
+        "letter": "رَ",
+        "letterName": "رَا",
+        "letterAudio": "assets/audio/raa/explain.mp3",
+        "example": {
+          "word": "رَجُل",
+          "imageAsset": "assets/images/assessment/man_v54.png",
+          "highlightPrefix": "رَ"
+        }
+      }
+    },
+    {
+      "id": "pronounce_1",
+      "type": "pronunciation",
+      "title": "تدريب النطق",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "هيا يا أصدقائي، سأستمع إلى نطقكم. رَا، رَا. اضغطوا على زر المايك وانطقوا الحرف.",
+          "female": "هيا يا أصدقائي، سأستمع إلى نطقكم. رَا، رَا. اضغطوا على زر المايك وانطقوا الحرف.",
+          "audio": "assets/audio/raa/pronounce_intro.mp3",
+          "durationSec": 8.2
+        }
+      ],
+      "data": {
+        "letter": "رَ",
+        "spokenLetter": "رَا",
+        "expected": "رَا",
+        "maxAttempts": 3,
+        "retryAudio": "assets/audio/checkpoint_1/retry_only_v51.mp3",
+        "successAudio": "assets/audio/alif/pronounce_success.mp3",
+        "letterAudio": "assets/audio/raa/explain.mp3"
+      }
+    },
+    {
+      "id": "write_guided_1",
+      "type": "guidedWriting",
+      "title": "الكتابة بالدليل",
+      "canSkip": false,
+      "lines": [
+        {
+          "male": "انظروا كيف نكتب حرف رَا. نبدأ من أعلى اليمين، ثم ننزل بمنحنى هادئ إلى أسفل اليسار.",
+          "female": "انظروا كيف نكتب حرف رَا. نبدأ من أعلى اليمين، ثم ننزل بمنحنى هادئ إلى أسفل اليسار.",
+          "audio": "assets/audio/raa/writing_demo.mp3",
+          "durationSec": 7.71
+        },
+        {
+          "male": "هيا يا أصدقائي، اكتبوا حرف رَا. ضعوا إصبعكم على النقطة الخضراء، واتبعوا المسار حتى النهاية.",
+          "female": "هيا يا أصدقائي، اكتبوا حرف رَا. ضعوا إصبعكم على النقطة الخضراء، واتبعوا المسار حتى النهاية.",
+          "audio": "assets/audio/raa/writing_try.mp3",
+          "durationSec": 8.36
+        }
+      ],
+      "data": {
+        "letter": "رَ",
+        "traceTemplateId": "raa_fatha_pdf_v1",
+        "writing": {
+          "guidedAttempts": 1,
+          "freeAttempts": 0,
+          "required": true
+        },
+        "againAudio": "assets/audio/raa/writing_try.mp3",
+        "successAudio": "assets/audio/alif/guided_praise.mp3",
+        "guidedPraiseAudio": "assets/audio/alif/guided_praise.mp3",
+        "demoPassDurationMs": 7710,
+        "lessonId": "raa"
+      }
+    },
+    {
+      "id": "write_free_1",
+      "type": "freeWriting",
+      "title": "الكتابة الحرة",
+      "canSkip": false,
+      "lines": [
+        {
+          "male": "هيا يا أصدقائي، اكتبوا حرف رَا كتابة حرة الآن.",
+          "female": "هيا يا أصدقائي، اكتبوا حرف رَا كتابة حرة الآن.",
+          "audio": "assets/audio/raa/free_intro.mp3",
+          "durationSec": 4.68
+        }
+      ],
+      "data": {
+        "letter": "رَ",
+        "traceTemplateId": "raa_fatha_pdf_v1",
+        "writing": {
+          "guidedAttempts": 0,
+          "freeAttempts": 1,
+          "required": false
+        },
+        "successAudio": "assets/audio/v46/free_praise.mp3",
+        "lessonId": "raa",
+        "successText": "ممتاز! أحسنتم كتابة الحرف"
+      }
+    },
+    {
+      "id": "assessment_1",
+      "type": "multipleChoice",
+      "title": "التقويم الختامي",
+      "canSkip": false,
+      "lines": [
+        {
+          "male": "والآن سأراجع معكم ما تعلمناه في هذا اليوم.",
+          "female": "والآن سأراجع معكم ما تعلمناه في هذا اليوم.",
+          "audio": "assets/audio/v46/assessment_intro.mp3",
+          "durationSec": 3.76
+        }
+      ],
+      "data": {
+        "retryAudio": "assets/audio/taa/assessment_retry.mp3",
+        "successAudio": "assets/audio/taa/assessment_success.mp3",
+        "secondAudio": "assets/audio/raa/assessment_word.mp3",
+        "questions": [
+          {
+            "prompt": "اضغط على حرف رَ",
+            "showPrompt": false,
+            "options": [
+              "رَ",
+              "خَ",
+              "دَ",
+              "ذَ"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/raa/assessment_letter.mp3"
+          },
+          {
+            "prompt": "ما الكلمة التي تبدأ بحرف رَ؟",
+            "showPrompt": false,
+            "options": [
+              "رَجُل",
+              "خَرُوف",
+              "دَجَاجَة"
+            ],
+            "optionImages": [
+              "assets/images/assessment/man_v54.png",
+              "assets/images/assessment/sheep_v48.png",
+              "assets/images/assessment/chicken_v54.png"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/raa/assessment_word.mp3"
+          }
+        ],
+        "questionAfterIntro": true
+      }
+    },
+    {
+      "id": "success_1",
+      "type": "success",
+      "title": "أحسنت",
+      "canSkip": false,
+      "lines": [
+        {
+          "male": "أبدعتم يا أبطال. لقد تعلمنا اليوم حرف رَا. رَا، رَجُل. إلى اللقاء يا أصدقائي.",
+          "female": "أبدعتم يا أبطال. لقد تعلمنا اليوم حرف رَا. رَا، رَجُل. إلى اللقاء يا أصدقائي.",
+          "audio": "assets/audio/raa/closing.mp3",
+          "durationSec": 7.65,
+          "events": [
+            {
+              "action": "playAnimation",
+              "target": "saleh",
+              "atSec": 0.2,
+              "params": {
+                "name": "celebrateThenWave"
+              }
+            },
+            {
+              "action": "playAnimation",
+              "target": "saleh",
+              "atSec": 8.5,
+              "params": {
+                "name": "farewell"
+              }
+            }
+          ]
+        }
+      ],
+      "data": {
+        "stars": 3
+      }
+    }
+  ]
+}

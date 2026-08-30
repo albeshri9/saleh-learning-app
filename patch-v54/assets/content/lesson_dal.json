@@ -1,0 +1,398 @@
+{
+  "id": "dal",
+  "title": "درس حرف دَ",
+  "mastery": {
+    "minScore": 0.6,
+    "requiredSceneIds": [
+      "assessment_1"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "welcome_1",
+      "type": "welcome",
+      "title": "ترحيب",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "مرحبًا يا أصدقائي، كيف حالكم اليوم؟ سوف نتعلم اليوم حرفًا جديدًا، حرف دَا. هيا بنا.",
+          "female": "مرحبًا يا أصدقائي، كيف حالكم اليوم؟ سوف نتعلم اليوم حرفًا جديدًا، حرف دَا. هيا بنا.",
+          "audio": "assets/audio/dal/welcome.mp3",
+          "durationSec": 8.12,
+          "events": [
+            {
+              "action": "playAnimation",
+              "target": "saleh",
+              "atSec": 0,
+              "params": {
+                "name": "greetThenTalk"
+              }
+            }
+          ]
+        }
+      ],
+      "data": {}
+    },
+    {
+      "id": "prior_review_1",
+      "type": "review",
+      "title": "المراجعة القبلية",
+      "canSkip": false,
+      "lines": [
+        {
+          "male": "الآن يا أصدقائي سأختبر معلوماتكم السابقة.",
+          "female": "الآن يا أصدقائي سأختبر معلوماتكم السابقة.",
+          "audio": "assets/audio/v45/review_intro.mp3",
+          "durationSec": 3.79
+        }
+      ],
+      "data": {
+        "priorLessonIds": [
+          "alif",
+          "baa",
+          "taa",
+          "thaa",
+          "jeem",
+          "haa",
+          "khaa"
+        ],
+        "questions": [
+          {
+            "kind": "letter",
+            "reviewLessonId": "baa",
+            "showPrompt": false,
+            "prompt": "أين حرف بَ؟",
+            "options": [
+              "بَ",
+              "أَ",
+              "تَ",
+              "ثَ"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/taa/prior_review_3.mp3",
+            "successAudio": "assets/audio/taa/assessment_success.mp3",
+            "retryAudio": "assets/audio/taa/assessment_retry.mp3"
+          },
+          {
+            "kind": "letter",
+            "reviewLessonId": "taa",
+            "showPrompt": false,
+            "prompt": "أين حرف تَ؟",
+            "options": [
+              "تَ",
+              "أَ",
+              "بَ",
+              "ثَ"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/v45/taa_review_letter.mp3",
+            "successAudio": "assets/audio/taa/assessment_success.mp3",
+            "retryAudio": "assets/audio/taa/assessment_retry.mp3"
+          },
+          {
+            "kind": "letter",
+            "reviewLessonId": "thaa",
+            "showPrompt": false,
+            "prompt": "أين حرف ثَ؟",
+            "options": [
+              "ثَ",
+              "أَ",
+              "بَ",
+              "تَ"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/thaa/assessment_1.mp3",
+            "successAudio": "assets/audio/taa/assessment_success.mp3",
+            "retryAudio": "assets/audio/taa/assessment_retry.mp3"
+          },
+          {
+            "kind": "word",
+            "reviewLessonId": "jeem",
+            "showPrompt": false,
+            "prompt": "أين الصورة التي تبدأ بحرف جَ؟",
+            "options": [
+              "جَمَل",
+              "أَسَد",
+              "بَطَّة"
+            ],
+            "optionImages": [
+              "assets/images/assessment/camel_v50.png",
+              "assets/images/assessment/alif_lion.png",
+              "assets/images/assessment/duck.png"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/jeem_v44/assessment_2.mp3",
+            "successAudio": "assets/audio/taa/assessment_success.mp3",
+            "retryAudio": "assets/audio/taa/assessment_retry.mp3"
+          },
+          {
+            "kind": "word",
+            "reviewLessonId": "haa",
+            "showPrompt": false,
+            "prompt": "أين الصورة التي تبدأ بحرف حَ؟",
+            "options": [
+              "حَبْل",
+              "أَسَد",
+              "بَطَّة"
+            ],
+            "optionImages": [
+              "assets/images/assessment/rope_v50.png",
+              "assets/images/assessment/alif_lion.png",
+              "assets/images/assessment/duck.png"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/haa/assessment_2.mp3",
+            "successAudio": "assets/audio/taa/assessment_success.mp3",
+            "retryAudio": "assets/audio/taa/assessment_retry.mp3"
+          },
+          {
+            "kind": "word",
+            "reviewLessonId": "khaa",
+            "showPrompt": false,
+            "prompt": "أين الصورة التي تبدأ بحرف خَ؟",
+            "options": [
+              "خَرُوف",
+              "أَسَد",
+              "بَطَّة"
+            ],
+            "optionImages": [
+              "assets/images/assessment/sheep_v48.png",
+              "assets/images/assessment/alif_lion.png",
+              "assets/images/assessment/duck.png"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/khaa/assessment_2.mp3",
+            "successAudio": "assets/audio/taa/assessment_success.mp3",
+            "retryAudio": "assets/audio/taa/assessment_retry.mp3"
+          }
+        ],
+        "successAudio": "assets/audio/taa/assessment_success.mp3",
+        "retryAudio": "assets/audio/taa/assessment_retry.mp3",
+        "completionLabel": "نستمع النشيد"
+      }
+    },
+    {
+      "id": "nasheed_1",
+      "type": "nasheed",
+      "title": "أنشودة الحرف",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "الآن نستمع نشيد حرف دَا.",
+          "female": "الآن نستمع نشيد حرف دَا.",
+          "audio": "assets/audio/dal/nasheed_intro.mp3",
+          "durationSec": 2.46
+        }
+      ],
+      "data": {
+        "mediaType": "audio",
+        "durationSec": 8,
+        "label": "أنشودة حرف دَ"
+      }
+    },
+    {
+      "id": "explain_1",
+      "type": "explanation",
+      "title": "شرح الحرف",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "انظروا يا أصدقائي إلى حرف دَا. دَا، دَجَاجَة. دَا، دَجَاجَة. رددوا معي: دَا، دَجَاجَة.",
+          "female": "انظروا يا أصدقائي إلى حرف دَا. دَا، دَجَاجَة. دَا، دَجَاجَة. رددوا معي: دَا، دَجَاجَة.",
+          "audio": "assets/audio/dal/explain.mp3",
+          "durationSec": 7.84,
+          "events": [
+            {
+              "action": "show",
+              "target": "letter",
+              "atSec": 0.2
+            },
+            {
+              "action": "salehPointAt",
+              "target": "letter",
+              "atSec": 0.3
+            }
+          ]
+        }
+      ],
+      "data": {
+        "letter": "دَ",
+        "letterName": "دَا",
+        "letterAudio": "assets/audio/dal/explain.mp3",
+        "example": {
+          "word": "دَجَاجَة",
+          "imageAsset": "assets/images/assessment/chicken_v54.png",
+          "highlightPrefix": "دَ"
+        }
+      }
+    },
+    {
+      "id": "pronounce_1",
+      "type": "pronunciation",
+      "title": "تدريب النطق",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "هيا يا أصدقائي، سأستمع إلى نطقكم. دَا، دَا. اضغطوا على زر المايك وانطقوا الحرف.",
+          "female": "هيا يا أصدقائي، سأستمع إلى نطقكم. دَا، دَا. اضغطوا على زر المايك وانطقوا الحرف.",
+          "audio": "assets/audio/dal/pronounce_intro.mp3",
+          "durationSec": 7.52
+        }
+      ],
+      "data": {
+        "letter": "دَ",
+        "spokenLetter": "دَا",
+        "expected": "دَا",
+        "maxAttempts": 3,
+        "retryAudio": "assets/audio/checkpoint_1/retry_only_v51.mp3",
+        "successAudio": "assets/audio/alif/pronounce_success.mp3",
+        "letterAudio": "assets/audio/dal/explain.mp3"
+      }
+    },
+    {
+      "id": "write_guided_1",
+      "type": "guidedWriting",
+      "title": "الكتابة بالدليل",
+      "canSkip": false,
+      "lines": [
+        {
+          "male": "انظروا كيف نكتب حرف دَا. نبدأ من أعلى اليمين، ونسير بمنحنى هادئ نحو اليسار حتى نكمل جسم الحرف.",
+          "female": "انظروا كيف نكتب حرف دَا. نبدأ من أعلى اليمين، ونسير بمنحنى هادئ نحو اليسار حتى نكمل جسم الحرف.",
+          "audio": "assets/audio/dal/writing_demo.mp3",
+          "durationSec": 10.27
+        },
+        {
+          "male": "هيا يا أصدقائي، اكتبوا حرف دَا. ضعوا إصبعكم على النقطة الخضراء، واتبعوا المسار حتى النهاية.",
+          "female": "هيا يا أصدقائي، اكتبوا حرف دَا. ضعوا إصبعكم على النقطة الخضراء، واتبعوا المسار حتى النهاية.",
+          "audio": "assets/audio/dal/writing_try.mp3",
+          "durationSec": 8.12
+        }
+      ],
+      "data": {
+        "letter": "دَ",
+        "traceTemplateId": "dal_fatha_pdf_v1",
+        "writing": {
+          "guidedAttempts": 1,
+          "freeAttempts": 0,
+          "required": true
+        },
+        "againAudio": "assets/audio/dal/writing_try.mp3",
+        "successAudio": "assets/audio/alif/guided_praise.mp3",
+        "guidedPraiseAudio": "assets/audio/alif/guided_praise.mp3",
+        "demoPassDurationMs": 10270,
+        "lessonId": "dal"
+      }
+    },
+    {
+      "id": "write_free_1",
+      "type": "freeWriting",
+      "title": "الكتابة الحرة",
+      "canSkip": false,
+      "lines": [
+        {
+          "male": "هيا يا أصدقائي، اكتبوا حرف دَا كتابة حرة الآن.",
+          "female": "هيا يا أصدقائي، اكتبوا حرف دَا كتابة حرة الآن.",
+          "audio": "assets/audio/dal/free_intro.mp3",
+          "durationSec": 4.44
+        }
+      ],
+      "data": {
+        "letter": "دَ",
+        "traceTemplateId": "dal_fatha_pdf_v1",
+        "writing": {
+          "guidedAttempts": 0,
+          "freeAttempts": 1,
+          "required": false
+        },
+        "successAudio": "assets/audio/v46/free_praise.mp3",
+        "lessonId": "dal",
+        "successText": "ممتاز! أحسنتم كتابة الحرف"
+      }
+    },
+    {
+      "id": "assessment_1",
+      "type": "multipleChoice",
+      "title": "التقويم الختامي",
+      "canSkip": false,
+      "lines": [
+        {
+          "male": "والآن سأراجع معكم ما تعلمناه في هذا اليوم.",
+          "female": "والآن سأراجع معكم ما تعلمناه في هذا اليوم.",
+          "audio": "assets/audio/v46/assessment_intro.mp3",
+          "durationSec": 3.76
+        }
+      ],
+      "data": {
+        "retryAudio": "assets/audio/taa/assessment_retry.mp3",
+        "successAudio": "assets/audio/taa/assessment_success.mp3",
+        "secondAudio": "assets/audio/dal/assessment_word.mp3",
+        "questions": [
+          {
+            "prompt": "اضغط على حرف دَ",
+            "showPrompt": false,
+            "options": [
+              "دَ",
+              "جَ",
+              "حَ",
+              "خَ"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/dal/assessment_letter.mp3"
+          },
+          {
+            "prompt": "ما الكلمة التي تبدأ بحرف دَ؟",
+            "showPrompt": false,
+            "options": [
+              "دَجَاجَة",
+              "جَمَل",
+              "حَبْل"
+            ],
+            "optionImages": [
+              "assets/images/assessment/chicken_v54.png",
+              "assets/images/assessment/camel_v50.png",
+              "assets/images/assessment/rope_v50.png"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/dal/assessment_word.mp3"
+          }
+        ],
+        "questionAfterIntro": true
+      }
+    },
+    {
+      "id": "success_1",
+      "type": "success",
+      "title": "أحسنت",
+      "canSkip": false,
+      "lines": [
+        {
+          "male": "أبدعتم يا أبطال. لقد تعلمنا اليوم حرف دَا. دَا، دَجَاجَة. إلى اللقاء يا أصدقائي.",
+          "female": "أبدعتم يا أبطال. لقد تعلمنا اليوم حرف دَا. دَا، دَجَاجَة. إلى اللقاء يا أصدقائي.",
+          "audio": "assets/audio/dal/closing.mp3",
+          "durationSec": 8.18,
+          "events": [
+            {
+              "action": "playAnimation",
+              "target": "saleh",
+              "atSec": 0.2,
+              "params": {
+                "name": "celebrateThenWave"
+              }
+            },
+            {
+              "action": "playAnimation",
+              "target": "saleh",
+              "atSec": 8.5,
+              "params": {
+                "name": "farewell"
+              }
+            }
+          ]
+        }
+      ],
+      "data": {
+        "stars": 3
+      }
+    }
+  ]
+}
