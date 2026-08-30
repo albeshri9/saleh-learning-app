@@ -1,0 +1,421 @@
+{
+  "schemaVersion": 1,
+  "packs": [
+    {
+      "id": "alif",
+      "version": 1,
+      "title": "حرف الألف",
+      "letter": "أَ",
+      "status": "available",
+      "lessonAsset": "assets/content/lesson_alif.json",
+      "audioFolder": "assets/audio/alif/",
+      "traceTemplateIds": [
+        "alif_fatha_video_v1"
+      ],
+      "exampleImages": [
+        "assets/images/assessment/alif_lion.png",
+        "assets/images/assessment/duck.png",
+        "assets/images/assessment/fox.png"
+      ],
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ],
+      "stageId": "letters_fatha",
+      "priorLessonIds": []
+    },
+    {
+      "id": "baa",
+      "version": 1,
+      "title": "حرف الباء",
+      "letter": "بَ",
+      "stageId": "letters_fatha",
+      "priorLessonIds": [
+        "alif"
+      ],
+      "status": "available",
+      "lessonAsset": "assets/content/lesson_baa.json",
+      "audioFolder": "assets/audio/baa/",
+      "traceTemplateIds": [
+        "baa_fatha_pdf_v1"
+      ],
+      "exampleImages": [
+        "assets/images/assessment/duck.png"
+      ],
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ]
+    },
+    {
+      "id": "taa",
+      "version": 1,
+      "title": "حرف التاء",
+      "letter": "تَ",
+      "stageId": "letters_fatha",
+      "priorLessonIds": [
+        "alif",
+        "baa"
+      ],
+      "status": "available",
+      "lessonAsset": "assets/content/lesson_taa.json",
+      "audioFolder": "assets/audio/taa/",
+      "traceTemplateIds": [
+        "taa_fatha_pdf_v1"
+      ],
+      "exampleImages": [
+        "assets/images/assessment/crown_v41.png"
+      ],
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ]
+    },
+    {
+      "id": "thaa",
+      "version": 1,
+      "title": "حرف الثاء",
+      "letter": "ثَ",
+      "stageId": "letters_fatha",
+      "priorLessonIds": [
+        "alif",
+        "baa",
+        "taa"
+      ],
+      "status": "available",
+      "lessonAsset": "assets/content/lesson_thaa.json",
+      "audioFolder": "assets/audio/thaa/",
+      "traceTemplateIds": [
+        "thaa_fatha_pdf_v1"
+      ],
+      "exampleImages": [
+        "assets/images/assessment/fox.png"
+      ],
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ]
+    },
+    {
+      "id": "jeem",
+      "version": 1,
+      "title": "حرف الجيم",
+      "letter": "جَ",
+      "stageId": "letters_fatha",
+      "priorLessonIds": [
+        "alif",
+        "baa",
+        "taa",
+        "thaa"
+      ],
+      "status": "available",
+      "lessonAsset": "assets/content/lesson_jeem.json",
+      "audioFolder": "assets/audio/jeem/",
+      "traceTemplateIds": [
+        "jeem_fatha_pdf_v1"
+      ],
+      "exampleImages": [
+        "assets/images/assessment/camel_v43.png"
+      ],
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ]
+    },
+    {
+      "id": "haa",
+      "version": 1,
+      "title": "حرف الحاء",
+      "letter": "حَ",
+      "stageId": "letters_fatha",
+      "priorLessonIds": [
+        "alif",
+        "baa",
+        "taa",
+        "thaa",
+        "jeem"
+      ],
+      "status": "available",
+      "lessonAsset": "assets/content/lesson_haa.json",
+      "audioFolder": "assets/audio/haa/",
+      "traceTemplateIds": [
+        "haa_fatha_pdf_v1"
+      ],
+      "exampleImages": [
+        "assets/images/assessment/rope_v43.png"
+      ],
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ]
+    },
+    {
+      "id": "khaa",
+      "version": 1,
+      "title": "حرف الخاء",
+      "letter": "خَ",
+      "stageId": "letters_fatha",
+      "priorLessonIds": [
+        "alif",
+        "baa",
+        "taa",
+        "thaa",
+        "jeem",
+        "haa"
+      ],
+      "status": "available",
+      "lessonAsset": "assets/content/lesson_khaa.json",
+      "audioFolder": "assets/audio/khaa/",
+      "traceTemplateIds": [
+        "khaa_fatha_pdf_v1"
+      ],
+      "exampleImages": [
+        "assets/images/assessment/sheep_v48.png"
+      ],
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ]
+    },
+    {
+      "id": "checkpoint_group_1",
+      "version": 1,
+      "title": "الاختبار المرحلي",
+      "kind": "checkpoint",
+      "stageId": "letters_fatha",
+      "priorLessonIds": [
+        "alif",
+        "baa",
+        "taa",
+        "thaa",
+        "jeem",
+        "haa",
+        "khaa"
+      ],
+      "status": "available",
+      "lessonAsset": "assets/content/lesson_checkpoint_group_1.json",
+      "audioFolder": "assets/audio/checkpoint_1/",
+      "traceTemplateIds": [
+        "taa_fatha_pdf_v1",
+        "jeem_fatha_pdf_v1",
+        "haa_fatha_pdf_v1",
+        "khaa_fatha_pdf_v1"
+      ],
+      "exampleImages": [
+        "assets/images/assessment/alif_lion.png",
+        "assets/images/assessment/duck.png",
+        "assets/images/assessment/crown_v41.png",
+        "assets/images/assessment/fox.png",
+        "assets/images/assessment/camel_v43.png",
+        "assets/images/assessment/rope_v43.png",
+        "assets/images/assessment/sheep_v48.png"
+      ],
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ]
+    },
+    {
+      "id": "dal",
+      "version": 1,
+      "title": "حرف دَا",
+      "letter": "دَ",
+      "stageId": "letters_fatha",
+      "priorLessonIds": [],
+      "status": "available",
+      "lessonAsset": "assets/content/lesson_dal.json",
+      "audioFolder": "assets/audio/dal/",
+      "traceTemplateIds": [
+        "dal_fatha_pdf_v1"
+      ],
+      "exampleImages": [
+        "assets/images/assessment/chicken_v54.png"
+      ],
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ],
+      "reviewScope": "level"
+    },
+    {
+      "id": "dhal",
+      "version": 1,
+      "title": "حرف ذَا",
+      "letter": "ذَ",
+      "stageId": "letters_fatha",
+      "priorLessonIds": [
+        "dal"
+      ],
+      "status": "available",
+      "lessonAsset": "assets/content/lesson_dhal.json",
+      "audioFolder": "assets/audio/dhal/",
+      "traceTemplateIds": [
+        "dhal_fatha_pdf_v1"
+      ],
+      "exampleImages": [
+        "assets/images/assessment/tail_v54.png"
+      ],
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ],
+      "reviewScope": "level"
+    },
+    {
+      "id": "raa",
+      "version": 1,
+      "title": "حرف رَا",
+      "letter": "رَ",
+      "stageId": "letters_fatha",
+      "priorLessonIds": [
+        "dal",
+        "dhal"
+      ],
+      "status": "available",
+      "lessonAsset": "assets/content/lesson_raa.json",
+      "audioFolder": "assets/audio/raa/",
+      "traceTemplateIds": [
+        "raa_fatha_pdf_v1"
+      ],
+      "exampleImages": [
+        "assets/images/assessment/man_v54.png"
+      ],
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ],
+      "reviewScope": "level"
+    },
+    {
+      "id": "zay",
+      "version": 1,
+      "title": "حرف زَا",
+      "letter": "زَ",
+      "stageId": "letters_fatha",
+      "priorLessonIds": [
+        "dal",
+        "dhal",
+        "raa"
+      ],
+      "status": "available",
+      "lessonAsset": "assets/content/lesson_zay.json",
+      "audioFolder": "assets/audio/zay/",
+      "traceTemplateIds": [
+        "zay_fatha_pdf_v1"
+      ],
+      "exampleImages": [
+        "assets/images/assessment/giraffe_v54.png"
+      ],
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ],
+      "reviewScope": "level"
+    },
+    {
+      "id": "seen",
+      "version": 1,
+      "title": "حرف سَا",
+      "letter": "سَ",
+      "stageId": "letters_fatha",
+      "priorLessonIds": [
+        "dal",
+        "dhal",
+        "raa",
+        "zay"
+      ],
+      "status": "available",
+      "lessonAsset": "assets/content/lesson_seen.json",
+      "audioFolder": "assets/audio/seen/",
+      "traceTemplateIds": [
+        "seen_fatha_pdf_v1"
+      ],
+      "exampleImages": [
+        "assets/images/assessment/clock_v54.png"
+      ],
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ],
+      "reviewScope": "level"
+    },
+    {
+      "id": "checkpoint_group_2",
+      "version": 1,
+      "title": "الاختبار المرحلي الثاني",
+      "kind": "checkpoint",
+      "stageId": "letters_fatha",
+      "priorLessonIds": [
+        "dal",
+        "dhal",
+        "raa",
+        "zay",
+        "seen"
+      ],
+      "status": "available",
+      "lessonAsset": "assets/content/lesson_checkpoint_group_2.json",
+      "audioFolder": "assets/audio/checkpoint_2/",
+      "traceTemplateIds": [
+        "dal_fatha_pdf_v1",
+        "dhal_fatha_pdf_v1",
+        "raa_fatha_pdf_v1",
+        "zay_fatha_pdf_v1",
+        "seen_fatha_pdf_v1"
+      ],
+      "exampleImages": [
+        "assets/images/assessment/chicken_v54.png",
+        "assets/images/assessment/tail_v54.png",
+        "assets/images/assessment/man_v54.png",
+        "assets/images/assessment/giraffe_v54.png",
+        "assets/images/assessment/clock_v54.png"
+      ],
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ],
+      "reviewScope": "level"
+    }
+  ]
+}

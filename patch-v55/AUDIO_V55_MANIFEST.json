@@ -1,0 +1,694 @@
+{
+  "provider": "ElevenLabs",
+  "voiceName": "Laloosh",
+  "voiceId": "zAHOVUiYXuxggpSljiCQ",
+  "modelId": "eleven_v3",
+  "generationsCount": 1,
+  "gapSeconds": 1.5,
+  "clips": [
+    {
+      "letterId": "dal",
+      "key": "welcome",
+      "asset": "assets/audio/dal/welcome.mp3",
+      "text": "مرحبًا يا أصدقائي، كيف حالكم اليوم؟ سوف نتعلم اليوم حرفًا جديدًا، حرف الدَا. هيا بنا.",
+      "bytes": 170271,
+      "sha256": "933596c24dec0de2f84846b567811ad6abfa8cbce7779cd88901d569ad73cefe",
+      "durationSec": 9.56
+    },
+    {
+      "letterId": "dal",
+      "key": "nasheed_intro",
+      "asset": "assets/audio/dal/nasheed_intro.mp3",
+      "text": "الآن نستمع نشيد حرف الدَا.",
+      "bytes": 61601,
+      "sha256": "c2ffc79c9bf482ee0d3e1c4d9898348eb20a039f7c75151252b4c1fe5005d667",
+      "durationSec": 2.77
+    },
+    {
+      "letterId": "dal",
+      "key": "explain_1",
+      "asset": "assets/audio/dal/explain_1.mp3",
+      "text": "انظروا يا أصدقائي إلى حرف الدَا، إنه حرف جميل.",
+      "bytes": 89604,
+      "sha256": "238c3c7619d666fd541630079a6374aecc3a17e57606171e5198dfb631806ce0",
+      "durationSec": 4.52
+    },
+    {
+      "letterId": "dal",
+      "key": "explain_2",
+      "asset": "assets/audio/dal/explain_2.mp3",
+      "text": "دَا، دَا، دَا. هل تعرفون كلمةً تبدأ بحرف الدَا؟",
+      "bytes": 117608,
+      "sha256": "78e87a6f01fcdfacde56b608bb0301c8b1fd680b9b980ae60eb713ca5f33c4d2",
+      "durationSec": 6.27
+    },
+    {
+      "letterId": "dal",
+      "key": "explain_3",
+      "asset": "assets/audio/dal/explain_3.mp3",
+      "text": "دَا، دَجَاجَة. دَا، دَجَاجَة.",
+      "bytes": 101307,
+      "sha256": "6f26678819a132582910e1dc0db74534908a82669bf5939ff85b0733ddefd965",
+      "durationSec": 5.25
+    },
+    {
+      "letterId": "dal",
+      "key": "explain_4",
+      "asset": "assets/audio/dal/explain_4.mp3",
+      "text": "انظروا إلى كلمة دَجَاجَة، إنها تبدأ بحرف الدَا.",
+      "bytes": 94620,
+      "sha256": "fc57f0027b51e75225f52913ea7cdb21368699a6503a7482038b4186c8d255e4",
+      "durationSec": 4.83
+    },
+    {
+      "letterId": "dal",
+      "key": "explain_5",
+      "asset": "assets/audio/dal/explain_5.mp3",
+      "text": "ردِّدوا معي: دَا، دَجَاجَة. دَا، دَجَاجَة. دَا، دَجَاجَة.",
+      "bytes": 179048,
+      "sha256": "c499fd02537f2811b74b0332da7256f7076cf95b00b879d76522b9acb6d1b966",
+      "durationSec": 10.11
+    },
+    {
+      "letterId": "dal",
+      "key": "explain_6",
+      "asset": "assets/audio/dal/explain_6.mp3",
+      "text": "هكذا يا أصدقائي تعلمنا اليوم حرف الدَا. سننتقل الآن إلى نطق وكتابة حرف الدَا. هيا بنا.",
+      "bytes": 171524,
+      "sha256": "7056593da56ecdbf5e64b62d8d74a1001743a7cade40c605d31839359d1c4c30",
+      "durationSec": 9.64
+    },
+    {
+      "letterId": "dal",
+      "key": "pronounce_intro",
+      "asset": "assets/audio/dal/pronounce_intro.mp3",
+      "text": "هيا يا أصدقائي، سأستمع إلى نطقكم لحرف الدَا. دَا، دَا، دَا. اضغطوا على زر المايك وقوموا بنطق الحرف. هيا.",
+      "bytes": 247175,
+      "sha256": "eaaf4e4d293ffe32fb2b3db6fb49c645a9760f6e86a12a3c3e66bbfc52472f99",
+      "durationSec": 14.37
+    },
+    {
+      "letterId": "dal",
+      "key": "writing_demo",
+      "asset": "assets/audio/dal/writing_demo.mp3",
+      "text": "انظروا يا أصدقائي كيف نكتب حرف الدَا. نبدأ من أعلى اليمين، ونتبع المسار بانحناءة هادئة حتى نهاية الحرف.",
+      "bytes": 198274,
+      "sha256": "82e3b46dac8e3f2bf23a5dd6329b8bb4f827fc305f877def197a9db1de321577",
+      "durationSec": 11.31
+    },
+    {
+      "letterId": "dal",
+      "key": "writing_try",
+      "asset": "assets/audio/dal/writing_try.mp3",
+      "text": "هيا يا أصدقائي، اكتبوا حرف الدَا. ضعوا إصبعكم على النقطة الخضراء، واتبعوا مسار الحرف حتى النهاية. دَا، دَا.",
+      "bytes": 202035,
+      "sha256": "681376d8cf2ebdc29f7410023d6475c83ad783be4a463ca32ca3693ae604b7e9",
+      "durationSec": 11.55
+    },
+    {
+      "letterId": "dal",
+      "key": "free_intro",
+      "asset": "assets/audio/dal/free_intro.mp3",
+      "text": "هيا يا أصدقائي، هل تذكرون كيفية كتابة حرف الدَا؟ قوموا بكتابة حرف الدَا الآن.",
+      "bytes": 143521,
+      "sha256": "6932be677f3943c8ba0fc2bb677ef9e7bba10d2c518b66ab79ef4879a85f8da2",
+      "durationSec": 7.89
+    },
+    {
+      "letterId": "dal",
+      "key": "assessment_letter",
+      "asset": "assets/audio/dal/assessment_letter.mp3",
+      "text": "أين حرف دَا؟ اضغطوا على حرف دَا.",
+      "bytes": 77902,
+      "sha256": "956dd90b6a897b2ec4f549348690ff06fb65742eae648b34afd07d0c5003eca8",
+      "durationSec": 3.79
+    },
+    {
+      "letterId": "dal",
+      "key": "assessment_word",
+      "asset": "assets/audio/dal/assessment_word.mp3",
+      "text": "أين الصورة التي تبدأ بحرف دَا؟ اختاروا الصورة الصحيحة.",
+      "bytes": 98382,
+      "sha256": "24ead859ba27f89120a1405013cf41bf2b0fc496303d2579451f696dcdf4d80d",
+      "durationSec": 5.07
+    },
+    {
+      "letterId": "dal",
+      "key": "closing",
+      "asset": "assets/audio/dal/closing.mp3",
+      "text": "أحسنتم يا أبطال. الحمد لله، لقد تعرفنا هذا اليوم على حرف الدَا. دَا، دَجَاجَة. إلى اللقاء يا أصدقائي.",
+      "bytes": 203707,
+      "sha256": "68450e9bcaeb67ab94b3095af252a92578789741f63207ab924efe2a15d96a83",
+      "durationSec": 11.65
+    },
+    {
+      "letterId": "dhal",
+      "key": "welcome",
+      "asset": "assets/audio/dhal/welcome.mp3",
+      "text": "مرحبًا يا أصدقائي، كيف حالكم اليوم؟ سوف نتعلم اليوم حرفًا جديدًا، حرف الذَا. هيا بنا.",
+      "bytes": 171524,
+      "sha256": "6819549f3f344b8e6115936d7ec34269e72051a2b1609616ceee02edcb433415",
+      "durationSec": 9.64
+    },
+    {
+      "letterId": "dhal",
+      "key": "nasheed_intro",
+      "asset": "assets/audio/dhal/nasheed_intro.mp3",
+      "text": "الآن نستمع نشيد حرف الذَا.",
+      "bytes": 65363,
+      "sha256": "c938e16b2e3a76cd43f79073f8511ab1784468afd29ee8f2c42607611f8d7766",
+      "durationSec": 3.0
+    },
+    {
+      "letterId": "dhal",
+      "key": "explain_1",
+      "asset": "assets/audio/dhal/explain_1.mp3",
+      "text": "انظروا يا أصدقائي إلى حرف الذَا، إنه حرف جميل.",
+      "bytes": 92112,
+      "sha256": "895eeba49e7c3e78e4c809709f30040d7aee3ccfe809d6a551112258b8fd5fe6",
+      "durationSec": 4.68
+    },
+    {
+      "letterId": "dhal",
+      "key": "explain_2",
+      "asset": "assets/audio/dhal/explain_2.mp3",
+      "text": "ذَا، ذَا، ذَا. هل تعرفون كلمةً تبدأ بحرف الذَا؟",
+      "bytes": 131818,
+      "sha256": "632ac20a52e333f8e4161aee9a0ed1f96837fc2aa654d2b8656ed22e666255bb",
+      "durationSec": 7.16
+    },
+    {
+      "letterId": "dhal",
+      "key": "explain_3",
+      "asset": "assets/audio/dhal/explain_3.mp3",
+      "text": "ذَا، ذَيْل. ذَا، ذَيْل.",
+      "bytes": 87097,
+      "sha256": "abb5ac1dc22155a8c00d8ce9dcbff23b2380db0acd6857f6ca704016bb470f56",
+      "durationSec": 4.36
+    },
+    {
+      "letterId": "dhal",
+      "key": "explain_4",
+      "asset": "assets/audio/dhal/explain_4.mp3",
+      "text": "انظروا إلى كلمة ذَيْل، إنها تبدأ بحرف الذَا.",
+      "bytes": 84589,
+      "sha256": "95d7e2aad67249c52e8439c7ceebfe9385e06a1a4ca64b4b34854411d3c9c8db",
+      "durationSec": 4.21
+    },
+    {
+      "letterId": "dhal",
+      "key": "explain_5",
+      "asset": "assets/audio/dhal/explain_5.mp3",
+      "text": "ردِّدوا معي: ذَا، ذَيْل. ذَا، ذَيْل. ذَا، ذَيْل.",
+      "bytes": 176540,
+      "sha256": "2c85cb6ef23118a38a8c6eeb624a2f9c4f585753f4c7ade83b01b27da0c0f003",
+      "durationSec": 9.95
+    },
+    {
+      "letterId": "dhal",
+      "key": "explain_6",
+      "asset": "assets/audio/dhal/explain_6.mp3",
+      "text": "هكذا يا أصدقائي تعلمنا اليوم حرف الذَا. سننتقل الآن إلى نطق وكتابة حرف الذَا. هيا بنا.",
+      "bytes": 170271,
+      "sha256": "98a34117449865676bb6ceb58f3bf2a53ce6db679f4dd542cc1ba7073b65c1c2",
+      "durationSec": 9.56
+    },
+    {
+      "letterId": "dhal",
+      "key": "pronounce_intro",
+      "asset": "assets/audio/dhal/pronounce_intro.mp3",
+      "text": "هيا يا أصدقائي، سأستمع إلى نطقكم لحرف الذَا. ذَا، ذَا، ذَا. اضغطوا على زر المايك وقوموا بنطق الحرف. هيا.",
+      "bytes": 258460,
+      "sha256": "8d78cfa1e2a84cc80f87f45db2c102012be0894eaa54e200e667ead354030c8a",
+      "durationSec": 15.07
+    },
+    {
+      "letterId": "dhal",
+      "key": "writing_demo",
+      "asset": "assets/audio/dhal/writing_demo.mp3",
+      "text": "انظروا يا أصدقائي كيف نكتب حرف الذَا. نبدأ من أعلى اليمين، ونتبع المسار بانحناءة هادئة حتى نهاية الحرف، ثم نضع نقطة فوق الحرف.",
+      "bytes": 248429,
+      "sha256": "49ef532f8166e2814cc935edc26de2b1dc2d77a98923e88298e038d04973fa1b",
+      "durationSec": 14.45
+    },
+    {
+      "letterId": "dhal",
+      "key": "writing_try",
+      "asset": "assets/audio/dhal/writing_try.mp3",
+      "text": "هيا يا أصدقائي، اكتبوا حرف الذَا. ضعوا إصبعكم على النقطة الخضراء، واتبعوا مسار الحرف حتى النهاية. ذَا، ذَا.",
+      "bytes": 221262,
+      "sha256": "a95e52b2895f9792c5b3057aa2ba9f0a32f1f17c52438c53a27cd6065c2aceaa",
+      "durationSec": 12.75
+    },
+    {
+      "letterId": "dhal",
+      "key": "free_intro",
+      "asset": "assets/audio/dhal/free_intro.mp3",
+      "text": "هيا يا أصدقائي، هل تذكرون كيفية كتابة حرف الذَا؟ قوموا بكتابة حرف الذَا الآن.",
+      "bytes": 154806,
+      "sha256": "becf1ee7537c4a91c1763f7a95656fc3139838356ca924df36146091f1f4fc5e",
+      "durationSec": 8.59
+    },
+    {
+      "letterId": "dhal",
+      "key": "assessment_letter",
+      "asset": "assets/audio/dhal/assessment_letter.mp3",
+      "text": "أين حرف ذَا؟ اضغطوا على حرف ذَا.",
+      "bytes": 76648,
+      "sha256": "e22ccefddc1644b654ad8e04ff1619df64ea545410e577acfeb61fdf2de0ece3",
+      "durationSec": 3.71
+    },
+    {
+      "letterId": "dhal",
+      "key": "assessment_word",
+      "asset": "assets/audio/dhal/assessment_word.mp3",
+      "text": "أين الصورة التي تبدأ بحرف ذَا؟ اختاروا الصورة الصحيحة.",
+      "bytes": 94620,
+      "sha256": "e460407d09f10821fd6189581c721c1c9ec82626093437068c30bf11889b1e9b",
+      "durationSec": 4.83
+    },
+    {
+      "letterId": "dhal",
+      "key": "closing",
+      "asset": "assets/audio/dhal/closing.mp3",
+      "text": "أحسنتم يا أبطال. الحمد لله، لقد تعرفنا هذا اليوم على حرف الذَا. ذَا، ذَيْل. إلى اللقاء يا أصدقائي.",
+      "bytes": 200782,
+      "sha256": "e59ea00ffa84fffef2b911d77d40f8e20b6d31252fb4aa09c0a4c84c720b0fa0",
+      "durationSec": 11.47
+    },
+    {
+      "letterId": "raa",
+      "key": "welcome",
+      "asset": "assets/audio/raa/welcome.mp3",
+      "text": "مرحبًا يا أصدقائي، كيف حالكم اليوم؟ سوف نتعلم اليوم حرفًا جديدًا، حرف الرَا. هيا بنا.",
+      "bytes": 158568,
+      "sha256": "8600927ab665a408ccc83e482241022dd097df933ef4e89679e31c9ae39b570d",
+      "durationSec": 8.83
+    },
+    {
+      "letterId": "raa",
+      "key": "nasheed_intro",
+      "asset": "assets/audio/raa/nasheed_intro.mp3",
+      "text": "الآن نستمع نشيد حرف الرَا.",
+      "bytes": 65363,
+      "sha256": "88935a374ef8c909aa181bd2b42a6de79dcb8f0e57e90a4a956cdd2061a22a02",
+      "durationSec": 3.0
+    },
+    {
+      "letterId": "raa",
+      "key": "explain_1",
+      "asset": "assets/audio/raa/explain_1.mp3",
+      "text": "انظروا يا أصدقائي إلى حرف الرَا، إنه حرف جميل.",
+      "bytes": 98382,
+      "sha256": "f2188eeed0aff06eafaba9f807ab8a17b3f9e098478e8612c2cc0a6b8b29b5d2",
+      "durationSec": 5.07
+    },
+    {
+      "letterId": "raa",
+      "key": "explain_2",
+      "asset": "assets/audio/raa/explain_2.mp3",
+      "text": "رَا، رَا، رَا. هل تعرفون كلمةً تبدأ بحرف الرَا؟",
+      "bytes": 110084,
+      "sha256": "5b577da95b20012598aed50f5255fb8de5acd9189ecf8389f1ad115064b7aaf5",
+      "durationSec": 5.8
+    },
+    {
+      "letterId": "raa",
+      "key": "explain_3",
+      "asset": "assets/audio/raa/explain_3.mp3",
+      "text": "رَا، رَجُل. رَا، رَجُل.",
+      "bytes": 88351,
+      "sha256": "05be60fcaeba52e3f05f4232756b27085dd3c75fa2467a2886b0509d69fb2ad4",
+      "durationSec": 4.44
+    },
+    {
+      "letterId": "raa",
+      "key": "explain_4",
+      "asset": "assets/audio/raa/explain_4.mp3",
+      "text": "انظروا إلى كلمة رَجُل، إنها تبدأ بحرف الرَا.",
+      "bytes": 95874,
+      "sha256": "c5cd33c314dad1851344aad5037a2770ff4dba63efab42a2e52be286fb699180",
+      "durationSec": 4.91
+    },
+    {
+      "letterId": "raa",
+      "key": "explain_5",
+      "asset": "assets/audio/raa/explain_5.mp3",
+      "text": "ردِّدوا معي: رَا، رَجُل. رَا، رَجُل. رَا، رَجُل.",
+      "bytes": 148537,
+      "sha256": "7352944de70adf296e34f415f489cacbf43ac3bff72f878fc087447b14d3c77c",
+      "durationSec": 8.2
+    },
+    {
+      "letterId": "raa",
+      "key": "explain_6",
+      "asset": "assets/audio/raa/explain_6.mp3",
+      "text": "هكذا يا أصدقائي تعلمنا اليوم حرف الرَا. سننتقل الآن إلى نطق وكتابة حرف الرَا. هيا بنا.",
+      "bytes": 154806,
+      "sha256": "2a7a9e312ee79f3e7d6f8d8f55a03e0aaf979be85e839e583e038d926c61f816",
+      "durationSec": 8.59
+    },
+    {
+      "letterId": "raa",
+      "key": "pronounce_intro",
+      "asset": "assets/audio/raa/pronounce_intro.mp3",
+      "text": "هيا يا أصدقائي، سأستمع إلى نطقكم لحرف الرَا. رَا، رَا، رَا. اضغطوا على زر المايك وقوموا بنطق الحرف. هيا.",
+      "bytes": 268909,
+      "sha256": "e6c9499bc037379c66edc0522e0dbc5301c44708ee6a2f4feb6e0cc190f5f8f4",
+      "durationSec": 15.73
+    },
+    {
+      "letterId": "raa",
+      "key": "writing_demo",
+      "asset": "assets/audio/raa/writing_demo.mp3",
+      "text": "انظروا يا أصدقائي كيف نكتب حرف الرَا. نبدأ من أعلى اليمين، ونتبع المسار بانحناءة إلى أسفل اليسار حتى نهاية الحرف.",
+      "bytes": 206215,
+      "sha256": "1033253bf4dc83548826ea95f0753d37eb7ff2aa4ee879d1a42eea5e9221b7c0",
+      "durationSec": 11.81
+    },
+    {
+      "letterId": "raa",
+      "key": "writing_try",
+      "asset": "assets/audio/raa/writing_try.mp3",
+      "text": "هيا يا أصدقائي، اكتبوا حرف الرَا. ضعوا إصبعكم على النقطة الخضراء، واتبعوا مسار الحرف حتى النهاية. رَا، رَا.",
+      "bytes": 232964,
+      "sha256": "fc04c35f4393eddf634a8d5e2ac9dda3f65dd77c6f98b934183b243be060d015",
+      "durationSec": 13.48
+    },
+    {
+      "letterId": "raa",
+      "key": "free_intro",
+      "asset": "assets/audio/raa/free_intro.mp3",
+      "text": "هيا يا أصدقائي، هل تذكرون كيفية كتابة حرف الرَا؟ قوموا بكتابة حرف الرَا الآن.",
+      "bytes": 154806,
+      "sha256": "7b76485f41a25ea2b6c01054ad0af0aba50909f8f0fe2e4c300d45efeeb87dcb",
+      "durationSec": 8.59
+    },
+    {
+      "letterId": "raa",
+      "key": "assessment_letter",
+      "asset": "assets/audio/raa/assessment_letter.mp3",
+      "text": "أين حرف رَا؟ اضغطوا على حرف رَا.",
+      "bytes": 75394,
+      "sha256": "0f39a7115c631d524ae669a92d4e6a128798dd2520f3c20effd4443c5e8d6355",
+      "durationSec": 3.63
+    },
+    {
+      "letterId": "raa",
+      "key": "assessment_word",
+      "asset": "assets/audio/raa/assessment_word.mp3",
+      "text": "أين الصورة التي تبدأ بحرف رَا؟ اختاروا الصورة الصحيحة.",
+      "bytes": 97128,
+      "sha256": "a5f0b08de97cc06968b5ac0cd71b2a65a1644bef163933a603d4c772f31d0adc",
+      "durationSec": 4.99
+    },
+    {
+      "letterId": "raa",
+      "key": "closing",
+      "asset": "assets/audio/raa/closing.mp3",
+      "text": "أحسنتم يا أبطال. الحمد لله، لقد تعرفنا هذا اليوم على حرف الرَا. رَا، رَجُل. إلى اللقاء يا أصدقائي.",
+      "bytes": 200782,
+      "sha256": "71395e90c30d7e7764acebfdddc2d4df8d0cec819e595ec99caa79f1a92eb31f",
+      "durationSec": 11.47
+    },
+    {
+      "letterId": "zay",
+      "key": "welcome",
+      "asset": "assets/audio/zay/welcome.mp3",
+      "text": "مرحبًا يا أصدقائي، كيف حالكم اليوم؟ سوف نتعلم اليوم حرفًا جديدًا، حرف الزَا. هيا بنا.",
+      "bytes": 166509,
+      "sha256": "44ec150a750b555cc70daec4401143c45bb4581541c02db4773761ea9841ff3e",
+      "durationSec": 9.33
+    },
+    {
+      "letterId": "zay",
+      "key": "nasheed_intro",
+      "asset": "assets/audio/zay/nasheed_intro.mp3",
+      "text": "الآن نستمع نشيد حرف الزَا.",
+      "bytes": 60347,
+      "sha256": "00d70bfd8798f810eaa1744c2126ea9992c17b9015269e6dcc9cf80d9abec104",
+      "durationSec": 2.69
+    },
+    {
+      "letterId": "zay",
+      "key": "explain_1",
+      "asset": "assets/audio/zay/explain_1.mp3",
+      "text": "انظروا يا أصدقائي إلى حرف الزَا، إنه حرف جميل.",
+      "bytes": 88351,
+      "sha256": "f49ec1b37f1c364a1fe13b1a652af1ed18be9c469bbd2fffe643879151bd4f1a",
+      "durationSec": 4.44
+    },
+    {
+      "letterId": "zay",
+      "key": "explain_2",
+      "asset": "assets/audio/zay/explain_2.mp3",
+      "text": "زَا، زَا، زَا. هل تعرفون كلمةً تبدأ بحرف الزَا؟",
+      "bytes": 126803,
+      "sha256": "cf673ae38eb1b98da9055a773a264717e802a70ea7753b173f6ad4fd605068ae",
+      "durationSec": 6.84
+    },
+    {
+      "letterId": "zay",
+      "key": "explain_3",
+      "asset": "assets/audio/zay/explain_3.mp3",
+      "text": "زَا، زَرَافَة. زَا، زَرَافَة.",
+      "bytes": 99635,
+      "sha256": "4509c4ff2e933049281350fd9445fe8ddbff9b6c7cbcbf4750f0ec5f45f24c1b",
+      "durationSec": 5.15
+    },
+    {
+      "letterId": "zay",
+      "key": "explain_4",
+      "asset": "assets/audio/zay/explain_4.mp3",
+      "text": "انظروا إلى كلمة زَرَافَة، إنها تبدأ بحرف الزَا.",
+      "bytes": 84589,
+      "sha256": "058d751941b0593c3884dc355daaa5383ce8f1b78b3235acc813aeed28da8b9f",
+      "durationSec": 4.21
+    },
+    {
+      "letterId": "zay",
+      "key": "explain_5",
+      "asset": "assets/audio/zay/explain_5.mp3",
+      "text": "ردِّدوا معي: زَا، زَرَافَة. زَا، زَرَافَة. زَا، زَرَافَة.",
+      "bytes": 171524,
+      "sha256": "10dab69a8f79dcb7402c2d0914990f407de0acc4cac174eefadd98c00385ccdc",
+      "durationSec": 9.64
+    },
+    {
+      "letterId": "zay",
+      "key": "explain_6",
+      "asset": "assets/audio/zay/explain_6.mp3",
+      "text": "هكذا يا أصدقائي تعلمنا اليوم حرف الزَا. سننتقل الآن إلى نطق وكتابة حرف الزَا. هيا بنا.",
+      "bytes": 162747,
+      "sha256": "d08caf7ece4771073b9263ce6736e033fbea0eb580ab11aab66a6cde00b664c3",
+      "durationSec": 9.09
+    },
+    {
+      "letterId": "zay",
+      "key": "pronounce_intro",
+      "asset": "assets/audio/zay/pronounce_intro.mp3",
+      "text": "هيا يا أصدقائي، سأستمع إلى نطقكم لحرف الزَا. زَا، زَا، زَا. اضغطوا على زر المايك وقوموا بنطق الحرف. هيا.",
+      "bytes": 253444,
+      "sha256": "9da7e6eff2aa2c98e07628e56dc21aa5e63149614c3d0fefeaa1c9c79b36b87a",
+      "durationSec": 14.76
+    },
+    {
+      "letterId": "zay",
+      "key": "writing_demo",
+      "asset": "assets/audio/zay/writing_demo.mp3",
+      "text": "انظروا يا أصدقائي كيف نكتب حرف الزَا. نبدأ من أعلى اليمين، ونتبع المسار بانحناءة إلى أسفل اليسار حتى نهاية الحرف، ثم نضع نقطة فوق الحرف.",
+      "bytes": 231711,
+      "sha256": "86051b5e4aefb56b279174e44792a15a8a6092d99befeb982c642fd73dd3042b",
+      "durationSec": 13.4
+    },
+    {
+      "letterId": "zay",
+      "key": "writing_try",
+      "asset": "assets/audio/zay/writing_try.mp3",
+      "text": "هيا يا أصدقائي، اكتبوا حرف الزَا. ضعوا إصبعكم على النقطة الخضراء، واتبعوا مسار الحرف حتى النهاية. زَا، زَا.",
+      "bytes": 211231,
+      "sha256": "443269158376c5bd43059c340d439ced79f808433ffe628b90a0e0180f533ec4",
+      "durationSec": 12.12
+    },
+    {
+      "letterId": "zay",
+      "key": "free_intro",
+      "asset": "assets/audio/zay/free_intro.mp3",
+      "text": "هيا يا أصدقائي، هل تذكرون كيفية كتابة حرف الزَا؟ قوموا بكتابة حرف الزَا الآن.",
+      "bytes": 147283,
+      "sha256": "ab19549cc6d823eccd7652226d48d75d634cdd37830f710bbe253cb47ef31b2d",
+      "durationSec": 8.12
+    },
+    {
+      "letterId": "zay",
+      "key": "assessment_letter",
+      "asset": "assets/audio/zay/assessment_letter.mp3",
+      "text": "أين حرف زَا؟ اضغطوا على حرف زَا.",
+      "bytes": 69124,
+      "sha256": "4e1a4dbec367660357d4370ab5067ac42186356a4bf5e40e50dbe279b60219a9",
+      "durationSec": 3.24
+    },
+    {
+      "letterId": "zay",
+      "key": "assessment_word",
+      "asset": "assets/audio/zay/assessment_word.mp3",
+      "text": "أين الصورة التي تبدأ بحرف زَا؟ اختاروا الصورة الصحيحة.",
+      "bytes": 99635,
+      "sha256": "1958abaa13905815398334ee8f759eb07c87469d8e17df459ca3119c1d37faa9",
+      "durationSec": 5.15
+    },
+    {
+      "letterId": "zay",
+      "key": "closing",
+      "asset": "assets/audio/zay/closing.mp3",
+      "text": "أحسنتم يا أبطال. الحمد لله، لقد تعرفنا هذا اليوم على حرف الزَا. زَا، زَرَافَة. إلى اللقاء يا أصدقائي.",
+      "bytes": 200782,
+      "sha256": "81beeb9651b9813d5e4bb6e62ed7a855f92a758b12b335c6562f1a526eca9834",
+      "durationSec": 11.47
+    },
+    {
+      "letterId": "seen",
+      "key": "welcome",
+      "asset": "assets/audio/seen/welcome.mp3",
+      "text": "مرحبًا يا أصدقائي، كيف حالكم اليوم؟ سوف نتعلم اليوم حرفًا جديدًا، حرف السَا. هيا بنا.",
+      "bytes": 167763,
+      "sha256": "82e4008603e743db9dc4c5d22c54878229f76a2af28728345842355f0abf1123",
+      "durationSec": 9.4
+    },
+    {
+      "letterId": "seen",
+      "key": "nasheed_intro",
+      "asset": "assets/audio/seen/nasheed_intro.mp3",
+      "text": "الآن نستمع نشيد حرف السَا.",
+      "bytes": 53660,
+      "sha256": "ddbb137d9898d299be41e5bf117698b444e947fd0c074e22a973cd95afc3bd4a",
+      "durationSec": 2.27
+    },
+    {
+      "letterId": "seen",
+      "key": "explain_1",
+      "asset": "assets/audio/seen/explain_1.mp3",
+      "text": "انظروا يا أصدقائي إلى حرف السَا، إنه حرف جميل.",
+      "bytes": 90858,
+      "sha256": "75bf631c79014cad8ef6a633c640701aff752207b4c2c0d0215b7a301817b154",
+      "durationSec": 4.6
+    },
+    {
+      "letterId": "seen",
+      "key": "explain_2",
+      "asset": "assets/audio/seen/explain_2.mp3",
+      "text": "سَا، سَا، سَا. هل تعرفون كلمةً تبدأ بحرف السَا؟",
+      "bytes": 116354,
+      "sha256": "0b44cd765064f40ce32cb7f8415fe00e8c9f7254edb40c458d43f42ee2bcf7cf",
+      "durationSec": 6.19
+    },
+    {
+      "letterId": "seen",
+      "key": "explain_3",
+      "asset": "assets/audio/seen/explain_3.mp3",
+      "text": "سَا، سَاعَة. سَا، سَاعَة.",
+      "bytes": 92112,
+      "sha256": "5a03c7e56fc3ba03027db8175c044f3e90d243fcadebf847189f18a145cd9fbc",
+      "durationSec": 4.68
+    },
+    {
+      "letterId": "seen",
+      "key": "explain_4",
+      "asset": "assets/audio/seen/explain_4.mp3",
+      "text": "انظروا إلى كلمة سَاعَة، إنها تبدأ بحرف السَا.",
+      "bytes": 80827,
+      "sha256": "eaa92887040e3fc05c3662adee7ff8798e4e9387eaec8714da3177e2a0660429",
+      "durationSec": 3.97
+    },
+    {
+      "letterId": "seen",
+      "key": "explain_5",
+      "asset": "assets/audio/seen/explain_5.mp3",
+      "text": "ردِّدوا معي: سَا، سَاعَة. سَا، سَاعَة. سَا، سَاعَة.",
+      "bytes": 172778,
+      "sha256": "d7958603ec9e91c8f394f62699c3f8a58f399cddc56c9fdf141d7f18e095dcad",
+      "durationSec": 9.72
+    },
+    {
+      "letterId": "seen",
+      "key": "explain_6",
+      "asset": "assets/audio/seen/explain_6.mp3",
+      "text": "هكذا يا أصدقائي تعلمنا اليوم حرف السَا. سننتقل الآن إلى نطق وكتابة حرف السَا. هيا بنا.",
+      "bytes": 161075,
+      "sha256": "34a334f89a948c542ad043aa1b0385901c6e710d9aecf3af10c2dd99aade9d95",
+      "durationSec": 8.99
+    },
+    {
+      "letterId": "seen",
+      "key": "pronounce_intro",
+      "asset": "assets/audio/seen/pronounce_intro.mp3",
+      "text": "هيا يا أصدقائي، سأستمع إلى نطقكم لحرف السَا. سَا، سَا، سَا. اضغطوا على زر المايك وقوموا بنطق الحرف. هيا.",
+      "bytes": 263475,
+      "sha256": "b1175041003ac0cff69956427384428ec0180e3030ae1f490346302d0a7f9eb1",
+      "durationSec": 15.39
+    },
+    {
+      "letterId": "seen",
+      "key": "writing_demo",
+      "asset": "assets/audio/seen/writing_demo.mp3",
+      "text": "انظروا يا أصدقائي كيف نكتب حرف السَا. نبدأ من اليمين، ونتبع تعرجات الحرف، ثم نكمل الانحناءة إلى اليسار حتى نهاية الحرف.",
+      "bytes": 218754,
+      "sha256": "167aec0db96c9337d623be84c30bc6006b393da79d1712dec82cacedb5f29fcd",
+      "durationSec": 12.59
+    },
+    {
+      "letterId": "seen",
+      "key": "writing_try",
+      "asset": "assets/audio/seen/writing_try.mp3",
+      "text": "هيا يا أصدقائي، اكتبوا حرف السَا. ضعوا إصبعكم على النقطة الخضراء، واتبعوا مسار الحرف حتى النهاية. سَا، سَا.",
+      "bytes": 232964,
+      "sha256": "99c0f245245a518e6bbd3b260595637482a1282bceae9e5dece4951a8a2c5e30",
+      "durationSec": 13.48
+    },
+    {
+      "letterId": "seen",
+      "key": "free_intro",
+      "asset": "assets/audio/seen/free_intro.mp3",
+      "text": "هيا يا أصدقائي، هل تذكرون كيفية كتابة حرف السَا؟ قوموا بكتابة حرف السَا الآن.",
+      "bytes": 159822,
+      "sha256": "66742c6a23a39fc85a9ec3c377db34d15f1edf7c0e195ea9f3f9b15910850505",
+      "durationSec": 8.91
+    },
+    {
+      "letterId": "seen",
+      "key": "assessment_letter",
+      "asset": "assets/audio/seen/assessment_letter.mp3",
+      "text": "أين حرف سَا؟ اضغطوا على حرف سَا.",
+      "bytes": 71632,
+      "sha256": "4be62587375f0610cad22c416c449ec0d823e6a837df067b72105915a9e16169",
+      "durationSec": 3.4
+    },
+    {
+      "letterId": "seen",
+      "key": "assessment_word",
+      "asset": "assets/audio/seen/assessment_word.mp3",
+      "text": "أين الصورة التي تبدأ بحرف سَا؟ اختاروا الصورة الصحيحة.",
+      "bytes": 108831,
+      "sha256": "278e425d485355b77fb6244c09176e65613548cc81bac9ef5413449c1c7f3f05",
+      "durationSec": 5.72
+    },
+    {
+      "letterId": "seen",
+      "key": "closing",
+      "asset": "assets/audio/seen/closing.mp3",
+      "text": "أحسنتم يا أبطال. الحمد لله، لقد تعرفنا هذا اليوم على حرف السَا. سَا، سَاعَة. إلى اللقاء يا أصدقائي.",
+      "bytes": 202035,
+      "sha256": "f15a3f1cc4e2767accdcfdd606e23a1d707b14f6beb7473beb080984f50339af",
+      "durationSec": 11.55
+    },
+    {
+      "letterId": "app",
+      "key": "first_launch_welcome_v55",
+      "asset": "assets/audio/first_launch_welcome_v55.mp3",
+      "text": "أهلًا وسهلًا بكم في برنامج تَعلًَمْ مَعَ صالِحْ! هنا نقرأ الحروف والكلمات، ونتدرّب على الكتابة، ونلعب ألعابًا تعليمية ممتعة. اختاروا رحلتكم، وهيا نبدأ معًا.",
+      "bytes": 257206,
+      "sha256": "2bcd9bb772a471d1eb0644f9e2f5ae2dace333046fc0cdbbe91483f4dee0b0e2",
+      "durationSec": 14.99
+    }
+  ]
+}
