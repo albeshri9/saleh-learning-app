@@ -1,0 +1,34 @@
+{
+  "provider": "ElevenLabs",
+  "model": "eleven_multilingual_v2",
+  "voiceId": "zAHOVUiYXuxggpSljiCQ",
+  "voiceName": "Laloosh - Upbeat Arabic Reels Voice",
+  "flowId": "z7LiT5jhKbu85ayT9hVA",
+  "files": [
+    {
+      "path": "assets/audio/checkpoint_1/praise_created_v52.mp3",
+      "text": "أبدعتم.",
+      "sha256": "a8dee3348a7e2d2c96bd729c98bb38172e6a5cad75662519e01f8697d47c8e4e"
+    },
+    {
+      "path": "assets/audio/checkpoint_1/praise_successful_v52.mp3",
+      "text": "إجابة موفقة.",
+      "sha256": "364e1f0f064a395e8d5dc642821b553e413163dc7d660cb9c8f99af30f8e20cc"
+    },
+    {
+      "path": "assets/audio/checkpoint_1/praise_wow_v52.mp3",
+      "text": "يا سلام.",
+      "sha256": "ceb0b70e2f2f406b45f215b7b2aabed96ac0b730042cbef8ab58aff261d56e8d"
+    },
+    {
+      "path": "assets/audio/checkpoint_1/praise_bless_all_v52.mp3",
+      "text": "بارك الله فيكم.",
+      "sha256": "bd27c3a76c61c8873c773124a956f8aaa74d60f6402e0884375c9c56d4accee1"
+    },
+    {
+      "path": "assets/audio/first_launch_welcome_v52.mp3",
+      "text": "أهلًا وسهلًا بكم في تعلّم مع صالح! هنا نقرأ الحروف والكلمات، ونتدرّب على الكتابة، ونلعب ألعابًا تعليمية ممتعة. اختاروا رحلتكم، وهيا نبدأ معًا.",
+      "sha256": "de43e86a75e277bb06c6bac95b8ccb3bda838c0937364c17b72a89b0f455e675"
+    }
+  ]
+}
