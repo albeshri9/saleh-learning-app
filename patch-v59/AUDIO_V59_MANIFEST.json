@@ -1,0 +1,111 @@
+{
+  "provider": "ElevenLabs",
+  "voiceId": "zAHOVUiYXuxggpSljiCQ",
+  "voiceName": "Laloosh - Upbeat Arabic Reels Voice",
+  "generationModel": "eleven_v3",
+  "verificationModel": "eleven_scribe_v1",
+  "tapBatchTranscription": "آ آ آ، با با با، تا تا تا، سا سا سا، جا جا جا، حا حا حا، خا خا خا، دا دا دا، ذا ذا ذا، را را را، زا زا زا، سا سا سا",
+  "tapBatchNote": "مقاطع الضغط مشتقة من بدايات explain_2 المعتمدة، وتنتهي داخل الصمت بعد التكرار الثالث. لم يظهر أي جزء من سؤال هل تعرفون كلمة. التبس على التفريغ الآلي صوت ثَا المعزول، لكن فحصه المنفرد أثبت وجود ثلاث وحدات صوتية والمصدر الأصلي هو تسجيل ثَا المعتمد.",
+  "voiceFixTranscription": "هيا يا أصدقائي اكتبوا حرف الراء. ضعوا إصبعكم على النقطة الخضراء واتبعوا مسار الحرف حتى النهاية. را، را. هيا يا أصدقائي، هل تذكرون كيفية كتابة حرف الساء؟ قوموا بكتابة حرف الساء الآن.",
+  "voiceFixNote": "اختفى صوت أ المنفصل الذي ظهر في الملفين المرفوضين، وظهر التكرار المجرد رَا، رَا دون زيادة. كتابة الراء والساء في التفريغ هي تهجئة المحرك للاسم الشائع وليست صوت أ منفصلًا.",
+  "assets": [
+    {
+      "asset": "assets/audio/alif/tap_repeat_3_v59.mp3",
+      "text": "آ، آ، آ.",
+      "bytes": 23031,
+      "durationSec": 1.410612,
+      "sha256": "de7d630a6d3c222209a046b429429cc6255f3b7f947fcdfde41d160588bb6d1d"
+    },
+    {
+      "asset": "assets/audio/baa/tap_repeat_3_v59.mp3",
+      "text": "بَا، بَا، بَا.",
+      "bytes": 33898,
+      "durationSec": 2.089796,
+      "sha256": "c7174d8aa5f2527f37134089c309b7856c7121e2933d45e2d38a5e36cbf09a9e"
+    },
+    {
+      "asset": "assets/audio/taa/tap_repeat_3_v59.mp3",
+      "text": "تَا، تَا، تَا.",
+      "bytes": 24703,
+      "durationSec": 1.515102,
+      "sha256": "0a4146f327f37c1bd79971c2a3959733f6682fe01c5b5d98d600d3e5ddb82bda"
+    },
+    {
+      "asset": "assets/audio/thaa/tap_repeat_3_v59.mp3",
+      "text": "ثَا، ثَا، ثَا.",
+      "bytes": 63155,
+      "durationSec": 3.918367,
+      "sha256": "47eca05b4198dfeaf55a2829f3be44a2427a9f048f528d65377c53dd1e9451e5"
+    },
+    {
+      "asset": "assets/audio/jeem_v44/tap_repeat_3_v59.mp3",
+      "text": "جَا، جَا، جَا.",
+      "bytes": 23867,
+      "durationSec": 1.462857,
+      "sha256": "a2411833bcfded3a4576c8d807ea086a8e644613112f44a3f9fa9df92c4b026f"
+    },
+    {
+      "asset": "assets/audio/haa/tap_repeat_3_v59.mp3",
+      "text": "حَا، حَا، حَا.",
+      "bytes": 23867,
+      "durationSec": 1.462857,
+      "sha256": "f322a79ba8c62e0afe223c72bdd713daa127d45a04a15057cdd1003cb7b1a100"
+    },
+    {
+      "asset": "assets/audio/khaa/tap_repeat_3_v59.mp3",
+      "text": "خَا، خَا، خَا.",
+      "bytes": 40586,
+      "durationSec": 2.507755,
+      "sha256": "a461c4d75aac32d9d12f9e10b69348c5e1562a5502d31a44492fd4d6b233d9d2"
+    },
+    {
+      "asset": "assets/audio/dal/tap_repeat_3_v59.mp3",
+      "text": "دَا، دَا، دَا.",
+      "bytes": 46019,
+      "durationSec": 2.847347,
+      "sha256": "9bbd413ccdb6883e8f461f6ab85942eccc0c4a7126036381db459325c5aa6dfc"
+    },
+    {
+      "asset": "assets/audio/dhal/tap_repeat_3_v59.mp3",
+      "text": "ذَا، ذَا، ذَا.",
+      "bytes": 65245,
+      "durationSec": 4.04898,
+      "sha256": "24e82ca73585b9bfb6f103f5e0083b96379a36b5a34b93a5068950a85bbbafa5"
+    },
+    {
+      "asset": "assets/audio/raa/tap_repeat_3_v59.mp3",
+      "text": "رَا، رَا، رَا.",
+      "bytes": 43093,
+      "durationSec": 2.66449,
+      "sha256": "b4b8a5f0410fad04c09ed7933c685ab033b7cf4b8846e1cd34d097f75d820297"
+    },
+    {
+      "asset": "assets/audio/zay/tap_repeat_3_v59.mp3",
+      "text": "زَا، زَا، زَا.",
+      "bytes": 55632,
+      "durationSec": 3.448163,
+      "sha256": "213c96c4a1ea8a53df7e057117ee5fbb5f97acfa5e0e021f7056915c97ce8607"
+    },
+    {
+      "asset": "assets/audio/seen/tap_repeat_3_v59.mp3",
+      "text": "سَا، سَا، سَا.",
+      "bytes": 42675,
+      "durationSec": 2.638367,
+      "sha256": "7ca4f63458f1c85d38adf059d8117d2888d03475140da2f8cc85654f1dabdd30"
+    },
+    {
+      "asset": "assets/audio/raa/writing_try_v59.mp3",
+      "text": "هيا يا أصدقائي، اكتبوا حرف الرَّا. ضعوا إصبعكم على النقطة الخضراء، واتبعوا مسار الحرف حتى النهاية. رَا، رَا.",
+      "bytes": 222515,
+      "durationSec": 12.826122,
+      "sha256": "a05e3309b7fa14fd681b38bdfb4e24b5770f63b0ffba72a83c202f9b24c856a4"
+    },
+    {
+      "asset": "assets/audio/seen/free_intro_v59.mp3",
+      "text": "هيا يا أصدقائي، هل تذكرون كيفية كتابة حرف السَّا؟ قوموا بكتابة حرف السَّا الآن.",
+      "bytes": 144775,
+      "durationSec": 7.967347,
+      "sha256": "7840bf6ffd1b039a514654a780b103b2e73776fcb20960c91e6883123b68b530"
+    }
+  ]
+}

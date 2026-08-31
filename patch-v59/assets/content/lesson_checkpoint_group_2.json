@@ -1,0 +1,237 @@
+{
+  "id": "checkpoint_group_2",
+  "title": "الاختبار المرحلي الثاني",
+  "mastery": {
+    "minScore": 0.85,
+    "requiredSceneIds": [
+      "checkpoint_2"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "checkpoint_2",
+      "type": "checkpoint",
+      "title": "الاختبار المرحلي الثاني",
+      "canSkip": false,
+      "lines": [
+        {
+          "male": "أهلًا يا أبطال. سنراجع الآن حروف مجموعتنا بطرق ممتعة ومتنوعة. ركزوا جيدًا، وهيا نبدأ الاختبار المرحلي.",
+          "female": "أهلًا يا أبطال. سنراجع الآن حروف مجموعتنا بطرق ممتعة ومتنوعة. ركزوا جيدًا، وهيا نبدأ الاختبار المرحلي.",
+          "audio": "assets/audio/checkpoint_2/checkpoint_intro.mp3",
+          "durationSec": 10.68
+        }
+      ],
+      "data": {
+        "standardizedFlow": true,
+        "recognitionCount": 6,
+        "dragMatchCount": 8,
+        "pronunciationCount": 4,
+        "writingLetterIds": [
+          "dal",
+          "dhal",
+          "raa",
+          "zay",
+          "seen"
+        ],
+        "pronunciationPromptAudio": "assets/audio/checkpoint_1/pronounce_generic_v49.mp3",
+        "dragMatchPromptAudio": "assets/audio/checkpoint_1/drag_match_intro_v51.mp3",
+        "successFeedbacks": [
+          {
+            "text": "أحسنتم، إجابة صحيحة.",
+            "audio": "assets/audio/praise_v58/praise_correct_well_done_v58.mp3"
+          },
+          {
+            "text": "ممتاز، إجابة صحيحة.",
+            "audio": "assets/audio/praise_v58/praise_correct_excellent_v58.mp3"
+          },
+          {
+            "text": "يا سلام، إجابة صحيحة.",
+            "audio": "assets/audio/praise_v58/praise_correct_wow_v58.mp3"
+          },
+          {
+            "text": "بارك الله فيكم، إجابة صحيحة.",
+            "audio": "assets/audio/praise_v58/praise_correct_bless_v58.mp3"
+          },
+          {
+            "text": "رائع جدًا، إجابة صحيحة.",
+            "audio": "assets/audio/praise_v58/praise_correct_wonderful_v58.mp3"
+          },
+          {
+            "text": "ما شاء الله، إجابة صحيحة.",
+            "audio": "assets/audio/praise_v58/praise_correct_mashallah_v58.mp3"
+          },
+          {
+            "text": "أحسنتم يا أبطال.",
+            "audio": "assets/audio/praise_v58/praise_heroes_v58.mp3"
+          }
+        ],
+        "tasks": [],
+        "letters": [
+          {
+            "id": "alif",
+            "letter": "أَ",
+            "word": "أَسَد",
+            "image": "assets/images/assessment/alif_lion.png",
+            "letterAudio": "assets/audio/taa/prior_review_2.mp3",
+            "wordAudio": "assets/audio/v45/alif_review_word.mp3",
+            "expected": "آ",
+            "pronunciationRetryAudio": "assets/audio/alif/pronounce_retry.mp3",
+            "traceTemplateId": "alif_fatha_video_v1",
+            "freeAudio": "assets/audio/alif/free_intro.mp3"
+          },
+          {
+            "id": "baa",
+            "letter": "بَ",
+            "word": "بَطَّة",
+            "image": "assets/images/assessment/duck.png",
+            "letterAudio": "assets/audio/taa/prior_review_3.mp3",
+            "wordAudio": "assets/audio/v45/baa_review_word.mp3",
+            "expected": "با",
+            "pronunciationRetryAudio": "assets/audio/baa/pronounce_retry.mp3",
+            "traceTemplateId": "baa_fatha_pdf_v1",
+            "freeAudio": "assets/audio/baa/free_intro.mp3"
+          },
+          {
+            "id": "taa",
+            "letter": "تَ",
+            "word": "تَاج",
+            "image": "assets/images/assessment/crown_v41.png",
+            "letterAudio": "assets/audio/v45/taa_review_letter.mp3",
+            "wordAudio": "assets/audio/v45/taa_review_word.mp3",
+            "expected": "تا",
+            "pronunciationRetryAudio": "assets/audio/taa/pronounce_retry.mp3",
+            "traceTemplateId": "taa_fatha_pdf_v1",
+            "freeAudio": "assets/audio/taa/free_intro.mp3"
+          },
+          {
+            "id": "thaa",
+            "letter": "ثَ",
+            "word": "ثَعْلَب",
+            "image": "assets/images/assessment/fox.png",
+            "letterAudio": "assets/audio/thaa/assessment_1.mp3",
+            "wordAudio": "assets/audio/thaa/assessment_2.mp3",
+            "expected": "ثَا",
+            "pronunciationRetryAudio": "assets/audio/v45/thaa_pronounce_retry.mp3",
+            "traceTemplateId": "thaa_fatha_pdf_v1",
+            "freeAudio": "assets/audio/thaa/free_intro.mp3"
+          },
+          {
+            "id": "jeem",
+            "letter": "جَ",
+            "word": "جَمَل",
+            "image": "assets/images/assessment/camel_v50.png",
+            "letterAudio": "assets/audio/jeem_v44/assessment_1.mp3",
+            "wordAudio": "assets/audio/jeem_v44/assessment_2.mp3",
+            "expected": "جَا",
+            "pronunciationRetryAudio": "assets/audio/v45/jeem_pronounce_retry.mp3",
+            "traceTemplateId": "jeem_fatha_pdf_v1",
+            "freeAudio": "assets/audio/jeem_v44/free_intro.mp3"
+          },
+          {
+            "id": "haa",
+            "letter": "حَ",
+            "word": "حَبْل",
+            "image": "assets/images/assessment/rope_v50.png",
+            "letterAudio": "assets/audio/haa/assessment_1.mp3",
+            "wordAudio": "assets/audio/haa/assessment_2.mp3",
+            "expected": "حَا",
+            "pronunciationRetryAudio": "assets/audio/v45/haa_pronounce_retry.mp3",
+            "traceTemplateId": "haa_fatha_pdf_v1",
+            "freeAudio": "assets/audio/haa/free_intro.mp3"
+          },
+          {
+            "id": "khaa",
+            "letter": "خَ",
+            "word": "خَرُوف",
+            "image": "assets/images/assessment/sheep_v48.png",
+            "letterAudio": "assets/audio/khaa/assessment_1.mp3",
+            "wordAudio": "assets/audio/khaa/assessment_2.mp3",
+            "expected": "خَا",
+            "pronunciationRetryAudio": "assets/audio/khaa/pronounce_retry.mp3",
+            "traceTemplateId": "khaa_fatha_pdf_v1",
+            "freeAudio": "assets/audio/khaa/free_intro.mp3"
+          },
+          {
+            "id": "dal",
+            "letter": "دَ",
+            "word": "دَجَاجَة",
+            "image": "assets/images/assessment/chicken_v54.png",
+            "letterAudio": "assets/audio/dal/assessment_letter.mp3",
+            "wordAudio": "assets/audio/dal/assessment_word.mp3",
+            "expected": "دَا",
+            "pronunciationRetryAudio": "assets/audio/checkpoint_1/retry_only_v51.mp3",
+            "traceTemplateId": "dal_fatha_pdf_v1",
+            "freeAudio": "assets/audio/dal/free_intro.mp3"
+          },
+          {
+            "id": "dhal",
+            "letter": "ذَ",
+            "word": "ذَيْل",
+            "image": "assets/images/assessment/tail_v54.png",
+            "letterAudio": "assets/audio/dhal/assessment_letter.mp3",
+            "wordAudio": "assets/audio/dhal/assessment_word.mp3",
+            "expected": "ذَا",
+            "pronunciationRetryAudio": "assets/audio/checkpoint_1/retry_only_v51.mp3",
+            "traceTemplateId": "dhal_fatha_pdf_v1",
+            "freeAudio": "assets/audio/dhal/free_intro.mp3"
+          },
+          {
+            "id": "raa",
+            "letter": "رَ",
+            "word": "رَجُل",
+            "image": "assets/images/assessment/man_v54.png",
+            "letterAudio": "assets/audio/raa/assessment_letter.mp3",
+            "wordAudio": "assets/audio/raa/assessment_word.mp3",
+            "expected": "رَا",
+            "pronunciationRetryAudio": "assets/audio/checkpoint_1/retry_only_v51.mp3",
+            "traceTemplateId": "raa_fatha_pdf_v1",
+            "freeAudio": "assets/audio/raa/free_intro.mp3"
+          },
+          {
+            "id": "zay",
+            "letter": "زَ",
+            "word": "زَرَافَة",
+            "image": "assets/images/assessment/giraffe_v54.png",
+            "letterAudio": "assets/audio/zay/assessment_letter.mp3",
+            "wordAudio": "assets/audio/zay/assessment_word.mp3",
+            "expected": "زَا",
+            "pronunciationRetryAudio": "assets/audio/checkpoint_1/retry_only_v51.mp3",
+            "traceTemplateId": "zay_fatha_pdf_v1",
+            "freeAudio": "assets/audio/zay/free_intro.mp3"
+          },
+          {
+            "id": "seen",
+            "letter": "سَ",
+            "word": "سَاعَة",
+            "image": "assets/images/assessment/clock_v54.png",
+            "letterAudio": "assets/audio/seen/assessment_letter.mp3",
+            "wordAudio": "assets/audio/seen/assessment_word.mp3",
+            "expected": "سَا",
+            "pronunciationRetryAudio": "assets/audio/checkpoint_1/retry_only_v51.mp3",
+            "traceTemplateId": "seen_fatha_pdf_v1",
+            "freeAudio": "assets/audio/seen/free_intro_v59.mp3"
+          }
+        ],
+        "successAudio": "assets/audio/taa/assessment_success.mp3",
+        "wrongAudio": "assets/audio/checkpoint_1/retry_only_v51.mp3"
+      }
+    },
+    {
+      "id": "success_1",
+      "type": "success",
+      "title": "أحسنت",
+      "canSkip": false,
+      "lines": [
+        {
+          "male": "تهانينا، لقد تجاوزتم هذا الاختبار المرحلي بتفوق. أتمنى لكم مزيدًا من التوفيق والنجاح.",
+          "female": "تهانينا، لقد تجاوزتم هذا الاختبار المرحلي بتفوق. أتمنى لكم مزيدًا من التوفيق والنجاح.",
+          "audio": "assets/audio/checkpoint_2/checkpoint_mastery.mp3",
+          "durationSec": 7.66
+        }
+      ],
+      "data": {
+        "stars": 3
+      }
+    }
+  ]
+}
