@@ -1,0 +1,244 @@
+{
+  "status": "source-data-authored-media-not-verified",
+  "activeProjectModified": false,
+  "templates": [
+    {
+      "path": "assets/content/lesson_seen.json",
+      "sha256": "83e3bc4db1ac982c080977a8aa2f11cb4cde4c4aace0e4971670deb648e1f4ad"
+    },
+    {
+      "path": "assets/content/lesson_dal.json",
+      "sha256": "31aa2751d0181e4da594e01483d6ba409d2b2d67c9780b0bed3650d08ac9de75"
+    },
+    {
+      "path": "assets/content/lesson_checkpoint_group_2.json",
+      "sha256": "d2de840be65823ea479e7300e9d9f9b6777d5312300a64aad3801d462e0eefb3"
+    },
+    {
+      "path": "assets/content/lesson_packs.json",
+      "sha256": "53cfa9770531da862b8ef61faf0f0470a6e3138989d6391f0c86a8d792a05e6b"
+    },
+    {
+      "path": "VOICEOVER_SETTINGS.md",
+      "sha256": "9ff83b5d553280f050a6f7389c53b4b83457bdbbfa9739509a47206e56394267"
+    }
+  ],
+  "letters": [
+    {
+      "id": "sheen",
+      "group": 3,
+      "letter": "شَ",
+      "name": "الشين",
+      "spoken": "شَا",
+      "article": "الشَا",
+      "word": "شَمْس",
+      "imageConcept": "sun",
+      "image": "assets/images/assessment/sheen_v60.png",
+      "traceTemplateId": "sheen_fatha_pdf_v1",
+      "writing": "نبدأ من اليمين، ونتبع تعرجات الحرف، ثم نكمل الانحناءة إلى اليسار حتى نهاية الحرف، ثم نضع ثلاث نقاط فوقه."
+    },
+    {
+      "id": "saad",
+      "group": 3,
+      "letter": "صَ",
+      "name": "الصاد",
+      "spoken": "صَا",
+      "article": "الصَا",
+      "word": "صَقْر",
+      "imageConcept": "falcon",
+      "image": "assets/images/assessment/saad_v60.png",
+      "traceTemplateId": "saad_fatha_pdf_v1",
+      "writing": "نتبع مسار جسم الحرف من نقطة البداية حتى النهاية، ونكمل انحناءاته."
+    },
+    {
+      "id": "daad",
+      "group": 3,
+      "letter": "ضَ",
+      "name": "الضاد",
+      "spoken": "ضَا",
+      "article": "الضَا",
+      "word": "ضَابِط",
+      "imageConcept": "officer",
+      "image": "assets/images/assessment/daad_v60.png",
+      "traceTemplateId": "daad_fatha_pdf_v1",
+      "writing": "نتبع مسار جسم الحرف من نقطة البداية حتى النهاية، ونكمل انحناءاته، ثم نضع نقطة فوقه."
+    },
+    {
+      "id": "tah",
+      "group": 3,
+      "letter": "طَ",
+      "name": "الطاء",
+      "spoken": "طَا",
+      "article": "الطَا",
+      "word": "طَبِيب",
+      "imageConcept": "doctor",
+      "image": "assets/images/assessment/tah_v60.png",
+      "traceTemplateId": "tah_fatha_pdf_v1",
+      "writing": "نبدأ بالخط الطويل، ثم نتبع مسار جسم الحرف حتى النهاية."
+    },
+    {
+      "id": "zah",
+      "group": 3,
+      "letter": "ظَ",
+      "name": "الظاء",
+      "spoken": "ظَا",
+      "article": "الظَا",
+      "word": "ظَرْف",
+      "imageConcept": "envelope",
+      "image": "assets/images/assessment/zah_v60.png",
+      "traceTemplateId": "zah_fatha_pdf_v1",
+      "writing": "نبدأ بالخط الطويل، ثم نتبع مسار جسم الحرف حتى النهاية، ثم نضع نقطة فوقه."
+    },
+    {
+      "id": "ayn",
+      "group": 3,
+      "letter": "عَ",
+      "name": "العين",
+      "spoken": "عَا",
+      "article": "العَا",
+      "word": "عَلَمٌ",
+      "imageConcept": "flag, NOT scholar or world",
+      "image": "assets/images/assessment/ayn_v60.png",
+      "traceTemplateId": "ayn_fatha_pdf_v1",
+      "writing": "نتبع مسار جسم الحرف من نقطة البداية، ونكمل انحناءاته حتى النهاية."
+    },
+    {
+      "id": "ghayn",
+      "group": 4,
+      "letter": "غَ",
+      "name": "الغين",
+      "spoken": "غَا",
+      "article": "الغَا",
+      "word": "غَزَال",
+      "imageConcept": "gazelle",
+      "image": "assets/images/assessment/ghayn_v60.png",
+      "traceTemplateId": "ghayn_fatha_pdf_v1",
+      "writing": "نتبع مسار جسم الحرف من نقطة البداية، ونكمل انحناءاته حتى النهاية، ثم نضع نقطة فوقه."
+    },
+    {
+      "id": "faa",
+      "group": 4,
+      "letter": "فَ",
+      "name": "الفاء",
+      "spoken": "فَا",
+      "article": "الفَا",
+      "word": "فَتْح",
+      "imageConcept": "opening; user-selected word, depiction needs semantic review",
+      "image": "assets/images/assessment/faa_v60.png",
+      "traceTemplateId": "faa_fatha_pdf_v1",
+      "writing": "نتبع مسار جسم الحرف من نقطة البداية حتى النهاية، ثم نضع نقطة فوقه."
+    },
+    {
+      "id": "qaaf",
+      "group": 4,
+      "letter": "قَ",
+      "name": "القاف",
+      "spoken": "قَا",
+      "article": "القَا",
+      "word": "قَلَم",
+      "imageConcept": "pen",
+      "image": "assets/images/assessment/qaaf_v60.png",
+      "traceTemplateId": "qaaf_fatha_pdf_v1",
+      "writing": "نتبع مسار جسم الحرف من نقطة البداية حتى النهاية، ثم نضع نقطتين فوقه."
+    },
+    {
+      "id": "kaaf",
+      "group": 4,
+      "letter": "كَ",
+      "name": "الكاف",
+      "spoken": "كَا",
+      "article": "الكَا",
+      "word": "كَلْب",
+      "imageConcept": "dog",
+      "image": "assets/images/assessment/kaaf_v60.png",
+      "traceTemplateId": "kaaf_fatha_pdf_v1",
+      "writing": "نتبع مسار جسم الحرف من نقطة البداية حتى النهاية، ثم نكمل العلامة داخل الحرف."
+    },
+    {
+      "id": "laam",
+      "group": 4,
+      "letter": "لَ",
+      "name": "اللام",
+      "spoken": "لَا",
+      "article": "اللَا",
+      "word": "لَحْم",
+      "imageConcept": "meat",
+      "image": "assets/images/assessment/laam_v60.png",
+      "traceTemplateId": "laam_fatha_pdf_v1",
+      "writing": "نتبع مسار الخط الطويل، ثم نكمل انحناءة الحرف إلى اليسار حتى النهاية."
+    },
+    {
+      "id": "meem",
+      "group": 4,
+      "letter": "مَ",
+      "name": "الميم",
+      "spoken": "مَا",
+      "article": "المَا",
+      "word": "مَوْز",
+      "imageConcept": "banana fruit, NOT موزون",
+      "image": "assets/images/assessment/meem_v60.png",
+      "traceTemplateId": "meem_fatha_pdf_v1",
+      "writing": "نتبع مسار رأس الحرف، ثم نكمل بقية جسم الحرف حتى النهاية."
+    },
+    {
+      "id": "noon",
+      "group": 5,
+      "letter": "نَ",
+      "name": "النون",
+      "spoken": "نَا",
+      "article": "النَا",
+      "word": "نَحْل",
+      "imageConcept": "bees",
+      "image": "assets/images/assessment/noon_v60.png",
+      "traceTemplateId": "noon_fatha_pdf_v1",
+      "writing": "نتبع مسار جسم الحرف من نقطة البداية حتى النهاية، ثم نضع نقطة فوقه."
+    },
+    {
+      "id": "heh",
+      "group": 5,
+      "letter": "هَ",
+      "name": "الهاء",
+      "spoken": "هَا",
+      "article": "الهَا",
+      "word": "هَرَم",
+      "imageConcept": "pyramid",
+      "image": "assets/images/assessment/heh_v60.png",
+      "traceTemplateId": "heh_fatha_pdf_v1",
+      "writing": "نتبع مسار جسم الحرف من نقطة البداية، ونكمل انحناءته حتى النهاية."
+    },
+    {
+      "id": "waw",
+      "group": 5,
+      "letter": "وَ",
+      "name": "الواو",
+      "spoken": "وَا",
+      "article": "الوَا",
+      "word": "وَلَد",
+      "imageConcept": "boy",
+      "image": "assets/images/assessment/waw_v60.png",
+      "traceTemplateId": "waw_fatha_pdf_v1",
+      "writing": "نتبع مسار رأس الحرف، ثم نكمل انحناءته إلى أسفل اليسار حتى النهاية."
+    },
+    {
+      "id": "yaa",
+      "group": 5,
+      "letter": "يَ",
+      "name": "الياء",
+      "spoken": "يَا",
+      "article": "اليَا",
+      "word": "يَد",
+      "imageConcept": "hand",
+      "image": "assets/images/assessment/yaa_v60.png",
+      "traceTemplateId": "yaa_fatha_pdf_v1",
+      "writing": "نتبع مسار جسم الحرف من نقطة البداية حتى النهاية، ثم نضع نقطتين تحته."
+    }
+  ],
+  "releaseBlockers": [
+    "new audio generation and complete audible/transcript QA",
+    "new image generation and semantic/transparency QA",
+    "PDF trace audit and writing animation QA",
+    "measured audio durations and synchronized farewell events",
+    "reading-test integration and learning-track regression tests",
+    "full content/voice/phone-layout tests before IPA"
+  ]
+}

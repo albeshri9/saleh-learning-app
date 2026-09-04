@@ -1,0 +1,135 @@
+{
+  "id": "reading_group_5",
+  "title": "قراءة حرفين وثلاثة",
+  "mastery": {
+    "minScore": 0.85,
+    "requiredSceneIds": [
+      "reading_group_5_assessment"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "reading_group_5_assessment",
+      "type": "reading",
+      "title": "اقرأ الحروف معًا",
+      "canSkip": true,
+      "lines": [],
+      "data": {
+        "items": [
+          [
+            "نَ",
+            "صَ"
+          ],
+          [
+            "وَ",
+            "ظَ"
+          ],
+          [
+            "هَ",
+            "وَ"
+          ],
+          [
+            "يَ",
+            "هَ"
+          ],
+          [
+            "مَ",
+            "نَ"
+          ],
+          [
+            "يَ",
+            "طَ"
+          ],
+          [
+            "كَ",
+            "يَ"
+          ],
+          [
+            "أَ",
+            "كَ",
+            "لَ"
+          ],
+          [
+            "رَ",
+            "أَ",
+            "سَ"
+          ],
+          [
+            "صَ",
+            "بَ",
+            "رَ"
+          ],
+          [
+            "نَ",
+            "ظَ",
+            "رَ"
+          ],
+          [
+            "حَ",
+            "رَ",
+            "ثَ"
+          ],
+          [
+            "خَ",
+            "دَ",
+            "مَ"
+          ],
+          [
+            "صَ",
+            "دَ",
+            "قَ"
+          ],
+          [
+            "ضَ",
+            "رَ",
+            "عَ"
+          ],
+          [
+            "غَ",
+            "زَ",
+            "لَ"
+          ],
+          [
+            "طَ",
+            "رَ",
+            "أَ"
+          ],
+          [
+            "فَ",
+            "تَ",
+            "حَ"
+          ],
+          [
+            "وَ",
+            "قَ",
+            "فَ"
+          ],
+          [
+            "وَ",
+            "جَ",
+            "دَ"
+          ],
+          [
+            "خَ",
+            "ذَ",
+            "لَ"
+          ],
+          [
+            "نَ",
+            "شَ",
+            "رَ"
+          ]
+        ],
+        "pairPromptAudio": "assets/audio/reading/pair_intro_v60.mp3",
+        "triplePromptAudio": "assets/audio/reading/triple_intro_v60.mp3",
+        "successAudio": "assets/audio/praise_v58/praise_heroes_v58.mp3",
+        "retryAudio": "assets/audio/checkpoint_1/retry_only_v51.mp3"
+      }
+    }
+  ],
+  "publication": {
+    "status": "experimental",
+    "mediaQaPassed": false,
+    "audioReview": "pending-user-auditory-review"
+  }
+}

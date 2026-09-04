@@ -1,0 +1,117 @@
+{
+  "generator": "built-in image_gen",
+  "assets": [
+    {
+      "id": "sheen",
+      "source": "C:\\Users\\FIN\\.codex\\generated_images\\01a03e95-d45d-7d92-bb5e-8a9cb3fbebb8\\exec-f8b98805-48b0-4486-82d0-a4521da17332.png",
+      "target": "pending_content/v60/assets/images/assessment/sheen_v60.png",
+      "mode": "built-in-image_gen",
+      "status": "generated-visually-reviewed-pending-release-integration"
+    },
+    {
+      "id": "saad",
+      "source": "C:\\Users\\FIN\\.codex\\generated_images\\01a03e95-d45d-7d92-bb5e-8a9cb3fbebb8\\exec-c4dbe86e-1901-43e2-a765-b679520dda82.png",
+      "target": "pending_content/v60/assets/images/assessment/saad_v60.png",
+      "mode": "built-in-image_gen",
+      "status": "generated-visually-reviewed-pending-release-integration"
+    },
+    {
+      "id": "daad",
+      "source": "C:\\Users\\FIN\\.codex\\generated_images\\01a03e95-d45d-7d92-bb5e-8a9cb3fbebb8\\exec-3be36c02-bd9f-4e6f-9cb3-89fbdeaa0cef.png",
+      "target": "pending_content/v60/assets/images/assessment/daad_v60.png",
+      "mode": "built-in-image_gen",
+      "status": "generated-visually-reviewed-pending-release-integration"
+    },
+    {
+      "id": "tah",
+      "source": "C:\\Users\\FIN\\.codex\\generated_images\\01a03e95-d45d-7d92-bb5e-8a9cb3fbebb8\\exec-5a2080d6-b3a9-4dcc-b950-8113bfbbde51.png",
+      "target": "pending_content/v60/assets/images/assessment/tah_v60.png",
+      "mode": "built-in-image_gen",
+      "status": "generated-visually-reviewed-pending-release-integration"
+    },
+    {
+      "id": "zah",
+      "source": "C:\\Users\\FIN\\.codex\\generated_images\\01a03e95-d45d-7d92-bb5e-8a9cb3fbebb8\\exec-65b7b27e-9733-47e0-85dc-79f5199019a4.png",
+      "target": "pending_content/v60/assets/images/assessment/zah_v60.png",
+      "mode": "built-in-image_gen",
+      "status": "generated-visually-reviewed-pending-release-integration"
+    },
+    {
+      "id": "ayn",
+      "source": "C:\\Users\\FIN\\.codex\\generated_images\\01a03e95-d45d-7d92-bb5e-8a9cb3fbebb8\\exec-89e365d9-ef2c-450d-8666-6893bd3dce22.png",
+      "target": "pending_content/v60/assets/images/assessment/ayn_v60.png",
+      "mode": "built-in-image_gen",
+      "status": "generated-visually-reviewed-pending-release-integration"
+    },
+    {
+      "id": "ghayn",
+      "source": "C:\\Users\\FIN\\.codex\\generated_images\\01a03e95-d45d-7d92-bb5e-8a9cb3fbebb8\\exec-dd25c1a0-22f8-4f94-b09e-e304ac8b6067.png",
+      "target": "pending_content/v60/assets/images/assessment/ghayn_v60.png",
+      "mode": "built-in-image_gen",
+      "status": "generated-visually-reviewed-pending-release-integration"
+    },
+    {
+      "id": "faa",
+      "source": "C:\\Users\\FIN\\.codex\\generated_images\\01a03e95-d45d-7d92-bb5e-8a9cb3fbebb8\\exec-f345771e-71ce-4d98-932c-24abb08109b7.png",
+      "target": "pending_content/v60/assets/images/assessment/faa_v60.png",
+      "mode": "built-in-image_gen",
+      "status": "generated-visually-reviewed-pending-release-integration"
+    },
+    {
+      "id": "qaaf",
+      "source": "C:\\Users\\FIN\\.codex\\generated_images\\01a03e95-d45d-7d92-bb5e-8a9cb3fbebb8\\exec-a169a580-036d-4ef2-8624-4beffbeefb97.png",
+      "target": "pending_content/v60/assets/images/assessment/qaaf_v60.png",
+      "mode": "built-in-image_gen",
+      "status": "generated-visually-reviewed-pending-release-integration"
+    },
+    {
+      "id": "kaaf",
+      "source": "C:\\Users\\FIN\\.codex\\generated_images\\01a03e95-d45d-7d92-bb5e-8a9cb3fbebb8\\exec-0ce14a36-fa67-40d2-8c6c-51f3dea07158.png",
+      "target": "pending_content/v60/assets/images/assessment/kaaf_v60.png",
+      "mode": "built-in-image_gen",
+      "status": "generated-visually-reviewed-pending-release-integration"
+    },
+    {
+      "id": "laam",
+      "source": "C:\\Users\\FIN\\.codex\\generated_images\\01a03e95-d45d-7d92-bb5e-8a9cb3fbebb8\\exec-d2776017-59d2-4ae0-b772-a28673231e80.png",
+      "target": "pending_content/v60/assets/images/assessment/laam_v60.png",
+      "mode": "built-in-image_gen",
+      "status": "generated-visually-reviewed-pending-release-integration"
+    },
+    {
+      "id": "meem",
+      "source": "C:\\Users\\FIN\\.codex\\generated_images\\01a03e95-d45d-7d92-bb5e-8a9cb3fbebb8\\exec-4b7efc22-f6e7-4568-9ccc-f46d9caac0ee.png",
+      "target": "pending_content/v60/assets/images/assessment/meem_v60.png",
+      "mode": "built-in-image_gen",
+      "status": "generated-visually-reviewed-pending-release-integration"
+    },
+    {
+      "id": "noon",
+      "source": "C:\\Users\\FIN\\.codex\\generated_images\\01a03e95-d45d-7d92-bb5e-8a9cb3fbebb8\\exec-5d111fd7-a14e-4434-adaa-b25f84cc2f6c.png",
+      "target": "pending_content/v60/assets/images/assessment/noon_v60.png",
+      "mode": "built-in-image_gen",
+      "status": "generated-visually-reviewed-pending-release-integration"
+    },
+    {
+      "id": "heh",
+      "source": "C:\\Users\\FIN\\.codex\\generated_images\\01a03e95-d45d-7d92-bb5e-8a9cb3fbebb8\\exec-b63113f6-1faa-4521-b2f8-cdd40a88d828.png",
+      "target": "pending_content/v60/assets/images/assessment/heh_v60.png",
+      "mode": "built-in-image_gen",
+      "status": "generated-visually-reviewed-pending-release-integration"
+    },
+    {
+      "id": "waw",
+      "source": "C:\\Users\\FIN\\.codex\\generated_images\\01a03e95-d45d-7d92-bb5e-8a9cb3fbebb8\\exec-24bcc49a-b1e3-4af5-a3af-c88d9e1a4202.png",
+      "target": "pending_content/v60/assets/images/assessment/waw_v60.png",
+      "mode": "built-in-image_gen",
+      "status": "generated-visually-reviewed-pending-release-integration"
+    },
+    {
+      "id": "yaa",
+      "source": "C:\\Users\\FIN\\.codex\\generated_images\\01a03e95-d45d-7d92-bb5e-8a9cb3fbebb8\\exec-b8c298dc-1818-4640-8a61-c36aa9e2c2aa.png",
+      "target": "pending_content/v60/assets/images/assessment/yaa_v60.png",
+      "mode": "built-in-image_gen",
+      "status": "generated-visually-reviewed-pending-release-integration"
+    }
+  ]
+}

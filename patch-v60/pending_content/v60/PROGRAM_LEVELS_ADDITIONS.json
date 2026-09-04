@@ -1,0 +1,161 @@
+{
+  "programId": "arabic_foundation",
+  "stageId": "letters_fatha",
+  "levels": [
+    {
+      "id": "group_3",
+      "title": "المجموعة 3",
+      "lessons": [
+        {
+          "lessonId": "sheen",
+          "title": "حرف الشين",
+          "subtitle": "شَ — شَمْس",
+          "letter": "شَ"
+        },
+        {
+          "lessonId": "saad",
+          "title": "حرف الصاد",
+          "subtitle": "صَ — صَقْر",
+          "letter": "صَ"
+        },
+        {
+          "lessonId": "daad",
+          "title": "حرف الضاد",
+          "subtitle": "ضَ — ضَابِط",
+          "letter": "ضَ"
+        },
+        {
+          "lessonId": "tah",
+          "title": "حرف الطاء",
+          "subtitle": "طَ — طَبِيب",
+          "letter": "طَ"
+        },
+        {
+          "lessonId": "zah",
+          "title": "حرف الظاء",
+          "subtitle": "ظَ — ظَرْف",
+          "letter": "ظَ"
+        },
+        {
+          "lessonId": "ayn",
+          "title": "حرف العين",
+          "subtitle": "عَ — عَلَمٌ",
+          "letter": "عَ"
+        },
+        {
+          "lessonId": "checkpoint_group_3",
+          "title": "الاختبار المرحلي الثالث",
+          "subtitle": "مراجعة تراكمية لجميع الحروف السابقة"
+        },
+        {
+          "lessonId": "reading_group_3",
+          "title": "قراءة حرفين معًا",
+          "subtitle": "اقرؤوا الحروف معًا"
+        }
+      ]
+    },
+    {
+      "id": "group_4",
+      "title": "المجموعة 4",
+      "lessons": [
+        {
+          "lessonId": "ghayn",
+          "title": "حرف الغين",
+          "subtitle": "غَ — غَزَال",
+          "letter": "غَ"
+        },
+        {
+          "lessonId": "faa",
+          "title": "حرف الفاء",
+          "subtitle": "فَ — فَتْح",
+          "letter": "فَ"
+        },
+        {
+          "lessonId": "qaaf",
+          "title": "حرف القاف",
+          "subtitle": "قَ — قَلَم",
+          "letter": "قَ"
+        },
+        {
+          "lessonId": "kaaf",
+          "title": "حرف الكاف",
+          "subtitle": "كَ — كَلْب",
+          "letter": "كَ"
+        },
+        {
+          "lessonId": "laam",
+          "title": "حرف اللام",
+          "subtitle": "لَ — لَحْم",
+          "letter": "لَ"
+        },
+        {
+          "lessonId": "meem",
+          "title": "حرف الميم",
+          "subtitle": "مَ — مَوْز",
+          "letter": "مَ"
+        },
+        {
+          "lessonId": "checkpoint_group_4",
+          "title": "الاختبار المرحلي الرابع",
+          "subtitle": "مراجعة تراكمية لجميع الحروف السابقة"
+        },
+        {
+          "lessonId": "reading_group_4",
+          "title": "قراءة حرفين معًا",
+          "subtitle": "اقرؤوا الحروف معًا"
+        }
+      ]
+    },
+    {
+      "id": "group_5",
+      "title": "المجموعة 5",
+      "lessons": [
+        {
+          "lessonId": "noon",
+          "title": "حرف النون",
+          "subtitle": "نَ — نَحْل",
+          "letter": "نَ"
+        },
+        {
+          "lessonId": "heh",
+          "title": "حرف الهاء",
+          "subtitle": "هَ — هَرَم",
+          "letter": "هَ"
+        },
+        {
+          "lessonId": "waw",
+          "title": "حرف الواو",
+          "subtitle": "وَ — وَلَد",
+          "letter": "وَ"
+        },
+        {
+          "lessonId": "yaa",
+          "title": "حرف الياء",
+          "subtitle": "يَ — يَد",
+          "letter": "يَ"
+        },
+        {
+          "lessonId": "checkpoint_group_5",
+          "title": "الاختبار المرحلي الخامس",
+          "subtitle": "مراجعة تراكمية لجميع الحروف السابقة"
+        },
+        {
+          "lessonId": "reading_group_5",
+          "title": "قراءة حرفين وثلاثة",
+          "subtitle": "اقرؤوا الحروف معًا"
+        }
+      ]
+    }
+  ],
+  "existingLevelInsertions": [
+    {
+      "levelId": "group_2",
+      "afterLessonId": "checkpoint_group_2",
+      "lesson": {
+        "lessonId": "reading_group_2",
+        "title": "قراءة حرفين معًا",
+        "subtitle": "اقرؤوا الحرفين معًا"
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "status": "not-approved",
+  "reason": "This session cannot consume audio input. Independent transcription was checked, but is not a substitute for listening.",
+  "voiceId": "zAHOVUiYXuxggpSljiCQ",
+  "modelId": "eleven_v3",
+  "flowId": "blnVxnKcvVwUJksKTJJy",
+  "clips": [
+    {
+      "asset": "assets/audio/reading/pair_intro_v60.mp3",
+      "text": "الآن يا أصدقائي، اقرؤوا الحرفين معًا. اضغطوا على زر المايك وابدؤوا القراءة.",
+      "durationSec": 6.88,
+      "bytes": 128057,
+      "sha256": "e5c246a9a5d7c0bb6f85427a2d97d636d2aae5dbab3123384c9b0dc8cf7792ee",
+      "generationId": "abQxr3IaScXo5afwaWdT",
+      "transcriptGenerationId": "5HONwZMyYx5W3RqsozIY",
+      "independentTranscript": "الآن يا أصدقائي، اقرؤوا الحرفين معًا. اضغطوا على زر المايك وابدؤوا القراءة.",
+      "listenedEntirely": false,
+      "transcriptChecked": true,
+      "pronunciationChecked": false,
+      "allRepetitionsChecked": false,
+      "status": "pending-auditory-review"
+    },
+    {
+      "asset": "assets/audio/reading/triple_intro_v60.mp3",
+      "text": "الآن يا أصدقائي، اقرؤوا ثلاثة أحرف معًا. اضغطوا على زر المايك وابدؤوا القراءة.",
+      "durationSec": 7.92,
+      "bytes": 144775,
+      "sha256": "488c4ad3f0d18e0442c989a803434565a1f7c8df0c4934b7d0cc7e3878fe64d3",
+      "generationId": "Isr8ZOwHdf5z5iGfyLQM",
+      "transcriptGenerationId": "WKWg21y19Nt2N5xZIrKO",
+      "independentTranscript": "الآن يا أصدقائي، اقرؤوا ثلاثة أحرف معًا. اضغطوا على زر المايك وابدؤوا القراءة.",
+      "listenedEntirely": false,
+      "transcriptChecked": true,
+      "pronunciationChecked": false,
+      "allRepetitionsChecked": false,
+      "status": "pending-auditory-review"
+    }
+  ]
+}

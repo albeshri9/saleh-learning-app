@@ -1,0 +1,467 @@
+{
+  "id": "tah",
+  "title": "درس حرف الطَا",
+  "mastery": {
+    "minScore": 0.6,
+    "requiredSceneIds": [
+      "assessment_1"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "welcome_1",
+      "type": "welcome",
+      "title": "ترحيب",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "مرحبًا يا أصدقائي، كيف حالكم اليوم؟ سوف نتعلم اليوم حرفًا جديدًا، حرف الطَا. هيا بنا.",
+          "female": "مرحبًا يا أصدقائي، كيف حالكم اليوم؟ سوف نتعلم اليوم حرفًا جديدًا، حرف الطَا. هيا بنا.",
+          "audio": "assets/audio/tah/welcome_v60.mp3",
+          "events": [
+            {
+              "action": "playAnimation",
+              "target": "saleh",
+              "atSec": 0,
+              "params": {
+                "name": "greetThenTalk"
+              }
+            }
+          ]
+        }
+      ],
+      "data": {}
+    },
+    {
+      "id": "prior_review_1",
+      "type": "review",
+      "title": "المراجعة القبلية",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "الآن يا أصدقائي سأختبر معلوماتكم السابقة.",
+          "female": "الآن يا أصدقائي سأختبر معلوماتكم السابقة.",
+          "audio": "assets/audio/v45/review_intro.mp3",
+          "durationSec": 3.79
+        }
+      ],
+      "data": {
+        "priorLessonIds": [
+          "sheen",
+          "saad",
+          "daad"
+        ],
+        "questions": [
+          {
+            "kind": "letter",
+            "reviewLessonId": "sheen",
+            "showPrompt": false,
+            "prompt": "أين حرف الشَا؟ اضغطوا على حرف الشَا.",
+            "options": [
+              "شَ",
+              "أَ",
+              "بَ",
+              "تَ"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/sheen/assessment_letter_v60.mp3",
+            "successAudio": "assets/audio/taa/assessment_success.mp3",
+            "retryAudio": "assets/audio/checkpoint_1/retry_only_v51.mp3"
+          },
+          {
+            "kind": "word",
+            "reviewLessonId": "sheen",
+            "showPrompt": false,
+            "prompt": "أين الصورة التي تبدأ بحرف الشَا؟ اختاروا الصورة الصحيحة.",
+            "options": [
+              "شَمْس",
+              "أَسَد",
+              "بَطَّة",
+              "تَاج"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/sheen/assessment_word_v60.mp3",
+            "successAudio": "assets/audio/taa/assessment_success.mp3",
+            "retryAudio": "assets/audio/checkpoint_1/retry_only_v51.mp3",
+            "optionImages": [
+              "assets/images/assessment/sheen_v60.png",
+              "assets/images/assessment/alif_lion.png",
+              "assets/images/assessment/duck.png",
+              "assets/images/assessment/crown_v41.png"
+            ]
+          },
+          {
+            "kind": "letter",
+            "reviewLessonId": "saad",
+            "showPrompt": false,
+            "prompt": "أين حرف الصَا؟ اضغطوا على حرف الصَا.",
+            "options": [
+              "صَ",
+              "أَ",
+              "بَ",
+              "تَ"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/saad/assessment_letter_v60.mp3",
+            "successAudio": "assets/audio/taa/assessment_success.mp3",
+            "retryAudio": "assets/audio/checkpoint_1/retry_only_v51.mp3"
+          },
+          {
+            "kind": "word",
+            "reviewLessonId": "saad",
+            "showPrompt": false,
+            "prompt": "أين الصورة التي تبدأ بحرف الصَا؟ اختاروا الصورة الصحيحة.",
+            "options": [
+              "صَقْر",
+              "أَسَد",
+              "بَطَّة",
+              "تَاج"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/saad/assessment_word_v60.mp3",
+            "successAudio": "assets/audio/taa/assessment_success.mp3",
+            "retryAudio": "assets/audio/checkpoint_1/retry_only_v51.mp3",
+            "optionImages": [
+              "assets/images/assessment/saad_v60.png",
+              "assets/images/assessment/alif_lion.png",
+              "assets/images/assessment/duck.png",
+              "assets/images/assessment/crown_v41.png"
+            ]
+          },
+          {
+            "kind": "letter",
+            "reviewLessonId": "daad",
+            "showPrompt": false,
+            "prompt": "أين حرف الضَا؟ اضغطوا على حرف الضَا.",
+            "options": [
+              "ضَ",
+              "أَ",
+              "بَ",
+              "تَ"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/daad/assessment_letter_v60.mp3",
+            "successAudio": "assets/audio/taa/assessment_success.mp3",
+            "retryAudio": "assets/audio/checkpoint_1/retry_only_v51.mp3"
+          },
+          {
+            "kind": "word",
+            "reviewLessonId": "daad",
+            "showPrompt": false,
+            "prompt": "أين الصورة التي تبدأ بحرف الضَا؟ اختاروا الصورة الصحيحة.",
+            "options": [
+              "ضَابِط",
+              "أَسَد",
+              "بَطَّة",
+              "تَاج"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/daad/assessment_word_v60.mp3",
+            "successAudio": "assets/audio/taa/assessment_success.mp3",
+            "retryAudio": "assets/audio/checkpoint_1/retry_only_v51.mp3",
+            "optionImages": [
+              "assets/images/assessment/daad_v60.png",
+              "assets/images/assessment/alif_lion.png",
+              "assets/images/assessment/duck.png",
+              "assets/images/assessment/crown_v41.png"
+            ]
+          }
+        ],
+        "successAudio": "assets/audio/taa/assessment_success.mp3",
+        "retryAudio": "assets/audio/checkpoint_1/retry_only_v51.mp3",
+        "completionLabel": "نستمع النشيد",
+        "questionSelection": "runtime-disjoint-half-letter-half-word"
+      }
+    },
+    {
+      "id": "nasheed_1",
+      "type": "nasheed",
+      "title": "أنشودة الحرف",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "الآن نستمع نشيد حرف الطَا.",
+          "female": "الآن نستمع نشيد حرف الطَا.",
+          "audio": "assets/audio/tah/nasheed_intro_v60.mp3"
+        }
+      ],
+      "data": {
+        "mediaType": "audio",
+        "label": "أنشودة حرف الطَا",
+        "mediaStatus": "not-provided"
+      }
+    },
+    {
+      "id": "explain_1",
+      "type": "explanation",
+      "title": "شرح الحرف",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "انظروا يا أصدقائي إلى حرف الطَا، إنه حرف جميل.",
+          "female": "انظروا يا أصدقائي إلى حرف الطَا، إنه حرف جميل.",
+          "audio": "assets/audio/tah/explain_1_v60.mp3",
+          "events": [
+            {
+              "action": "show",
+              "target": "letter",
+              "atSec": 0.2
+            },
+            {
+              "action": "salehPointAt",
+              "target": "letter",
+              "atSec": 0.3
+            }
+          ]
+        },
+        {
+          "male": "طَا، طَا، طَا. هل تعرفون كلمةً تبدأ بحرف الطَا؟",
+          "female": "طَا، طَا، طَا. هل تعرفون كلمةً تبدأ بحرف الطَا؟",
+          "audio": "assets/audio/tah/explain_2_v60.mp3",
+          "events": [
+            {
+              "action": "pulse",
+              "target": "letter",
+              "atSec": 0.3
+            },
+            {
+              "action": "pulse",
+              "target": "letter",
+              "atSec": 1.1
+            },
+            {
+              "action": "pulse",
+              "target": "letter",
+              "atSec": 1.9
+            }
+          ]
+        },
+        {
+          "male": "طَا، طَبِيب. طَا، طَبِيب.",
+          "female": "طَا، طَبِيب. طَا، طَبِيب.",
+          "audio": "assets/audio/tah/explain_3_v60.mp3",
+          "events": [
+            {
+              "action": "show",
+              "target": "example",
+              "atSec": 0.4
+            },
+            {
+              "action": "highlight",
+              "target": "exampleLetter",
+              "atSec": 0.8
+            }
+          ]
+        },
+        {
+          "male": "انظروا إلى كلمة طَبِيب، إنها تبدأ بحرف الطَا.",
+          "female": "انظروا إلى كلمة طَبِيب، إنها تبدأ بحرف الطَا.",
+          "audio": "assets/audio/tah/explain_4_v60.mp3"
+        },
+        {
+          "male": "ردِّدوا معي: طَا، طَبِيب. طَا، طَبِيب. طَا، طَبِيب.",
+          "female": "ردِّدوا معي: طَا، طَبِيب. طَا، طَبِيب. طَا، طَبِيب.",
+          "audio": "assets/audio/tah/explain_5_v60.mp3"
+        },
+        {
+          "male": "هكذا يا أصدقائي تعلمنا اليوم حرف الطَا. سننتقل الآن إلى نطق وكتابة حرف الطَا. هيا بنا.",
+          "female": "هكذا يا أصدقائي تعلمنا اليوم حرف الطَا. سننتقل الآن إلى نطق وكتابة حرف الطَا. هيا بنا.",
+          "audio": "assets/audio/tah/explain_6_v60.mp3"
+        }
+      ],
+      "data": {
+        "letter": "طَ",
+        "letterName": "طَا",
+        "letterAudio": "assets/audio/tah/explain_1_v60.mp3",
+        "example": {
+          "word": "طَبِيب",
+          "imageAsset": "assets/images/assessment/tah_v60.png",
+          "highlightPrefix": "طَ"
+        }
+      }
+    },
+    {
+      "id": "pronounce_1",
+      "type": "pronunciation",
+      "title": "تدريب النطق",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "هيا يا أصدقائي، سأستمع إلى نطقكم لحرف الطَا. طَا، طَا، طَا. اضغطوا على زر المايك وقوموا بنطق الحرف. هيا.",
+          "female": "هيا يا أصدقائي، سأستمع إلى نطقكم لحرف الطَا. طَا، طَا، طَا. اضغطوا على زر المايك وقوموا بنطق الحرف. هيا.",
+          "audio": "assets/audio/tah/pronounce_intro_v60.mp3"
+        }
+      ],
+      "data": {
+        "letter": "طَ",
+        "spokenLetter": "طَا",
+        "expected": "طَا",
+        "maxAttempts": 3,
+        "retryAudio": "assets/audio/checkpoint_1/retry_only_v51.mp3",
+        "successAudio": "assets/audio/alif/pronounce_success.mp3",
+        "letterAudio": "assets/audio/tah/tap_repeat_3_v60.mp3",
+        "letterTapAudio": "assets/audio/tah/tap_repeat_3_v60.mp3"
+      }
+    },
+    {
+      "id": "write_guided_1",
+      "type": "guidedWriting",
+      "title": "الكتابة بالدليل",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "انظروا يا أصدقائي كيف نكتب حرف الطَا. نبدأ بالخط الطويل، ثم نتبع مسار جسم الحرف حتى النهاية.",
+          "female": "انظروا يا أصدقائي كيف نكتب حرف الطَا. نبدأ بالخط الطويل، ثم نتبع مسار جسم الحرف حتى النهاية.",
+          "audio": "assets/audio/tah/writing_demo_v60.mp3"
+        },
+        {
+          "male": "هيا يا أصدقائي، اكتبوا حرف الطَا. ضعوا إصبعكم على النقطة الخضراء، واتبعوا مسار الحرف حتى النهاية. طَا، طَا.",
+          "female": "هيا يا أصدقائي، اكتبوا حرف الطَا. ضعوا إصبعكم على النقطة الخضراء، واتبعوا مسار الحرف حتى النهاية. طَا، طَا.",
+          "audio": "assets/audio/tah/writing_try_v60.mp3"
+        }
+      ],
+      "data": {
+        "letter": "طَ",
+        "traceTemplateId": "tah_fatha_pdf_v1",
+        "writing": {
+          "guidedAttempts": 1,
+          "freeAttempts": 0,
+          "required": true
+        },
+        "againAudio": "assets/audio/tah/writing_try_v60.mp3",
+        "successAudio": "assets/audio/alif/guided_praise.mp3",
+        "guidedPraiseAudio": "assets/audio/alif/guided_praise.mp3",
+        "lessonId": "tah"
+      }
+    },
+    {
+      "id": "write_free_1",
+      "type": "freeWriting",
+      "title": "الكتابة الحرة",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "هيا يا أصدقائي، هل تذكرون كيفية كتابة حرف الطَا؟ قوموا بكتابة حرف الطَا الآن.",
+          "female": "هيا يا أصدقائي، هل تذكرون كيفية كتابة حرف الطَا؟ قوموا بكتابة حرف الطَا الآن.",
+          "audio": "assets/audio/tah/free_intro_v60.mp3"
+        }
+      ],
+      "data": {
+        "letter": "طَ",
+        "traceTemplateId": "tah_fatha_pdf_v1",
+        "writing": {
+          "guidedAttempts": 0,
+          "freeAttempts": 1,
+          "required": false
+        },
+        "successAudio": "assets/audio/v46/free_praise.mp3",
+        "lessonId": "tah",
+        "successText": "ممتاز! أحسنتم كتابة الحرف"
+      }
+    },
+    {
+      "id": "assessment_1",
+      "type": "multipleChoice",
+      "title": "التقويم الختامي",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "والآن سأراجع معكم ما تعلمناه في هذا اليوم.",
+          "female": "والآن سأراجع معكم ما تعلمناه في هذا اليوم.",
+          "audio": "assets/audio/v46/assessment_intro.mp3",
+          "durationSec": 3.76
+        }
+      ],
+      "data": {
+        "retryAudio": "assets/audio/checkpoint_1/retry_only_v51.mp3",
+        "successAudio": "assets/audio/taa/assessment_success.mp3",
+        "secondAudio": "assets/audio/tah/assessment_word_v60.mp3",
+        "questions": [
+          {
+            "kind": "letter",
+            "reviewLessonId": "tah",
+            "showPrompt": false,
+            "prompt": "أين حرف الطَا؟ اضغطوا على حرف الطَا.",
+            "options": [
+              "طَ",
+              "شَ",
+              "صَ",
+              "ضَ",
+              "ظَ",
+              "عَ"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/tah/assessment_letter_v60.mp3",
+            "successAudio": "assets/audio/taa/assessment_success.mp3",
+            "retryAudio": "assets/audio/checkpoint_1/retry_only_v51.mp3"
+          },
+          {
+            "kind": "word",
+            "reviewLessonId": "tah",
+            "showPrompt": false,
+            "prompt": "أين الصورة التي تبدأ بحرف الطَا؟ اختاروا الصورة الصحيحة.",
+            "options": [
+              "طَبِيب",
+              "شَمْس",
+              "صَقْر",
+              "ضَابِط",
+              "ظَرْف",
+              "عَلَمٌ"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/tah/assessment_word_v60.mp3",
+            "successAudio": "assets/audio/taa/assessment_success.mp3",
+            "retryAudio": "assets/audio/checkpoint_1/retry_only_v51.mp3",
+            "optionImages": [
+              "assets/images/assessment/tah_v60.png",
+              "assets/images/assessment/sheen_v60.png",
+              "assets/images/assessment/saad_v60.png",
+              "assets/images/assessment/daad_v60.png",
+              "assets/images/assessment/zah_v60.png",
+              "assets/images/assessment/ayn_v60.png"
+            ]
+          }
+        ],
+        "questionAfterIntro": true
+      }
+    },
+    {
+      "id": "success_1",
+      "type": "success",
+      "title": "أحسنت",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "أحسنتم يا أبطال. الحمد لله، لقد تعرفنا هذا اليوم على حرف الطَا. طَا، طَبِيب. إلى اللقاء يا أصدقائي.",
+          "female": "أحسنتم يا أبطال. الحمد لله، لقد تعرفنا هذا اليوم على حرف الطَا. طَا، طَبِيب. إلى اللقاء يا أصدقائي.",
+          "audio": "assets/audio/tah/closing_v60.mp3",
+          "events": [
+            {
+              "action": "playAnimation",
+              "target": "saleh",
+              "atSec": 0.2,
+              "params": {
+                "name": "celebrateThenWave"
+              }
+            },
+            {
+              "action": "playAnimation",
+              "target": "saleh",
+              "atSec": 8.5,
+              "params": {
+                "name": "farewell"
+              }
+            }
+          ]
+        }
+      ],
+      "data": {
+        "stars": 3
+      }
+    }
+  ],
+  "publication": {
+    "status": "pending",
+    "mediaQaPassed": false
+  }
+}

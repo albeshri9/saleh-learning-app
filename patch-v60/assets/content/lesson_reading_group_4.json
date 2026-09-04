@@ -1,0 +1,80 @@
+{
+  "id": "reading_group_4",
+  "title": "قراءة حرفين معًا",
+  "mastery": {
+    "minScore": 0.85,
+    "requiredSceneIds": [
+      "reading_group_4_assessment"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "reading_group_4_assessment",
+      "type": "reading",
+      "title": "اقرأ الحرفين معًا",
+      "canSkip": true,
+      "lines": [],
+      "data": {
+        "items": [
+          [
+            "غَ",
+            "صَ"
+          ],
+          [
+            "فَ",
+            "ظَ"
+          ],
+          [
+            "قَ",
+            "شَ"
+          ],
+          [
+            "لَ",
+            "طَ"
+          ],
+          [
+            "مَ",
+            "ثَ"
+          ],
+          [
+            "كَ",
+            "ضَ"
+          ],
+          [
+            "سَ",
+            "لَ"
+          ],
+          [
+            "بَ",
+            "مَ"
+          ],
+          [
+            "زَ",
+            "غَ"
+          ],
+          [
+            "شَ",
+            "فَ"
+          ],
+          [
+            "خَ",
+            "كَ"
+          ],
+          [
+            "ذَ",
+            "قَ"
+          ]
+        ],
+        "pairPromptAudio": "assets/audio/reading/pair_intro_v60.mp3",
+        "triplePromptAudio": "assets/audio/reading/triple_intro_v60.mp3",
+        "successAudio": "assets/audio/praise_v58/praise_heroes_v58.mp3",
+        "retryAudio": "assets/audio/checkpoint_1/retry_only_v51.mp3"
+      }
+    }
+  ],
+  "publication": {
+    "status": "experimental",
+    "mediaQaPassed": false,
+    "audioReview": "pending-user-auditory-review"
+  }
+}

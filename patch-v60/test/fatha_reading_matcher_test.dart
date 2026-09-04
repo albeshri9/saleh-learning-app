@@ -1,0 +1,399 @@
+import 'package:flutter_test/flutter_test.dart';
+import 'package:saleh_app/services/speech/fatha_reading_matcher.dart';
+import 'package:saleh_app/services/speech/speech_service.dart';
+
+void main() {
+  group('runtime speech service boundary for the sixteen new letters', () {
+    const newLetters = 'شصضطظعغفقكلمنهوي';
+
+    test('recognizes every glyph, phonetic spelling and 1–4 repeats', () {
+      for (final letter in newLetters.split('')) {
+        final phoneme = '$letterا';
+        for (final expected in [letter, '$letterَ', phoneme, '$letterَا']) {
+          for (final heard in [letter, '$letterَ', phoneme, '$letterاء']) {
+            for (var repetitions = 1; repetitions <= 4; repetitions++) {
+              final transcript = List.filled(repetitions, heard).join('، ');
+              expect(speechMatchesExpected(transcript, expected), isTrue,
+                  reason: 'Expected $expected; ASR $transcript');
+            }
+          }
+        }
+      }
+    });
+
+    test('does not let legacy equality erase a wrong vowel or accept a name',
+        () {
+      for (final letter in newLetters.split('')) {
+        for (final mark in ['ِ', 'ُ', 'ْ', 'ّ', 'ً', 'ٌ', 'ٍ']) {
+          expect(speechMatchesExpected('$letter$mark', '$letterَ'), isFalse,
+              reason: 'Wrong mark $mark on $letter');
+          expect(speechMatchesExpected('$letter$mark', '$letter$mark'), isFalse,
+              reason: 'Invalid expected mark must not pass via equality');
+        }
+      }
+      const names = {
+        'شين': 'شا',
+        'صاد': 'صا',
+        'ضاد': 'ضا',
+        'عين': 'عا',
+        'غين': 'غا',
+        'قاف': 'قا',
+        'كاف': 'كا',
+        'لام': 'لا',
+        'ميم': 'ما',
+        'نون': 'نا',
+        'واو': 'وا',
+      };
+      for (final entry in names.entries) {
+        expect(speechMatchesExpected(entry.key, entry.value), isFalse,
+            reason: entry.key);
+        expect(speechMatchesExpected('ال${entry.key}', entry.value), isFalse);
+        expect(speechMatchesExpected(entry.key, entry.key), isFalse,
+            reason: 'A distinct alphabet name is not a fatha target');
+      }
+    });
+
+    test('rejects other letters, extra words, connected repeats and five reads',
+        () {
+      for (final letter in newLetters.split('')) {
+        final expected = '$letterا';
+        for (final other in 'ابتثجحخدذرزسشصضطظعغفقكلمنهوي'.split('')) {
+          if (other == letter) continue;
+          expect(speechMatchesExpected('$otherا', expected), isFalse,
+              reason: 'Expected $letter, got $other');
+        }
+        for (final heard in [
+          '$expected أحسنتم',
+          'هذا $expected',
+          '$expected$expected',
+          List.filled(5, expected).join(' '),
+          '${letter}1',
+        ]) {
+          expect(speechMatchesExpected(heard, expected), isFalse,
+              reason: heard);
+        }
+      }
+    });
+
+    test('preserves the first twelve letters legacy device acceptance', () {
+      const legacy = <String, List<String>>{
+        'آ': ['أَ', 'آ', 'آه', 'ألف', 'اا', 'ها'],
+        'با': ['ب', 'با', 'باء', 'الباء'],
+        'تا': ['ت', 'تا', 'تاء', 'التاء'],
+        'ثا': ['ث', 'ثا', 'ثاء', 'الثاء'],
+        'جا': ['ج', 'جا', 'جاء', 'جيم', 'الجيم', 'جا جا'],
+        'حا': ['ح', 'حا', 'حاء', 'الحاء'],
+        'خا': ['خ', 'خا', 'خاء', 'الخاء', 'خا خا'],
+        'دا': ['د', 'دا', 'داء', 'دال', 'الدال'],
+        'ذا': ['ذ', 'ذا', 'ذاء', 'ذال', 'الذال'],
+        'را': ['ر', 'را', 'راء', 'الراء'],
+        'زا': ['ز', 'زا', 'زاء', 'زاي', 'الزاي'],
+        'سا': ['س', 'سا', 'ساء', 'سين', 'السين'],
+      };
+      for (final entry in legacy.entries) {
+        for (final heard in entry.value) {
+          expect(speechMatchesExpected(heard, entry.key), isTrue,
+              reason: 'Preserve ${entry.key}: $heard');
+        }
+      }
+      expect(speechMatchesExpected('باء', 'آ'), isFalse);
+      expect(speechMatchesExpected('بطة', 'با'), isFalse);
+      expect(speechMatchesExpected('جمل', 'جا'), isFalse);
+      expect(speechMatchesExpected('ساعة', 'سا'), isFalse);
+    });
+  });
+
+  group('single fatha letter', () {
+    test('accepts all 28 glyphs and their phonetic ASR spellings', () {
+      const alphabet = 'ابتثجحخدذرزسشصضطظعغفقكلمنهوي';
+      for (final letter in alphabet.split('')) {
+        final phoneme = '$letterا';
+        final hamzaSpelling = letter == 'ا' ? 'اء' : '$letterاء';
+        for (final expected in [letter, '$letterَ', phoneme, hamzaSpelling]) {
+          for (final heard in [letter, '$letterَ', phoneme, hamzaSpelling]) {
+            expect(fathaLetterMatchesExpected(heard, expected), isTrue,
+                reason: 'Expected $expected; heard $heard');
+          }
+        }
+      }
+    });
+
+    test('accepts one through four separate repetitions of the same syllable',
+        () {
+      for (final heard in ['سا', 'سا سا', 'سَ سا ساء', 'سا، سَ! ساء؟ سا']) {
+        expect(fathaLetterMatchesExpected(heard, 'سَا'), isTrue, reason: heard);
+      }
+      for (final heard in [
+        'سا سا سا سا سا',
+        'ساسا',
+        'سا ساسا',
+        'سا شا',
+        'سا سين',
+        'سا سِ',
+        'س ا',
+      ]) {
+        expect(fathaLetterMatchesExpected(heard, 'سا'), isFalse, reason: heard);
+      }
+    });
+
+    test('rejects distinct names as responses and as expected phonemes', () {
+      const names = <String, String>{
+        'ألف': 'أَ',
+        'جيم': 'جَا',
+        'دال': 'دَا',
+        'ذال': 'ذَا',
+        'زاي': 'زَا',
+        'زين': 'زَا',
+        'سين': 'سَا',
+        'شين': 'شَا',
+        'صاد': 'صَا',
+        'ضاد': 'ضَا',
+        'عين': 'عَا',
+        'غين': 'غَا',
+        'قاف': 'قَا',
+        'كاف': 'كَا',
+        'لام': 'لَا',
+        'ميم': 'مَا',
+        'نون': 'نَا',
+        'واو': 'وَا',
+      };
+      for (final entry in names.entries) {
+        expect(fathaLetterMatchesExpected(entry.key, entry.value), isFalse,
+            reason: 'Do not accept the name ${entry.key}');
+        expect(
+            fathaLetterMatchesExpected('ال${entry.key}', entry.value), isFalse,
+            reason: 'Do not accept the definite name ${entry.key}');
+        expect(fathaLetterMatchesExpected(entry.value, entry.key), isFalse,
+            reason: 'Content must request the phoneme, not ${entry.key}');
+      }
+    });
+
+    test('accepts the reported saa sound but never substitutes seen for saa',
+        () {
+      for (final heard in ['سا', 'سَا', 'س', 'سَ', 'ساء']) {
+        expect(fathaLetterMatchesExpected(heard, 'سَا'), isTrue, reason: heard);
+      }
+      for (final heard in ['سين', 'السين', 'ساعة', 'السا', 'سالم', 'سؤال']) {
+        expect(fathaLetterMatchesExpected(heard, 'سَا'), isFalse,
+            reason: heard);
+      }
+    });
+
+    test('handles alif and hamza without allowing an extra haa or a name', () {
+      for (final heard in ['أ', 'أَ', 'آ', 'ا', 'ء', 'اا', 'اء', 'اَ\u0654']) {
+        expect(fathaLetterMatchesExpected(heard, 'أَ'), isTrue, reason: heard);
+      }
+      for (final heard in ['إ', 'إِ', 'ا\u0655', 'آه', 'ها', 'اه', 'ألف']) {
+        expect(fathaLetterMatchesExpected(heard, 'أَ'), isFalse, reason: heard);
+      }
+    });
+
+    test('rejects explicit wrong vowels, extra words, symbols and partials',
+        () {
+      for (final heard in [
+        '',
+        '   ',
+        'سِ',
+        'سُ',
+        'سْ',
+        'سً',
+        'سَّ',
+        'سٍ',
+        'سٌ',
+        'سي',
+        'سو',
+        'أقول سا',
+        'سا أحسنتم',
+        'saa',
+        'سا1',
+        'سا-سا',
+        'لا سا',
+        'سام',
+        'اسا',
+      ]) {
+        expect(fathaLetterMatchesExpected(heard, 'سا'), isFalse, reason: heard);
+      }
+      expect(fathaLetterMatchesExpected('سَـا\u200f،', 'سَا'), isTrue);
+      for (final expected in ['', 'سِ', 'سُ', 'سَ ذَ', 'seen', 'ة']) {
+        expect(fathaLetterMatchesExpected('سا', expected), isFalse,
+            reason: 'Invalid expected value: $expected');
+      }
+    });
+  });
+
+  group('two-/three-letter fatha reading', () {
+    test('accepts the reference cards in logical RTL reading order', () {
+      const referenceReadings = <String>[
+        // First card, rows from right to left.
+        'بح', 'دخ', 'زس', 'تأ', 'جث', 'ذر',
+        'جز', 'رأ', 'ثح', 'سذ', 'خت', 'دب',
+        // Second card.
+        'شح', 'طخ', 'ظس', 'صأ', 'عث', 'ضر',
+        'جط', 'رض', 'ثش', 'سع', 'خظ', 'دص',
+        'جد', 'ذس', 'تز', 'سش', 'ظع', 'بد',
+        // Third card.
+        'غص', 'فظ', 'قش', 'لط', 'مث', 'كض',
+        'سل', 'بم', 'زغ', 'شف', 'خك', 'ذق',
+        // Fourth card: first pairs, then three-letter readings.
+        'نص', 'وظ', 'هو', 'يه', 'من', 'يط', 'كي',
+        'أكل', 'رأس', 'صبر', 'نظر', 'حرث',
+        'خدم', 'صدق', 'ضرع', 'غزل', 'طرأ',
+        'فتح', 'وقف', 'وجد', 'خذل', 'نشر',
+      ];
+      for (final reading in referenceReadings) {
+        final letters = reading.split('');
+        final withFatha = letters.map((letter) => '$letterَ').toList();
+        expect(fathaReadingMatchesExpected(reading, letters), isTrue,
+            reason: reading);
+        expect(
+            fathaReadingMatchesExpected(withFatha.join(' '), withFatha), isTrue,
+            reason: 'Spaced fatha: $reading');
+        expect(fathaReadingMatchesExpected(withFatha.join(), withFatha), isTrue,
+            reason: 'Connected fatha: $reading');
+        expect(fathaReadingMatchesExpected(letters.reversed.join(), letters),
+            isFalse,
+            reason: 'Reversed order: $reading');
+      }
+    });
+
+    test('covers all 28 letters with alif/hamza ASR syllable spellings', () {
+      const alphabet = 'ابتثجحخدذرزسشصضطظعغفقكلمنهوي';
+      for (final letter in alphabet.split('')) {
+        final expected = [letter, 'ح'];
+        expect(fathaReadingMatchesExpected('$letterَ حَ', expected), isTrue,
+            reason: 'Glyph: $letter');
+        expect(fathaReadingMatchesExpected('$letterا حا', expected), isTrue,
+            reason: 'Alif spelling: $letter');
+        final hamzaSpelling = letter == 'ا' ? 'اء' : '$letterاء';
+        expect(
+            fathaReadingMatchesExpected('$hamzaSpelling حاء', expected), isTrue,
+            reason: 'Hamza spelling: $letter');
+      }
+    });
+
+    test('accepts complete connected, separated and mixed syllables', () {
+      for (final heard in ['سا ذا', 'ساذا', 'ساء ذاء', 'سَ ذا', 'سا ذَ']) {
+        expect(fathaReadingMatchesExpected(heard, ['سَ', 'ذَ']), isTrue,
+            reason: heard);
+      }
+      expect(fathaReadingMatchesExpected('فا تا حا', ['ف', 'ت', 'ح']), isTrue);
+      expect(fathaReadingMatchesExpected('فاتاحا', ['ف', 'ت', 'ح']), isTrue);
+      expect(fathaReadingMatchesExpected('فا تحا', ['ف', 'ت', 'ح']), isTrue);
+    });
+
+    test('accepts only the expected alif/hamza variants', () {
+      for (final heard in ['رأ', 'را', 'رَ أَ', 'را آ', 'ر ء', 'را اا']) {
+        expect(fathaReadingMatchesExpected(heard, ['ر', 'أ']), isTrue,
+            reason: heard);
+      }
+      expect(fathaReadingMatchesExpected('رَ ا\u0654َ', ['ر', 'أ']), isTrue);
+      expect(fathaReadingMatchesExpected('رَ اَ\u0654', ['ر', 'أ']), isTrue);
+      expect(fathaReadingMatchesExpected('را ء', ['ر', 'ء']), isTrue);
+      expect(fathaReadingMatchesExpected('را آه', ['ر', 'أ']), isFalse);
+      expect(fathaReadingMatchesExpected('را ألف', ['ر', 'أ']), isFalse);
+      expect(fathaReadingMatchesExpected('رَ إِ', ['ر', 'أ']), isFalse);
+    });
+
+    test('preserves token boundaries and consumes exactly the whole response',
+        () {
+      for (final heard in [
+        '',
+        'سا',
+        'سا ذا سا',
+        'سا سا ذا',
+        'ذا سا',
+        'شا ذا',
+        'أقول سا ذا',
+        'سا ذا أحسنتم',
+        'اساذا',
+        'ساذاب',
+        'سا و ذا',
+        'س ا ذا',
+        'سا ذ ا',
+        'سا1ذا',
+        'سا-ذا',
+        'sin ذا',
+        'سين ذا',
+        'السين ذا',
+        'السا ذا',
+      ]) {
+        expect(fathaReadingMatchesExpected(heard, ['س', 'ذ']), isFalse,
+            reason: heard);
+      }
+      expect(fathaReadingMatchesExpected('سا ذ', ['س', 'ذ']), isTrue);
+      expect(fathaReadingMatchesExpected('سَا، ذَا!', ['س', 'ذ']), isTrue);
+      expect(
+          fathaReadingMatchesExpected('سَـا\u200f، ذَا', ['س', 'ذ']), isTrue);
+    });
+
+    test('does not accept a word merely containing expected letters', () {
+      expect(fathaReadingMatchesExpected('سلام', ['س', 'م']), isFalse);
+      expect(fathaReadingMatchesExpected('جمل', ['ج', 'م']), isFalse);
+      expect(fathaReadingMatchesExpected('حرف السين', ['س', 'ن']), isFalse);
+      expect(fathaReadingMatchesExpected('الساعة', ['س', 'ع']), isFalse);
+    });
+
+    test('rejects distinct letter names even if syllables could segment them',
+        () {
+      const cases = <String, List<String>>{
+        'دال': ['د', 'ل'],
+        'ذال': ['ذ', 'ل'],
+        'صاد': ['ص', 'د'],
+        'ضاد': ['ض', 'د'],
+        'قاف': ['ق', 'ف'],
+        'كاف': ['ك', 'ف'],
+        'لام': ['ل', 'م'],
+        'واو': ['و', 'و'],
+        'جيم حا': ['ج', 'ح'],
+        'عين حا': ['ع', 'ح'],
+        'غين حا': ['غ', 'ح'],
+        'سين حا': ['س', 'ح'],
+        'شين حا': ['ش', 'ح'],
+        'ميم حا': ['م', 'ح'],
+        'نون حا': ['ن', 'ح'],
+        'زاي حا': ['ز', 'ح'],
+        'الدال': ['د', 'ل'],
+      };
+      for (final entry in cases.entries) {
+        expect(fathaReadingMatchesExpected(entry.key, entry.value), isFalse,
+            reason: entry.key);
+      }
+      // Separated phonemes are not the ambiguous whole-token letter name.
+      expect(fathaReadingMatchesExpected('دا لَ', ['د', 'ل']), isTrue);
+      expect(fathaReadingMatchesExpected('دَ لَ', ['د', 'ل']), isTrue);
+    });
+
+    test('rejects explicit non-fatha vowels instead of stripping them', () {
+      for (final heard in [
+        'سِ ذَ',
+        'سُ ذَ',
+        'سْ ذَ',
+        'سٍ ذَ',
+        'سٌ ذَ',
+        'سً ذَ',
+        'سَّ ذَ',
+        'سَا ذِي',
+        'سَا ذُو',
+      ]) {
+        expect(fathaReadingMatchesExpected(heard, ['س', 'ذ']), isFalse,
+            reason: heard);
+      }
+      expect(fathaReadingMatchesExpected('سَذَ', ['سَ', 'ذَ']), isTrue);
+      expect(fathaReadingMatchesExpected('سذ', ['سِ', 'ذَ']), isFalse);
+    });
+
+    test('validates expected shape and requires exactly two or three glyphs',
+        () {
+      expect(fathaReadingMatchesExpected('سا', ['س']), isFalse);
+      expect(fathaReadingMatchesExpected('سذ', []), isFalse);
+      expect(
+          fathaReadingMatchesExpected('سذرح', ['س', 'ذ', 'ر', 'ح']), isFalse);
+      expect(fathaReadingMatchesExpected('سذ', ['سا', 'ذ']), isFalse);
+      expect(fathaReadingMatchesExpected('سذ', ['seen', 'dhal']), isFalse);
+      expect(fathaReadingMatchesExpected('سذ', ['سين', 'ذ']), isFalse);
+      expect(fathaReadingMatchesExpected('سذ', ['س', 'ة']), isFalse);
+      expect(fathaReadingMatchesExpected('فت', ['ف', 'ت', 'ح']), isFalse);
+      expect(fathaReadingMatchesExpected('فتحح', ['ف', 'ت', 'ح']), isFalse);
+    });
+  });
+}

@@ -1,0 +1,1303 @@
+[
+  {
+    "slug": "thaa",
+    "key": "welcome",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "3sd7hbFnJUTIc2hYLElU",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13c4kdye3vsnng0gqhny0pz",
+    "results": [
+      {
+        "success": true,
+        "node_id": "3sd7hbFnJUTIc2hYLElU",
+        "session_id": "Dg4x00LnEWaiNnNUJqiM"
+      }
+    ],
+    "session_ids": [
+      "Dg4x00LnEWaiNnNUJqiM"
+    ],
+    "pending": [
+      {
+        "generation_id": "zbHLxt9wO0Nb3cO945he",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13c4kdye3vsnng0gqhny0pz",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "thaa",
+    "key": "explain_1",
+    "prompt": "انظروا يا أصدقائي إلى حرف الثاء، إنه حرف جميل.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "Shw5X2uXszc4wm1qQT0l",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13c4xppf0jt4m7c27vs7kw3",
+    "results": [
+      {
+        "success": true,
+        "node_id": "Shw5X2uXszc4wm1qQT0l",
+        "session_id": "zlpEHZ7xEWNQx0djYUxi"
+      }
+    ],
+    "session_ids": [
+      "zlpEHZ7xEWNQx0djYUxi"
+    ],
+    "pending": [
+      {
+        "generation_id": "LZHE7TaUJ4DHG5S2zorj",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13c4xppf0jt4m7c27vs7kw3",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "thaa",
+    "key": "explain_2",
+    "prompt": "ثَا، ثَا، ثَا. هل تعرفون كلمةً تبدأ بحرف الثاء؟",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "Sr9LpidQy7EcydNDdjpc",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13c4zqxfk2vsmt61zxbr03y",
+    "results": [
+      {
+        "success": true,
+        "node_id": "Sr9LpidQy7EcydNDdjpc",
+        "session_id": "u1sbY3lTBAy7PcE2MIsc"
+      }
+    ],
+    "session_ids": [
+      "u1sbY3lTBAy7PcE2MIsc"
+    ],
+    "pending": [
+      {
+        "generation_id": "pb5pdrVXbD5pE5Sj2TIR",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13c4zqxfk2vsmt61zxbr03y",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "thaa",
+    "key": "explain_3",
+    "prompt": "ثَا، ثَعْلَب. ثَا، ثَعْلَب.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "ZH0AD61aRUoP3avd0SU3",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13c52h4e5grnz6d39khztbp",
+    "results": [
+      {
+        "success": true,
+        "node_id": "ZH0AD61aRUoP3avd0SU3",
+        "session_id": "RPXgLkrfmEMuGcPqvhvM"
+      }
+    ],
+    "session_ids": [
+      "RPXgLkrfmEMuGcPqvhvM"
+    ],
+    "pending": [
+      {
+        "generation_id": "4byGazE8hrEQwRVaT8KI",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13c52h4e5grnz6d39khztbp",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "thaa",
+    "key": "explain_4",
+    "prompt": "انظروا إلى كلمة ثَعْلَب، إنها تبدأ بحرف الثاء.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "FkiiMFthzXoLzroYdMWv",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13c54hxf8hvrt1fbj5f5g31",
+    "results": [
+      {
+        "success": true,
+        "node_id": "FkiiMFthzXoLzroYdMWv",
+        "session_id": "74ZCWjuWeSgk97ZcnRQQ"
+      }
+    ],
+    "session_ids": [
+      "74ZCWjuWeSgk97ZcnRQQ"
+    ],
+    "pending": [
+      {
+        "generation_id": "I3h41LRAFlSgwkR8cybg",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13c54hxf8hvrt1fbj5f5g31",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "thaa",
+    "key": "explain_5",
+    "prompt": "ردِّدوا معي: ثَا، ثَعْلَب. ثَا، ثَعْلَب. ثَا، ثَعْلَب.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "uVdj4hVMd6BSQipY7Nm2",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13c56nmev79t2wxxdwzpkst",
+    "results": [
+      {
+        "success": true,
+        "node_id": "uVdj4hVMd6BSQipY7Nm2",
+        "session_id": "zywUhUA3Uc9Li20hgHS3"
+      }
+    ],
+    "session_ids": [
+      "zywUhUA3Uc9Li20hgHS3"
+    ],
+    "pending": [
+      {
+        "generation_id": "fvrWCyIDgajhWxIgpaqZ",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13c56nmev79t2wxxdwzpkst",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "thaa",
+    "key": "explain_6",
+    "prompt": "هكذا يا أصدقائي تعلمنا اليوم حرف الثاء. سننتقل الآن إلى نطق وكتابة حرف الثاء. هيا بنا.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "Lpocn5OBhkJmGoBcWy2H",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13c58rfedfbrpryne1er72k",
+    "results": [
+      {
+        "success": true,
+        "node_id": "Lpocn5OBhkJmGoBcWy2H",
+        "session_id": "qnkmgHP8DAN51aEWWx3s"
+      }
+    ],
+    "session_ids": [
+      "qnkmgHP8DAN51aEWWx3s"
+    ],
+    "pending": [
+      {
+        "generation_id": "2UsCLa17TS6I2YkDNsKs",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13c58rfedfbrpryne1er72k",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "thaa",
+    "key": "pronounce_intro",
+    "prompt": "هيا يا أصدقائي، سأستمع إلى نطقكم لحرف الثاء. ثَا، ثَا، ثَا. اضغطوا على زر المايك وقوموا بنطق الحرف. هيا.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "RdDQXIEfkbyR0EGoVDPG",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13c5arwfe2vd9nfn4nf8zcp",
+    "results": [
+      {
+        "success": true,
+        "node_id": "RdDQXIEfkbyR0EGoVDPG",
+        "session_id": "CfDpzXTlQZRIBqiq0TF0"
+      }
+    ],
+    "session_ids": [
+      "CfDpzXTlQZRIBqiq0TF0"
+    ],
+    "pending": [
+      {
+        "generation_id": "qpkazTwdl157woVti5Vk",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13c5arwfe2vd9nfn4nf8zcp",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "thaa",
+    "key": "writing_demo",
+    "prompt": "انظروا يا أصدقائي كيف نكتب حرف الثاء. نبدأ من اليمين، ونسير مع المسار إلى اليسار، ثم نضع ثلاث نقاط فوق الحرف، ثم الفتحة. انظروا مرةً أخرى. نبدأ من اليمين، ونسير مع المسار إلى اليسار، ثم نضع ثلاث نقاط فوق الحرف، ثم الفتحة.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "PCmclGfMfa7mIjYkEQyu",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13c76a5e8e9ggca0drp3r6q",
+    "results": [
+      {
+        "success": true,
+        "node_id": "PCmclGfMfa7mIjYkEQyu",
+        "session_id": "GFgfaGfjOyp4aHErunKs"
+      }
+    ],
+    "session_ids": [
+      "GFgfaGfjOyp4aHErunKs"
+    ],
+    "pending": [
+      {
+        "generation_id": "EteR1LdDtYLP42BoJNFn",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13c76a5e8e9ggca0drp3r6q",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "thaa",
+    "key": "writing_try",
+    "prompt": "هيا يا أصدقائي، اكتبوا حرف الثاء. ضعوا إصبعكم على النقطة الخضراء، واتبعوا مسار الحرف حتى النهاية. ثَا، ثَا.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "SDZvO5iG4n119PVkU0IF",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13c78d5eyysa2hyw9pacsp8",
+    "results": [
+      {
+        "success": true,
+        "node_id": "SDZvO5iG4n119PVkU0IF",
+        "session_id": "eGQlbxtEqca2iLUYWsRp"
+      }
+    ],
+    "session_ids": [
+      "eGQlbxtEqca2iLUYWsRp"
+    ],
+    "pending": [
+      {
+        "generation_id": "mevnkAr2FMqq2w1VZ645",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13c78d5eyysa2hyw9pacsp8",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "thaa",
+    "key": "free_intro",
+    "prompt": "هيا يا أصدقائي، هل تذكرون كيفية كتابة حرف الثاء؟ قوموا بكتابة حرف الثاء الآن.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "6qAtmb0jxDX08PQK5GIc",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13c7b13e0p8g6dmz4nsqdg5",
+    "results": [
+      {
+        "success": true,
+        "node_id": "6qAtmb0jxDX08PQK5GIc",
+        "session_id": "gzso3cQwrhR84CwDwpdm"
+      }
+    ],
+    "session_ids": [
+      "gzso3cQwrhR84CwDwpdm"
+    ],
+    "pending": [
+      {
+        "generation_id": "r2n6Gk461bdX1GVStplE",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13c7b13e0p8g6dmz4nsqdg5",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "thaa",
+    "key": "assessment_1",
+    "prompt": "أين حرف الثاء؟ اضغطوا على حرف الثاء.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "pMyQ75lgS613Cm3qPkht",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13c7d28fygbdgyynjt7kn6s",
+    "results": [
+      {
+        "success": true,
+        "node_id": "pMyQ75lgS613Cm3qPkht",
+        "session_id": "d7NIU5vNelgMoF3G5owG"
+      }
+    ],
+    "session_ids": [
+      "d7NIU5vNelgMoF3G5owG"
+    ],
+    "pending": [
+      {
+        "generation_id": "H2CW5Ikb1fYbdYaNlSq2",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13c7d28fygbdgyynjt7kn6s",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "thaa",
+    "key": "assessment_2",
+    "prompt": "ما الكلمة التي تبدأ بحرف الثاء؟ اختاروا الصورة الصحيحة.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "sorICKKEb8q1A299tESV",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13c7f2semvseqmxfhse0365",
+    "results": [
+      {
+        "success": true,
+        "node_id": "sorICKKEb8q1A299tESV",
+        "session_id": "LgCuudVROvrYnCV5X7Ao"
+      }
+    ],
+    "session_ids": [
+      "LgCuudVROvrYnCV5X7Ao"
+    ],
+    "pending": [
+      {
+        "generation_id": "hKY8KKJkWwzRAUJ3iqoz",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13c7f2semvseqmxfhse0365",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "thaa",
+    "key": "closing",
+    "prompt": "أحسنتم يا أبطال. الحمد لله، لقد تعرفنا هذا اليوم على حرف الثاء. ثَا، ثَعْلَب. نلقاكم غدًا بإذن الله. إلى اللقاء يا أصدقائي.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "zpwN2qU8BSEB3WWcdZOT",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13c7h3xef6vz7h0p92rjrhg",
+    "results": [
+      {
+        "success": true,
+        "node_id": "zpwN2qU8BSEB3WWcdZOT",
+        "session_id": "uWZNj3wdwPw0fnk650ph"
+      }
+    ],
+    "session_ids": [
+      "uWZNj3wdwPw0fnk650ph"
+    ],
+    "pending": [
+      {
+        "generation_id": "iA1NGmnoGHg7EXZkZnWB",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13c7h3xef6vz7h0p92rjrhg",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "jeem",
+    "key": "welcome",
+    "prompt": "مرحبًا يا أصدقائي، كيف حالكم اليوم؟ سوف نتعلم اليوم حرفًا جديدًا، حرف الجيم. هيا بنا.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "wAN4hMb9GZ2gvTQxxeGB",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13c7k73f888mpjmdc2m0ya5",
+    "results": [
+      {
+        "success": true,
+        "node_id": "wAN4hMb9GZ2gvTQxxeGB",
+        "session_id": "5mntm6YR5tRnLUfJpko0"
+      }
+    ],
+    "session_ids": [
+      "5mntm6YR5tRnLUfJpko0"
+    ],
+    "pending": [
+      {
+        "generation_id": "PHjT14ChzKp7ZtzpnyX8",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13c7k73f888mpjmdc2m0ya5",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "jeem",
+    "key": "explain_1",
+    "prompt": "انظروا يا أصدقائي إلى حرف الجيم، إنه حرف جميل.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "UQ5tiDZGS6dEbdvOMWnb",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13c7n8yffwtj008aq6nj3nk",
+    "results": [
+      {
+        "success": true,
+        "node_id": "UQ5tiDZGS6dEbdvOMWnb",
+        "session_id": "c91IO8o0U3pxCAybc2fg"
+      }
+    ],
+    "session_ids": [
+      "c91IO8o0U3pxCAybc2fg"
+    ],
+    "pending": [
+      {
+        "generation_id": "yqz3Z0FEIFPOq6kBsjg9",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13c7n8yffwtj008aq6nj3nk",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "jeem",
+    "key": "explain_2",
+    "prompt": "جَا، جَا، جَا. هل تعرفون كلمةً تبدأ بحرف الجيم؟",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "ObQpMEyqijhB2sRwAFLL",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13c7rg9erdr4feq0yw19gg7",
+    "results": [
+      {
+        "success": true,
+        "node_id": "ObQpMEyqijhB2sRwAFLL",
+        "session_id": "bGKAPbuvQqcH8xKS6kLl"
+      }
+    ],
+    "session_ids": [
+      "bGKAPbuvQqcH8xKS6kLl"
+    ],
+    "pending": [
+      {
+        "generation_id": "6fKW6rcgKf0Ge6GI1MUc",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13c7rg9erdr4feq0yw19gg7",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "jeem",
+    "key": "explain_3",
+    "prompt": "جَا، جَمَل. جَا، جَمَل.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "3zzbTp3gGDJ26DjnUeGu",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13c7tjhfxzvtapaw3rrkagz",
+    "results": [
+      {
+        "success": true,
+        "node_id": "3zzbTp3gGDJ26DjnUeGu",
+        "session_id": "u9uGja03an6zaCe2M8bo"
+      }
+    ],
+    "session_ids": [
+      "u9uGja03an6zaCe2M8bo"
+    ],
+    "pending": [
+      {
+        "generation_id": "3I1EFVY2Q7PMm7rHf0o1",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13c7tjhfxzvtapaw3rrkagz",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "jeem",
+    "key": "explain_4",
+    "prompt": "انظروا إلى كلمة جَمَل، إنها تبدأ بحرف الجيم.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "oBLg6NUq00VJKOupd2Bu",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13c96p4e12vg1ybe9xjj17q",
+    "results": [
+      {
+        "success": true,
+        "node_id": "oBLg6NUq00VJKOupd2Bu",
+        "session_id": "kCychqGbKxJmqS6WJiLJ"
+      }
+    ],
+    "session_ids": [
+      "kCychqGbKxJmqS6WJiLJ"
+    ],
+    "pending": [
+      {
+        "generation_id": "bNb1IVWrNwz2RNPzQWFz",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13c96p4e12vg1ybe9xjj17q",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "jeem",
+    "key": "explain_5",
+    "prompt": "ردِّدوا معي: جَا، جَمَل. جَا، جَمَل. جَا، جَمَل.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "lUfarVdku0keP9bpJDTG",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13c98pme6yaf19cmtsd95df",
+    "results": [
+      {
+        "success": true,
+        "node_id": "lUfarVdku0keP9bpJDTG",
+        "session_id": "wpGjMXmgY4A2FK9OfKx5"
+      }
+    ],
+    "session_ids": [
+      "wpGjMXmgY4A2FK9OfKx5"
+    ],
+    "pending": [
+      {
+        "generation_id": "8KGUBL2Pnfbc4xPEvQCz",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13c98pme6yaf19cmtsd95df",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "jeem",
+    "key": "explain_6",
+    "prompt": "هكذا يا أصدقائي تعلمنا اليوم حرف الجيم. سننتقل الآن إلى نطق وكتابة حرف الجيم. هيا بنا.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "GTL8zR1kOoTzo7KtVtT3",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13c9ax5e9atzk0nqzh4y3ws",
+    "results": [
+      {
+        "success": true,
+        "node_id": "GTL8zR1kOoTzo7KtVtT3",
+        "session_id": "F0YTlQT70qjfIE6diZ5f"
+      }
+    ],
+    "session_ids": [
+      "F0YTlQT70qjfIE6diZ5f"
+    ],
+    "pending": [
+      {
+        "generation_id": "sKceXtWgyRYWbRaffztv",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13c9ax5e9atzk0nqzh4y3ws",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "jeem",
+    "key": "pronounce_intro",
+    "prompt": "هيا يا أصدقائي، سأستمع إلى نطقكم لحرف الجيم. جَا، جَا، جَا. اضغطوا على زر المايك وقوموا بنطق الحرف. هيا.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "afFw5u8K0Zrw3chfZgGo",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13c9cyhf12bf8d6cwcha08b",
+    "results": [
+      {
+        "success": true,
+        "node_id": "afFw5u8K0Zrw3chfZgGo",
+        "session_id": "ZSCZTgm3GcZ5Mwnv4nm3"
+      }
+    ],
+    "session_ids": [
+      "ZSCZTgm3GcZ5Mwnv4nm3"
+    ],
+    "pending": [
+      {
+        "generation_id": "SkX88yeDXs0o4BpUlXUk",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13c9cyhf12bf8d6cwcha08b",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "jeem",
+    "key": "writing_demo",
+    "prompt": "انظروا يا أصدقائي كيف نكتب حرف الجيم. نرسم رأس الحرف مع المسار، ثم ننزل ونكمل الانحناءة إلى اليمين، ونضع نقطة داخل الحرف، ثم الفتحة. انظروا مرةً أخرى. نرسم رأس الحرف مع المسار، ثم ننزل ونكمل الانحناءة إلى اليمين، ونضع نقطة داخل الحرف، ثم الفتحة.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "GCteSDyoHUp3XxtiC66y",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13c9f2sfxeaxfhc5fky44nv",
+    "results": [
+      {
+        "success": true,
+        "node_id": "GCteSDyoHUp3XxtiC66y",
+        "session_id": "vaLQCh0P33VhxqpSPLgW"
+      }
+    ],
+    "session_ids": [
+      "vaLQCh0P33VhxqpSPLgW"
+    ],
+    "pending": [
+      {
+        "generation_id": "LueXS4O6tx63q1aNDp5V",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13c9f2sfxeaxfhc5fky44nv",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "jeem",
+    "key": "writing_try",
+    "prompt": "هيا يا أصدقائي، اكتبوا حرف الجيم. ضعوا إصبعكم على النقطة الخضراء، واتبعوا مسار الحرف حتى النهاية. جَا، جَا.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "UFNluzwSExFfkj6XoIeZ",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13c9h5dfykrf0k9cxfv4bcs",
+    "results": [
+      {
+        "success": true,
+        "node_id": "UFNluzwSExFfkj6XoIeZ",
+        "session_id": "xH3vzGZS69CJrhoFVAiN"
+      }
+    ],
+    "session_ids": [
+      "xH3vzGZS69CJrhoFVAiN"
+    ],
+    "pending": [
+      {
+        "generation_id": "au6MzUEEqsrtDosyX0g7",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13c9h5dfykrf0k9cxfv4bcs",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "jeem",
+    "key": "free_intro",
+    "prompt": "هيا يا أصدقائي، هل تذكرون كيفية كتابة حرف الجيم؟ قوموا بكتابة حرف الجيم الآن.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "AaUdAJ7WrLL2aVVA16J9",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13c9kcheqpsmpaxpaa02yd7",
+    "results": [
+      {
+        "success": true,
+        "node_id": "AaUdAJ7WrLL2aVVA16J9",
+        "session_id": "uny82WhHar801yUJ95vF"
+      }
+    ],
+    "session_ids": [
+      "uny82WhHar801yUJ95vF"
+    ],
+    "pending": [
+      {
+        "generation_id": "k97a4JroCOjVheko6YAf",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13c9kcheqpsmpaxpaa02yd7",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "jeem",
+    "key": "assessment_1",
+    "prompt": "أين حرف الجيم؟ اضغطوا على حرف الجيم.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "cVsAJJAScGLktKag5Qib",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13c9nd8f2e8cnrhy76bz75m",
+    "results": [
+      {
+        "success": true,
+        "node_id": "cVsAJJAScGLktKag5Qib",
+        "session_id": "rjDNxCVCQPrr1hM5Pb31"
+      }
+    ],
+    "session_ids": [
+      "rjDNxCVCQPrr1hM5Pb31"
+    ],
+    "pending": [
+      {
+        "generation_id": "HOMauPFK7zjhp8ujGhzL",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13c9nd8f2e8cnrhy76bz75m",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "jeem",
+    "key": "assessment_2",
+    "prompt": "ما الكلمة التي تبدأ بحرف الجيم؟ اختاروا الصورة الصحيحة.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "Ws74ocX6aJhjkw3z5aQ4",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13c9qjzfhhtx4pxsrpjv81w",
+    "results": [
+      {
+        "success": true,
+        "node_id": "Ws74ocX6aJhjkw3z5aQ4",
+        "session_id": "Jn234PmORbm09Z4kHTUx"
+      }
+    ],
+    "session_ids": [
+      "Jn234PmORbm09Z4kHTUx"
+    ],
+    "pending": [
+      {
+        "generation_id": "D7Cleyk54pDW61Z5BZQF",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13c9qjzfhhtx4pxsrpjv81w",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "jeem",
+    "key": "closing",
+    "prompt": "أحسنتم يا أبطال. الحمد لله، لقد تعرفنا هذا اليوم على حرف الجيم. جَا، جَمَل. نلقاكم غدًا بإذن الله. إلى اللقاء يا أصدقائي.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "aB1tcS4JM90qqGRGORgy",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13c9sq7eazsbfdcw3s6t08g",
+    "results": [
+      {
+        "success": true,
+        "node_id": "aB1tcS4JM90qqGRGORgy",
+        "session_id": "1T02qbpsBk0DyzwnQvYR"
+      }
+    ],
+    "session_ids": [
+      "1T02qbpsBk0DyzwnQvYR"
+    ],
+    "pending": [
+      {
+        "generation_id": "EdZWmScfLgEp8D49goBB",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13c9sq7eazsbfdcw3s6t08g",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "haa",
+    "key": "welcome",
+    "prompt": "مرحبًا يا أصدقائي، كيف حالكم اليوم؟ سوف نتعلم اليوم حرفًا جديدًا، حرف الحاء. هيا بنا.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "PMSmzCsX9V9R2Hqpfkdg",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13c9vqveb3swb2fabcga6cd",
+    "results": [
+      {
+        "success": true,
+        "node_id": "PMSmzCsX9V9R2Hqpfkdg",
+        "session_id": "6afBn6xtiavcoS2xqmdE"
+      }
+    ],
+    "session_ids": [
+      "6afBn6xtiavcoS2xqmdE"
+    ],
+    "pending": [
+      {
+        "generation_id": "8rArIWUYFbfV9kIVmkaI",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13c9vqveb3swb2fabcga6cd",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "haa",
+    "key": "explain_1",
+    "prompt": "انظروا يا أصدقائي إلى حرف الحاء، إنه حرف جميل.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "Vcz2iwMYRakER7QWtcPK",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13c9xsafh78nd25jz5qdgr7",
+    "results": [
+      {
+        "success": true,
+        "node_id": "Vcz2iwMYRakER7QWtcPK",
+        "session_id": "ewHKZdbrJLPHWtIV6II7"
+      }
+    ],
+    "session_ids": [
+      "ewHKZdbrJLPHWtIV6II7"
+    ],
+    "pending": [
+      {
+        "generation_id": "SHN6Z5gF5r9RyDZTguxE",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13c9xsafh78nd25jz5qdgr7",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "haa",
+    "key": "explain_2",
+    "prompt": "حَا، حَا، حَا. هل تعرفون كلمةً تبدأ بحرف الحاء؟",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "Lf0cbBxd48g9NoYCEgAt",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13car9ffpea9crdn1j6g15w",
+    "results": [
+      {
+        "success": true,
+        "node_id": "Lf0cbBxd48g9NoYCEgAt",
+        "session_id": "pPbiPIi6quXU64Ogzk1f"
+      }
+    ],
+    "session_ids": [
+      "pPbiPIi6quXU64Ogzk1f"
+    ],
+    "pending": [
+      {
+        "generation_id": "CtNPPxgDS6qmeh9T5de3",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13car9ffpea9crdn1j6g15w",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "haa",
+    "key": "explain_3",
+    "prompt": "حَا، حَمامة. حَا، حَمامة.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "ZqaQbRJ0CFmJpN8AcDyv",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13catc5fkkvzs6k085hr2p8",
+    "results": [
+      {
+        "success": true,
+        "node_id": "ZqaQbRJ0CFmJpN8AcDyv",
+        "session_id": "LeHH7BtPQ93M50oGBDUs"
+      }
+    ],
+    "session_ids": [
+      "LeHH7BtPQ93M50oGBDUs"
+    ],
+    "pending": [
+      {
+        "generation_id": "cus1RQ0AjC7yvfhHZ2Wo",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13catc5fkkvzs6k085hr2p8",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "haa",
+    "key": "explain_4",
+    "prompt": "انظروا إلى كلمة حَمامة، إنها تبدأ بحرف الحاء.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "CUObT53vI4CSCpHiZFCi",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13cawehf3m85dbawvmpdy7t",
+    "results": [
+      {
+        "success": true,
+        "node_id": "CUObT53vI4CSCpHiZFCi",
+        "session_id": "SevOAdhMshRhToyumzXF"
+      }
+    ],
+    "session_ids": [
+      "SevOAdhMshRhToyumzXF"
+    ],
+    "pending": [
+      {
+        "generation_id": "GwYnbagaDZmaQtNULn4P",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13cawehf3m85dbawvmpdy7t",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "haa",
+    "key": "explain_5",
+    "prompt": "ردِّدوا معي: حَا، حَمامة. حَا، حَمامة. حَا، حَمامة.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "KzrNSZvpL2wOeTwZ0nm0",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13cayfsent81v8tdz23rjcn",
+    "results": [
+      {
+        "success": true,
+        "node_id": "KzrNSZvpL2wOeTwZ0nm0",
+        "session_id": "idBynv0XkbgPVPrd1oQ8"
+      }
+    ],
+    "session_ids": [
+      "idBynv0XkbgPVPrd1oQ8"
+    ],
+    "pending": [
+      {
+        "generation_id": "LpYoN6VXgq7SmSYVdHsU",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13cayfsent81v8tdz23rjcn",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "haa",
+    "key": "explain_6",
+    "prompt": "هكذا يا أصدقائي تعلمنا اليوم حرف الحاء. سننتقل الآن إلى نطق وكتابة حرف الحاء. هيا بنا.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "vAXIL06b0uwbLdTT8wQh",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13cb0nwf308rshm2ssgt3f2",
+    "results": [
+      {
+        "success": true,
+        "node_id": "vAXIL06b0uwbLdTT8wQh",
+        "session_id": "IQbvEHUS0B04F9ZbAAum"
+      }
+    ],
+    "session_ids": [
+      "IQbvEHUS0B04F9ZbAAum"
+    ],
+    "pending": [
+      {
+        "generation_id": "SxlQPAtUT6FvBnOAjM39",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13cb0nwf308rshm2ssgt3f2",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "haa",
+    "key": "pronounce_intro",
+    "prompt": "هيا يا أصدقائي، سأستمع إلى نطقكم لحرف الحاء. حَا، حَا، حَا. اضغطوا على زر المايك وقوموا بنطق الحرف. هيا.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "kDR9kLPBw6MkiIZhzelB",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13cb2tkexn9vf1ch5vd61yk",
+    "results": [
+      {
+        "success": true,
+        "node_id": "kDR9kLPBw6MkiIZhzelB",
+        "session_id": "7MP1en2bibTmtgLxTwmk"
+      }
+    ],
+    "session_ids": [
+      "7MP1en2bibTmtgLxTwmk"
+    ],
+    "pending": [
+      {
+        "generation_id": "6OWqSZ43imbfRndFUbgM",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13cb2tkexn9vf1ch5vd61yk",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "haa",
+    "key": "writing_demo",
+    "prompt": "انظروا يا أصدقائي كيف نكتب حرف الحاء. نرسم رأس الحرف مع المسار، ثم ننزل ونكمل الانحناءة إلى اليمين، ثم نضع الفتحة. حرف الحاء ليس له نقاط. انظروا مرةً أخرى. نرسم رأس الحرف مع المسار، ثم ننزل ونكمل الانحناءة إلى اليمين، ثم نضع الفتحة. حرف الحاء ليس له نقاط.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "bZKjQs021hIYdUXPjlzP",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13cb4w9f9drg8tmkw995r6j",
+    "results": [
+      {
+        "success": true,
+        "node_id": "bZKjQs021hIYdUXPjlzP",
+        "session_id": "JVWS8N6dTjgb8XcBsYWe"
+      }
+    ],
+    "session_ids": [
+      "JVWS8N6dTjgb8XcBsYWe"
+    ],
+    "pending": [
+      {
+        "generation_id": "tzrtmVpjnOLBw74HOXGa",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13cb4w9f9drg8tmkw995r6j",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "haa",
+    "key": "writing_try",
+    "prompt": "هيا يا أصدقائي، اكتبوا حرف الحاء. ضعوا إصبعكم على النقطة الخضراء، واتبعوا مسار الحرف حتى النهاية. حَا، حَا.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "BgLXFSrHxarSVztCVqbF",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13cb749eh1r1xsc4x9qyy1h",
+    "results": [
+      {
+        "success": true,
+        "node_id": "BgLXFSrHxarSVztCVqbF",
+        "session_id": "Am8MmyEOF3qHOL76xwe9"
+      }
+    ],
+    "session_ids": [
+      "Am8MmyEOF3qHOL76xwe9"
+    ],
+    "pending": [
+      {
+        "generation_id": "C2Kczmrw0DLfRrSJnJt6",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13cb749eh1r1xsc4x9qyy1h",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "haa",
+    "key": "free_intro",
+    "prompt": "هيا يا أصدقائي، هل تذكرون كيفية كتابة حرف الحاء؟ قوموا بكتابة حرف الحاء الآن.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "qXto6V6TZEe9P2xDcQPE",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13cb9q1escafym1443sm2xz",
+    "results": [
+      {
+        "success": true,
+        "node_id": "qXto6V6TZEe9P2xDcQPE",
+        "session_id": "XZFNpo3a2hOyr3emYrdK"
+      }
+    ],
+    "session_ids": [
+      "XZFNpo3a2hOyr3emYrdK"
+    ],
+    "pending": [
+      {
+        "generation_id": "QyROomtdBLVvZvWeYu1t",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13cb9q1escafym1443sm2xz",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "haa",
+    "key": "assessment_1",
+    "prompt": "أين حرف الحاء؟ اضغطوا على حرف الحاء.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "c2vNXnPqlTLgeHJzhX2L",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13cbc5hfpfae3k72m0kjw58",
+    "results": [
+      {
+        "success": true,
+        "node_id": "c2vNXnPqlTLgeHJzhX2L",
+        "session_id": "eQugm2BkZHqTpXGtG1E7"
+      }
+    ],
+    "session_ids": [
+      "eQugm2BkZHqTpXGtG1E7"
+    ],
+    "pending": [
+      {
+        "generation_id": "qJpcKI91nE3aqiR9Hq4W",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13cbc5hfpfae3k72m0kjw58",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "haa",
+    "key": "assessment_2",
+    "prompt": "ما الكلمة التي تبدأ بحرف الحاء؟ اختاروا الصورة الصحيحة.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "AEhX27xN4d1MSraXCetL",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13cbe9xfnrsbng1avjp99mt",
+    "results": [
+      {
+        "success": true,
+        "node_id": "AEhX27xN4d1MSraXCetL",
+        "session_id": "K1WpPUEFlHkIG6Wf79R1"
+      }
+    ],
+    "session_ids": [
+      "K1WpPUEFlHkIG6Wf79R1"
+    ],
+    "pending": [
+      {
+        "generation_id": "TPwLZSVgPQe2jrTGSNRN",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13cbe9xfnrsbng1avjp99mt",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  },
+  {
+    "slug": "haa",
+    "key": "closing",
+    "prompt": "أحسنتم يا أبطال. الحمد لله، لقد تعرفنا هذا اليوم على حرف الحاء. حَا، حَمامة. نلقاكم غدًا بإذن الله. إلى اللقاء يا أصدقائي.",
+    "flow_id": "9YFvZjc3D8zZW7XlyRIP",
+    "flow_created": false,
+    "node_id": "ioHfd5K0GMUO1TUJ3lrS",
+    "url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP?vs=viewstate_01m13cbgd9e1w98amc6beeew54",
+    "results": [
+      {
+        "success": true,
+        "node_id": "ioHfd5K0GMUO1TUJ3lrS",
+        "session_id": "EMj0ZQ0IN7dvYG58ePfe"
+      }
+    ],
+    "session_ids": [
+      "EMj0ZQ0IN7dvYG58ePfe"
+    ],
+    "pending": [
+      {
+        "generation_id": "RtVmGz8smTUoycQ94GeW",
+        "kind": "audio",
+        "generation_url": null
+      }
+    ],
+    "poll_after_seconds": 3,
+    "notes": "Not finished yet. If a generation view is shown it tracks progress and polls by itself, so there is nothing to do here. Only call creative_get_flow_run_status yourself if no view appeared: wait poll_after_seconds, then call it with this flow_id and session_ids, repeating until all_completed or has_failures is true.\nThe result renders as a speech view: it plays the takes, and offers the user a voice switcher and a pager over every take generated so far. Switching voice there starts and charges another generation of this same line, appended as a take, and is published to you as widget context — read that rather than asking what they switched to.",
+    "view_kind": "speech_generation",
+    "view_state_id": "viewstate_01m13cbgd9e1w98amc6beeew54",
+    "flow_url": "https://elevenlabs.io/app/flows/9YFvZjc3D8zZW7XlyRIP"
+  }
+]

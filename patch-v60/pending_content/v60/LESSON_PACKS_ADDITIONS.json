@@ -1,0 +1,791 @@
+{
+  "schemaVersion": 1,
+  "packs": [
+    {
+      "id": "reading_group_2",
+      "version": 1,
+      "kind": "reading",
+      "title": "قراءة حرفين معًا",
+      "stageId": "letters_fatha",
+      "status": "pending",
+      "lessonAsset": "assets/content/lesson_reading_group_2.json",
+      "audioFolder": "assets/audio/reading/",
+      "traceTemplateIds": [],
+      "exampleImages": [],
+      "priorLessonIds": [
+        "dal",
+        "dhal",
+        "raa",
+        "zay",
+        "seen"
+      ],
+      "reviewScope": "level",
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ]
+    },
+    {
+      "id": "sheen",
+      "version": 1,
+      "title": "حرف الشين",
+      "letter": "شَ",
+      "stageId": "letters_fatha",
+      "status": "pending",
+      "priorLessonIds": [],
+      "reviewScope": "level",
+      "lessonAsset": "assets/content/lesson_sheen.json",
+      "audioFolder": "assets/audio/sheen/",
+      "traceTemplateIds": [
+        "sheen_fatha_pdf_v1"
+      ],
+      "exampleImages": [
+        "assets/images/assessment/sheen_v60.png"
+      ],
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ]
+    },
+    {
+      "id": "saad",
+      "version": 1,
+      "title": "حرف الصاد",
+      "letter": "صَ",
+      "stageId": "letters_fatha",
+      "status": "pending",
+      "priorLessonIds": [
+        "sheen"
+      ],
+      "reviewScope": "level",
+      "lessonAsset": "assets/content/lesson_saad.json",
+      "audioFolder": "assets/audio/saad/",
+      "traceTemplateIds": [
+        "saad_fatha_pdf_v1"
+      ],
+      "exampleImages": [
+        "assets/images/assessment/saad_v60.png"
+      ],
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ]
+    },
+    {
+      "id": "daad",
+      "version": 1,
+      "title": "حرف الضاد",
+      "letter": "ضَ",
+      "stageId": "letters_fatha",
+      "status": "pending",
+      "priorLessonIds": [
+        "sheen",
+        "saad"
+      ],
+      "reviewScope": "level",
+      "lessonAsset": "assets/content/lesson_daad.json",
+      "audioFolder": "assets/audio/daad/",
+      "traceTemplateIds": [
+        "daad_fatha_pdf_v1"
+      ],
+      "exampleImages": [
+        "assets/images/assessment/daad_v60.png"
+      ],
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ]
+    },
+    {
+      "id": "tah",
+      "version": 1,
+      "title": "حرف الطاء",
+      "letter": "طَ",
+      "stageId": "letters_fatha",
+      "status": "pending",
+      "priorLessonIds": [
+        "sheen",
+        "saad",
+        "daad"
+      ],
+      "reviewScope": "level",
+      "lessonAsset": "assets/content/lesson_tah.json",
+      "audioFolder": "assets/audio/tah/",
+      "traceTemplateIds": [
+        "tah_fatha_pdf_v1"
+      ],
+      "exampleImages": [
+        "assets/images/assessment/tah_v60.png"
+      ],
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ]
+    },
+    {
+      "id": "zah",
+      "version": 1,
+      "title": "حرف الظاء",
+      "letter": "ظَ",
+      "stageId": "letters_fatha",
+      "status": "pending",
+      "priorLessonIds": [
+        "sheen",
+        "saad",
+        "daad",
+        "tah"
+      ],
+      "reviewScope": "level",
+      "lessonAsset": "assets/content/lesson_zah.json",
+      "audioFolder": "assets/audio/zah/",
+      "traceTemplateIds": [
+        "zah_fatha_pdf_v1"
+      ],
+      "exampleImages": [
+        "assets/images/assessment/zah_v60.png"
+      ],
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ]
+    },
+    {
+      "id": "ayn",
+      "version": 1,
+      "title": "حرف العين",
+      "letter": "عَ",
+      "stageId": "letters_fatha",
+      "status": "pending",
+      "priorLessonIds": [
+        "sheen",
+        "saad",
+        "daad",
+        "tah",
+        "zah"
+      ],
+      "reviewScope": "level",
+      "lessonAsset": "assets/content/lesson_ayn.json",
+      "audioFolder": "assets/audio/ayn/",
+      "traceTemplateIds": [
+        "ayn_fatha_pdf_v1"
+      ],
+      "exampleImages": [
+        "assets/images/assessment/ayn_v60.png"
+      ],
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ]
+    },
+    {
+      "id": "checkpoint_group_3",
+      "title": "الاختبار المرحلي الثالث",
+      "version": 1,
+      "kind": "checkpoint",
+      "stageId": "letters_fatha",
+      "status": "pending",
+      "priorLessonIds": [
+        "alif",
+        "baa",
+        "taa",
+        "thaa",
+        "jeem",
+        "haa",
+        "khaa",
+        "dal",
+        "dhal",
+        "raa",
+        "zay",
+        "seen",
+        "sheen",
+        "saad",
+        "daad",
+        "tah",
+        "zah",
+        "ayn"
+      ],
+      "reviewScope": "cumulative",
+      "lessonAsset": "assets/content/lesson_checkpoint_group_3.json",
+      "audioFolder": "assets/audio/checkpoint_2/",
+      "traceTemplateIds": [
+        "sheen_fatha_pdf_v1",
+        "saad_fatha_pdf_v1",
+        "daad_fatha_pdf_v1",
+        "tah_fatha_pdf_v1",
+        "zah_fatha_pdf_v1",
+        "ayn_fatha_pdf_v1"
+      ],
+      "exampleImages": [
+        "assets/images/assessment/alif_lion.png",
+        "assets/images/assessment/duck.png",
+        "assets/images/assessment/crown_v41.png",
+        "assets/images/assessment/fox.png",
+        "assets/images/assessment/camel_v50.png",
+        "assets/images/assessment/rope_v50.png",
+        "assets/images/assessment/sheep_v48.png",
+        "assets/images/assessment/chicken_v54.png",
+        "assets/images/assessment/tail_v54.png",
+        "assets/images/assessment/man_v54.png",
+        "assets/images/assessment/giraffe_v54.png",
+        "assets/images/assessment/clock_v54.png",
+        "assets/images/assessment/sheen_v60.png",
+        "assets/images/assessment/saad_v60.png",
+        "assets/images/assessment/daad_v60.png",
+        "assets/images/assessment/tah_v60.png",
+        "assets/images/assessment/zah_v60.png",
+        "assets/images/assessment/ayn_v60.png"
+      ],
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ]
+    },
+    {
+      "id": "reading_group_3",
+      "version": 1,
+      "kind": "reading",
+      "title": "قراءة حرفين معًا",
+      "stageId": "letters_fatha",
+      "status": "pending",
+      "lessonAsset": "assets/content/lesson_reading_group_3.json",
+      "audioFolder": "assets/audio/reading/",
+      "traceTemplateIds": [],
+      "exampleImages": [],
+      "priorLessonIds": [
+        "sheen",
+        "saad",
+        "daad",
+        "tah",
+        "zah",
+        "ayn"
+      ],
+      "reviewScope": "level",
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ]
+    },
+    {
+      "id": "ghayn",
+      "version": 1,
+      "title": "حرف الغين",
+      "letter": "غَ",
+      "stageId": "letters_fatha",
+      "status": "pending",
+      "priorLessonIds": [],
+      "reviewScope": "level",
+      "lessonAsset": "assets/content/lesson_ghayn.json",
+      "audioFolder": "assets/audio/ghayn/",
+      "traceTemplateIds": [
+        "ghayn_fatha_pdf_v1"
+      ],
+      "exampleImages": [
+        "assets/images/assessment/ghayn_v60.png"
+      ],
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ]
+    },
+    {
+      "id": "faa",
+      "version": 1,
+      "title": "حرف الفاء",
+      "letter": "فَ",
+      "stageId": "letters_fatha",
+      "status": "pending",
+      "priorLessonIds": [
+        "ghayn"
+      ],
+      "reviewScope": "level",
+      "lessonAsset": "assets/content/lesson_faa.json",
+      "audioFolder": "assets/audio/faa/",
+      "traceTemplateIds": [
+        "faa_fatha_pdf_v1"
+      ],
+      "exampleImages": [
+        "assets/images/assessment/faa_v60.png"
+      ],
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ]
+    },
+    {
+      "id": "qaaf",
+      "version": 1,
+      "title": "حرف القاف",
+      "letter": "قَ",
+      "stageId": "letters_fatha",
+      "status": "pending",
+      "priorLessonIds": [
+        "ghayn",
+        "faa"
+      ],
+      "reviewScope": "level",
+      "lessonAsset": "assets/content/lesson_qaaf.json",
+      "audioFolder": "assets/audio/qaaf/",
+      "traceTemplateIds": [
+        "qaaf_fatha_pdf_v1"
+      ],
+      "exampleImages": [
+        "assets/images/assessment/qaaf_v60.png"
+      ],
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ]
+    },
+    {
+      "id": "kaaf",
+      "version": 1,
+      "title": "حرف الكاف",
+      "letter": "كَ",
+      "stageId": "letters_fatha",
+      "status": "pending",
+      "priorLessonIds": [
+        "ghayn",
+        "faa",
+        "qaaf"
+      ],
+      "reviewScope": "level",
+      "lessonAsset": "assets/content/lesson_kaaf.json",
+      "audioFolder": "assets/audio/kaaf/",
+      "traceTemplateIds": [
+        "kaaf_fatha_pdf_v1"
+      ],
+      "exampleImages": [
+        "assets/images/assessment/kaaf_v60.png"
+      ],
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ]
+    },
+    {
+      "id": "laam",
+      "version": 1,
+      "title": "حرف اللام",
+      "letter": "لَ",
+      "stageId": "letters_fatha",
+      "status": "pending",
+      "priorLessonIds": [
+        "ghayn",
+        "faa",
+        "qaaf",
+        "kaaf"
+      ],
+      "reviewScope": "level",
+      "lessonAsset": "assets/content/lesson_laam.json",
+      "audioFolder": "assets/audio/laam/",
+      "traceTemplateIds": [
+        "laam_fatha_pdf_v1"
+      ],
+      "exampleImages": [
+        "assets/images/assessment/laam_v60.png"
+      ],
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ]
+    },
+    {
+      "id": "meem",
+      "version": 1,
+      "title": "حرف الميم",
+      "letter": "مَ",
+      "stageId": "letters_fatha",
+      "status": "pending",
+      "priorLessonIds": [
+        "ghayn",
+        "faa",
+        "qaaf",
+        "kaaf",
+        "laam"
+      ],
+      "reviewScope": "level",
+      "lessonAsset": "assets/content/lesson_meem.json",
+      "audioFolder": "assets/audio/meem/",
+      "traceTemplateIds": [
+        "meem_fatha_pdf_v1"
+      ],
+      "exampleImages": [
+        "assets/images/assessment/meem_v60.png"
+      ],
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ]
+    },
+    {
+      "id": "checkpoint_group_4",
+      "title": "الاختبار المرحلي الرابع",
+      "version": 1,
+      "kind": "checkpoint",
+      "stageId": "letters_fatha",
+      "status": "pending",
+      "priorLessonIds": [
+        "alif",
+        "baa",
+        "taa",
+        "thaa",
+        "jeem",
+        "haa",
+        "khaa",
+        "dal",
+        "dhal",
+        "raa",
+        "zay",
+        "seen",
+        "sheen",
+        "saad",
+        "daad",
+        "tah",
+        "zah",
+        "ayn",
+        "ghayn",
+        "faa",
+        "qaaf",
+        "kaaf",
+        "laam",
+        "meem"
+      ],
+      "reviewScope": "cumulative",
+      "lessonAsset": "assets/content/lesson_checkpoint_group_4.json",
+      "audioFolder": "assets/audio/checkpoint_2/",
+      "traceTemplateIds": [
+        "ghayn_fatha_pdf_v1",
+        "faa_fatha_pdf_v1",
+        "qaaf_fatha_pdf_v1",
+        "kaaf_fatha_pdf_v1",
+        "laam_fatha_pdf_v1",
+        "meem_fatha_pdf_v1"
+      ],
+      "exampleImages": [
+        "assets/images/assessment/alif_lion.png",
+        "assets/images/assessment/duck.png",
+        "assets/images/assessment/crown_v41.png",
+        "assets/images/assessment/fox.png",
+        "assets/images/assessment/camel_v50.png",
+        "assets/images/assessment/rope_v50.png",
+        "assets/images/assessment/sheep_v48.png",
+        "assets/images/assessment/chicken_v54.png",
+        "assets/images/assessment/tail_v54.png",
+        "assets/images/assessment/man_v54.png",
+        "assets/images/assessment/giraffe_v54.png",
+        "assets/images/assessment/clock_v54.png",
+        "assets/images/assessment/sheen_v60.png",
+        "assets/images/assessment/saad_v60.png",
+        "assets/images/assessment/daad_v60.png",
+        "assets/images/assessment/tah_v60.png",
+        "assets/images/assessment/zah_v60.png",
+        "assets/images/assessment/ayn_v60.png",
+        "assets/images/assessment/ghayn_v60.png",
+        "assets/images/assessment/faa_v60.png",
+        "assets/images/assessment/qaaf_v60.png",
+        "assets/images/assessment/kaaf_v60.png",
+        "assets/images/assessment/laam_v60.png",
+        "assets/images/assessment/meem_v60.png"
+      ],
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ]
+    },
+    {
+      "id": "reading_group_4",
+      "version": 1,
+      "kind": "reading",
+      "title": "قراءة حرفين معًا",
+      "stageId": "letters_fatha",
+      "status": "pending",
+      "lessonAsset": "assets/content/lesson_reading_group_4.json",
+      "audioFolder": "assets/audio/reading/",
+      "traceTemplateIds": [],
+      "exampleImages": [],
+      "priorLessonIds": [
+        "ghayn",
+        "faa",
+        "qaaf",
+        "kaaf",
+        "laam",
+        "meem"
+      ],
+      "reviewScope": "level",
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ]
+    },
+    {
+      "id": "noon",
+      "version": 1,
+      "title": "حرف النون",
+      "letter": "نَ",
+      "stageId": "letters_fatha",
+      "status": "pending",
+      "priorLessonIds": [],
+      "reviewScope": "level",
+      "lessonAsset": "assets/content/lesson_noon.json",
+      "audioFolder": "assets/audio/noon/",
+      "traceTemplateIds": [
+        "noon_fatha_pdf_v1"
+      ],
+      "exampleImages": [
+        "assets/images/assessment/noon_v60.png"
+      ],
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ]
+    },
+    {
+      "id": "heh",
+      "version": 1,
+      "title": "حرف الهاء",
+      "letter": "هَ",
+      "stageId": "letters_fatha",
+      "status": "pending",
+      "priorLessonIds": [
+        "noon"
+      ],
+      "reviewScope": "level",
+      "lessonAsset": "assets/content/lesson_heh.json",
+      "audioFolder": "assets/audio/heh/",
+      "traceTemplateIds": [
+        "heh_fatha_pdf_v1"
+      ],
+      "exampleImages": [
+        "assets/images/assessment/heh_v60.png"
+      ],
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ]
+    },
+    {
+      "id": "waw",
+      "version": 1,
+      "title": "حرف الواو",
+      "letter": "وَ",
+      "stageId": "letters_fatha",
+      "status": "pending",
+      "priorLessonIds": [
+        "noon",
+        "heh"
+      ],
+      "reviewScope": "level",
+      "lessonAsset": "assets/content/lesson_waw.json",
+      "audioFolder": "assets/audio/waw/",
+      "traceTemplateIds": [
+        "waw_fatha_pdf_v1"
+      ],
+      "exampleImages": [
+        "assets/images/assessment/waw_v60.png"
+      ],
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ]
+    },
+    {
+      "id": "yaa",
+      "version": 1,
+      "title": "حرف الياء",
+      "letter": "يَ",
+      "stageId": "letters_fatha",
+      "status": "pending",
+      "priorLessonIds": [
+        "noon",
+        "heh",
+        "waw"
+      ],
+      "reviewScope": "level",
+      "lessonAsset": "assets/content/lesson_yaa.json",
+      "audioFolder": "assets/audio/yaa/",
+      "traceTemplateIds": [
+        "yaa_fatha_pdf_v1"
+      ],
+      "exampleImages": [
+        "assets/images/assessment/yaa_v60.png"
+      ],
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ]
+    },
+    {
+      "id": "checkpoint_group_5",
+      "title": "الاختبار المرحلي الخامس",
+      "version": 1,
+      "kind": "checkpoint",
+      "stageId": "letters_fatha",
+      "status": "pending",
+      "priorLessonIds": [
+        "alif",
+        "baa",
+        "taa",
+        "thaa",
+        "jeem",
+        "haa",
+        "khaa",
+        "dal",
+        "dhal",
+        "raa",
+        "zay",
+        "seen",
+        "sheen",
+        "saad",
+        "daad",
+        "tah",
+        "zah",
+        "ayn",
+        "ghayn",
+        "faa",
+        "qaaf",
+        "kaaf",
+        "laam",
+        "meem",
+        "noon",
+        "heh",
+        "waw",
+        "yaa"
+      ],
+      "reviewScope": "cumulative",
+      "lessonAsset": "assets/content/lesson_checkpoint_group_5.json",
+      "audioFolder": "assets/audio/checkpoint_2/",
+      "traceTemplateIds": [
+        "noon_fatha_pdf_v1",
+        "heh_fatha_pdf_v1",
+        "waw_fatha_pdf_v1",
+        "yaa_fatha_pdf_v1"
+      ],
+      "exampleImages": [
+        "assets/images/assessment/alif_lion.png",
+        "assets/images/assessment/duck.png",
+        "assets/images/assessment/crown_v41.png",
+        "assets/images/assessment/fox.png",
+        "assets/images/assessment/camel_v50.png",
+        "assets/images/assessment/rope_v50.png",
+        "assets/images/assessment/sheep_v48.png",
+        "assets/images/assessment/chicken_v54.png",
+        "assets/images/assessment/tail_v54.png",
+        "assets/images/assessment/man_v54.png",
+        "assets/images/assessment/giraffe_v54.png",
+        "assets/images/assessment/clock_v54.png",
+        "assets/images/assessment/sheen_v60.png",
+        "assets/images/assessment/saad_v60.png",
+        "assets/images/assessment/daad_v60.png",
+        "assets/images/assessment/tah_v60.png",
+        "assets/images/assessment/zah_v60.png",
+        "assets/images/assessment/ayn_v60.png",
+        "assets/images/assessment/ghayn_v60.png",
+        "assets/images/assessment/faa_v60.png",
+        "assets/images/assessment/qaaf_v60.png",
+        "assets/images/assessment/kaaf_v60.png",
+        "assets/images/assessment/laam_v60.png",
+        "assets/images/assessment/meem_v60.png",
+        "assets/images/assessment/noon_v60.png",
+        "assets/images/assessment/heh_v60.png",
+        "assets/images/assessment/waw_v60.png",
+        "assets/images/assessment/yaa_v60.png"
+      ],
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ]
+    },
+    {
+      "id": "reading_group_5",
+      "version": 1,
+      "kind": "reading",
+      "title": "قراءة حرفين وثلاثة",
+      "stageId": "letters_fatha",
+      "status": "pending",
+      "lessonAsset": "assets/content/lesson_reading_group_5.json",
+      "audioFolder": "assets/audio/reading/",
+      "traceTemplateIds": [],
+      "exampleImages": [],
+      "priorLessonIds": [
+        "noon",
+        "heh",
+        "waw",
+        "yaa"
+      ],
+      "reviewScope": "level",
+      "reviewChecklist": [
+        "audio-text-match",
+        "trace-direction",
+        "assessment-answer-mapping",
+        "phone-layout",
+        "offline-assets"
+      ]
+    }
+  ]
+}

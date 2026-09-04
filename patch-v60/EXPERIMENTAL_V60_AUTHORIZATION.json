@@ -1,0 +1,11 @@
+{
+  "version": 60,
+  "releaseChannel": "experimental",
+  "userConsent": "نعم",
+  "consentQuestion": "هل تسمح ببناء IPA تجريبي لتراجع الصوتيات داخله، دون اعتبارها معتمدة نهائيًا؟",
+  "allowUnreviewedAudioInExperimentalIpa": true,
+  "auditoryApprovalGranted": false,
+  "productionReleaseAllowed": false,
+  "audioReview": "pending-user-auditory-review",
+  "onlyWaivedReadinessCategory": "audio-manual-qa-pending"
+}

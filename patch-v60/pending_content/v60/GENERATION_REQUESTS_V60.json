@@ -1,0 +1,24 @@
+{
+  "date": "2026-09-04",
+  "settings": {
+    "voiceId": "zAHOVUiYXuxggpSljiCQ",
+    "modelId": "eleven_v3",
+    "generationsCount": 1,
+    "gapSeconds": 1.5
+  },
+  "flows": {
+    "sheen": "7hp3R3sRUCQoZFmjZtGB"
+  },
+  "requests": [
+    {
+      "asset": "assets/audio/sheen/welcome_v60.mp3",
+      "text": "مرحبًا يا أصدقائي، كيف حالكم اليوم؟ سوف نتعلم اليوم حرفًا جديدًا، حرف الشَا. هيا بنا.",
+      "flowId": "7hp3R3sRUCQoZFmjZtGB",
+      "nodeId": "0w1anMJrNcz2miz8oRQ7",
+      "status": "completed",
+      "auditoryApproved": false,
+      "sessionId": "C1dyHf5E65KklYeXalpD",
+      "generationId": "UQrZERQNJq2c2QtPO9qY"
+    }
+  ]
+}

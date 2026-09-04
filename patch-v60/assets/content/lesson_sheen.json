@@ -1,0 +1,327 @@
+{
+  "id": "sheen",
+  "title": "درس حرف الشَا",
+  "mastery": {
+    "minScore": 0.6,
+    "requiredSceneIds": [
+      "assessment_1"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "welcome_1",
+      "type": "welcome",
+      "title": "ترحيب",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "مرحبًا يا أصدقائي، كيف حالكم اليوم؟ سوف نتعلم اليوم حرفًا جديدًا، حرف الشَا. هيا بنا.",
+          "female": "مرحبًا يا أصدقائي، كيف حالكم اليوم؟ سوف نتعلم اليوم حرفًا جديدًا، حرف الشَا. هيا بنا.",
+          "audio": "assets/audio/sheen/welcome_v60.mp3",
+          "events": [
+            {
+              "action": "playAnimation",
+              "target": "saleh",
+              "atSec": 0,
+              "params": {
+                "name": "greetThenTalk"
+              }
+            }
+          ]
+        }
+      ],
+      "data": {}
+    },
+    {
+      "id": "nasheed_1",
+      "type": "nasheed",
+      "title": "أنشودة الحرف",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "الآن نستمع نشيد حرف الشَا.",
+          "female": "الآن نستمع نشيد حرف الشَا.",
+          "audio": "assets/audio/sheen/nasheed_intro_v60.mp3"
+        }
+      ],
+      "data": {
+        "mediaType": "audio",
+        "label": "أنشودة حرف الشَا",
+        "mediaStatus": "not-provided"
+      }
+    },
+    {
+      "id": "explain_1",
+      "type": "explanation",
+      "title": "شرح الحرف",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "انظروا يا أصدقائي إلى حرف الشَا، إنه حرف جميل.",
+          "female": "انظروا يا أصدقائي إلى حرف الشَا، إنه حرف جميل.",
+          "audio": "assets/audio/sheen/explain_1_v60.mp3",
+          "events": [
+            {
+              "action": "show",
+              "target": "letter",
+              "atSec": 0.2
+            },
+            {
+              "action": "salehPointAt",
+              "target": "letter",
+              "atSec": 0.3
+            }
+          ]
+        },
+        {
+          "male": "شَا، شَا، شَا. هل تعرفون كلمةً تبدأ بحرف الشَا؟",
+          "female": "شَا، شَا، شَا. هل تعرفون كلمةً تبدأ بحرف الشَا؟",
+          "audio": "assets/audio/sheen/explain_2_v60.mp3",
+          "events": [
+            {
+              "action": "pulse",
+              "target": "letter",
+              "atSec": 0.3
+            },
+            {
+              "action": "pulse",
+              "target": "letter",
+              "atSec": 1.1
+            },
+            {
+              "action": "pulse",
+              "target": "letter",
+              "atSec": 1.9
+            }
+          ]
+        },
+        {
+          "male": "شَا، شَمْس. شَا، شَمْس.",
+          "female": "شَا، شَمْس. شَا، شَمْس.",
+          "audio": "assets/audio/sheen/explain_3_v60.mp3",
+          "events": [
+            {
+              "action": "show",
+              "target": "example",
+              "atSec": 0.4
+            },
+            {
+              "action": "highlight",
+              "target": "exampleLetter",
+              "atSec": 0.8
+            }
+          ]
+        },
+        {
+          "male": "انظروا إلى كلمة شَمْس، إنها تبدأ بحرف الشَا.",
+          "female": "انظروا إلى كلمة شَمْس، إنها تبدأ بحرف الشَا.",
+          "audio": "assets/audio/sheen/explain_4_v60.mp3"
+        },
+        {
+          "male": "ردِّدوا معي: شَا، شَمْس. شَا، شَمْس. شَا، شَمْس.",
+          "female": "ردِّدوا معي: شَا، شَمْس. شَا، شَمْس. شَا، شَمْس.",
+          "audio": "assets/audio/sheen/explain_5_v60.mp3"
+        },
+        {
+          "male": "هكذا يا أصدقائي تعلمنا اليوم حرف الشَا. سننتقل الآن إلى نطق وكتابة حرف الشَا. هيا بنا.",
+          "female": "هكذا يا أصدقائي تعلمنا اليوم حرف الشَا. سننتقل الآن إلى نطق وكتابة حرف الشَا. هيا بنا.",
+          "audio": "assets/audio/sheen/explain_6_v60.mp3"
+        }
+      ],
+      "data": {
+        "letter": "شَ",
+        "letterName": "شَا",
+        "letterAudio": "assets/audio/sheen/explain_1_v60.mp3",
+        "example": {
+          "word": "شَمْس",
+          "imageAsset": "assets/images/assessment/sheen_v60.png",
+          "highlightPrefix": "شَ"
+        }
+      }
+    },
+    {
+      "id": "pronounce_1",
+      "type": "pronunciation",
+      "title": "تدريب النطق",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "هيا يا أصدقائي، سأستمع إلى نطقكم لحرف الشَا. شَا، شَا، شَا. اضغطوا على زر المايك وقوموا بنطق الحرف. هيا.",
+          "female": "هيا يا أصدقائي، سأستمع إلى نطقكم لحرف الشَا. شَا، شَا، شَا. اضغطوا على زر المايك وقوموا بنطق الحرف. هيا.",
+          "audio": "assets/audio/sheen/pronounce_intro_v60.mp3"
+        }
+      ],
+      "data": {
+        "letter": "شَ",
+        "spokenLetter": "شَا",
+        "expected": "شَا",
+        "maxAttempts": 3,
+        "retryAudio": "assets/audio/checkpoint_1/retry_only_v51.mp3",
+        "successAudio": "assets/audio/alif/pronounce_success.mp3",
+        "letterAudio": "assets/audio/sheen/tap_repeat_3_v60.mp3",
+        "letterTapAudio": "assets/audio/sheen/tap_repeat_3_v60.mp3"
+      }
+    },
+    {
+      "id": "write_guided_1",
+      "type": "guidedWriting",
+      "title": "الكتابة بالدليل",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "انظروا يا أصدقائي كيف نكتب حرف الشَا. نبدأ من اليمين، ونتبع تعرجات الحرف، ثم نكمل الانحناءة إلى اليسار حتى نهاية الحرف، ثم نضع ثلاث نقاط فوقه.",
+          "female": "انظروا يا أصدقائي كيف نكتب حرف الشَا. نبدأ من اليمين، ونتبع تعرجات الحرف، ثم نكمل الانحناءة إلى اليسار حتى نهاية الحرف، ثم نضع ثلاث نقاط فوقه.",
+          "audio": "assets/audio/sheen/writing_demo_v60.mp3"
+        },
+        {
+          "male": "هيا يا أصدقائي، اكتبوا حرف الشَا. ضعوا إصبعكم على النقطة الخضراء، واتبعوا مسار الحرف حتى النهاية. شَا، شَا.",
+          "female": "هيا يا أصدقائي، اكتبوا حرف الشَا. ضعوا إصبعكم على النقطة الخضراء، واتبعوا مسار الحرف حتى النهاية. شَا، شَا.",
+          "audio": "assets/audio/sheen/writing_try_v60.mp3"
+        }
+      ],
+      "data": {
+        "letter": "شَ",
+        "traceTemplateId": "sheen_fatha_pdf_v1",
+        "writing": {
+          "guidedAttempts": 1,
+          "freeAttempts": 0,
+          "required": true
+        },
+        "againAudio": "assets/audio/sheen/writing_try_v60.mp3",
+        "successAudio": "assets/audio/alif/guided_praise.mp3",
+        "guidedPraiseAudio": "assets/audio/alif/guided_praise.mp3",
+        "lessonId": "sheen"
+      }
+    },
+    {
+      "id": "write_free_1",
+      "type": "freeWriting",
+      "title": "الكتابة الحرة",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "هيا يا أصدقائي، هل تذكرون كيفية كتابة حرف الشَا؟ قوموا بكتابة حرف الشَا الآن.",
+          "female": "هيا يا أصدقائي، هل تذكرون كيفية كتابة حرف الشَا؟ قوموا بكتابة حرف الشَا الآن.",
+          "audio": "assets/audio/sheen/free_intro_v60.mp3"
+        }
+      ],
+      "data": {
+        "letter": "شَ",
+        "traceTemplateId": "sheen_fatha_pdf_v1",
+        "writing": {
+          "guidedAttempts": 0,
+          "freeAttempts": 1,
+          "required": false
+        },
+        "successAudio": "assets/audio/v46/free_praise.mp3",
+        "lessonId": "sheen",
+        "successText": "ممتاز! أحسنتم كتابة الحرف"
+      }
+    },
+    {
+      "id": "assessment_1",
+      "type": "multipleChoice",
+      "title": "التقويم الختامي",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "والآن سأراجع معكم ما تعلمناه في هذا اليوم.",
+          "female": "والآن سأراجع معكم ما تعلمناه في هذا اليوم.",
+          "audio": "assets/audio/v46/assessment_intro.mp3",
+          "durationSec": 3.76
+        }
+      ],
+      "data": {
+        "retryAudio": "assets/audio/checkpoint_1/retry_only_v51.mp3",
+        "successAudio": "assets/audio/taa/assessment_success.mp3",
+        "secondAudio": "assets/audio/sheen/assessment_word_v60.mp3",
+        "questions": [
+          {
+            "kind": "letter",
+            "reviewLessonId": "sheen",
+            "showPrompt": false,
+            "prompt": "أين حرف الشَا؟ اضغطوا على حرف الشَا.",
+            "options": [
+              "شَ",
+              "صَ",
+              "ضَ",
+              "طَ",
+              "ظَ",
+              "عَ"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/sheen/assessment_letter_v60.mp3",
+            "successAudio": "assets/audio/taa/assessment_success.mp3",
+            "retryAudio": "assets/audio/checkpoint_1/retry_only_v51.mp3"
+          },
+          {
+            "kind": "word",
+            "reviewLessonId": "sheen",
+            "showPrompt": false,
+            "prompt": "أين الصورة التي تبدأ بحرف الشَا؟ اختاروا الصورة الصحيحة.",
+            "options": [
+              "شَمْس",
+              "صَقْر",
+              "ضَابِط",
+              "طَبِيب",
+              "ظَرْف",
+              "عَلَمٌ"
+            ],
+            "correctIndex": 0,
+            "audio": "assets/audio/sheen/assessment_word_v60.mp3",
+            "successAudio": "assets/audio/taa/assessment_success.mp3",
+            "retryAudio": "assets/audio/checkpoint_1/retry_only_v51.mp3",
+            "optionImages": [
+              "assets/images/assessment/sheen_v60.png",
+              "assets/images/assessment/saad_v60.png",
+              "assets/images/assessment/daad_v60.png",
+              "assets/images/assessment/tah_v60.png",
+              "assets/images/assessment/zah_v60.png",
+              "assets/images/assessment/ayn_v60.png"
+            ]
+          }
+        ],
+        "questionAfterIntro": true
+      }
+    },
+    {
+      "id": "success_1",
+      "type": "success",
+      "title": "أحسنت",
+      "canSkip": true,
+      "lines": [
+        {
+          "male": "أحسنتم يا أبطال. الحمد لله، لقد تعرفنا هذا اليوم على حرف الشَا. شَا، شَمْس. إلى اللقاء يا أصدقائي.",
+          "female": "أحسنتم يا أبطال. الحمد لله، لقد تعرفنا هذا اليوم على حرف الشَا. شَا، شَمْس. إلى اللقاء يا أصدقائي.",
+          "audio": "assets/audio/sheen/closing_v60.mp3",
+          "events": [
+            {
+              "action": "playAnimation",
+              "target": "saleh",
+              "atSec": 0.2,
+              "params": {
+                "name": "celebrateThenWave"
+              }
+            },
+            {
+              "action": "playAnimation",
+              "target": "saleh",
+              "atSec": 9.8,
+              "params": {
+                "name": "farewell"
+              }
+            }
+          ]
+        }
+      ],
+      "data": {
+        "stars": 3
+      }
+    }
+  ],
+  "publication": {
+    "status": "experimental",
+    "mediaQaPassed": false,
+    "audioReview": "pending-user-auditory-review"
+  }
+}

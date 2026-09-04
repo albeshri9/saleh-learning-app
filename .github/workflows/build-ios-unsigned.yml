@@ -1,4 +1,4 @@
-name: Build unsigned Saleh IPA v59
+name: Build experimental Saleh IPA v60
 
 on:
   push:
@@ -11,7 +11,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: ios-unsigned-v59
+  group: ios-unsigned-v60
   cancel-in-progress: true
 
 jobs:
@@ -83,12 +83,14 @@ jobs:
           cp -R patch-v57/. saleh_app/
           cp -R patch-v58/. saleh_app/
           cp -R patch-v59/. saleh_app/
+          cp -R patch-v60/. saleh_app/
           rm -f saleh_app/assets/audio/{dal,dhal,raa,zay,seen}/{core,explain}.mp3
 
       - name: Install Flutter
         uses: subosito/flutter-action@v2
         with:
           channel: stable
+          flutter-version: '3.47.1'
           cache: true
 
       - name: Clean animated alpha assets
@@ -97,6 +99,10 @@ jobs:
           python3 -m venv .alpha-venv
           .alpha-venv/bin/pip install --quiet pillow
           .alpha-venv/bin/python tool/clean_animated_alpha.py
+
+      - name: Install audio validation dependency
+        run: |
+          if ! command -v ffmpeg >/dev/null; then brew install ffmpeg; fi
 
       - name: Verify and build unsigned iOS app
         working-directory: saleh_app
@@ -107,45 +113,24 @@ jobs:
           python3 tool/validate_voice_bindings.py
           python3 tool/test_validate_voice_bindings.py
           flutter analyze
-          flutter test test/writing_interaction_test.dart test/widget_test.dart test/saleh_character_controller_test.dart test/alif_audio_assets_test.dart test/alif_lesson_interaction_test.dart test/handwriting_validator_test.dart test/mcq_animal_cards_test.dart
-          flutter test test/interaction_effects_test.dart --exclude-tags visual
-          flutter test test/world_v36_test.dart test/profile_v37_test.dart --exclude-tags visual
-          flutter test test/v38_test.dart --exclude-tags visual
-          flutter test test/v39_test.dart --exclude-tags visual
-          flutter test test/games_worlds_test.dart test/v41_test.dart --exclude-tags visual
-          flutter test test/v42_test.dart test/v42_catalog_test.dart --exclude-tags visual
-          flutter test test/v43_lessons_test.dart test/v43_fatha_words_test.dart --exclude-tags visual
-          flutter test test/v44_test.dart --exclude-tags visual
-          flutter test test/v45_test.dart test/v45_reveal_test.dart --exclude-tags visual
-          flutter test test/v46_test.dart --exclude-tags visual
-          flutter test test/v47_layout_test.dart --exclude-tags visual
-          flutter test test/v48_test.dart --exclude-tags visual
-          flutter test test/v49_test.dart --exclude-tags visual
-          flutter test test/v50_test.dart --exclude-tags visual
-          flutter test test/v51_test.dart --exclude-tags visual
-          flutter test test/v52_test.dart --exclude-tags visual
-          flutter test test/v53_test.dart --exclude-tags visual
-          flutter test test/v54_test.dart --exclude-tags visual
-          flutter test test/v55_test.dart --exclude-tags visual
-          flutter test test/v56_test.dart --exclude-tags visual
-          flutter test test/v57_test.dart --exclude-tags visual
-          flutter test test/v58_path_audit_test.dart test/v58_test.dart --exclude-tags visual
-          flutter test test/v59_test.dart --exclude-tags visual
+          .alpha-venv/bin/python tool/validate_v60_experimental.py
+          .alpha-venv/bin/python -m unittest discover -s tool -p 'test_*v60*.py'
+          flutter test --exclude-tags visual
           flutter build ios --release --no-codesign
 
       - name: Package IPA
         run: |
           mkdir Payload
           cp -R saleh_app/build/ios/iphoneos/Runner.app Payload/Runner.app
-          /usr/bin/zip -qry Saleh-unsigned-v59.ipa Payload
-          shasum -a 256 Saleh-unsigned-v59.ipa > Saleh-unsigned-v59.ipa.sha256
+          /usr/bin/zip -qry Saleh-unsigned-v60.ipa Payload
+          shasum -a 256 Saleh-unsigned-v60.ipa > Saleh-unsigned-v60.ipa.sha256
 
       - name: Upload IPA
         uses: actions/upload-artifact@v4
         with:
-          name: Saleh-iOS-unsigned-v59
+          name: Saleh-iOS-unsigned-v60
           path: |
-            Saleh-unsigned-v59.ipa
-            Saleh-unsigned-v59.ipa.sha256
+            Saleh-unsigned-v60.ipa
+            Saleh-unsigned-v60.ipa.sha256
           if-no-files-found: error
           retention-days: 14
