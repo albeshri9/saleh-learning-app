@@ -104,7 +104,7 @@ jobs:
         run: |
           if ! command -v ffmpeg >/dev/null; then brew install ffmpeg; fi
 
-      - name: Verify and build unsigned iOS app
+      - name: Verify project and experimental audio
         working-directory: saleh_app
         run: |
           flutter pub get
@@ -115,7 +115,14 @@ jobs:
           flutter analyze
           .alpha-venv/bin/python tool/validate_v60_experimental.py
           .alpha-venv/bin/python -m unittest discover -s tool -p 'test_*v60*.py'
-          flutter test --exclude-tags visual
+
+      - name: Run Flutter regression tests
+        working-directory: saleh_app
+        run: flutter test --exclude-tags visual
+
+      - name: Build unsigned iOS app
+        working-directory: saleh_app
+        run: |
           flutter build ios --release --no-codesign
 
       - name: Package IPA
