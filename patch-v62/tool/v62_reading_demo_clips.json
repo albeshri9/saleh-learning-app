@@ -1,0 +1,960 @@
+{
+  "version": 62,
+  "clipCount": 28,
+  "method": "Existing narration only. ffmpeg decode to 16kHz mono; 10ms RMS. Endpoints selected from measured pauses, with one connected ha endpoint at its energy trough. No division of recording duration by repetition count.",
+  "sourceAudioModified": false,
+  "technicalBoundaryChecksPassed": true,
+  "auditoryApproval": false,
+  "limitations": [
+    "Energy/silence validates timing, not phoneme identity or quality.",
+    "Saved ASR evidence describes whole source files, not new manual listening or acoustic approval.",
+    "The ha source has connected syllables; its endpoint uses an energy trough and merits on-device listening.",
+    "All existing experimental audio QA status remains unchanged."
+  ],
+  "clips": [
+    {
+      "letter": "أ",
+      "letterId": "alif",
+      "asset": "assets/audio/alif/tap_repeat_3_v59.mp3",
+      "startMs": 0,
+      "endMs": 450,
+      "sourceSha256": "de7d630a6d3c222209a046b429429cc6255f3b7f947fcdfde41d160588bb6d1d",
+      "sourceDurationMs": 1370,
+      "boundaryRmsDb": -56.21,
+      "boundaryType": "measured-inter-syllable-silence",
+      "technicalBoundaryConfidence": "high",
+      "silenceGapsSec": [
+        [
+          0.0,
+          0.03
+        ],
+        [
+          0.42,
+          0.48
+        ],
+        [
+          0.87,
+          0.91
+        ],
+        [
+          1.26,
+          1.37
+        ]
+      ],
+      "cachedWholeSourceAsr": null,
+      "asrIsForClippedSyllable": false,
+      "listenedEntirely": false,
+      "pronunciationApproved": false,
+      "sourceAudioModified": false
+    },
+    {
+      "letter": "ب",
+      "letterId": "baa",
+      "asset": "assets/audio/baa/tap_repeat_3_v59.mp3",
+      "startMs": 0,
+      "endMs": 350,
+      "sourceSha256": "c7174d8aa5f2527f37134089c309b7856c7121e2933d45e2d38a5e36cbf09a9e",
+      "sourceDurationMs": 2050,
+      "boundaryRmsDb": -55.45,
+      "boundaryType": "measured-inter-syllable-silence",
+      "technicalBoundaryConfidence": "high",
+      "silenceGapsSec": [
+        [
+          0.28,
+          0.68
+        ],
+        [
+          1.0,
+          1.35
+        ],
+        [
+          1.65,
+          2.05
+        ]
+      ],
+      "cachedWholeSourceAsr": null,
+      "asrIsForClippedSyllable": false,
+      "listenedEntirely": false,
+      "pronunciationApproved": false,
+      "sourceAudioModified": false
+    },
+    {
+      "letter": "ت",
+      "letterId": "taa",
+      "asset": "assets/audio/taa/tap_repeat_3_v59.mp3",
+      "startMs": 0,
+      "endMs": 500,
+      "sourceSha256": "0a4146f327f37c1bd79971c2a3959733f6682fe01c5b5d98d600d3e5ddb82bda",
+      "sourceDurationMs": 1480,
+      "boundaryRmsDb": -67.99,
+      "boundaryType": "measured-inter-syllable-silence",
+      "technicalBoundaryConfidence": "high",
+      "silenceGapsSec": [
+        [
+          0.0,
+          0.05
+        ],
+        [
+          0.45,
+          0.53
+        ],
+        [
+          0.88,
+          0.99
+        ],
+        [
+          1.27,
+          1.48
+        ]
+      ],
+      "cachedWholeSourceAsr": null,
+      "asrIsForClippedSyllable": false,
+      "listenedEntirely": false,
+      "pronunciationApproved": false,
+      "sourceAudioModified": false
+    },
+    {
+      "letter": "ث",
+      "letterId": "thaa",
+      "asset": "assets/audio/thaa/tap_repeat_3_v59.mp3",
+      "startMs": 0,
+      "endMs": 560,
+      "sourceSha256": "47eca05b4198dfeaf55a2829f3be44a2427a9f048f528d65377c53dd1e9451e5",
+      "sourceDurationMs": 3890,
+      "boundaryRmsDb": -84.04,
+      "boundaryType": "measured-inter-syllable-silence",
+      "technicalBoundaryConfidence": "high",
+      "silenceGapsSec": [
+        [
+          0.49,
+          1.61
+        ],
+        [
+          2.02,
+          3.3
+        ],
+        [
+          3.71,
+          3.89
+        ]
+      ],
+      "cachedWholeSourceAsr": null,
+      "asrIsForClippedSyllable": false,
+      "listenedEntirely": false,
+      "pronunciationApproved": false,
+      "sourceAudioModified": false
+    },
+    {
+      "letter": "ج",
+      "letterId": "jeem",
+      "asset": "assets/audio/jeem/explain_3.mp3",
+      "startMs": 0,
+      "endMs": 580,
+      "sourceSha256": "39b133d95f22a57dbb1595684e802f8a59024a2e1da5147d4c031764b3d6b338",
+      "sourceDurationMs": 3840,
+      "boundaryRmsDb": -50.79,
+      "boundaryType": "measured-inter-syllable-silence",
+      "technicalBoundaryConfidence": "high",
+      "silenceGapsSec": [
+        [
+          0.51,
+          0.69
+        ],
+        [
+          1.21,
+          2.52
+        ],
+        [
+          3.02,
+          3.25
+        ]
+      ],
+      "cachedWholeSourceAsr": null,
+      "asrIsForClippedSyllable": false,
+      "listenedEntirely": false,
+      "pronunciationApproved": false,
+      "sourceAudioModified": false
+    },
+    {
+      "letter": "ح",
+      "letterId": "haa",
+      "asset": "assets/audio/haa/explain_3.mp3",
+      "startMs": 0,
+      "endMs": 570,
+      "sourceSha256": "f5457a8786fa65be1df90eee7a1a496f451d72fa56b20b6b95054b4f951ffb03",
+      "sourceDurationMs": 4480,
+      "boundaryRmsDb": -51.7,
+      "boundaryType": "measured-inter-syllable-silence",
+      "technicalBoundaryConfidence": "high",
+      "silenceGapsSec": [
+        [
+          0.46,
+          0.85
+        ],
+        [
+          1.42,
+          2.97
+        ],
+        [
+          3.47,
+          3.89
+        ]
+      ],
+      "cachedWholeSourceAsr": null,
+      "asrIsForClippedSyllable": false,
+      "listenedEntirely": false,
+      "pronunciationApproved": false,
+      "sourceAudioModified": false
+    },
+    {
+      "letter": "خ",
+      "letterId": "khaa",
+      "asset": "assets/audio/khaa/tap_repeat_3_v59.mp3",
+      "startMs": 0,
+      "endMs": 520,
+      "sourceSha256": "a461c4d75aac32d9d12f9e10b69348c5e1562a5502d31a44492fd4d6b233d9d2",
+      "sourceDurationMs": 2480,
+      "boundaryRmsDb": -56.1,
+      "boundaryType": "measured-inter-syllable-silence",
+      "technicalBoundaryConfidence": "high",
+      "silenceGapsSec": [
+        [
+          0.46,
+          0.86
+        ],
+        [
+          1.36,
+          1.74
+        ],
+        [
+          2.21,
+          2.48
+        ]
+      ],
+      "cachedWholeSourceAsr": null,
+      "asrIsForClippedSyllable": false,
+      "listenedEntirely": false,
+      "pronunciationApproved": false,
+      "sourceAudioModified": false
+    },
+    {
+      "letter": "د",
+      "letterId": "dal",
+      "asset": "assets/audio/dal/tap_repeat_3_v59.mp3",
+      "startMs": 0,
+      "endMs": 540,
+      "sourceSha256": "9bbd413ccdb6883e8f461f6ab85942eccc0c4a7126036381db459325c5aa6dfc",
+      "sourceDurationMs": 2820,
+      "boundaryRmsDb": -61.71,
+      "boundaryType": "measured-inter-syllable-silence",
+      "technicalBoundaryConfidence": "high",
+      "silenceGapsSec": [
+        [
+          0.47,
+          0.86
+        ],
+        [
+          1.37,
+          1.78
+        ],
+        [
+          2.26,
+          2.82
+        ]
+      ],
+      "cachedWholeSourceAsr": null,
+      "asrIsForClippedSyllable": false,
+      "listenedEntirely": false,
+      "pronunciationApproved": false,
+      "sourceAudioModified": false
+    },
+    {
+      "letter": "ذ",
+      "letterId": "dhal",
+      "asset": "assets/audio/dhal/tap_repeat_3_v59.mp3",
+      "startMs": 0,
+      "endMs": 560,
+      "sourceSha256": "24e82ca73585b9bfb6f103f5e0083b96379a36b5a34b93a5068950a85bbbafa5",
+      "sourceDurationMs": 4020,
+      "boundaryRmsDb": -62.97,
+      "boundaryType": "measured-inter-syllable-silence",
+      "technicalBoundaryConfidence": "high",
+      "silenceGapsSec": [
+        [
+          0.49,
+          1.44
+        ],
+        [
+          2.01,
+          3.15
+        ],
+        [
+          3.69,
+          4.02
+        ]
+      ],
+      "cachedWholeSourceAsr": null,
+      "asrIsForClippedSyllable": false,
+      "listenedEntirely": false,
+      "pronunciationApproved": false,
+      "sourceAudioModified": false
+    },
+    {
+      "letter": "ر",
+      "letterId": "raa",
+      "asset": "assets/audio/raa/tap_repeat_3_v59.mp3",
+      "startMs": 0,
+      "endMs": 520,
+      "sourceSha256": "b4b8a5f0410fad04c09ed7933c685ab033b7cf4b8846e1cd34d097f75d820297",
+      "sourceDurationMs": 2620,
+      "boundaryRmsDb": -57.36,
+      "boundaryType": "measured-inter-syllable-silence",
+      "technicalBoundaryConfidence": "high",
+      "silenceGapsSec": [
+        [
+          0.45,
+          0.95
+        ],
+        [
+          1.4,
+          1.9
+        ],
+        [
+          2.35,
+          2.62
+        ]
+      ],
+      "cachedWholeSourceAsr": null,
+      "asrIsForClippedSyllable": false,
+      "listenedEntirely": false,
+      "pronunciationApproved": false,
+      "sourceAudioModified": false
+    },
+    {
+      "letter": "ز",
+      "letterId": "zay",
+      "asset": "assets/audio/zay/tap_repeat_3_v59.mp3",
+      "startMs": 0,
+      "endMs": 670,
+      "sourceSha256": "213c96c4a1ea8a53df7e057117ee5fbb5f97acfa5e0e021f7056915c97ce8607",
+      "sourceDurationMs": 3400,
+      "boundaryRmsDb": -56.79,
+      "boundaryType": "measured-inter-syllable-silence",
+      "technicalBoundaryConfidence": "high",
+      "silenceGapsSec": [
+        [
+          0.61,
+          1.0
+        ],
+        [
+          1.7,
+          2.2
+        ],
+        [
+          2.91,
+          3.4
+        ]
+      ],
+      "cachedWholeSourceAsr": null,
+      "asrIsForClippedSyllable": false,
+      "listenedEntirely": false,
+      "pronunciationApproved": false,
+      "sourceAudioModified": false
+    },
+    {
+      "letter": "س",
+      "letterId": "seen",
+      "asset": "assets/audio/seen/tap_repeat_3_v59.mp3",
+      "startMs": 0,
+      "endMs": 570,
+      "sourceSha256": "7ca4f63458f1c85d38adf059d8117d2888d03475140da2f8cc85654f1dabdd30",
+      "sourceDurationMs": 2600,
+      "boundaryRmsDb": -58.29,
+      "boundaryType": "measured-inter-syllable-silence",
+      "technicalBoundaryConfidence": "high",
+      "silenceGapsSec": [
+        [
+          0.5,
+          0.88
+        ],
+        [
+          1.38,
+          1.83
+        ],
+        [
+          2.34,
+          2.6
+        ]
+      ],
+      "cachedWholeSourceAsr": null,
+      "asrIsForClippedSyllable": false,
+      "listenedEntirely": false,
+      "pronunciationApproved": false,
+      "sourceAudioModified": false
+    },
+    {
+      "letter": "ش",
+      "letterId": "sheen",
+      "asset": "assets/audio/sheen/explain_3_v60.mp3",
+      "startMs": 0,
+      "endMs": 620,
+      "sourceSha256": "d078e06c1d0c923a2426a03df8df7b17222a9436f340cb19c23dd9b824ea6f84",
+      "sourceDurationMs": 4160,
+      "boundaryRmsDb": -58.21,
+      "boundaryType": "measured-inter-syllable-silence",
+      "technicalBoundaryConfidence": "high",
+      "silenceGapsSec": [
+        [
+          0.56,
+          0.76
+        ],
+        [
+          1.51,
+          2.48
+        ],
+        [
+          3.07,
+          3.32
+        ],
+        [
+          3.97,
+          4.05
+        ],
+        [
+          4.11,
+          4.16
+        ]
+      ],
+      "cachedWholeSourceAsr": "شى شمس",
+      "asrIsForClippedSyllable": false,
+      "listenedEntirely": false,
+      "pronunciationApproved": false,
+      "sourceAudioModified": false
+    },
+    {
+      "letter": "ص",
+      "letterId": "saad",
+      "asset": "assets/audio/saad/tap_repeat_3_v60.mp3",
+      "startMs": 0,
+      "endMs": 570,
+      "sourceSha256": "14b9e649bd37b44efb3036209d6ad5b0400b497490150e314865b0a5fdad7a09",
+      "sourceDurationMs": 2240,
+      "boundaryRmsDb": -51.37,
+      "boundaryType": "measured-inter-syllable-silence",
+      "technicalBoundaryConfidence": "high",
+      "silenceGapsSec": [
+        [
+          0.5,
+          0.81
+        ],
+        [
+          1.36,
+          1.69
+        ]
+      ],
+      "cachedWholeSourceAsr": "صار صار",
+      "asrIsForClippedSyllable": false,
+      "listenedEntirely": false,
+      "pronunciationApproved": false,
+      "sourceAudioModified": false
+    },
+    {
+      "letter": "ض",
+      "letterId": "daad",
+      "asset": "assets/audio/daad/tap_repeat_3_v60.mp3",
+      "startMs": 0,
+      "endMs": 520,
+      "sourceSha256": "9f49ec2f24e26bcfa9bbb0d5f1c4736f9d2a9f80cee7200ca4c57aad813500c0",
+      "sourceDurationMs": 2400,
+      "boundaryRmsDb": -60.66,
+      "boundaryType": "measured-inter-syllable-silence",
+      "technicalBoundaryConfidence": "high",
+      "silenceGapsSec": [
+        [
+          0.44,
+          0.88
+        ],
+        [
+          1.33,
+          1.92
+        ]
+      ],
+      "cachedWholeSourceAsr": "دا دا",
+      "asrIsForClippedSyllable": false,
+      "listenedEntirely": false,
+      "pronunciationApproved": false,
+      "sourceAudioModified": false
+    },
+    {
+      "letter": "ط",
+      "letterId": "tah",
+      "asset": "assets/audio/tah/tap_repeat_3_v60.mp3",
+      "startMs": 0,
+      "endMs": 470,
+      "sourceSha256": "9a1cdb0b1bcaedeb833ee4e2e5ca0a3ee2e2bdad2d84bf145deff89650cf6ccd",
+      "sourceDurationMs": 2400,
+      "boundaryRmsDb": -64.48,
+      "boundaryType": "measured-inter-syllable-silence",
+      "technicalBoundaryConfidence": "high",
+      "silenceGapsSec": [
+        [
+          0.0,
+          0.05
+        ],
+        [
+          0.4,
+          1.0
+        ],
+        [
+          1.35,
+          2.04
+        ]
+      ],
+      "cachedWholeSourceAsr": "تو تو",
+      "asrIsForClippedSyllable": false,
+      "listenedEntirely": false,
+      "pronunciationApproved": false,
+      "sourceAudioModified": false
+    },
+    {
+      "letter": "ظ",
+      "letterId": "zah",
+      "asset": "assets/audio/zah/tap_repeat_3_v60.mp3",
+      "startMs": 0,
+      "endMs": 540,
+      "sourceSha256": "b44cea6b0f45466b4382064530f1405cb1cc960ccf30cbd9e25582dc9e156bde",
+      "sourceDurationMs": 2400,
+      "boundaryRmsDb": -55.69,
+      "boundaryType": "measured-inter-syllable-silence",
+      "technicalBoundaryConfidence": "high",
+      "silenceGapsSec": [
+        [
+          0.47,
+          0.87
+        ],
+        [
+          1.38,
+          1.85
+        ]
+      ],
+      "cachedWholeSourceAsr": "زا",
+      "asrIsForClippedSyllable": false,
+      "listenedEntirely": false,
+      "pronunciationApproved": false,
+      "sourceAudioModified": false
+    },
+    {
+      "letter": "ع",
+      "letterId": "ayn",
+      "asset": "assets/audio/ayn/explain_2_v60.mp3",
+      "startMs": 0,
+      "endMs": 640,
+      "sourceSha256": "b7b11167992da37d06209cb023183f8d40cfed883995ca437a49e24e0d3578b0",
+      "sourceDurationMs": 6560,
+      "boundaryRmsDb": -54.56,
+      "boundaryType": "measured-inter-syllable-silence",
+      "technicalBoundaryConfidence": "high",
+      "silenceGapsSec": [
+        [
+          0.0,
+          0.03
+        ],
+        [
+          0.58,
+          0.98
+        ],
+        [
+          1.56,
+          1.97
+        ],
+        [
+          2.5,
+          3.31
+        ],
+        [
+          3.33,
+          3.38
+        ],
+        [
+          3.56,
+          3.61
+        ],
+        [
+          4.23,
+          4.28
+        ],
+        [
+          4.63,
+          4.68
+        ],
+        [
+          4.9,
+          5.18
+        ],
+        [
+          6.51,
+          6.56
+        ]
+      ],
+      "cachedWholeSourceAsr": "عا.. عا.. عا.. هل تعرفون كلمة تبدأ بحرف العا؟",
+      "asrIsForClippedSyllable": false,
+      "listenedEntirely": false,
+      "pronunciationApproved": false,
+      "sourceAudioModified": false
+    },
+    {
+      "letter": "غ",
+      "letterId": "ghayn",
+      "asset": "assets/audio/ghayn/tap_repeat_3_v60.mp3",
+      "startMs": 0,
+      "endMs": 470,
+      "sourceSha256": "afbe2df7a2cda6538146ca9a32a098b002f442aabe8f649b689318355ae9b6cc",
+      "sourceDurationMs": 2160,
+      "boundaryRmsDb": -57.5,
+      "boundaryType": "measured-inter-syllable-silence",
+      "technicalBoundaryConfidence": "high",
+      "silenceGapsSec": [
+        [
+          0.39,
+          0.87
+        ],
+        [
+          1.31,
+          1.78
+        ]
+      ],
+      "cachedWholeSourceAsr": "را! را! را!",
+      "asrIsForClippedSyllable": false,
+      "listenedEntirely": false,
+      "pronunciationApproved": false,
+      "sourceAudioModified": false
+    },
+    {
+      "letter": "ف",
+      "letterId": "faa",
+      "asset": "assets/audio/faa/tap_repeat_3_v60.mp3",
+      "startMs": 0,
+      "endMs": 580,
+      "sourceSha256": "c870c55ccb6f4d8a45d3a89ef98d3f4027a8c7207d27b096a1a6ba0ac3ce98bb",
+      "sourceDurationMs": 2800,
+      "boundaryRmsDb": -57.34,
+      "boundaryType": "measured-inter-syllable-silence",
+      "technicalBoundaryConfidence": "high",
+      "silenceGapsSec": [
+        [
+          0.51,
+          1.13
+        ],
+        [
+          1.66,
+          2.3
+        ]
+      ],
+      "cachedWholeSourceAsr": "فا .. فا .. فا",
+      "asrIsForClippedSyllable": false,
+      "listenedEntirely": false,
+      "pronunciationApproved": false,
+      "sourceAudioModified": false
+    },
+    {
+      "letter": "ق",
+      "letterId": "qaaf",
+      "asset": "assets/audio/qaaf/tap_repeat_3_v60.mp3",
+      "startMs": 0,
+      "endMs": 540,
+      "sourceSha256": "056a2997b20354002e4fae7f9f53e6e29e2066cdc5484ee88fdfde8f6dff7196",
+      "sourceDurationMs": 2080,
+      "boundaryRmsDb": -54.28,
+      "boundaryType": "measured-inter-syllable-silence",
+      "technicalBoundaryConfidence": "high",
+      "silenceGapsSec": [
+        [
+          0.0,
+          0.09
+        ],
+        [
+          0.47,
+          0.88
+        ],
+        [
+          1.24,
+          1.71
+        ]
+      ],
+      "cachedWholeSourceAsr": "كار",
+      "asrIsForClippedSyllable": false,
+      "listenedEntirely": false,
+      "pronunciationApproved": false,
+      "sourceAudioModified": false
+    },
+    {
+      "letter": "ك",
+      "letterId": "kaaf",
+      "asset": "assets/audio/kaaf/tap_repeat_3_v60.mp3",
+      "startMs": 0,
+      "endMs": 540,
+      "sourceSha256": "e449a07b1480cf0760a7b55b0bde74758bdbed73d989d5a36e7e38655a8a21f9",
+      "sourceDurationMs": 1760,
+      "boundaryRmsDb": -56.89,
+      "boundaryType": "measured-inter-syllable-silence",
+      "technicalBoundaryConfidence": "high",
+      "silenceGapsSec": [
+        [
+          0.0,
+          0.07
+        ],
+        [
+          0.47,
+          0.71
+        ],
+        [
+          1.12,
+          1.36
+        ],
+        [
+          1.72,
+          1.76
+        ]
+      ],
+      "cachedWholeSourceAsr": "كا .. كا .. كا",
+      "asrIsForClippedSyllable": false,
+      "listenedEntirely": false,
+      "pronunciationApproved": false,
+      "sourceAudioModified": false
+    },
+    {
+      "letter": "ل",
+      "letterId": "laam",
+      "asset": "assets/audio/laam/explain_3_v60.mp3",
+      "startMs": 0,
+      "endMs": 700,
+      "sourceSha256": "69b56bf2f860226da888b0192435f3445abcf3bf4819893998eb5f1ff8da5e56",
+      "sourceDurationMs": 4560,
+      "boundaryRmsDb": -55.81,
+      "boundaryType": "measured-inter-syllable-silence",
+      "technicalBoundaryConfidence": "high",
+      "silenceGapsSec": [
+        [
+          0.64,
+          0.94
+        ],
+        [
+          1.59,
+          2.79
+        ],
+        [
+          3.41,
+          3.8
+        ],
+        [
+          4.48,
+          4.51
+        ]
+      ],
+      "cachedWholeSourceAsr": "لا لحم",
+      "asrIsForClippedSyllable": false,
+      "listenedEntirely": false,
+      "pronunciationApproved": false,
+      "sourceAudioModified": false
+    },
+    {
+      "letter": "م",
+      "letterId": "meem",
+      "asset": "assets/audio/meem/tap_repeat_3_v60.mp3",
+      "startMs": 0,
+      "endMs": 600,
+      "sourceSha256": "be9068aefd0db9dee8b60470a20bba43396f21afd7ad9ef3988699dc56b29b68",
+      "sourceDurationMs": 2160,
+      "boundaryRmsDb": -60.38,
+      "boundaryType": "measured-inter-syllable-silence",
+      "technicalBoundaryConfidence": "high",
+      "silenceGapsSec": [
+        [
+          0.53,
+          0.84
+        ],
+        [
+          1.37,
+          1.67
+        ]
+      ],
+      "cachedWholeSourceAsr": "ما .. ما .. ما ..",
+      "asrIsForClippedSyllable": false,
+      "listenedEntirely": false,
+      "pronunciationApproved": false,
+      "sourceAudioModified": false
+    },
+    {
+      "letter": "ن",
+      "letterId": "noon",
+      "asset": "assets/audio/noon/explain_3_v60.mp3",
+      "startMs": 0,
+      "endMs": 580,
+      "sourceSha256": "d83a1d16146c3e801e02a0d3845be5a9c49af1a96740cc5d8c0f16f0c5f2524f",
+      "sourceDurationMs": 4000,
+      "boundaryRmsDb": -51.34,
+      "boundaryType": "measured-inter-syllable-silence",
+      "technicalBoundaryConfidence": "high",
+      "silenceGapsSec": [
+        [
+          0.52,
+          0.68
+        ],
+        [
+          1.33,
+          2.56
+        ],
+        [
+          3.11,
+          3.29
+        ],
+        [
+          3.96,
+          4.0
+        ]
+      ],
+      "cachedWholeSourceAsr": "نا نحل",
+      "asrIsForClippedSyllable": false,
+      "listenedEntirely": false,
+      "pronunciationApproved": false,
+      "sourceAudioModified": false
+    },
+    {
+      "letter": "ه",
+      "letterId": "heh",
+      "asset": "assets/audio/heh/explain_2_v60.mp3",
+      "startMs": 0,
+      "endMs": 470,
+      "sourceSha256": "cadf0b196ab1656e690b06da77a63b3a36af030de141e4053ad4ec47c23782d0",
+      "sourceDurationMs": 4640,
+      "boundaryRmsDb": -19.58,
+      "boundaryType": "inter-syllable-energy-trough",
+      "technicalBoundaryConfidence": "medium",
+      "silenceGapsSec": [
+        [
+          0.0,
+          0.04
+        ],
+        [
+          1.11,
+          1.37
+        ],
+        [
+          1.47,
+          1.54
+        ],
+        [
+          1.71,
+          1.77
+        ],
+        [
+          2.41,
+          2.45
+        ],
+        [
+          4.45,
+          4.64
+        ]
+      ],
+      "cachedWholeSourceAsr": "ها ها ها هل تعرفون كلمة تبدأ بحرف الها؟",
+      "asrIsForClippedSyllable": false,
+      "listenedEntirely": false,
+      "pronunciationApproved": false,
+      "sourceAudioModified": false
+    },
+    {
+      "letter": "و",
+      "letterId": "waw",
+      "asset": "assets/audio/waw/explain_3_v60.mp3",
+      "startMs": 0,
+      "endMs": 620,
+      "sourceSha256": "a9932f48aa32210b489050f681fb6eb78764f3aedbdf166fb78588f09e010b82",
+      "sourceDurationMs": 3760,
+      "boundaryRmsDb": -63.08,
+      "boundaryType": "measured-inter-syllable-silence",
+      "technicalBoundaryConfidence": "high",
+      "silenceGapsSec": [
+        [
+          0.0,
+          0.03
+        ],
+        [
+          0.54,
+          0.76
+        ],
+        [
+          1.31,
+          1.35
+        ],
+        [
+          1.38,
+          2.27
+        ],
+        [
+          2.79,
+          3.06
+        ],
+        [
+          3.63,
+          3.69
+        ]
+      ],
+      "cachedWholeSourceAsr": "وَا وَلَد",
+      "asrIsForClippedSyllable": false,
+      "listenedEntirely": false,
+      "pronunciationApproved": false,
+      "sourceAudioModified": false
+    },
+    {
+      "letter": "ي",
+      "letterId": "yaa",
+      "asset": "assets/audio/yaa/explain_2_v60.mp3",
+      "startMs": 0,
+      "endMs": 540,
+      "sourceSha256": "80c34e96fff3841039733876025362f238ac112421cf7764ac1a032c916c428c",
+      "sourceDurationMs": 5600,
+      "boundaryRmsDb": -55.49,
+      "boundaryType": "measured-inter-syllable-silence",
+      "technicalBoundaryConfidence": "high",
+      "silenceGapsSec": [
+        [
+          0.47,
+          0.69
+        ],
+        [
+          1.23,
+          1.42
+        ],
+        [
+          1.95,
+          2.72
+        ],
+        [
+          2.89,
+          2.93
+        ],
+        [
+          3.5,
+          3.54
+        ],
+        [
+          4.2,
+          4.28
+        ],
+        [
+          4.38,
+          4.47
+        ],
+        [
+          5.56,
+          5.6
+        ]
+      ],
+      "cachedWholeSourceAsr": "يا هل تعرفون كلمة تبدأ بحرف اليا؟",
+      "asrIsForClippedSyllable": false,
+      "listenedEntirely": false,
+      "pronunciationApproved": false,
+      "sourceAudioModified": false
+    }
+  ]
+}

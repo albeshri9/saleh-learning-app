@@ -1,4 +1,4 @@
-name: Build experimental Saleh IPA v61
+name: Build experimental Saleh IPA v62
 
 on:
   push:
@@ -11,7 +11,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: ios-unsigned-v61
+  group: ios-unsigned-v62
   cancel-in-progress: true
 
 jobs:
@@ -85,6 +85,7 @@ jobs:
           cp -R patch-v59/. saleh_app/
           cp -R patch-v60/. saleh_app/
           cp -R patch-v61/. saleh_app/
+          cp -R patch-v62/. saleh_app/
           rm -f saleh_app/assets/audio/{dal,dhal,raa,zay,seen}/{core,explain}.mp3
 
       - name: Install Flutter
@@ -130,15 +131,15 @@ jobs:
         run: |
           mkdir Payload
           cp -R saleh_app/build/ios/iphoneos/Runner.app Payload/Runner.app
-          /usr/bin/zip -qry Saleh-unsigned-v61.ipa Payload
-          shasum -a 256 Saleh-unsigned-v61.ipa > Saleh-unsigned-v61.ipa.sha256
+          /usr/bin/zip -qry Saleh-unsigned-v62.ipa Payload
+          shasum -a 256 Saleh-unsigned-v62.ipa > Saleh-unsigned-v62.ipa.sha256
 
       - name: Upload IPA
         uses: actions/upload-artifact@v4
         with:
-          name: Saleh-iOS-unsigned-v61
+          name: Saleh-iOS-unsigned-v62
           path: |
-            Saleh-unsigned-v61.ipa
-            Saleh-unsigned-v61.ipa.sha256
+            Saleh-unsigned-v62.ipa
+            Saleh-unsigned-v62.ipa.sha256
           if-no-files-found: error
           retention-days: 14
