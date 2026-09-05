@@ -1,4 +1,4 @@
-name: Build experimental Saleh IPA v62
+name: Build experimental Saleh IPA v63
 
 on:
   push:
@@ -11,7 +11,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: ios-unsigned-v62
+  group: ios-unsigned-v63
   cancel-in-progress: true
 
 jobs:
@@ -86,6 +86,9 @@ jobs:
           cp -R patch-v60/. saleh_app/
           cp -R patch-v61/. saleh_app/
           cp -R patch-v62/. saleh_app/
+          cat patch_v63_parts/part-*.bin > patch-v63.zip
+          echo "58a445e9c3603bf849d5fc8be918c10eed814035fa8aa4affec0532b9bced548  patch-v63.zip" | shasum -a 256 -c -
+          unzip -qo patch-v63.zip -d saleh_app
           rm -f saleh_app/assets/audio/{dal,dhal,raa,zay,seen}/{core,explain}.mp3
 
       - name: Install Flutter
@@ -111,6 +114,8 @@ jobs:
         run: |
           flutter pub get
           python3 tool/validate_content.py
+          python3 tool/validate_words_fatha_v63.py --release --experimental-v63
+          python3 -m unittest discover -s tool -p 'test_*v63*.py'
           python3 tool/test_validate_content.py
           python3 tool/validate_voice_bindings.py
           python3 tool/test_validate_voice_bindings.py
@@ -131,15 +136,15 @@ jobs:
         run: |
           mkdir Payload
           cp -R saleh_app/build/ios/iphoneos/Runner.app Payload/Runner.app
-          /usr/bin/zip -qry Saleh-unsigned-v62.ipa Payload
-          shasum -a 256 Saleh-unsigned-v62.ipa > Saleh-unsigned-v62.ipa.sha256
+          /usr/bin/zip -qry Saleh-unsigned-v63.ipa Payload
+          shasum -a 256 Saleh-unsigned-v63.ipa > Saleh-unsigned-v63.ipa.sha256
 
       - name: Upload IPA
         uses: actions/upload-artifact@v4
         with:
-          name: Saleh-iOS-unsigned-v62
+          name: Saleh-iOS-unsigned-v63
           path: |
-            Saleh-unsigned-v62.ipa
-            Saleh-unsigned-v62.ipa.sha256
+            Saleh-unsigned-v63.ipa
+            Saleh-unsigned-v63.ipa.sha256
           if-no-files-found: error
           retention-days: 14
