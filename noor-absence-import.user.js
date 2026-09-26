@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         استيراد الغياب إلى نور — أداة المدرسة
 // @namespace    local.school.noor.absence
-// @version      0.1.0
+// @version      0.2.0
 // @description  معاينة ملف غياب المدرسة ثم تحديد الطلاب ونوع المخالفة في صفحة نور، مع حفظ يدوي.
 // @match        https://noor.moe.gov.sa/*
 // @run-at       document-idle
@@ -164,6 +164,10 @@
     const dates = new Set(records.map((row) => row.date));
     const schools = new Set(records.map((row) => normalize(row.school)));
     if (dates.size !== 1 || schools.size !== 1) throw new Error('يجب أن يخص الملف تاريخًا واحدًا ومدرسة واحدة.');
+    const modes = new Set(records.map((row) => row.mode));
+    if (modes.size !== 1 || !['IN_PERSON', 'REMOTE'].includes(records[0].mode)) {
+      throw new Error('يجب أن يخص الملف نمط دراسة واحدًا: حضوري أو عن بُعد.');
+    }
     const duplicateKeys = new Set();
     const seen = new Set();
     for (const record of records) {
@@ -172,7 +176,7 @@
       seen.add(identity);
       record.identity = identity;
     }
-    return { date: records[0].date, school: records[0].school, records, duplicateKeys };
+    return { date: records[0].date, school: records[0].school, mode: records[0].mode, records, duplicateKeys };
   }
 
   function visible(element) {
@@ -365,9 +369,17 @@
   }
 
   function preview(data) {
-    const workflow = workflowEvidence();
     const date = pageDateEvidence(data.date);
     const school = pageSchoolEvidence(data.school);
+    if (data.mode === 'REMOTE') {
+      return {
+        fatal: [],
+        entries: data.records.map((record) => ({ record, status: data.duplicateKeys.has(record.identity) ? 'duplicate' : 'remoteManual' })),
+        modeWarnings: [date, school].filter((item) => !item.ok).map((item) => item.reason),
+        scope: null, date: date.text, school: school.text
+      };
+    }
+    const workflow = workflowEvidence();
     if (!workflow.ok || !date.ok || !school.ok) return { fatal: [workflow, date, school].filter((item) => !item.ok).map((item) => item.reason), entries: [] };
     const rows = rosterRows();
     if (!rows.length) return { fatal: ['لم يظهر جدول طلاب نور أو قوائم نوع المخالفة بعد الضغط على «بحث».'], entries: [] };
@@ -377,7 +389,6 @@
     if (preselected.length) return { fatal: [`يوجد ${preselected.length} مربع تحديد مختار مسبقًا في جدول نور، وقد يشمل طلابًا خارج الملف. راجع التحديدات وألغِها يدويًا ثم حدّث المعاينة.`], entries: [] };
     const scope = pageClassScope();
     const entries = data.records.map((record) => {
-      if (record.mode !== 'IN_PERSON') return { record, status: 'unsupportedMode' };
       if (data.duplicateKeys.has(record.identity)) return { record, status: 'duplicate' };
       if (scope && (scope.grade !== record.studentClass.grade || scope.section !== record.studentClass.section)) return { record, status: 'outside' };
       const nameMatches = rows.filter((row) => row.names.some((name) => normalize(name) === normalize(record.studentName)));
@@ -412,7 +423,7 @@
     return {
       ready: 'جاهز', outside: 'فصل آخر', duplicate: 'مكرر في الملف', ambiguous: 'مطابقة ملتبسة',
       classMismatch: 'الاسم موجود والفصل مختلف', notFound: 'غير موجود في الجدول',
-      alreadySelected: 'محدد مسبقًا في نور', unsupportedMode: 'النمط ليس حضوريًا محددًا'
+      alreadySelected: 'محدد مسبقًا في نور', remoteManual: 'عن بُعد — إدخال يدوي في نور'
     }[value] ?? value;
   }
 
@@ -431,11 +442,16 @@
     const outside = count('outside');
     const problems = result.entries.filter((entry) => !['ready', 'outside'].includes(entry.status));
     const unexcused = result.entries.filter((entry) => entry.status === 'ready' && decisions.get(entry.record.sourceRow) === UNEXCUSED).length;
-    summary.textContent = `جاهز: ${ready} · بعذر: ${ready - unexcused} · بغير عذر: ${unexcused} · فصول أخرى: ${outside} · تحتاج مراجعة: ${problems.length}`;
+    summary.textContent = imported.mode === 'REMOTE'
+      ? `ملف غياب عن بُعد · ${imported.records.length} طالبًا · ${imported.school} · ${imported.date}`
+      : `جاهز: ${ready} · بعذر: ${ready - unexcused} · بغير عذر: ${unexcused} · فصول أخرى: ${outside} · تحتاج مراجعة: ${problems.length}`;
     const ignoredTypes = imported.records.filter((record) => record.sourceType && !/^(?:الغياب\s*)?بعذر$/u.test(normalize(record.sourceType))).length;
     const sourceNotice = ignoredTypes ? ` ${ignoredTypes} حالة في الملف لها نوع آخر؛ بدأت بعذر ويمكن تغييرها يدويًا هنا.` : '';
-    const modeNotice = count('unsupportedMode') ? ' يعمل التحديد الآلي لملف IN_PERSON فقط؛ أعد تصدير التقرير بالنمط الحضوري. غياب منصة مدرستي يحتاج اختيار نوعه المناسب يدويًا في نور.' : '';
-    setStatus((problems.length ? 'راجع الحالات غير المطابقة قبل التحديد. يمكنك إعادة البحث في نور ثم تحديث المعاينة.' : `تطابق اسم المدرسة والتاريخ. ${result.scope ? `الفصل ${result.scope.grade}/${result.scope.section}.` : 'راجع الفصل في كل صف.'}`) + modeNotice + sourceNotice, Boolean(modeNotice));
+    const modeNotice = imported.mode === 'REMOTE'
+      ? ' هذا الملف للدراسة عن بُعد. راجع الأسماء، ثم اختر نوع الغياب الصحيح وأدخل الحالات يدويًا في نور؛ لا يحدد السكربت هؤلاء الطلاب آليًا حتى نتأكد من نوع المخالفة المناسب في نور.'
+      : '';
+    const modeWarnings = result.modeWarnings?.length ? ` ${result.modeWarnings.join(' ')}` : '';
+    setStatus((problems.length && imported.mode !== 'REMOTE' ? 'راجع الحالات غير المطابقة قبل التحديد. يمكنك إعادة البحث في نور ثم تحديث المعاينة.' : `الملف مقروء. ${result.scope ? `الفصل ${result.scope.grade}/${result.scope.section}.` : 'راجع الفصل في كل صف.'}`) + modeNotice + modeWarnings + sourceNotice, Boolean(modeNotice || modeWarnings));
     for (const entry of result.entries) {
       if (entry.status === 'outside') continue;
       const item = el('div', `student ${entry.status === 'ready' ? '' : 'problem'}`);
@@ -584,7 +600,7 @@
   }
 
   if (globalThis.__NOOR_ABSENCE_TEST_MODE__ === true) {
-    globalThis.__NOOR_ABSENCE_TEST_API__ = { normalize, parseClass, parseIsoDate, parseDelimited, parseImport, sameDate, gradeNumber, sectionNumber, classMatches, optionFor, containsSchoolPhrase, pageDateEvidence, pageSchoolEvidence, workflowEvidence };
+    globalThis.__NOOR_ABSENCE_TEST_API__ = { normalize, parseClass, parseIsoDate, parseDelimited, parseImport, preview, sameDate, gradeNumber, sectionNumber, classMatches, optionFor, containsSchoolPhrase, pageDateEvidence, pageSchoolEvidence, workflowEvidence };
     return;
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', syncUi, { once: true });
@@ -594,4 +610,3 @@
   });
   observer.observe(document.documentElement, { childList: true, subtree: true });
 })();
-
